@@ -26,6 +26,7 @@
         <a id="openLink" class="button" rel="noopener noreferrer" hidden>Open link</a>
         <a class="button back" href="index.html">Back to Games</a>
     </main>
+    <script src="link-status.js"></script>
     <script src="catalog.js"></script>
     <script>
         var params = new URLSearchParams(window.location.search);
@@ -40,7 +41,7 @@
             button.removeAttribute('hidden');
         } else {
             document.getElementById('heading').textContent = 'Link unavailable';
-            document.getElementById('message').textContent = 'This link is malformed, points to a closed host, or is not a download link. Return to the catalogue to choose another link.';
+            document.getElementById('message').textContent = gameCatalog.isMissing(params.get('url')) ? 'The host reports that this file does not exist. Return to the catalogue to choose another link.' : 'This link is malformed, points to a closed host, or is not a download link. Return to the catalogue to choose another link.';
         }
     </script>
 </body>

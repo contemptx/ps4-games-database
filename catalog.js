@@ -23,6 +23,7 @@ var gameCatalog = (function() {
     function describeLink(value) {
         var url = normalizeUrl(value);
         if (!url) return null;
+        if (isMissing(url.href)) return null;
         var host = url.hostname.toLowerCase();
         var path = url.pathname;
         // These were scraped from menus, help pages and comment-sharing buttons.
@@ -47,6 +48,27 @@ var gameCatalog = (function() {
         else if (matchesHost(host, 'bit.ly')) label = 'Short link';
         else if (matchesHost(host, 'vikingfile.com')) label = 'VikingFile';
         return { url: url.href, host: host, label: label, group: group };
+    }
+
+    function statusKey(value) {
+        var url = normalizeUrl(value);
+        if (!url) return null;
+        // Affiliate parameters do not change a 1fichier file's identity.
+        if (matchesHost(url.hostname, '1fichier.com')) {
+            var id = url.search.match(/^\?([a-z0-9]+)/i);
+            if (id) return 'https://1fichier.com/?' + id[1].toLowerCase();
+        }
+        if (matchesHost(url.hostname, 'mediafire.com')) {
+            var file = url.pathname.match(/^\/file\/([a-z0-9]+)(?:\/|$)/i);
+            if (file) return 'https://www.mediafire.com/file/' + file[1];
+        }
+        return url.href;
+    }
+
+    function isMissing(value) {
+        var key = statusKey(value);
+        var statuses = typeof linkStatuses === 'object' && linkStatuses ? linkStatuses.links : null;
+        return !!(key && statuses && statuses[key] && statuses[key].status === 'missing');
     }
 
     function prepare(records) {
@@ -93,7 +115,13 @@ var gameCatalog = (function() {
         document.getElementById('totalGames').textContent = gameCount;
         document.getElementById('totalLinks').textContent = linkCount;
         document.getElementById('catalogTotals').textContent = gameCount + ' Games | ' + linkCount + ' Download Links';
+        var summary = document.getElementById('linkStatusSummary');
+        if (summary) {
+            var statuses = typeof linkStatuses === 'object' && linkStatuses ? linkStatuses.links || {} : {};
+            var missing = Object.keys(statuses).filter(function(key) { return statuses[key].status === 'missing'; }).length;
+            summary.textContent = missing.toLocaleString('en-US') + ' confirmed missing link' + (missing === 1 ? '' : 's') + ' hidden. Other links may be unchecked.';
+        }
     }
 
-    return { prepare: prepare, updateStatistics: updateStatistics, describeLink: describeLink };
+    return { prepare: prepare, updateStatistics: updateStatistics, describeLink: describeLink, isMissing: isMissing };
 }());

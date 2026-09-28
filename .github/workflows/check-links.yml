@@ -1,0 +1,33 @@
+name: Check download links
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: Maximum links to check (1–1000)
+        default: '100'
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-download-links
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check landing pages without downloading files
+        env:
+          CHECK_LIMIT: ${{ inputs.limit }}
+        run: python3 scripts/check_links.py --limit "$CHECK_LIMIT"
+      - name: Save report for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-check-results
+          path: link-check-results/
+          if-no-files-found: error

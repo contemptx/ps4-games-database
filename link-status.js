@@ -1,0 +1,1 @@
+var linkStatuses = {"version": 1, "updated_at": "2026-09-28T04:06:52.211895+00:00", "links": {"https://1fichier.com/?4zgunnj3128kjj8c1ojw": {"status": "missing", "checked_at": "2026-09-28T04:06:52.211907+00:00", "source": "user screenshot", "reason": "The requested file does not exist. It could be deleted by its owner.", "game": "Ultrawings"}}};
