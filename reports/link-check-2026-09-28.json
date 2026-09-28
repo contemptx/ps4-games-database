@@ -1,15 +1,22 @@
 {
-  "version": 1,
-  "updated_at": "2026-09-28T04:14:20.698002+00:00",
-  "links": {
-    "https://1fichier.com/?4zgunnj3128kjj8c1ojw": {
-      "status": "missing",
-      "checked_at": "2026-09-28T04:06:52.211907+00:00",
-      "source": "user screenshot",
-      "reason": "The requested file does not exist. It could be deleted by its owner.",
-      "game": "Ultrawings"
+  "summary": {
+    "attempted": 15,
+    "results": {
+      "restricted": 2,
+      "present": 4,
+      "unknown": 9
     },
-    "https://filecrypt.cc/Container/6912073BCA.html": {
+    "hosts_stopped": [
+      "1fichier.com",
+      "filecrypt.cc",
+      "mediafire.com"
+    ],
+    "supported_unique_links": 30408,
+    "note": "Unattempted links remain unchecked. Present means a file page was seen, not a verified download."
+  },
+  "attempts": [
+    {
+      "url": "https://filecrypt.cc/Container/6912073BCA.html",
       "status": "restricted",
       "reason": "Access restriction or challenge; file status unknown",
       "http_status": 403,
@@ -17,7 +24,8 @@
       "source": "host page check",
       "game": "#KILLALLZOMBIES"
     },
-    "https://1fichier.com/?htdgi43tprada3hzgc7f": {
+    {
+      "url": "https://1fichier.com/?htdgi43tprada3hzgc7f",
       "status": "restricted",
       "reason": "Access restriction or challenge; file status unknown",
       "http_status": 200,
@@ -25,7 +33,8 @@
       "source": "host page check",
       "game": "#KILLALLZOMBIES"
     },
-    "https://www.mediafire.com/file/wueh6kj3y9f3136": {
+    {
+      "url": "https://www.mediafire.com/file/wueh6kj3y9f3136",
       "status": "present",
       "reason": "Host displays a file download page; file bytes were not verified",
       "http_status": 200,
@@ -33,7 +42,8 @@
       "source": "host page check",
       "game": "11 11 Memories Retold"
     },
-    "https://filecrypt.co/Container/D3FAD454ED.html": {
+    {
+      "url": "https://filecrypt.co/Container/D3FAD454ED.html",
       "status": "unknown",
       "reason": "No definitive file status found in the page",
       "http_status": 200,
@@ -41,7 +51,8 @@
       "source": "host page check",
       "game": "Call of Duty Modern Warfare"
     },
-    "https://www.mediafire.com/file/ldfo18trin0verc": {
+    {
+      "url": "https://www.mediafire.com/file/ldfo18trin0verc",
       "status": "present",
       "reason": "Host displays a file download page; file bytes were not verified",
       "http_status": 200,
@@ -49,7 +60,8 @@
       "source": "host page check",
       "game": "11 11 Memories Retold"
     },
-    "https://filecrypt.co/Container/47B055C4F9.html": {
+    {
+      "url": "https://filecrypt.co/Container/47B055C4F9.html",
       "status": "unknown",
       "reason": "No definitive file status found in the page",
       "http_status": 200,
@@ -57,7 +69,8 @@
       "source": "host page check",
       "game": "Dungeons 3 Complete Collection"
     },
-    "https://www.mediafire.com/file/fx6zcuas64aex3f": {
+    {
+      "url": "https://www.mediafire.com/file/fx6zcuas64aex3f",
       "status": "present",
       "reason": "Host displays a file download page; file bytes were not verified",
       "http_status": 200,
@@ -65,7 +78,8 @@
       "source": "host page check",
       "game": "11 11 Memories Retold"
     },
-    "https://filecrypt.co/Container/27FE5E7703.html": {
+    {
+      "url": "https://filecrypt.co/Container/27FE5E7703.html",
       "status": "unknown",
       "reason": "No definitive file status found in the page",
       "http_status": 200,
@@ -73,7 +87,8 @@
       "source": "host page check",
       "game": "FIFA 16"
     },
-    "https://www.mediafire.com/file/q0f39cinzuil296": {
+    {
+      "url": "https://www.mediafire.com/file/q0f39cinzuil296",
       "status": "present",
       "reason": "Host displays a file download page; file bytes were not verified",
       "http_status": 200,
@@ -81,7 +96,8 @@
       "source": "host page check",
       "game": "11 11 Memories Retold"
     },
-    "https://filecrypt.co/Container/8F6BBA8790.html": {
+    {
+      "url": "https://filecrypt.co/Container/8F6BBA8790.html",
       "status": "unknown",
       "reason": "No definitive file status found in the page",
       "http_status": 200,
@@ -89,7 +105,8 @@
       "source": "host page check",
       "game": "Final Fantasy Type 0 HD Day One Edition"
     },
-    "https://www.mediafire.com/file/t9xothjzvczhg0h": {
+    {
+      "url": "https://www.mediafire.com/file/t9xothjzvczhg0h",
       "status": "unknown",
       "reason": "HTTP 404 alone does not confirm a deleted file",
       "http_status": 404,
@@ -97,7 +114,8 @@
       "source": "host page check",
       "game": "13 Sentinels Aegis Rim"
     },
-    "https://filecrypt.co/Container/3AB3C34008.html": {
+    {
+      "url": "https://filecrypt.co/Container/3AB3C34008.html",
       "status": "unknown",
       "reason": "No definitive file status found in the page",
       "http_status": 200,
@@ -105,7 +123,8 @@
       "source": "host page check",
       "game": "Sky Force Anniversary"
     },
-    "https://filecrypt.co/Container/66E087D9AD.html": {
+    {
+      "url": "https://filecrypt.co/Container/66E087D9AD.html",
       "status": "unknown",
       "reason": "No definitive file status found in the page",
       "http_status": 200,
@@ -113,7 +132,8 @@
       "source": "host page check",
       "game": "Tales From The Borderlands A Telltale Game Series"
     },
-    "https://filecrypt.co/Container/D5C44260EF.html": {
+    {
+      "url": "https://filecrypt.co/Container/D5C44260EF.html",
       "status": "unknown",
       "reason": "No definitive file status found in the page",
       "http_status": 200,
@@ -121,7 +141,8 @@
       "source": "host page check",
       "game": "Tales of Vesperia Definitive Edition"
     },
-    "https://filecrypt.co/Container/3691B5D1CD.html": {
+    {
+      "url": "https://filecrypt.co/Container/3691B5D1CD.html",
       "status": "unknown",
       "reason": "No definitive file status found in the page",
       "http_status": 200,
@@ -129,5 +150,5 @@
       "source": "host page check",
       "game": "WWE 2K24 Forty Years of Wrestlemania Edition"
     }
-  }
+  ]
 }
