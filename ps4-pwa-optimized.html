@@ -446,7 +446,7 @@
             }
             
             var selectedSource = document.getElementById('sourceFilter').value;
-            searchInfo.textContent = 'Showing ' + visibleCount.toLocaleString() + ' game listings' +
+            searchInfo.textContent = 'Showing ' + visibleCount.toLocaleString() + ' game listing' + (visibleCount === 1 ? '' : 's') +
                 (selectedSource ? ' from ' + selectedSource : '') +
                 (filter ? ' matching "' + input.value + '"' : '');
         }
