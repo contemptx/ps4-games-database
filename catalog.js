@@ -48,6 +48,12 @@ var gameCatalog = (function() {
         else if (matchesHost(host, 'anotepad.com')) label = 'Link list';
         else if (matchesHost(host, 'bit.ly')) label = 'Short link';
         else if (matchesHost(host, 'vikingfile.com')) label = 'VikingFile';
+        else if (matchesHost(host, 'mocha.my')) label = 'Mocha';
+        else if (matchesHost(host, 'filekeeper.net')) label = 'FileKeeper';
+        else if (matchesHost(host, 'rootz.so')) label = 'Rootz';
+        else if (matchesHost(host, 'ranoz.gg')) label = 'Ranoz';
+        else if (matchesHost(host, 'pixeldrain.com')) label = 'Pixeldrain';
+        else if (matchesHost(host, 'keeplinks.org')) label = 'KeepLinks (container)';
         return { url: url.href, host: host, label: label, group: group };
     }
 
@@ -121,7 +127,7 @@ var gameCatalog = (function() {
         var groups = [], index = Object.create(null), versions = Object.create(null);
         links.forEach(function(link) {
             var meta = link.release || {};
-            var fields = ['kind', 'version', 'title_id', 'region', 'firmware', 'variant', 'source_section', 'source_label', 'evidence', 'conflict'];
+            var fields = ['kind', 'version', 'title_id', 'region', 'firmware', 'variant', 'edition', 'source_section', 'source_label', 'evidence', 'conflict'];
             var key = fields.map(function(field) { return meta[field] || ''; }).join('|');
             if (!index[key]) {
                 index[key] = { metadata: meta, links: [] };
@@ -129,20 +135,20 @@ var gameCatalog = (function() {
             }
             index[key].links.push(link);
             if (meta.kind === 'update' && meta.title_id && meta.region && meta.version && !meta.conflict) {
-                var family = [meta.title_id, meta.region, meta.variant || ''].join('|');
+                var family = [meta.title_id, meta.region, meta.variant || '', meta.edition || ''].join('|');
                 if (!versions[family]) versions[family] = [];
                 if (versions[family].indexOf(meta.version) === -1) versions[family].push(meta.version);
             }
         });
         groups.forEach(function(group) {
-            var m = group.metadata, family = [m.title_id, m.region, m.variant || ''].join('|');
+            var m = group.metadata, family = [m.title_id, m.region, m.variant || '', m.edition || ''].join('|');
             var listed = versions[family] || [];
             group.newest = m.kind === 'update' && !!m.version && !m.conflict && listed.length > 1 && listed.every(function(v) { return compareVersions(m.version, v) >= 0; });
         });
-        var order = { base: 0, update: 1, dlc: 2, fix: 3, bundle: 4 };
+        var order = { base: 0, update: 1, dlc: 2, fix: 3, patch: 4, bundle: 5 };
         groups.sort(function(a, b) {
             var left = a.metadata, right = b.metadata;
-            var difference = (order[left.kind] === undefined ? 5 : order[left.kind]) - (order[right.kind] === undefined ? 5 : order[right.kind]);
+            var difference = (order[left.kind] === undefined ? 6 : order[left.kind]) - (order[right.kind] === undefined ? 6 : order[right.kind]);
             if (difference) return difference;
             if (left.title_id === right.title_id && left.region === right.region && left.version && right.version) return compareVersions(right.version, left.version);
             return 0;
@@ -150,8 +156,20 @@ var gameCatalog = (function() {
         return groups;
     }
 
+    function sourceName(value) {
+        var url = normalizeUrl(value);
+        if (!url) return 'Unknown source';
+        var host = url.hostname.replace(/^www\./, '');
+        var names = { 'superpsx.com': 'SuperPSX', 'dlpsgame.com': 'DLPSGame', 'romsfun.com': 'RomsFun', 'arabicps4games.github.io': 'ArabicPS4Games' };
+        return names[host] || host;
+    }
+
     function renderLinks(container, game, newTab) {
-        var names = { base: 'Base game', update: 'Update', dlc: 'DLC', fix: 'Fix', bundle: 'Combined package' };
+        var source = document.createElement('div');
+        source.className = 'source-label';
+        source.textContent = 'Source: ' + game.source;
+        container.appendChild(source);
+        var names = { base: 'Base game', update: 'Update', dlc: 'DLC', fix: 'Fix', patch: 'Language / mod patch', bundle: 'Combined package' };
         game.releases.forEach(function(release) {
             var m = release.metadata, wrapper = document.createElement('div');
             wrapper.className = 'release-group';
@@ -160,6 +178,7 @@ var gameCatalog = (function() {
             var parts = [names[m.kind] || (m.evidence ? 'File — type unspecified' : 'Release details unknown')];
             var dlcCount = m.kind === 'dlc' && (m.source_label || '').match(/\bDLC\s*\((\d+)\)/i);
             if (dlcCount) parts[0] += ' (' + dlcCount[1] + ')';
+            if (m.kind === 'patch' && m.source_label) parts.push(m.source_label);
             if (m.version) parts.push('v' + m.version);
             if (m.title_id) parts.push(m.title_id);
             if (m.region) parts.push(m.region);
@@ -210,12 +229,13 @@ var gameCatalog = (function() {
     }
 
     function prepare(records) {
-        var games = [];
+        var games = [], seenPages = Object.create(null);
         records.forEach(function(record) {
             if (!record || typeof record.name !== 'string') return;
             var name = record.name.trim();
             // A scraped URL is not a game title.
             if (!name || /^(?:https?:\/\/|www\.)/i.test(name)) return;
+            if (record.page_url && seenPages[record.page_url]) return;
 
             var sourceLinks = record.download_links || {};
             var downloadLinks = { mediafire: [], '1file': [], other: [] };
@@ -223,12 +243,15 @@ var gameCatalog = (function() {
             var seen = Object.create(null);
             var pages = typeof releaseMetadata === 'object' && releaseMetadata ? releaseMetadata.pages || {} : {};
             var sourcePage = pages[record.page_url];
-            var entries = sourcePage && Array.isArray(sourcePage.links) ? sourcePage.links : [];
+            var entries = Array.isArray(record.release_links) ? record.release_links : (sourcePage && Array.isArray(sourcePage.links) ? sourcePage.links : []);
             var metadata = Object.create(null), values = [];
             entries.forEach(function(entry) {
                 var key = statusKey(entry.url);
                 if (!key) return;
-                if (metadata[key] && JSON.stringify(metadata[key]) !== JSON.stringify(entry)) {
+                var identityFields = ['kind', 'version', 'title_id', 'region', 'firmware', 'variant', 'edition', 'conflict'];
+                var previousIdentity = metadata[key] && identityFields.map(function(field) { return metadata[key][field] || ''; }).join('|');
+                var currentIdentity = identityFields.map(function(field) { return entry[field] || ''; }).join('|');
+                if (metadata[key] && previousIdentity !== currentIdentity) {
                     // The same file was labelled differently; never guess its type.
                     metadata[key] = { conflict: true, evidence: 'Source page' };
                 } else metadata[key] = entry;
@@ -250,8 +273,10 @@ var gameCatalog = (function() {
             // Count links the UI renders, rather than trusting scraped totals.
             if (destinations.length === 0) return;
             var pageUrl = normalizeUrl(record.page_url);
+            if (record.page_url) seenPages[record.page_url] = true;
             games.push({
                 name: name,
+                source: sourceName(record.page_url),
                 page_url: pageUrl ? pageUrl.href : null,
                 download_links: downloadLinks,
                 links: destinations,
@@ -268,7 +293,22 @@ var gameCatalog = (function() {
         var linkCount = links.toLocaleString('en-US');
         document.getElementById('totalGames').textContent = gameCount;
         document.getElementById('totalLinks').textContent = linkCount;
-        document.getElementById('catalogTotals').textContent = gameCount + ' Games | ' + linkCount + ' Download Links';
+        document.getElementById('catalogTotals').textContent = gameCount + ' Game Listings | ' + linkCount + ' Download Links';
+        var sources = Object.create(null);
+        games.forEach(function(game) { sources[game.source] = true; });
+        var sourceFilter = document.getElementById('sourceFilter');
+        if (sourceFilter) {
+            var options = sourceFilter.querySelectorAll('option');
+            for (var i = 0; i < options.length; i++) {
+                if (options[i].value && !sources[options[i].value]) options[i].parentNode.removeChild(options[i]);
+            }
+        }
+        var sourceCount = document.getElementById('totalSources');
+        if (sourceCount) sourceCount.textContent = Object.keys(sources).length + ' Sources';
+        var coverage = document.getElementById('sourceCoverage');
+        if (coverage && typeof superpsxCatalog === 'object') {
+            coverage.textContent = 'SuperPSX: ' + superpsxCatalog.records.length + ' listings indexed; coverage is partial. Source labels do not confirm file availability.';
+        }
         var summary = document.getElementById('linkStatusSummary');
         if (summary) {
             var statuses = typeof linkStatuses === 'object' && linkStatuses ? linkStatuses.links || {} : {};

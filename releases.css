@@ -4,3 +4,8 @@
 .release-detail { font-size: 12px; line-height: 1.5; margin: 4px 0 8px; opacity: .85; overflow-wrap: anywhere; }
 .release-latest { display: inline-block; font-size: 12px; font-weight: bold; padding: 4px 8px; margin: 0 0 6px; border-radius: 4px; background: #e1f4e5; color: #18552b; }
 .release-group .download-btn { margin: 0 6px 6px 0; }
+
+.source-label { color: #285f98; font-size: 13px; margin: 0 0 8px; }
+.source-filter { display: block; margin-top: 12px; font-size: 14px; }
+.source-filter select { margin-left: 8px; padding: 8px 12px; color: #243249; background: #fff; border: 1px solid #60738e; border-radius: 6px; }
+#sourceCoverage { font-size: 12px; }

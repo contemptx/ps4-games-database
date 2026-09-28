@@ -1,0 +1,124 @@
+{
+  "started_at": "2026-09-28T05:03:30.834107+00:00",
+  "attempts": [
+    {
+      "url": "https://www.superpsx.com/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-2-ps4-fpkg/",
+      "checked_at": "2026-09-28T05:03:48.096069+00:00",
+      "links": 51
+    },
+    {
+      "url": "https://www.superpsx.com/elden-ring-nightreign-fpkg/",
+      "checked_at": "2026-09-28T05:04:15.802923+00:00",
+      "links": 19
+    },
+    {
+      "url": "https://www.superpsx.com/valentino-rossi-the-game-ps4-iso/",
+      "checked_at": "2026-09-28T05:04:46.105743+00:00",
+      "links": 1
+    },
+    {
+      "url": "https://www.superpsx.com/minecraft-ps4-fpkg/",
+      "checked_at": "2026-09-28T05:05:15.575209+00:00",
+      "links": 42
+    },
+    {
+      "url": "https://www.superpsx.com/legacy-of-kain-defiance-remastered-ps4-pkg/",
+      "checked_at": "2026-09-28T05:05:36.053280+00:00",
+      "links": 8
+    },
+    {
+      "url": "https://www.superpsx.com/absolute-tactics-daughters-of-mercy-ps4-pkg/",
+      "checked_at": "2026-09-28T05:05:56.538165+00:00",
+      "links": 8
+    },
+    {
+      "url": "https://www.superpsx.com/batman-the-telltale-series-ps4-fpkg/",
+      "checked_at": "2026-09-28T05:06:24.223345+00:00",
+      "links": 8
+    },
+    {
+      "url": "https://www.superpsx.com/saga-frontier-2-remastered-ps4-pkg/",
+      "checked_at": "2026-09-28T05:06:45.136770+00:00",
+      "links": 4
+    },
+    {
+      "url": "https://www.superpsx.com/resident-evil-7-biohazard-ps4-iso/",
+      "checked_at": "2026-09-28T05:07:19.489343+00:00",
+      "links": 12
+    },
+    {
+      "url": "https://www.superpsx.com/hlp423/",
+      "checked_at": "2026-09-28T05:07:47.077490+00:00",
+      "links": 16
+    },
+    {
+      "url": "https://www.superpsx.com/greyhill-incident-ps4-pkg/",
+      "checked_at": "2026-09-28T05:08:12.560820+00:00",
+      "links": 4
+    },
+    {
+      "url": "https://www.superpsx.com/project-cars-complete-edition-ps4-pkg/",
+      "checked_at": "2026-09-28T05:08:36.697340+00:00",
+      "links": 12
+    },
+    {
+      "url": "https://www.superpsx.com/wolcen-lords-of-mayhem-ps4-pkg/",
+      "checked_at": "2026-09-28T05:08:56.972172+00:00",
+      "links": 8
+    },
+    {
+      "url": "https://www.superpsx.com/brokenlore-dont-watch-ps4-pkg/",
+      "checked_at": "2026-09-28T05:09:19.124534+00:00",
+      "links": 8
+    },
+    {
+      "url": "https://www.superpsx.com/tomb-raider-anniversary-ps4-pkg/",
+      "checked_at": "2026-09-28T05:09:40.038163+00:00",
+      "links": 8
+    },
+    {
+      "url": "https://www.superpsx.com/resident-evil-2-ps4-pkg/",
+      "checked_at": "2026-09-28T05:10:00.243952+00:00",
+      "links": 4
+    },
+    {
+      "url": "https://www.superpsx.com/the-grinch-christmas-adventures-ps4-pkg/",
+      "checked_at": "2026-09-28T05:10:20.985216+00:00",
+      "links": 8
+    },
+    {
+      "url": "https://www.superpsx.com/onimusha-dawn-of-dreams-ps4-pkg/",
+      "checked_at": "2026-09-28T05:10:42.828686+00:00",
+      "links": 8
+    },
+    {
+      "url": "https://www.superpsx.com/teslagrad-ps4-pkg/",
+      "checked_at": "2026-09-28T05:11:10.910257+00:00",
+      "links": 4
+    },
+    {
+      "url": "https://www.superpsx.com/keep-talking-and-nobody-explodes-ps4-fpkg/",
+      "checked_at": "2026-09-28T05:11:44.702786+00:00",
+      "links": 9
+    }
+  ],
+  "stopped": null,
+  "finished_at": "2026-09-28T05:11:44.704826+00:00",
+  "attempted": 20,
+  "listings": 24,
+  "links": 330,
+  "checked_articles": 24,
+  "discovered_candidates": 2631,
+  "note": "Public source labels only. File availability is unverified. Candidate discovery uses PS4 hints in post sitemaps; coverage is partial.",
+  "initial_articles_checked": 24,
+  "canonical_links_per_listing": 329,
+  "release_types": {
+    "base": 107,
+    "update": 111,
+    "bundle": 14,
+    "patch": 39,
+    "dlc": 55,
+    "fix": 4
+  },
+  "parser_review": "Reparsed all cached source tables with edition headings, language patches and additional observed host labels; no new network requests."
+}

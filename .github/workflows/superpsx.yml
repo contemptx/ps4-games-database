@@ -1,0 +1,29 @@
+name: Index SuperPSX source
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: Maximum public game articles (1–500; reads their download tables too)
+        default: '100'
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: superpsx-index
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read public SuperPSX labels
+        env:
+          PAGE_LIMIT: ${{ inputs.limit }}
+        run: python3 scripts/superpsx.py --limit "$PAGE_LIMIT"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: superpsx-results
+          path: superpsx-results/
+          if-no-files-found: error

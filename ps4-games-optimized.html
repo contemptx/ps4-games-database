@@ -263,7 +263,7 @@
             <div class="stats">
                 <div class="stat-item">
                     <span class="stat-number" id="totalGames">—</span>
-                    <span class="stat-label">Games</span>
+                    <span class="stat-label">Game listings</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number" id="totalLinks">—</span>
@@ -274,6 +274,15 @@
         
         <div class="search-container">
             <input type="text" id="searchInput" placeholder="Search games..." onkeyup="searchGames()">
+            <label class="source-filter" for="sourceFilter">Source
+                <select id="sourceFilter" onchange="searchGames()">
+                    <option value="">All sources</option>
+                    <option value="SuperPSX">SuperPSX</option>
+                    <option value="DLPSGame">DLPSGame</option>
+                    <option value="RomsFun">RomsFun</option>
+                    <option value="ArabicPS4Games">ArabicPS4Games</option>
+                </select>
+            </label>
             <div class="search-info" id="searchInfo">Loading...</div>
             <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
         </div>
@@ -285,7 +294,8 @@
         <footer>
             <p>PS4 Games Database | <span id="catalogTotals">Games with download links</span></p>
             <p id="linkStatusSummary">Confirmed missing links are hidden; other links may be unchecked.</p>
-            <p>Sources: dlpsgame.com, romsfun.com, arabicps4games.github.io</p>
+            <p>Sources: dlpsgame.com, romsfun.com, arabicps4games.github.io, superpsx.com</p>
+            <p id="sourceCoverage"></p>
         </footer>
     </div>
     
@@ -293,6 +303,7 @@
     
     <script src="link-status.js"></script>
     <script src="release-metadata.js"></script>
+    <script src="superpsx-catalog.js"></script>
     <script src="catalog.js"></script>
     <script>
         var allGames = [];
@@ -316,9 +327,10 @@
                         if (!Array.isArray(allGames)) {
                             throw new Error('Expected an array of game records');
                         }
-                        allGames = gameCatalog.prepare(allGames);
+                        allGames = gameCatalog.prepare(allGames.concat(typeof superpsxCatalog === 'object' && Array.isArray(superpsxCatalog.records) ? superpsxCatalog.records : []));
                         gameCatalog.updateStatistics(allGames);
                         displayGames(allGames);
+                searchGames();
                         document.getElementById('searchInfo').textContent = 'Showing all ' + allGames.length + ' games';
                     } catch (e) {
                         showLoadError('Error reading games database. Please refresh the page.');
@@ -380,6 +392,7 @@
                     var game = letterGames[g];
                     var gameDiv = document.createElement('div');
                     gameDiv.className = 'game-item';
+                    gameDiv.setAttribute('data-source', game.source);
                     
                     var title = document.createElement('div');
                     title.className = 'game-title';
@@ -420,7 +433,7 @@
                 for (var g = 0; g < games.length; g++) {
                     var game = games[g];
                     var text = game.textContent || game.innerText;
-                    if (text.toUpperCase().indexOf(filter) > -1) {
+                    if (text.toUpperCase().indexOf(filter) > -1 && (!document.getElementById('sourceFilter').value || game.getAttribute('data-source') === document.getElementById('sourceFilter').value)) {
                         game.style.display = '';
                         sectionHasVisible = true;
                         visibleCount++;
@@ -432,11 +445,10 @@
                 section.style.display = sectionHasVisible ? '' : 'none';
             }
             
-            if (filter) {
-                searchInfo.textContent = 'Found ' + visibleCount + ' games matching "' + input.value + '"';
-            } else {
-                searchInfo.textContent = 'Showing all ' + allGames.length + ' games';
-            }
+            var selectedSource = document.getElementById('sourceFilter').value;
+            searchInfo.textContent = 'Showing ' + visibleCount.toLocaleString() + ' game listings' +
+                (selectedSource ? ' from ' + selectedSource : '') +
+                (filter ? ' matching "' + input.value + '"' : '');
         }
         
         var scrollBtn = document.getElementById('scrollTop');

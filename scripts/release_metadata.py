@@ -15,7 +15,9 @@ from check_links import status_key
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DOWNLOAD_HOSTS = ('1fichier.com', 'mediafire.com', 'mega.nz', 'drive.google.com',
-                  'akirabox.com', 'vikingfile.com', 'filefactory.com', 'filecrypt.co')
+                  'akirabox.com', 'vikingfile.com', 'filefactory.com', 'filecrypt.co',
+                  'mocha.my', 'filekeeper.net', 'rootz.so', 'ranoz.gg',
+                  'pixeldrain.com', 'keeplinks.org')
 
 
 def clean(text):

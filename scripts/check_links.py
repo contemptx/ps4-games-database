@@ -167,6 +167,9 @@ def main():
         for row in rows:
             entries = releases.get(row.get('page_url'), {}).get('links', [])
             row.setdefault('download_links', {}).setdefault('other', []).extend(entry['url'] for entry in entries)
+    superpsx_path = ROOT / 'superpsx-catalog.json'
+    if superpsx_path.exists():
+        rows.extend(json.loads(superpsx_path.read_text()).get('records', []))
     urls = candidates(rows)
     by_host = collections.defaultdict(list)
     for url, game in urls.items():
