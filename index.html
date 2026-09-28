@@ -312,10 +312,17 @@
         async function loadGames() {
             try {
                 const response = await fetch('ps4_games_expanded.json');
+                if (!response.ok) {
+                    throw new Error(`Database request failed: HTTP ${response.status}`);
+                }
                 allGames = await response.json();
+                if (!Array.isArray(allGames)) {
+                    throw new Error('Expected an array of game records');
+                }
                 displayGames(allGames);
                 document.getElementById('searchInfo').textContent = `Showing all ${allGames.length.toLocaleString()} games`;
             } catch (error) {
+                document.getElementById('searchInfo').textContent = 'Unable to load games database';
                 document.getElementById('gamesContainer').innerHTML = '<div class="loading">Error loading games database. Please refresh the page.</div>';
                 console.error('Error loading games:', error);
             }
@@ -363,9 +370,10 @@
                     
                     const linksDiv = document.createElement('div');
                     linksDiv.className = 'download-links';
+                    const downloadLinks = game.download_links || {};
                     
                     // Add Mediafire links
-                    game.download_links.mediafire.forEach((link, index) => {
+                    (Array.isArray(downloadLinks.mediafire) ? downloadLinks.mediafire : []).forEach((link, index) => {
                         const btn = document.createElement('a');
                         btn.href = `redirect-optimized.html?url=${encodeURIComponent(link)}&game=${encodeURIComponent(game.name)}&host=mediafire`;
                         btn.className = 'download-btn btn-mediafire';
@@ -375,7 +383,7 @@
                     });
                     
                     // Add 1File links
-                    game.download_links['1file'].forEach((link, index) => {
+                    (Array.isArray(downloadLinks['1file']) ? downloadLinks['1file'] : []).forEach((link, index) => {
                         const btn = document.createElement('a');
                         btn.href = `redirect-optimized.html?url=${encodeURIComponent(link)}&game=${encodeURIComponent(game.name)}&host=1file`;
                         btn.className = 'download-btn btn-1file';
@@ -385,7 +393,7 @@
                     });
                     
                     // Add other links
-                    game.download_links.other.forEach((link, index) => {
+                    (Array.isArray(downloadLinks.other) ? downloadLinks.other : []).forEach((link, index) => {
                         const btn = document.createElement('a');
                         btn.href = `redirect-optimized.html?url=${encodeURIComponent(link)}&game=${encodeURIComponent(game.name)}&host=other`;
                         btn.className = 'download-btn btn-other';
