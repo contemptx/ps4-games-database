@@ -295,7 +295,7 @@
         
         function loadGames() {
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'ps4-games-database/ps4_games_expanded.json', true);
+            xhr.open('GET', 'ps4_games_expanded.json', true);
             
             xhr.onprogress = function(e) {
                 if (e.lengthComputable) {
@@ -308,21 +308,37 @@
                 if (xhr.status === 200) {
                     try {
                         allGames = JSON.parse(xhr.responseText);
+                        if (!Array.isArray(allGames)) {
+                            throw new Error('Expected an array of game records');
+                        }
                         displayGames(allGames);
                         document.getElementById('searchInfo').textContent = 'Showing all ' + allGames.length + ' games';
                     } catch (e) {
-                        document.getElementById('gamesContainer').innerHTML = '<div class="loading">Error parsing database</div>';
+                        showLoadError('Error reading games database. Please refresh the page.');
+                        console.error('Error loading games:', e);
                     }
+                } else {
+                    showLoadError('Error loading database (HTTP ' + xhr.status + '). Please refresh the page.');
                 }
             };
             
             xhr.onerror = function() {
-                document.getElementById('gamesContainer').innerHTML = '<div class="loading">Error loading database</div>';
+                showLoadError('Error loading database. Please refresh the page.');
             };
             
             xhr.send();
         }
         
+        function showLoadError(message) {
+            document.getElementById('searchInfo').textContent = 'Unable to load games database';
+            var container = document.getElementById('gamesContainer');
+            container.innerHTML = '';
+            var error = document.createElement('div');
+            error.className = 'loading';
+            error.textContent = message;
+            container.appendChild(error);
+        }
+
         function displayGames(games) {
             var container = document.getElementById('gamesContainer');
             container.innerHTML = '';
@@ -366,7 +382,11 @@
                     var linksDiv = document.createElement('div');
                     linksDiv.className = 'download-links';
                     
-                    var links = game.download_links.mediafire.concat(game.download_links['1file']).concat(game.download_links.other);
+                    var downloadLinks = game.download_links || {};
+                    var mediafire = Array.isArray(downloadLinks.mediafire) ? downloadLinks.mediafire : [];
+                    var oneFile = Array.isArray(downloadLinks['1file']) ? downloadLinks['1file'] : [];
+                    var other = Array.isArray(downloadLinks.other) ? downloadLinks.other : [];
+                    var links = mediafire.concat(oneFile, other);
                     for (var k = 0; k < links.length; k++) {
                         var link = links[k];
                         var btn = document.createElement('a');
