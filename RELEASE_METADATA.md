@@ -1,5 +1,8 @@
 # Release labels
 
+For the full catalogue pass with automatic continuation and publication, use **Process full catalogue** and see [FULL_INDEXING.md](FULL_INDEXING.md). The individual refresh commands below remain manual review tools.
+
+
 Filecrypt.cc is temporarily excluded from the catalogue and legacy redirect pages.
 This is a display preference, not a deleted-file status. The source database is retained.
 Filecrypt.co is a separate hostname and is not covered by this exclusion.

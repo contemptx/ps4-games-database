@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Catalogue indexing progress</title>
+<style>body{font-family:Arial,sans-serif;max-width:1100px;margin:40px auto;padding:0 20px;color:#23324a;background:#f5f7fb}h1{color:#003791}table{width:100%;border-collapse:collapse;background:white}td,th{text-align:left;padding:14px;border-bottom:1px solid #ccd5df}th{background:#e5edf9}a{color:#003791}.table-wrap{overflow:auto}.note{line-height:1.6}.held{color:#944500}#updated{color:#596779}li{margin-bottom:8px}</style></head>
+<body><p><a href="index.html">← Back to games</a></p><h1>Catalogue indexing progress</h1><p id="updated">Loading progress…</p>
+<p class="note">Each batch saves its progress and publishes newly identified links. A processed page can still have unknown versions or unresolved destinations. Release labels describe the source page; they do not verify package contents or file availability.</p>
+<div class="table-wrap"><table><thead><tr><th>Source</th><th>Processed</th><th>Discovered</th><th>Needs review</th><th>Status</th></tr></thead><tbody id="sources"></tbody></table></div>
+<p id="unresolved" class="note"></p><h2>Availability limits</h2><ul id="holds"></ul><p><a id="run" href="https://github.com/contemptx/ps4-games-database/actions/workflows/full-index.yml">Open processing workflow</a></p>
+<p><a href="index-progress.json">Download coverage report</a> · <a href="source-review.json">Download unresolved source entries</a></p>
+<script src="index-progress.js"></script><script>
+(function(){
+ var data=typeof indexProgress==='object'?indexProgress:{sources:{},availability_holds:{}};
+ document.getElementById('updated').textContent=data.updated_at?'Updated '+new Date(data.updated_at).toLocaleString()+' · Batch '+data.batch:'First batch is preparing.';
+ Object.keys(data.sources).forEach(function(key){var s=data.sources[key],row=document.createElement('tr');
+  [s.label,s.processed.toLocaleString(),s.total.toLocaleString(),s.review.toLocaleString(),s.held?'Paused: '+s.held.reason:(s.pending?'Pending: '+s.pending.toLocaleString():'Pass finished')].forEach(function(value){var cell=document.createElement('td');cell.textContent=value;row.appendChild(cell);});
+  if(s.held)row.className='held';document.getElementById('sources').appendChild(row);
+ });
+ document.getElementById('unresolved').textContent=(data.unresolved_named_games||0).toLocaleString()+' named source entries still have unresolved shorteners or link lists. '+(data.runnable_remaining||0).toLocaleString()+' queued items remain on accessible sources.';
+ Object.keys(data.availability_holds||{}).forEach(function(host){var item=document.createElement('li');item.textContent=host+': '+data.availability_holds[host];document.getElementById('holds').appendChild(item);});
+ if(data.run_url)document.getElementById('run').href=data.run_url;
+}());
+</script></body></html>

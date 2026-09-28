@@ -9,3 +9,8 @@
 .source-filter { display: block; margin-top: 12px; font-size: 14px; }
 .source-filter select { margin-left: 8px; padding: 8px 12px; color: #243249; background: #fff; border: 1px solid #60738e; border-radius: 6px; }
 #sourceCoverage { font-size: 12px; }
+
+.catalog-pager { padding: 18px; display: flex; justify-content: center; align-items: center; gap: 18px; }
+.catalog-pager button { border: 1px solid #003791; background: #003791; color: white; padding: 9px 18px; border-radius: 5px; cursor: pointer; }
+.catalog-pager button:disabled { opacity: .4; cursor: default; }
+#indexingSummary { font-size: 13px; }

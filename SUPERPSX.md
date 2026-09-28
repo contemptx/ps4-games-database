@@ -1,5 +1,8 @@
 # SuperPSX source
 
+For the full catalogue pass with automatic continuation and publication, use **Process full catalogue** and see [FULL_INDEXING.md](FULL_INDEXING.md). The individual refresh commands below remain manual review tools.
+
+
 `scripts/superpsx.py` discovers PS4 article candidates from public post sitemaps, verifies a PS4 article heading, follows only its explicitly linked same-site `/dll-…/` pages, and extracts approved download hosts from labelled table rows. It never visits package URLs or uses an account. Premium/CDN credentials must never go in this public repository or its frontend.
 
 Base game, update, DLC, language/mod patch, version, CUSA, region and firmware labels come from the download table. Edition headers are scoped to their table; named language patches are distinct from game updates; missing fields stay unknown. Mirrors share row labels. KeepLinks destinations are labelled as containers and are not automatically resolved. SuperPSX listings keep their own source pages, so similarly named games and different editions are not merged by title.

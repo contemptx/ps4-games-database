@@ -153,7 +153,7 @@ class Reader:
         self.interval = max(self.interval, self.robots.crawl_delay(UA) or 0)
 
 
-def discover(reader):
+def discover(reader, all_posts=False):
     index = ET.fromstring(reader.get(SITE + 'sitemap_index.xml'))
     candidates = {}
     for node in index.findall('s:sitemap', NS):
@@ -165,7 +165,7 @@ def discover(reader):
             url = item.findtext('s:loc', '', NS)
             # Images supply PS4 hints for opaque article slugs; articles are verified later.
             hints = ' '.join(item.itertext())
-            if source_url(url) and re.search('ps4', hints, re.I):
+            if source_url(url) and (all_posts or re.search('ps4', hints, re.I)):
                 candidates[url] = item.findtext('s:lastmod', '', NS)
     return candidates
 

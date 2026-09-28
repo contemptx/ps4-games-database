@@ -291,11 +291,18 @@
             <div class="loading">Loading games database...</div>
         </div>
         
+        <div class="catalog-pager" aria-label="Catalogue pages">
+            <button id="previousPage" onclick="changePage(-1)" disabled>Previous</button>
+            <span id="pageStatus">Loading</span>
+            <button id="nextPage" onclick="changePage(1)" disabled>Next</button>
+        </div>
         <footer>
             <p>PS4 Games Database | <span id="catalogTotals">Games with download links</span></p>
             <p id="linkStatusSummary">Confirmed missing links are hidden; other links may be unchecked.</p>
             <p>Sources: dlpsgame.com, romsfun.com, arabicps4games.github.io, superpsx.com</p>
             <p id="sourceCoverage"></p>
+            <p id="indexingSummary"></p>
+            <p><a href="processing.html">View indexing progress and unresolved sources</a></p>
         </footer>
     </div>
     
@@ -304,7 +311,10 @@
     <script src="link-status.js"></script>
     <script src="release-metadata.js"></script>
     <script src="superpsx-catalog.js"></script>
+    <script src="additional-catalog.js"></script>
+    <script src="index-progress.js"></script>
     <script src="catalog.js"></script>
+    <script src="paging.js"></script>
     <script>
         var allGames = [];
         var loadedCount = 0;
@@ -327,11 +337,10 @@
                         if (!Array.isArray(allGames)) {
                             throw new Error('Expected an array of game records');
                         }
-                        allGames = gameCatalog.prepare(allGames.concat(typeof superpsxCatalog === 'object' && Array.isArray(superpsxCatalog.records) ? superpsxCatalog.records : []));
+                        allGames = gameCatalog.prepare(allGames.concat(typeof superpsxCatalog === 'object' && Array.isArray(superpsxCatalog.records) ? superpsxCatalog.records : [], typeof additionalCatalog === 'object' && Array.isArray(additionalCatalog.records) ? additionalCatalog.records : []));
+                        allGames.sort(function(a, b) { return a.name.localeCompare(b.name); });
                         gameCatalog.updateStatistics(allGames);
-                        displayGames(allGames);
-                searchGames();
-                        document.getElementById('searchInfo').textContent = 'Showing all ' + allGames.length + ' games';
+                        searchGames();
                     } catch (e) {
                         showLoadError('Error reading games database. Please refresh the page.');
                         console.error('Error loading games:', e);
@@ -419,36 +428,11 @@
         }
         
         function searchGames() {
-            var input = document.getElementById('searchInput');
-            var filter = input.value.toUpperCase();
-            var sections = document.querySelectorAll('.letter-section');
-            var searchInfo = document.getElementById('searchInfo');
-            var visibleCount = 0;
-            
-            for (var s = 0; s < sections.length; s++) {
-                var section = sections[s];
-                var games = section.querySelectorAll('.game-item');
-                var sectionHasVisible = false;
-                
-                for (var g = 0; g < games.length; g++) {
-                    var game = games[g];
-                    var text = game.textContent || game.innerText;
-                    if (text.toUpperCase().indexOf(filter) > -1 && (!document.getElementById('sourceFilter').value || game.getAttribute('data-source') === document.getElementById('sourceFilter').value)) {
-                        game.style.display = '';
-                        sectionHasVisible = true;
-                        visibleCount++;
-                    } else {
-                        game.style.display = 'none';
-                    }
-                }
-                
-                section.style.display = sectionHasVisible ? '' : 'none';
-            }
-            
-            var selectedSource = document.getElementById('sourceFilter').value;
-            searchInfo.textContent = 'Showing ' + visibleCount.toLocaleString() + ' game listing' + (visibleCount === 1 ? '' : 's') +
-                (selectedSource ? ' from ' + selectedSource : '') +
-                (filter ? ' matching "' + input.value + '"' : '');
+            catalogPaging.show(allGames, displayGames, 0);
+        }
+
+        function changePage(delta) {
+            catalogPaging.show(allGames, displayGames, delta);
         }
         
         var scrollBtn = document.getElementById('scrollTop');

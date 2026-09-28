@@ -17,7 +17,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 DOWNLOAD_HOSTS = ('1fichier.com', 'mediafire.com', 'mega.nz', 'drive.google.com',
                   'akirabox.com', 'vikingfile.com', 'filefactory.com', 'filecrypt.co',
                   'mocha.my', 'filekeeper.net', 'rootz.so', 'ranoz.gg',
-                  'pixeldrain.com', 'keeplinks.org')
+                  'pixeldrain.com', 'keeplinks.org', 'datanodes.to')
 
 
 def clean(text):
@@ -57,6 +57,8 @@ def details(text, filename=False):
         result['kind'] = kinds[0] if len(kinds) == 1 else 'bundle'
     elif re.match(r'^\s*(?:fix|backport)\b', normalized, re.I):
         result['kind'] = 'fix'
+    if result.get('kind') == 'update' and re.search(r'\bpatch\b', normalized, re.I) and not re.match(r'^\s*(?:update|patch)\b', normalized, re.I):
+        result['kind'] = 'fix' if re.match(r'^\s*(?:fix|backport)\b', normalized, re.I) else 'patch'
     if re.search(r'\bbackport\b|\bfix\s+\d', normalized, re.I):
         result['variant'] = 'Backport / fix'
     firmware = re.search(r'\((?:fix\s*|fw\s*|firmware\s*)?(\d+\.(?:\d+|xx)(?:\s*[/+–-]\s*\d+\.(?:\d+|xx))*\+?)\)', normalized, re.I)
@@ -146,11 +148,21 @@ def expand_labels(body):
     return re.sub(r'<div\b[^>]*class="secure-data"[^>]*data-payload="([^"]+)"[^>]*>[^<]*</div>', decode, body)
 
 
+def download_url(source_url, href):
+    target = urllib.parse.urljoin(source_url, href)
+    p = urllib.parse.urlsplit(target)
+    if urllib.parse.urlsplit(source_url).hostname == 'justpaste.it' and p.hostname == 'justpaste.it':
+        match = re.match(r'^/redirect/[^/]+/(.+)$', p.path)
+        if match:
+            target = html.unescape(urllib.parse.unquote(match[1]))
+    return target
+
+
 def parse_source(body, source_url):
-    if urllib.parse.urlsplit(source_url).hostname != 'dlpsgame.com':
+    if urllib.parse.urlsplit(source_url).hostname not in ('dlpsgame.com', 'justpaste.it'):
         return []  # Other source layouts need their own proven adapter.
     root = Tree(expand_labels(body)).root
-    content = next((n for n in root.walk() if 'entry-content' in n.attrs.get('class', '').split()), None)
+    content = next((n for n in root.walk() if 'entry-content' in n.attrs.get('class', '').split() or (urllib.parse.urlsplit(source_url).hostname == 'justpaste.it' and n.attrs.get('id') == 'articleContent')), None)
     if content is None:
         return []
     result, context, section = [], {}, ''
@@ -188,7 +200,7 @@ def parse_source(body, source_url):
         row = details(label)
         if not row.get('kind') or re.search(r'guide|dlc\s+content|changelog', label, re.I):
             continue
-        links = [urllib.parse.urljoin(source_url, n.attrs.get('href', '')) for n in anchors]
+        links = [download_url(source_url, n.attrs.get('href', '')) for n in anchors]
         links = [url for url in links if downloadable(url)]
         file_data = [filename_details(url) for url in links]
         shared = {}

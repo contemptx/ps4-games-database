@@ -53,6 +53,7 @@ var gameCatalog = (function() {
         else if (matchesHost(host, 'rootz.so')) label = 'Rootz';
         else if (matchesHost(host, 'ranoz.gg')) label = 'Ranoz';
         else if (matchesHost(host, 'pixeldrain.com')) label = 'Pixeldrain';
+        else if (matchesHost(host, 'datanodes.to')) label = 'DataNodes';
         else if (matchesHost(host, 'keeplinks.org')) label = 'KeepLinks (container)';
         return { url: url.href, host: host, label: label, group: group };
     }
@@ -235,7 +236,8 @@ var gameCatalog = (function() {
             var name = record.name.trim();
             // A scraped URL is not a game title.
             if (!name || /^(?:https?:\/\/|www\.)/i.test(name)) return;
-            if (record.page_url && seenPages[record.page_url]) return;
+            var recordIdentity = record.catalog_id || record.page_url;
+            if (recordIdentity && seenPages[recordIdentity]) return;
 
             var sourceLinks = record.download_links || {};
             var downloadLinks = { mediafire: [], '1file': [], other: [] };
@@ -273,10 +275,10 @@ var gameCatalog = (function() {
             // Count links the UI renders, rather than trusting scraped totals.
             if (destinations.length === 0) return;
             var pageUrl = normalizeUrl(record.page_url);
-            if (record.page_url) seenPages[record.page_url] = true;
+            if (recordIdentity) seenPages[recordIdentity] = true;
             games.push({
                 name: name,
-                source: sourceName(record.page_url),
+                source: record.source === 'ArabicPS4Games' ? record.source : sourceName(record.page_url),
                 page_url: pageUrl ? pageUrl.href : null,
                 download_links: downloadLinks,
                 links: destinations,
@@ -308,6 +310,16 @@ var gameCatalog = (function() {
         var coverage = document.getElementById('sourceCoverage');
         if (coverage && typeof superpsxCatalog === 'object') {
             coverage.textContent = 'SuperPSX: ' + superpsxCatalog.records.length + ' listings indexed; coverage is partial. Source labels do not confirm file availability.';
+        }
+        var indexing = document.getElementById('indexingSummary');
+        if (indexing && typeof indexProgress === 'object') {
+            var processed = 0, total = 0;
+            Object.keys(indexProgress.sources || {}).forEach(function(key) {
+                if (key === 'mediafire') return;
+                processed += indexProgress.sources[key].processed;
+                total += indexProgress.sources[key].total;
+            });
+            indexing.textContent = 'Full source pass: ' + processed.toLocaleString() + ' / ' + total.toLocaleString() + ' pages processed. Some sources or labels may remain unresolved.';
         }
         var summary = document.getElementById('linkStatusSummary');
         if (summary) {
