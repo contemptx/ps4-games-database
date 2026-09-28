@@ -1,0 +1,6 @@
+.release-group { width: 100%; padding: 10px 0; border-top: 1px solid #ccd5df; }
+.release-group:first-child { border-top: 0; padding-top: 0; }
+.release-heading { font-weight: bold; margin: 0 0 6px; font-size: 15px; }
+.release-detail { font-size: 12px; line-height: 1.5; margin: 4px 0 8px; opacity: .85; overflow-wrap: anywhere; }
+.release-latest { display: inline-block; font-size: 12px; font-weight: bold; padding: 4px 8px; margin: 0 0 6px; border-radius: 4px; background: #e1f4e5; color: #18552b; }
+.release-group .download-btn { margin: 0 6px 6px 0; }

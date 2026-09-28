@@ -254,6 +254,7 @@
             transition: width 0.3s;
         }
     </style>
+    <link rel="stylesheet" href="releases.css">
 </head>
 <body>
     <div class="container">
@@ -291,6 +292,7 @@
     <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">UP</button>
     
     <script src="link-status.js"></script>
+    <script src="release-metadata.js"></script>
     <script src="catalog.js"></script>
     <script>
         var allGames = [];
@@ -387,17 +389,7 @@
                     var linksDiv = document.createElement('div');
                     linksDiv.className = 'download-links';
                     
-                    var hostCounts = Object.create(null);
-                    for (var k = 0; k < game.links.length; k++) {
-                        var link = game.links[k];
-                        hostCounts[link.label] = (hostCounts[link.label] || 0) + 1;
-                        var btn = document.createElement('a');
-                        btn.setAttribute('href', link.url);
-                        btn.className = 'download-btn btn-' + link.group;
-                        btn.textContent = link.label + ' ' + hostCounts[link.label];
-                        btn.title = link.url;
-                        linksDiv.appendChild(btn);
-                    }
+                    gameCatalog.renderLinks(linksDiv, game, false);
 
                     gameDiv.appendChild(linksDiv);
                     

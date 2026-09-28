@@ -264,8 +264,11 @@ def main():
     for row in candidates[:args.limit]:
         url = row['page_url']
         try:
-            entries = parse_source(fetch_source(url), url)
+            body = fetch_source(url)
+            entries = parse_source(body, url)
             if not entries:
+                args.output.mkdir(parents=True, exist_ok=True)
+                (args.output / 'unparsed-source.html').write_text(body)
                 raise ValueError('No supported release rows; source layout needs review')
             manifest['pages'][url] = {'checked_at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'links': entries}
             attempt = {'source_url': url, 'name': row['name'], 'release_links': len(entries)}
@@ -273,8 +276,8 @@ def main():
             print(json.dumps(attempt), flush=True)
             write_manifest(manifest, args.output)
         except Exception as error:
-            attempts.append({'source_url': url, 'error': type(error).__name__})
-            print('Source check stopped: ' + type(error).__name__, flush=True)
+            attempts.append({'source_url': url, 'error': type(error).__name__, 'reason': str(error)[:200]})
+            print('Source check stopped: ' + type(error).__name__ + ': ' + str(error)[:200], flush=True)
             break
         time.sleep(args.interval)
     write_manifest(manifest, args.output)

@@ -78,6 +78,120 @@ var gameCatalog = (function() {
         return !!(url && matchesHost(url.hostname.toLowerCase(), 'filecrypt.cc'));
     }
 
+    function filenameDetails(value) {
+        var url = normalizeUrl(value);
+        if (!url || !matchesHost(url.hostname, 'mediafire.com')) return {};
+        var match = url.pathname.match(/^\/file\/[^/]+\/([^/]+)/);
+        if (!match) return {};
+        var name;
+        try { name = decodeURIComponent(match[1]).replace(/_/g, ' '); } catch (error) { return {}; }
+        var result = {};
+        var version = name.match(/\bv(?:ersion)?\s*(\d{1,3}\.\d{1,3}(?:\.\d+)?)/i);
+        var titleId = name.match(/\b(CUSA\d{5})\b/i);
+        var firmware = name.match(/\[(\d+\.(?:\d+|xx)(?:[-/+]\d+\.(?:\d+|xx))*\+?)\]/i);
+        if (version) result.version = version[1];
+        if (titleId) result.title_id = titleId[1].toUpperCase();
+        if (firmware) result.firmware = firmware[1].replace(/-/g, '/');
+        if (/\bBACKPORT\b/i.test(name)) result.variant = 'Backport / fix';
+        if (/^Base[ -]/i.test(name)) result.kind = 'base';
+        else if (/^Update[ -]/i.test(name)) result.kind = 'update';
+        else if (/\bDLC(?:PACK|s)?\b/i.test(name)) result.kind = 'dlc';
+        if (Object.keys(result).length) result.evidence = 'URL filename';
+        return result;
+    }
+
+    function compareVersions(a, b) {
+        var left = a.split('.'), right = b.split('.');
+        for (var i = 0; i < Math.max(left.length, right.length); i++) {
+            var delta = Number(left[i] || 0) - Number(right[i] || 0);
+            if (delta) return delta;
+        }
+        return 0;
+    }
+
+    function releaseGroups(links) {
+        var groups = [], index = Object.create(null), versions = Object.create(null);
+        links.forEach(function(link) {
+            var meta = link.release || {};
+            var fields = ['kind', 'version', 'title_id', 'region', 'firmware', 'variant', 'source_section', 'source_label', 'evidence', 'conflict'];
+            var key = fields.map(function(field) { return meta[field] || ''; }).join('|');
+            if (!index[key]) {
+                index[key] = { metadata: meta, links: [] };
+                groups.push(index[key]);
+            }
+            index[key].links.push(link);
+            if (meta.kind === 'update' && meta.title_id && meta.region && meta.version && !meta.conflict) {
+                var family = [meta.title_id, meta.region, meta.variant || ''].join('|');
+                if (!versions[family]) versions[family] = [];
+                if (versions[family].indexOf(meta.version) === -1) versions[family].push(meta.version);
+            }
+        });
+        groups.forEach(function(group) {
+            var m = group.metadata, family = [m.title_id, m.region, m.variant || ''].join('|');
+            var listed = versions[family] || [];
+            group.newest = m.kind === 'update' && !!m.version && !m.conflict && listed.length > 1 && listed.every(function(v) { return compareVersions(m.version, v) >= 0; });
+        });
+        var order = { base: 0, update: 1, dlc: 2, fix: 3, bundle: 4 };
+        groups.sort(function(a, b) {
+            var left = a.metadata, right = b.metadata;
+            var difference = (order[left.kind] === undefined ? 5 : order[left.kind]) - (order[right.kind] === undefined ? 5 : order[right.kind]);
+            if (difference) return difference;
+            if (left.title_id === right.title_id && left.region === right.region && left.version && right.version) return compareVersions(right.version, left.version);
+            return 0;
+        });
+        return groups;
+    }
+
+    function renderLinks(container, game, newTab) {
+        var names = { base: 'Base game', update: 'Update', dlc: 'DLC', fix: 'Fix', bundle: 'Combined package' };
+        game.releases.forEach(function(release) {
+            var m = release.metadata, wrapper = document.createElement('div');
+            wrapper.className = 'release-group';
+            var heading = document.createElement('div');
+            heading.className = 'release-heading';
+            var parts = [names[m.kind] || (m.evidence ? 'File — type unspecified' : 'Release details unknown')];
+            var dlcCount = m.kind === 'dlc' && (m.source_label || '').match(/\bDLC\s*\((\d+)\)/i);
+            if (dlcCount) parts[0] += ' (' + dlcCount[1] + ')';
+            if (m.version) parts.push('v' + m.version);
+            if (m.title_id) parts.push(m.title_id);
+            if (m.region) parts.push(m.region);
+            heading.textContent = parts.join(' · ');
+            wrapper.appendChild(heading);
+            if (release.newest) {
+                var badge = document.createElement('span');
+                badge.className = 'release-latest';
+                badge.textContent = 'Highest listed update — check firmware';
+                wrapper.appendChild(badge);
+            }
+            var details = [];
+            if (m.firmware) details.push('Firmware: ' + m.firmware);
+            if (m.variant) details.push(m.variant);
+            if (m.source_section) details.push('Source section: ' + m.source_section);
+            if (m.evidence === 'URL filename') details.push('From filename; package contents unverified');
+            if (m.conflict) details.push('Conflicting labels — check source page');
+            if (details.length) {
+                var note = document.createElement('div');
+                note.className = 'release-detail';
+                note.textContent = details.join(' · ');
+                wrapper.appendChild(note);
+            }
+            if (m.source_label) wrapper.title = m.source_label;
+            var hostCounts = Object.create(null);
+            release.links.forEach(function(link) {
+                hostCounts[link.label] = (hostCounts[link.label] || 0) + 1;
+                var button = document.createElement('a');
+                button.setAttribute('href', link.url);
+                button.className = 'download-btn btn-' + link.group;
+                button.textContent = link.label + ' ' + hostCounts[link.label];
+                button.title = m.source_label ? m.source_label + '\n' + link.url : link.url;
+                if (newTab) button.target = '_blank';
+                button.rel = 'noopener noreferrer';
+                wrapper.appendChild(button);
+            });
+            container.appendChild(wrapper);
+        });
+    }
+
     function prepare(records) {
         var games = [];
         records.forEach(function(record) {
@@ -90,15 +204,30 @@ var gameCatalog = (function() {
             var downloadLinks = { mediafire: [], '1file': [], other: [] };
             var destinations = [];
             var seen = Object.create(null);
+            var pages = typeof releaseMetadata === 'object' && releaseMetadata ? releaseMetadata.pages || {} : {};
+            var sourcePage = pages[record.page_url];
+            var entries = sourcePage && Array.isArray(sourcePage.links) ? sourcePage.links : [];
+            var metadata = Object.create(null), values = [];
+            entries.forEach(function(entry) {
+                var key = statusKey(entry.url);
+                if (!key) return;
+                if (metadata[key] && JSON.stringify(metadata[key]) !== JSON.stringify(entry)) {
+                    // The same file was labelled differently; never guess its type.
+                    metadata[key] = { conflict: true, evidence: 'Source page' };
+                } else metadata[key] = entry;
+                values.push(entry.url);
+            });
             hosts.forEach(function(host) {
-                var links = Array.isArray(sourceLinks[host]) ? sourceLinks[host] : [];
-                links.forEach(function(value) {
+                values = values.concat(Array.isArray(sourceLinks[host]) ? sourceLinks[host] : []);
+            });
+            values.forEach(function(value) {
                     var link = describeLink(value);
-                    if (!link || seen[link.url]) return;
-                    seen[link.url] = true;
+                    var key = link && statusKey(link.url);
+                    if (!link || seen[key]) return;
+                    seen[key] = true;
+                    link.release = metadata[key] || filenameDetails(link.url);
                     downloadLinks[link.group].push(link.url);
                     destinations.push(link);
-                });
             });
 
             // Count links the UI renders, rather than trusting scraped totals.
@@ -109,6 +238,7 @@ var gameCatalog = (function() {
                 page_url: pageUrl ? pageUrl.href : null,
                 download_links: downloadLinks,
                 links: destinations,
+                releases: releaseGroups(destinations),
                 total_links: destinations.length
             });
         });
@@ -130,5 +260,5 @@ var gameCatalog = (function() {
         }
     }
 
-    return { prepare: prepare, updateStatistics: updateStatistics, describeLink: describeLink, isMissing: isMissing, isExcluded: isExcluded };
+    return { prepare: prepare, updateStatistics: updateStatistics, describeLink: describeLink, isMissing: isMissing, isExcluded: isExcluded, renderLinks: renderLinks, compareVersions: compareVersions };
 }());

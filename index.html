@@ -266,6 +266,7 @@
             .download-btn { padding: 6px 12px; font-size: 12px; }
         }
     </style>
+    <link rel="stylesheet" href="releases.css">
 </head>
 <body>
     <div class="container">
@@ -307,6 +308,7 @@
     <div class="scroll-top" id="scrollTop" onclick="scrollToTop()">↑</div>
     
     <script src="link-status.js"></script>
+    <script src="release-metadata.js"></script>
     <script src="catalog.js"></script>
     <script>
         let allGames = [];
@@ -375,18 +377,7 @@
                     
                     const linksDiv = document.createElement('div');
                     linksDiv.className = 'download-links';
-                    const hostCounts = Object.create(null);
-                    game.links.forEach(link => {
-                        hostCounts[link.label] = (hostCounts[link.label] || 0) + 1;
-                        const btn = document.createElement('a');
-                        btn.setAttribute('href', link.url);
-                        btn.className = 'download-btn btn-' + link.group;
-                        btn.textContent = link.label + ' ' + hostCounts[link.label];
-                        btn.title = link.url;
-                        btn.target = '_blank';
-                        btn.rel = 'noopener noreferrer';
-                        linksDiv.appendChild(btn);
-                    });
+                    gameCatalog.renderLinks(linksDiv, game, true);
 
                     if (game.page_url) {
                         const pageBtn = document.createElement('a');
