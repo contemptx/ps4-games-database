@@ -86,11 +86,11 @@ var gameCatalog = (function() {
         var name;
         try { name = decodeURIComponent(match[1]).replace(/_/g, ' '); } catch (error) { return {}; }
         var result = {};
-        var version = name.match(/\bv(?:ersion)?\s*(\d{1,3}\.\d{1,3}(?:\.\d+)?)/i);
-        var titleId = name.match(/\b(CUSA\d{5})\b/i);
+        var version = uniqueToken(name, /\bv(?:ersion)?\s*(\d{1,3}\.\d{1,3}(?:\.\d+)?)/ig);
+        var titleId = uniqueToken(name, /\b(CUSA\d{5})\b/ig);
         var firmware = name.match(/\[(\d+\.(?:\d+|xx)(?:[-/+]\d+\.(?:\d+|xx))*\+?)\]/i);
-        if (version) result.version = version[1];
-        if (titleId) result.title_id = titleId[1].toUpperCase();
+        if (version) result.version = version;
+        if (titleId) result.title_id = titleId.toUpperCase();
         if (firmware) result.firmware = firmware[1].replace(/-/g, '/');
         if (/\bBACKPORT\b/i.test(name)) result.variant = 'Backport / fix';
         if (/^Base[ -]/i.test(name)) result.kind = 'base';
@@ -98,6 +98,14 @@ var gameCatalog = (function() {
         else if (/\bDLC(?:PACK|s)?\b/i.test(name)) result.kind = 'dlc';
         if (Object.keys(result).length) result.evidence = 'URL filename';
         return result;
+    }
+
+    function uniqueToken(text, pattern) {
+        var match, tokens = [];
+        while ((match = pattern.exec(text))) {
+            if (tokens.indexOf(match[1]) === -1) tokens.push(match[1]);
+        }
+        return tokens.length === 1 ? tokens[0] : null;
     }
 
     function compareVersions(a, b) {
@@ -190,6 +198,15 @@ var gameCatalog = (function() {
             });
             container.appendChild(wrapper);
         });
+        if (game.page_url) {
+            var pageButton = document.createElement('a');
+            pageButton.setAttribute('href', game.page_url);
+            pageButton.className = 'download-btn btn-page';
+            pageButton.textContent = 'View source page';
+            if (newTab) pageButton.target = '_blank';
+            pageButton.rel = 'noopener noreferrer';
+            container.appendChild(pageButton);
+        }
     }
 
     function prepare(records) {

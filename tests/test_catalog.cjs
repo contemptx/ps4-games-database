@@ -30,4 +30,6 @@ result = catalog.prepare([{name:'Unknown', download_links:{mediafire:['https://w
 assert.equal(result[0].links[0].release.version,'1.00');
 assert.equal(result[0].links[0].release.kind,undefined);
 assert.equal(result[0].links[0].release.firmware,'9.00');
+result = catalog.prepare([{name:'Ambiguous filename',download_links:{mediafire:['https://www.mediafire.com/file/id/Title_CUSA12345_v1.00_v1.17.rar/file']}}]);
+assert.equal(result[0].links[0].release.version,undefined);
 console.log('Catalogue release comparison, identity, filtering and filename evidence: PASS');

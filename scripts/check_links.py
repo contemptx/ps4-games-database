@@ -139,7 +139,7 @@ def candidates(rows):
                 if not isinstance(value, str):
                     continue
                 url = status_key(value.strip())
-                if host_family(url):
+                if host_family(url) and host_family(url) != 'filecrypt.cc':
                     found.setdefault(url, row.get('name', ''))
     return found
 
@@ -160,7 +160,14 @@ def main():
     if not 1 <= args.limit <= 1000 or args.interval < 5:
         parser.error('limit must be 1–1000; interval must be at least 5 seconds')
     manifest = json.loads((ROOT / 'link-status.json').read_text())
-    urls = candidates(json.loads((ROOT / 'ps4_games_expanded.json').read_text()))
+    rows = json.loads((ROOT / 'ps4_games_expanded.json').read_text())
+    release_path = ROOT / 'release-metadata.json'
+    if release_path.exists():
+        releases = json.loads(release_path.read_text()).get('pages', {})
+        for row in rows:
+            entries = releases.get(row.get('page_url'), {}).get('links', [])
+            row.setdefault('download_links', {}).setdefault('other', []).extend(entry['url'] for entry in entries)
+    urls = candidates(rows)
     by_host = collections.defaultdict(list)
     for url, game in urls.items():
         by_host[host_family(url)].append((url, game))

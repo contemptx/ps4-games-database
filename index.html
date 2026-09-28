@@ -379,15 +379,6 @@
                     linksDiv.className = 'download-links';
                     gameCatalog.renderLinks(linksDiv, game, true);
 
-                    if (game.page_url) {
-                        const pageBtn = document.createElement('a');
-                        pageBtn.setAttribute('href', game.page_url);
-                        pageBtn.className = 'download-btn btn-page';
-                        pageBtn.textContent = 'View Page';
-                        pageBtn.target = '_blank';
-                        pageBtn.rel = 'noopener noreferrer';
-                        linksDiv.appendChild(pageBtn);
-                    }
 
                     gameDiv.appendChild(linksDiv);
                     

@@ -34,6 +34,9 @@ It does not automatically commit or run on a schedule.
 
 Local equivalent: `python3 scripts/release_metadata.py --limit 100`.
 Tests: `python3 -m unittest discover -s tests -v`.
+Catalogue grouping tests: `node tests/test_catalog.cjs`.
+The separate download-link checker also reads imported release links and skips
+the excluded Filecrypt.cc host.
 
 ## Accounts
 

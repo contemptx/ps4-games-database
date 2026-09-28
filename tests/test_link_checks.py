@@ -57,6 +57,13 @@ class LinkChecks(unittest.TestCase):
         self.assertIsNone(checker.host_family('https://user:password@1fichier.com/?abc'))
         self.assertIsNone(checker.host_family('file:///tmp/example'))
 
+    def test_excluded_host_is_not_checked(self):
+        rows = [{'download_links': {'other': ['https://filecrypt.cc/Container/x.html',
+                 'https://filecrypt.co/Container/y.html', 'https://1fichier.com/?z']}}]
+        urls = checker.candidates(rows)
+        self.assertNotIn('https://filecrypt.cc/Container/x.html', urls)
+        self.assertEqual(len(urls), 2)
+
 
 if __name__ == '__main__':
     unittest.main()
