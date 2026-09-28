@@ -41,7 +41,7 @@
             button.removeAttribute('hidden');
         } else {
             document.getElementById('heading').textContent = 'Link unavailable';
-            document.getElementById('message').textContent = gameCatalog.isMissing(params.get('url')) ? 'The host reports that this file does not exist. Return to the catalogue to choose another link.' : 'This link is malformed, points to a closed host, or is not a download link. Return to the catalogue to choose another link.';
+            document.getElementById('message').textContent = gameCatalog.isExcluded(params.get('url')) ? 'Filecrypt.cc links are currently hidden from this catalogue. Return to choose another host.' : gameCatalog.isMissing(params.get('url')) ? 'The host reports that this file does not exist. Return to the catalogue to choose another link.' : 'This link is malformed, points to a closed host, or is not a download link. Return to the catalogue to choose another link.';
         }
     </script>
 </body>

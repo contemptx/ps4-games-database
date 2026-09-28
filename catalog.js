@@ -23,6 +23,7 @@ var gameCatalog = (function() {
     function describeLink(value) {
         var url = normalizeUrl(value);
         if (!url) return null;
+        if (isExcluded(url.href)) return null;
         if (isMissing(url.href)) return null;
         var host = url.hostname.toLowerCase();
         var path = url.pathname;
@@ -69,6 +70,12 @@ var gameCatalog = (function() {
         var key = statusKey(value);
         var statuses = typeof linkStatuses === 'object' && linkStatuses ? linkStatuses.links : null;
         return !!(key && statuses && statuses[key] && statuses[key].status === 'missing');
+    }
+
+    function isExcluded(value) {
+        var url = normalizeUrl(value);
+        // Temporary catalogue preference, not evidence that a file was deleted.
+        return !!(url && matchesHost(url.hostname.toLowerCase(), 'filecrypt.cc'));
     }
 
     function prepare(records) {
@@ -119,9 +126,9 @@ var gameCatalog = (function() {
         if (summary) {
             var statuses = typeof linkStatuses === 'object' && linkStatuses ? linkStatuses.links || {} : {};
             var missing = Object.keys(statuses).filter(function(key) { return statuses[key].status === 'missing'; }).length;
-            summary.textContent = missing.toLocaleString('en-US') + ' confirmed missing link' + (missing === 1 ? '' : 's') + ' hidden. Other links may be unchecked.';
+            summary.textContent = 'Filecrypt.cc links hidden. ' + missing.toLocaleString('en-US') + ' confirmed missing link' + (missing === 1 ? '' : 's') + ' hidden. Other links may be unchecked.';
         }
     }
 
-    return { prepare: prepare, updateStatistics: updateStatistics, describeLink: describeLink, isMissing: isMissing };
+    return { prepare: prepare, updateStatistics: updateStatistics, describeLink: describeLink, isMissing: isMissing, isExcluded: isExcluded };
 }());
