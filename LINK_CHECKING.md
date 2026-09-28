@@ -3,6 +3,9 @@
 `link-status.json` records observations without deleting source database entries.
 `link-status.js` contains the same data for the static pages. Only `missing`
 records are hidden. Tracking parameters on 1fichier links share one file identity.
+Filecrypt.cc is separately excluded by the user's temporary host preference;
+that exclusion does not mark its files as deleted. The checker skips that host
+and includes new URLs imported through `release-metadata.json`.
 
 The initial Ultrawings observation comes from the user's 28 September 2026
 screenshot: 1fichier explicitly says the requested file does not exist.
