@@ -55,7 +55,22 @@ class API:
                 if error.code in (429, 500, 502, 503, 504) and attempt < 3:
                     time.sleep(2 ** (attempt + 1))
                     continue
-                raise RuntimeError('IGDB/Twitch request failed: HTTP ' + str(error.code)) from None
+                phase = 'Twitch token' if url == 'https://id.twitch.tv/oauth2/token' else 'IGDB ' + url.rsplit('/', 1)[-1]
+                reason = ''
+                if phase == 'Twitch token':
+                    # Only known fixed messages may enter logs; never echo arbitrary responses.
+                    try:
+                        message = json.loads(error.read(8192)).get('message', '').lower()
+                        allowed = {'invalid client': 'client ID was rejected',
+                                   'invalid client id': 'client ID was rejected',
+                                   'client id not found': 'client ID was not found',
+                                   'invalid client secret': 'client secret was rejected',
+                                   'missing client id': 'client ID was missing',
+                                   'missing client secret': 'client secret was missing'}
+                        reason = ': ' + allowed[message] if message in allowed else ''
+                    except (ValueError, AttributeError):
+                        pass
+                raise RuntimeError(phase + ' request failed: HTTP ' + str(error.code) + reason) from None
             except urllib.error.URLError:
                 raise RuntimeError('IGDB/Twitch network request failed') from None
         raise RuntimeError('API retry limit reached')
