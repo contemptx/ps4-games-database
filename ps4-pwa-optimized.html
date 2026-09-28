@@ -385,27 +385,23 @@
                     var linksDiv = document.createElement('div');
                     linksDiv.className = 'download-links';
                     
-                    var downloadLinks = game.download_links || {};
-                    var mediafire = Array.isArray(downloadLinks.mediafire) ? downloadLinks.mediafire : [];
-                    var oneFile = Array.isArray(downloadLinks['1file']) ? downloadLinks['1file'] : [];
-                    var other = Array.isArray(downloadLinks.other) ? downloadLinks.other : [];
-                    var links = mediafire.concat(oneFile, other);
-                    for (var k = 0; k < links.length; k++) {
-                        var link = links[k];
+                    var hostCounts = Object.create(null);
+                    for (var k = 0; k < game.links.length; k++) {
+                        var link = game.links[k];
+                        hostCounts[link.label] = (hostCounts[link.label] || 0) + 1;
                         var btn = document.createElement('a');
-                        btn.href = 'redirect-optimized.html?url=' + encodeURIComponent(link) + '&game=' + encodeURIComponent(game.name);
-                        btn.className = 'download-btn btn-mediafire';
-                        btn.textContent = 'Link ' + (k + 1);
-                        btn.target = '_blank';
-                        btn.onclick = function(e) { e.preventDefault(); window.location.href = this.href; return false; };
+                        btn.setAttribute('href', link.url);
+                        btn.className = 'download-btn btn-' + link.group;
+                        btn.textContent = link.label + ' ' + hostCounts[link.label];
+                        btn.title = link.url;
                         linksDiv.appendChild(btn);
                     }
-                    
+
                     gameDiv.appendChild(linksDiv);
                     
                     var linkCount = document.createElement('div');
                     linkCount.className = 'link-count';
-                    linkCount.textContent = game.total_links + ' links available';
+                    linkCount.textContent = game.total_links + ' listed links';
                     gameDiv.appendChild(linkCount);
                     
                     section.appendChild(gameDiv);

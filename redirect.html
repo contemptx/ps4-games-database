@@ -3,310 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preparing Your Download...</title>
+    <title>Open Download Link</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        
-        .container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            max-width: 600px;
-            width: 100%;
-            padding: 50px 40px;
-            text-align: center;
-        }
-        
-        .game-icon {
-            font-size: 80px;
-            margin-bottom: 20px;
-        }
-        
-        h1 {
-            color: #003791;
-            font-size: 2em;
-            margin-bottom: 15px;
-        }
-        
-        .game-name {
-            font-size: 1.3em;
-            color: #333;
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
-        
-        .countdown-container {
-            margin: 40px 0;
-        }
-        
-        .countdown-text {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        
-        .countdown-timer {
-            font-size: 5em;
-            font-weight: bold;
-            color: #003791;
-            margin: 20px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .progress-bar-container {
-            width: 100%;
-            height: 10px;
-            background: #e0e0e0;
-            border-radius: 10px;
-            overflow: hidden;
-            margin: 30px 0;
-        }
-        
-        .progress-bar {
-            height: 100%;
-            background: linear-gradient(90deg, #003791 0%, #0066cc 100%);
-            width: 0%;
-            transition: width 1s linear;
-        }
-        
-        .promo-section {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            border-radius: 15px;
-            padding: 30px;
-            margin: 30px 0;
-        }
-        
-        .promo-title {
-            font-size: 1.4em;
-            color: #003791;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        
-        .promo-text {
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        
-        .promo-features {
-            text-align: left;
-            margin: 20px 0;
-        }
-        
-        .promo-features li {
-            color: #333;
-            margin: 10px 0;
-            padding-left: 25px;
-            position: relative;
-        }
-        
-        .promo-features li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #003791;
-            font-weight: bold;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #003791 0%, #0066cc 100%);
-            color: white;
-            padding: 15px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: 600;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(0, 55, 145, 0.3);
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 55, 145, 0.4);
-        }
-        
-        .skip-button {
-            display: inline-block;
-            background: #6c757d;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1em;
-            font-weight: 500;
-            transition: all 0.3s;
-            margin-top: 20px;
-            cursor: pointer;
-            border: none;
-        }
-        
-        .skip-button:hover {
-            background: #495057;
-            transform: translateY(-2px);
-        }
-        
-        .footer-text {
-            margin-top: 30px;
-            color: #999;
-            font-size: 0.9em;
-        }
-        
-        @media (max-width: 768px) {
-            .container { padding: 30px 20px; }
-            h1 { font-size: 1.5em; }
-            .game-name { font-size: 1.1em; }
-            .countdown-timer { font-size: 3.5em; }
-            .promo-title { font-size: 1.2em; }
-            .cta-button { padding: 12px 30px; font-size: 1em; }
-        }
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 24px; min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: Arial, sans-serif; background: #1a1a2e; color: #fff; }
+        main { width: 100%; max-width: 720px; padding: 36px; background: #16213e; border-radius: 12px; }
+        h1 { margin-top: 0; color: #00d4ff; }
+        p { line-height: 1.6; }
+        #destination { color: #b8c8db; overflow-wrap: anywhere; word-break: break-all; }
+        .button { display: inline-block; margin: 12px 12px 0 0; padding: 16px 22px; background: #e94560; border-radius: 6px; color: white; font-weight: bold; text-decoration: none; }
+        .back { background: #245279; }
+        .button:focus { outline: 3px solid #00d4ff; outline-offset: 4px; }
+        [hidden] { display: none; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="game-icon">🎮</div>
-        <h1>Preparing Your Download</h1>
-        <div class="game-name" id="gameName">Loading...</div>
-        
-        <div class="countdown-container">
-            <div class="countdown-text">Your download will begin in:</div>
-            <div class="countdown-timer" id="countdown">8</div>
-            <div class="progress-bar-container">
-                <div class="progress-bar" id="progressBar"></div>
-            </div>
-        </div>
-        
-        <div class="promo-section">
-            <div class="promo-title">🚀 How This Database Was Built</div>
-            <div class="promo-text">
-                This entire PS4 games database with 6,001+ games and 38,690+ download links was built with a single prompt using Galaxy.ai!
-            </div>
-            <ul class="promo-features">
-                <li>Turn natural language prompts into complete applications</li>
-                <li>Automate complex workflows with AI-powered coding</li>
-                <li>From idea to deployment in hours, not weeks</li>
-            </ul>
-            <a href="https://galaxy.ai/?via=start-building" target="_blank" class="cta-button">
-                Start Building with Galaxy.ai
-            </a>
-        </div>
-        
-        <button class="skip-button" onclick="skipCountdown()">Skip & Download Now</button>
-        
-        <div class="footer-text">
-            You will be redirected to <span id="hostName">the download page</span> automatically
-        </div>
-    </div>
-    
+    <main>
+        <h1 id="heading">Open Download Link</h1>
+        <p id="gameName"></p>
+        <p id="message">Checking the link...</p>
+        <p id="destination"></p>
+        <a id="openLink" class="button" rel="noopener noreferrer" hidden>Open link</a>
+        <a class="button back" href="index.html">Back to Games</a>
+    </main>
+    <script src="catalog.js"></script>
     <script>
-        // Get URL parameters
-        const urlParams = new URLSearchParams(window.location.search);
-        const downloadUrl = urlParams.get('url');
-        const gameName = urlParams.get('game');
-        const hostName = urlParams.get('host');
-        
-        // Whitelist of allowed domains for security
-        const allowedDomains = [
-            'mediafire.com',
-            '1fichier.com',
-            '1file',
-            'mega.nz',
-            'drive.google.com',
-            'dropbox.com',
-            'uploadhaven',
-            'filecrypt.cc',
-            'dlpsgame.com'
-        ];
-        
-        // Validate download URL
-        function isValidUrl(url) {
-            if (!url) return false;
-            try {
-                const urlObj = new URL(url);
-                return allowedDomains.some(domain => urlObj.hostname.includes(domain));
-            } catch {
-                return false;
-            }
-        }
-        
-        // Display game name
-        if (gameName) {
-            document.getElementById('gameName').textContent = decodeURIComponent(gameName);
+        var params = new URLSearchParams(window.location.search);
+        var link = gameCatalog.describeLink(params.get('url'));
+        document.getElementById('gameName').textContent = params.get('game') || 'PS4 Game';
+        if (link) {
+            document.getElementById('message').textContent = 'This opens an external website. File availability is managed by that site.';
+            document.getElementById('destination').textContent = link.url;
+            var button = document.getElementById('openLink');
+            button.setAttribute('href', link.url);
+            button.textContent = 'Open ' + link.label;
+            button.removeAttribute('hidden');
         } else {
-            document.getElementById('gameName').textContent = 'PS4 Game';
+            document.getElementById('heading').textContent = 'Link unavailable';
+            document.getElementById('message').textContent = 'This link is malformed, points to a closed host, or is not a download link. Return to the catalogue to choose another link.';
         }
-        
-        // Display host name
-        if (hostName) {
-            const hostNames = {
-                'mediafire': 'Mediafire',
-                '1file': '1File',
-                'other': 'the download page'
-            };
-            document.getElementById('hostName').textContent = hostNames[hostName] || 'the download page';
-        }
-        
-        // Countdown timer
-        let timeLeft = 8;
-        const countdownElement = document.getElementById('countdown');
-        const progressBar = document.getElementById('progressBar');
-        
-        // Update progress bar
-        function updateProgress() {
-            const progress = ((8 - timeLeft) / 8) * 100;
-            progressBar.style.width = progress + '%';
-        }
-        
-        // Countdown function
-        const countdownInterval = setInterval(() => {
-            timeLeft--;
-            countdownElement.textContent = timeLeft;
-            updateProgress();
-            
-            if (timeLeft <= 0) {
-                clearInterval(countdownInterval);
-                redirect();
-            }
-        }, 1000);
-        
-        // Initial progress
-        updateProgress();
-        
-        // Redirect function
-        function redirect() {
-            if (isValidUrl(downloadUrl)) {
-                window.location.href = decodeURIComponent(downloadUrl);
-            } else {
-                alert('Invalid download URL. Please return to the games database.');
-                window.close();
-            }
-        }
-        
-        // Skip countdown function
-        function skipCountdown() {
-            clearInterval(countdownInterval);
-            redirect();
-        }
-        
-        // Prevent accidental navigation
-        window.addEventListener('beforeunload', (e) => {
-            if (timeLeft > 0) {
-                e.preventDefault();
-                e.returnValue = '';
-            }
-        });
     </script>
 </body>
 </html>
-
