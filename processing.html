@@ -6,9 +6,11 @@
 <div class="table-wrap"><table><thead><tr><th>Source</th><th>Processed</th><th>Discovered</th><th>Needs review</th><th>Status</th></tr></thead><tbody id="sources"></tbody></table></div>
 <p id="unresolved" class="note"></p><h2>Availability limits</h2><ul id="holds"></ul><p><a id="run" href="https://github.com/contemptx/ps4-games-database/actions/workflows/full-index.yml">Open processing workflow</a></p>
 <p><a href="index-progress.json">Download coverage report</a> · <a href="source-review.json">Download unresolved source entries</a></p>
-<script src="index-progress.js"></script><script>
+<script src="index-progress.js?v=b86934265996f5fa"></script><script>
 (function(){
- var data=typeof indexProgress==='object'?indexProgress:{sources:{},availability_holds:{}};
+ function render(data){
+ document.getElementById('sources').textContent='';
+ document.getElementById('holds').textContent='';
  document.getElementById('updated').textContent=data.updated_at?'Updated '+new Date(data.updated_at).toLocaleString()+' · Batch '+data.batch:'First batch is preparing.';
  Object.keys(data.sources).forEach(function(key){var s=data.sources[key],row=document.createElement('tr');
   [s.label,s.processed.toLocaleString(),s.total.toLocaleString(),s.review.toLocaleString(),s.held?'Paused: '+s.held.reason:(s.pending?'Pending: '+s.pending.toLocaleString():'Pass finished')].forEach(function(value){var cell=document.createElement('td');cell.textContent=value;row.appendChild(cell);});
@@ -17,5 +19,14 @@
  document.getElementById('unresolved').textContent=(data.unresolved_named_games||0).toLocaleString()+' named source entries still have unresolved shorteners or link lists. '+(data.runnable_remaining||0).toLocaleString()+' queued items remain on accessible sources.';
  Object.keys(data.availability_holds||{}).forEach(function(host){var item=document.createElement('li');item.textContent=host+': '+data.availability_holds[host];document.getElementById('holds').appendChild(item);});
  if(data.run_url)document.getElementById('run').href=data.run_url;
+ }
+ render(typeof indexProgress==='object'?indexProgress:{sources:{},availability_holds:{}});
+ function refresh(){
+  var request=new XMLHttpRequest();
+  request.open('GET','index-progress.json?refresh='+Date.now(),true);
+  request.onload=function(){if(request.status===200){try{var fresh=JSON.parse(request.responseText);if(fresh&&fresh.sources)render(fresh);}catch(error){/* Keep the timestamped previous report. */}}};
+  request.send();
+ }
+ refresh();setInterval(refresh,60000);
 }());
 </script></body></html>

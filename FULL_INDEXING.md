@@ -19,6 +19,8 @@ Readers follow robots rules, use one serial request stream per source, wait two 
 
 Source labels distinguish base games, updates, DLC, fixes, bundles and language patches. Unlabelled recognised links are retained as unknown; explicit filename evidence can supplement them. Matching CUSA, region and edition are needed before comparing updates. Filecrypt.cc stays excluded.
 
+Data script URLs are versioned by content on each publication. The progress page also fetches a fresh report every minute while open.
+
 The frontend renders 50 listings at a time and searches the full in-memory catalogue, including versions, CUSA IDs and release labels. Counts describe source listings, not deduplicated game identities across different sites or editions.
 
 ## Operation and recovery

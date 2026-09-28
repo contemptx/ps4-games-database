@@ -37,11 +37,13 @@ jobs:
         run: python3 scripts/full_index.py --limit "$PAGE_LIMIT" --minutes 20
       - name: Validate generated catalogue
         run: python3 scripts/validate_index.py
+      - name: Refresh catalogue data script versions
+        run: python3 scripts/stamp_catalog.py
       - name: Publish validated data
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add release-metadata.json release-metadata.js superpsx-catalog.json superpsx-catalog.js additional-catalog.json additional-catalog.js link-status.json link-status.js index-state.json index-progress.json index-progress.js source-review.json
+          git add release-metadata.json release-metadata.js superpsx-catalog.json superpsx-catalog.js additional-catalog.json additional-catalog.js link-status.json link-status.js index-state.json index-progress.json index-progress.js source-review.json index.html ps4-games-optimized.html ps4-pwa-optimized.html processing.html
           if ! git diff --cached --quiet; then
             git commit -m 'Update catalogue releases and processing checkpoints'
             git fetch origin main
