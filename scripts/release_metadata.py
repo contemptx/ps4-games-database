@@ -234,9 +234,21 @@ def fetch_source(url):
         if len(body) > 2000000:
             raise ValueError('Page exceeds metadata size limit')
         body = body.decode('utf-8', errors='replace')
-        if re.search(r'checking your browser|verify you are human|too many requests|site unavailable', body, re.I):
+        if is_access_error(body):
             raise ValueError('Source access restricted; stopping checks')
         return body
+
+
+def is_access_error(body):
+    tree = Tree(body).root
+    title = next((n.text() for n in tree.walk() if n.tag == 'title'), '')
+    pattern = r'checking your browser|verify you are human|too many requests|site unavailable|just a moment'
+    if re.search(pattern, title, re.I):
+        return True
+    # A comment-widget translation in JavaScript is not an access error.
+    # A normal article may also quote such an error in its comments.
+    has_article = any('entry-content' in n.attrs.get('class', '').split() for n in tree.walk())
+    return not has_article and bool(re.search(pattern, clean(tree.text()), re.I))
 
 
 def write_manifest(manifest, output):

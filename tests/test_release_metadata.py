@@ -3,12 +3,17 @@ import pathlib
 import sys
 import unittest
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / 'scripts'))
-from release_metadata import parse_source, filename_details
+from release_metadata import parse_source, filename_details, is_access_error
 
 SOURCE = 'https://dlpsgame.com/example/'
 
 
 class ReleaseMetadataTests(unittest.TestCase):
+    def test_comment_widget_text_is_not_an_access_error(self):
+        self.assertFalse(is_access_error('<title>Game</title><div class="entry-content">Game</div><script>var translation="Too many requests";</script>'))
+        self.assertTrue(is_access_error('<title>Too many requests</title><p>Try later</p>'))
+        self.assertTrue(is_access_error('<p>Verify you are human</p>'))
+
     def test_versions_are_scoped_to_release_rows(self):
         body = '''<div class="entry-content"><p>CUSA34255 – EUR (v1.17)</p>
         <p>Game: <a href="https://1fichier.com/?base">1File</a></p>
