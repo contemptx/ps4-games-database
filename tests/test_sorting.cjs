@@ -1,0 +1,21 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict'),path=require('path');
+const context={igdbMetadata:{records:{Zebra:{release_sort:'2020-01-01',popularity:0},Alpha:{release_sort:'2022-01-01',popularity:10},Beta:{release_sort:'2021-01-01'}}}};
+vm.createContext(context);vm.runInContext(fs.readFileSync(path.join(__dirname,'../sorting.js'),'utf8'),context);
+const games=['Unknown','Zebra','Alpha','Beta'].map(name=>({name}));
+const sorted=mode=>Array.from(context.catalogSorting.sort(games,mode),g=>g.name);
+assert.deepEqual(sorted('newest'),['Alpha','Beta','Zebra','Unknown']);
+assert.deepEqual(sorted('oldest'),['Zebra','Beta','Alpha','Unknown']);
+assert.deepEqual(sorted('popular'),['Alpha','Zebra','Beta','Unknown']);
+assert.deepEqual(sorted('za'),['Zebra','Unknown','Beta','Alpha']);
+assert.equal(games[0].name,'Unknown');
+// Search/filter first, sort the entire matching catalogue, then slice into pages.
+const controls={searchInput:{value:''},sourceFilter:{value:''},sortOrder:{value:'newest'},gamesContainer:{scrollTop:0},previousPage:{},nextPage:{},pageStatus:{},searchInfo:{}};
+context.document={getElementById:id=>controls[id]};
+vm.runInContext(fs.readFileSync(path.join(__dirname,'../paging.js'),'utf8'),context);
+const many=Array.from({length:70},(_,i)=>({name:'Game '+String(i).padStart(2,'0'),source:'DLPSGame',links:[]}));
+many.forEach((g,i)=>context.igdbMetadata.records[g.name]={release_sort:String(1900+i)+'-01-01'});
+let rendered=[];context.catalogPaging.show(many,x=>rendered=x,0);
+assert.equal(rendered.length,50);assert.equal(rendered[0].name,'Game 69');
+context.catalogPaging.show(many,x=>rendered=x,1);assert.equal(rendered[0].name,'Game 19');
+controls.searchInput.value='Game 0';context.catalogPaging.show(many,x=>rendered=x,0);assert.equal(rendered[0].name,'Game 09');
+console.log('Dates, popularity, unknown values, filtering and pagination: PASS');

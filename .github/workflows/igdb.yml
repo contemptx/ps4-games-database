@@ -1,0 +1,47 @@
+name: Refresh IGDB metadata
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 3 * * *'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: igdb-metadata
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Test metadata matching and sorting
+        run: |
+          python3 -m unittest discover -s tests -p 'test_igdb.py'
+          node tests/test_sorting.cjs
+      - name: Import PS4 release dates and IGDB visits
+        env:
+          IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
+          IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
+        run: python3 scripts/igdb_metadata.py
+      - name: Version metadata assets
+        run: python3 scripts/stamp_catalog.py
+      - name: Publish metadata
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add igdb-metadata.json igdb-metadata.js igdb-review.json index.html ps4-games-optimized.html ps4-pwa-optimized.html processing.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh IGDB PS4 dates and popularity'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
+      - name: Deploy refreshed catalogue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: gh workflow run static.yml --ref main

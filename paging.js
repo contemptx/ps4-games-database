@@ -22,6 +22,7 @@ var catalogPaging = (function() {
         var input = document.getElementById('searchInput');
         var source = document.getElementById('sourceFilter').value || '';
         var matches = filter(games, input.value, source);
+        if (typeof catalogSorting === 'object') matches = catalogSorting.sort(matches, catalogSorting.mode());
         var pages = Math.ceil(matches.length / size);
         page = Math.max(0, Math.min(page, pages - 1));
         var start = page * size, end = Math.min(start + size, matches.length);

@@ -314,7 +314,9 @@
     <script src="additional-catalog.js?v=b03b9d1a2ce0d983"></script>
     <script src="index-progress.js?v=165772d06e33c1c6"></script>
     <script src="catalog.js"></script>
-    <script src="paging.js"></script>
+    <script src="igdb-metadata.js?v=59b811b815941b6d"></script>
+    <script src="sorting.js?v=1"></script>
+    <script src="paging.js?v=2"></script>
     <script>
         var allGames = [];
         var loadedCount = 0;
@@ -375,7 +377,7 @@
             for (var i = 0; i < games.length; i++) {
                 var game = games[i];
                 var firstChar = game.name.charAt(0).toUpperCase();
-                var letter = /[A-Z]/.test(firstChar) ? firstChar : '#';
+                var letter = catalogSorting.section(game);
                 if (!grouped[letter]) grouped[letter] = [];
                 grouped[letter].push(game);
             }
@@ -407,6 +409,7 @@
                     title.className = 'game-title';
                     title.textContent = game.name;
                     gameDiv.appendChild(title);
+                    catalogSorting.describe(gameDiv, game);
                     
                     var linksDiv = document.createElement('div');
                     linksDiv.className = 'download-links';
@@ -450,6 +453,7 @@
             gamesContainer.scrollTop = 0;
         }
         
+        catalogSorting.init();
         loadGames();
     </script>
 </body>

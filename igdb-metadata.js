@@ -1,0 +1,11 @@
+var igdbMetadata = {
+  "schema_version": 1,
+  "source": "IGDB",
+  "updated_at": null,
+  "summary": {
+    "matched": 0,
+    "with_dates": 0,
+    "with_popularity": 0
+  },
+  "records": {}
+};
