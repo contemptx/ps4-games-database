@@ -23,6 +23,12 @@ class FileSizesTest(unittest.TestCase):
         self.assertEqual(d['part_number'],2)
         self.assertEqual(d['checksums'],{'sha256':'a'*64})
         self.assertNotIn('token',d);self.assertNotIn('download_url',d)
+    def test_fichier_success_without_status(self):
+        r=from_api('1fichier.com',{'filename':'game.pkg','size':1234,'checksum':'a'*128})
+        self.assertEqual(r['status'],'known')
+        self.assertEqual(r['checksums']['whirlpool'],'a'*128)
+        self.assertEqual(from_api('1fichier.com',{'status':'KO','filename':'game.pkg','size':1234})['status'],'unknown')
+
     def test_viking_array_response(self):
         class Response:
             code=200

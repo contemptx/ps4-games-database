@@ -72,15 +72,15 @@ def from_api(host, data):
         return {'status':'missing','reason':'Host API explicitly reports file absent'}
     if host=='pixeldrain.com' and data.get('success') is False and data.get('value')=='not_found':
         return {'status':'missing','reason':'Host API explicitly reports file absent'}
-    ok=(data.get('exist') is True if host=='vikingfile.com' else data.get('success') is True if host=='pixeldrain.com' else data.get('status')=='OK')
-    if not ok: return {'status':'unknown','reason':'Host did not return successful file metadata'}
+    ok=(data.get('exist') is True if host=='vikingfile.com' else data.get('success') is True if host=='pixeldrain.com' else data.get('status') in (None,'OK') and clean_name(data.get('filename')) is not None and size_number(data.get('size')) is not None)
+    if not ok: return {'status':'unknown','reason':'Host did not return successful file metadata','response_schema':{k:type(data.get(k)).__name__ for k in ('status','filename','name','size','checksum')}}
     name=clean_name(data.get('filename') or data.get('name'))
     n=size_number(data.get('size'))
     result={'status':'known' if n is not None else 'unknown','evidence':'host API','size_precision':'exact'}
     if n is not None: result['size_bytes']=n
     if name: result.update(filename=name,filename_evidence='host API',**multipart(name))
     for alg,length in [('sha256',64),('sha1',40),('md5',32),('whirlpool',128)]:
-        value=data.get(alg)
+        value=data.get('checksum') if host=='1fichier.com' and alg=='whirlpool' else data.get(alg)
         if isinstance(value,str) and re.fullmatch('[0-9a-fA-F]{'+str(length)+'}',value):
             result.setdefault('checksums',{})[alg]=value.lower()
     return result
@@ -208,6 +208,10 @@ def run(root, limit=3000, minutes=15):
         for url,value in list(files.items()):
             if family(url) in ('vikingfile.com','akirabox.com','akirabox.to') and value.get('status')=='unknown': files.pop(url)
         data['adapter_revision']=2
+    if data.get('adapter_revision',1)<3:
+        for url,value in list(files.items()):
+            if family(url)=='1fichier.com' and value.get('status')=='unknown': files.pop(url)
+        data['adapter_revision']=3
     keys={c['url'] for c in candidates}
     data['files']=files={k:v for k,v in files.items() if k in keys}
     queues=collections.defaultdict(list); api_key=os.environ.get('FICHIER_API_KEY','')
@@ -242,7 +246,7 @@ def run(root, limit=3000, minutes=15):
             if value['status']=='held':
                 hold={'reason':value['reason'],'at':now()};break
             unresolved = unresolved+1 if value['status']=='unknown' else 0
-            if unresolved>=3 and host not in API_HOSTS:
+            if unresolved>=3:
                 hold={'reason':'Three pages returned no usable metadata; host adapter needs review','at':now()};break
             time.sleep(3)
         return host,results,hold
