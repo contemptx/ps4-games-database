@@ -229,6 +229,17 @@ def run(root, limit=3000, minutes=15):
             if family(url)=='1fichier.com' and value.get('status')=='unknown': files.pop(url)
         if 'adapter needs review' in holds.get('1fichier.com',{}).get('reason',''): holds.pop('1fichier.com')
         data['adapter_revision']=4
+    # One user-requested retry after the September 29 API pause. Persist the
+    # marker so a repeated access denial stops the chain instead of looping.
+    retry_id='1fichier-2026-09-29T1239Z'
+    retries=data.setdefault('manual_retries',[])
+    if retry_id not in retries:
+        if holds.get('1fichier.com',{}).get('reason')=='1fichier API access restriction (HTTP 403)':
+            holds.pop('1fichier.com')
+            for url,value in list(files.items()):
+                if family(url)=='1fichier.com' and value.get('status')=='held':
+                    files.pop(url)
+        retries.append(retry_id)
     keys={c['url'] for c in candidates}
     data['files']=files={k:v for k,v in files.items() if k in keys}
     established={family(u) for u,v in files.items() if v.get('status')=='known'}
@@ -268,7 +279,7 @@ def run(root, limit=3000, minutes=15):
             unresolved = unresolved+1 if value['status']=='unknown' else 0
             if unresolved>=3 and host not in established and not any(v.get('status')=='known' for v in results.values()):
                 hold={'reason':'Three pages returned no usable metadata; host adapter needs review','at':now()};break
-            time.sleep(3)
+            time.sleep(10 if host=='1fichier.com' else 3)
         return host,results,hold
     attempted=0
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
