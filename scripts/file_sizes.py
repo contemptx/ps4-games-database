@@ -231,6 +231,9 @@ def run(root, limit=3000, minutes=15):
         data['adapter_revision']=4
     keys={c['url'] for c in candidates}
     data['files']=files={k:v for k,v in files.items() if k in keys}
+    established={family(u) for u,v in files.items() if v.get('status')=='known'}
+    for host in established:
+        if 'adapter needs review' in holds.get(host,{}).get('reason',''): holds.pop(host)
     queues=collections.defaultdict(list); api_key=os.environ.get('FICHIER_API_KEY','')
     for item in candidates:
         url=item['url']; host=family(url)
@@ -263,7 +266,7 @@ def run(root, limit=3000, minutes=15):
             if value['status']=='held':
                 hold={'reason':value['reason'],'at':now()};break
             unresolved = unresolved+1 if value['status']=='unknown' else 0
-            if unresolved>=3:
+            if unresolved>=3 and host not in established and not any(v.get('status')=='known' for v in results.values()):
                 hold={'reason':'Three pages returned no usable metadata; host adapter needs review','at':now()};break
             time.sleep(3)
         return host,results,hold
