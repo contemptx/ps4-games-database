@@ -343,10 +343,10 @@
     <script src="index-progress.js?v=165772d06e33c1c6"></script>
     <script src="file-sizes.js?v=d148d8a05282172b"></script>
     <script src="sizes.js?v=2"></script>
-    <script src="catalog.js?v=cards1"></script>
+    <script src="catalog.js?v=groups1"></script>
     <script src="igdb-metadata.js?v=1393ef8433c2c90d"></script>
-    <script src="sorting.js?v=cards1"></script>
-    <script src="paging.js?v=release-filter1"></script>
+    <script src="sorting.js?v=groups1"></script>
+    <script src="paging.js?v=groups1"></script>
     <script>
         let allGames = [];
         
@@ -362,6 +362,7 @@
                     throw new Error('Expected an array of game records');
                 }
                 allGames = gameCatalog.prepare(allGames.concat(typeof superpsxCatalog === 'object' && Array.isArray(superpsxCatalog.records) ? superpsxCatalog.records : [], typeof additionalCatalog === 'object' && Array.isArray(additionalCatalog.records) ? additionalCatalog.records : []));
+                allGames = gameCatalog.groupGames(allGames);
                 allGames.sort(function(a, b) { return a.name.localeCompare(b.name); });
                 gameCatalog.updateStatistics(allGames);
                 searchGames();

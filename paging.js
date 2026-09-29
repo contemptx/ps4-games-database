@@ -3,8 +3,10 @@ var catalogPaging = (function() {
     var page = 0, size = 50;
     function filter(games, text, source, kind) {
         var query = (text || '').trim().toLowerCase();
-        var candidates = kind ? games.map(function(game) {
+        var candidates = (kind || source) ? games.map(function(game) {
             var releases = (game.releases || []).filter(function(release) {
+                if (source && (release.source || game.source) !== source) return false;
+                if (!kind) return true;
                 var m = release.metadata || {};
                 var known = ['base', 'update', 'dlc', 'fix', 'patch', 'bundle'];
                 return kind === 'unknown' ? (!m.kind || known.indexOf(m.kind) === -1 || m.conflict) : m.kind === kind && !m.conflict;
@@ -13,6 +15,7 @@ var catalogPaging = (function() {
             var copy = {};
             Object.keys(game).forEach(function(key) { copy[key] = game[key]; });
             copy.releases = releases;
+            if (source && game.sources) copy.sources = game.sources.filter(function(s) { return s.name === source; });
             copy.links = [];
             releases.forEach(function(release) { copy.links = copy.links.concat(release.links); });
             copy.total_links = copy.links.length;
@@ -20,10 +23,10 @@ var catalogPaging = (function() {
             return copy;
         }).filter(function(game) { return game !== null; }) : games;
         return candidates.filter(function(game) {
-            if (source && game.source !== source) return false;
+
             if (!query) return true;
             if (!game.searchText) {
-                var terms = [game.name, game.source];
+                var terms = [game.name, game.source].concat(game.aliases || []);
                 game.links.forEach(function(link) {
                     var m = link.release || {};
                     terms.push(link.label, m.kind, m.version, m.title_id, m.region, m.firmware, m.edition, m.source_label, m.source_section);

@@ -2,7 +2,7 @@ var catalogSorting = (function() {
     var labels = { az: 'A–Z', za: 'Z–A', newest: 'PS4 release: newest first', oldest: 'PS4 release: oldest first', popular: 'Popularity: IGDB visits' };
     function metadata(game) {
         var records = typeof igdbMetadata === 'object' && igdbMetadata.records || {};
-        return Object.prototype.hasOwnProperty.call(records, game.name) ? records[game.name] : {};
+        return Object.prototype.hasOwnProperty.call(records, game.metadata_name || game.name) ? records[game.metadata_name || game.name] : {};
     }
     function mode() {
         var select = document.getElementById('sortOrder');

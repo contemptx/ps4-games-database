@@ -173,7 +173,14 @@ var gameCatalog = (function() {
     function renderLinks(container, game, newTab) {
         var source = document.createElement('div');
         source.className = 'source-label';
-        source.textContent = 'Source: ' + game.source;
+        source.textContent = 'Sources: ';
+        (game.sources || [{name:game.source, page_url:game.page_url}]).forEach(function(item, index) {
+            if (index) source.appendChild(document.createTextNode(' · '));
+            var anchor = document.createElement(item.page_url ? 'a' : 'span');
+            anchor.textContent = item.name;
+            if (item.page_url) { anchor.href = item.page_url; anchor.rel = 'noopener noreferrer'; if (newTab) anchor.target = '_blank'; }
+            source.appendChild(anchor);
+        });
         container.appendChild(source);
         var names = { base: 'Base game', update: 'Update', dlc: 'DLC', fix: 'Fix', patch: 'Language / mod patch', bundle: 'Combined package' };
         game.releases.forEach(function(release) {
@@ -190,6 +197,15 @@ var gameCatalog = (function() {
             if (m.region) parts.push(m.region);
             heading.textContent = parts.join(' · ');
             wrapper.appendChild(heading);
+            if (release.source) {
+                var origin = document.createElement('a');
+                origin.className = 'release-detail';
+                origin.textContent = release.source;
+                origin.href = release.page_url;
+                origin.rel = 'noopener noreferrer';
+                if (newTab) origin.target = '_blank';
+                wrapper.appendChild(origin);
+            }
             if (release.newest) {
                 var badge = document.createElement('span');
                 badge.className = 'release-latest';
@@ -299,6 +315,42 @@ var gameCatalog = (function() {
         return games;
     }
 
+
+    function groupGames(games) {
+        var grouped = [], byName = Object.create(null);
+        var records = typeof igdbMetadata === 'object' && igdbMetadata.records || {};
+        games.forEach(function(game) {
+            // Strip platform/packaging suffixes only; retain editions and sequels.
+            var name = game.name.replace(/\s+(?:PS4|FPKG|PKG)(?:\s+(?:PS4|FPKG|PKG|Download))*\s*$/i, '').trim();
+            var key = name.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9\u00c0-\uffff]+/g, ' ').trim();
+            var meta = records[game.name] || {};
+            var target = byName[key];
+            if (target && target.igdb_id && meta.igdb_id && target.igdb_id !== meta.igdb_id) {
+                key += '|igdb:' + meta.igdb_id; target = byName[key];
+            }
+            if (!target) {
+                target = {name:name, source:game.source, page_url:game.page_url, sources:[], aliases:[],
+                    links:[], releases:[], total_links:0, download_links:{mediafire:[], '1file':[], other:[]}};
+                byName[key] = target; grouped.push(target);
+            }
+            if (meta.igdb_id && !target.igdb_id) { target.igdb_id = meta.igdb_id; target.metadata_name = game.name; }
+            target.aliases.push(game.name);
+            if (!target.sources.some(function(s) { return s.page_url === game.page_url && s.name === game.source; })) {
+                target.sources.push({name:game.source, page_url:game.page_url});
+            }
+            game.releases.forEach(function(release) {
+                var copy = {};
+                Object.keys(release).forEach(function(k) { copy[k] = release[k]; });
+                copy.source = game.source; copy.page_url = game.page_url;
+                target.releases.push(copy);
+            });
+            target.links = target.links.concat(game.links);
+            target.total_links += game.total_links;
+            hosts.forEach(function(h) { target.download_links[h] = target.download_links[h].concat(game.download_links[h] || []); });
+        });
+        return grouped;
+    }
+
     function updateStatistics(games) {
         if (typeof catalogSizes !== 'undefined') catalogSizes.init(games);
         var links = games.reduce(function(total, game) { return total + game.total_links; }, 0);
@@ -308,7 +360,7 @@ var gameCatalog = (function() {
         document.getElementById('totalLinks').textContent = linkCount;
         document.getElementById('catalogTotals').textContent = gameCount + ' Game Listings | ' + linkCount + ' Download Links';
         var sources = Object.create(null);
-        games.forEach(function(game) { sources[game.source] = true; });
+        games.forEach(function(game) { (game.sources || [{name:game.source}]).forEach(function(s) { sources[s.name] = true; }); });
         var sourceFilter = document.getElementById('sourceFilter');
         if (sourceFilter) {
             var options = sourceFilter.querySelectorAll('option');
@@ -343,5 +395,5 @@ var gameCatalog = (function() {
         }
     }
 
-    return { statusKey: statusKey, prepare: prepare, updateStatistics: updateStatistics, describeLink: describeLink, isMissing: isMissing, isExcluded: isExcluded, renderLinks: renderLinks, renderTitle: renderTitle, compareVersions: compareVersions };
+    return { statusKey: statusKey, prepare: prepare, groupGames: groupGames, updateStatistics: updateStatistics, describeLink: describeLink, isMissing: isMissing, isExcluded: isExcluded, renderLinks: renderLinks, renderTitle: renderTitle, compareVersions: compareVersions };
 }());
