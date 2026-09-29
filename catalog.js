@@ -225,15 +225,18 @@ var gameCatalog = (function() {
             });
             container.appendChild(wrapper);
         });
-        if (game.page_url) {
-            var pageButton = document.createElement('a');
-            pageButton.setAttribute('href', game.page_url);
-            pageButton.className = 'download-btn btn-page';
-            pageButton.textContent = 'View source page';
-            if (newTab) pageButton.target = '_blank';
-            pageButton.rel = 'noopener noreferrer';
-            container.appendChild(pageButton);
-        }
+    }
+
+    function renderTitle(container, game, newTab) {
+        container.textContent = '';
+        if (!game.page_url) { container.textContent = game.name; return; }
+        var link = document.createElement('a');
+        link.href = game.page_url;
+        link.textContent = game.name;
+        link.style.color = 'inherit';
+        link.rel = 'noopener noreferrer';
+        if (newTab) link.target = '_blank';
+        container.appendChild(link);
     }
 
     function prepare(records) {
@@ -340,5 +343,5 @@ var gameCatalog = (function() {
         }
     }
 
-    return { statusKey: statusKey, prepare: prepare, updateStatistics: updateStatistics, describeLink: describeLink, isMissing: isMissing, isExcluded: isExcluded, renderLinks: renderLinks, compareVersions: compareVersions };
+    return { statusKey: statusKey, prepare: prepare, updateStatistics: updateStatistics, describeLink: describeLink, isMissing: isMissing, isExcluded: isExcluded, renderLinks: renderLinks, renderTitle: renderTitle, compareVersions: compareVersions };
 }());

@@ -331,7 +331,7 @@
     <script src="index-progress.js?v=165772d06e33c1c6"></script>
     <script src="file-sizes.js?v=d148d8a05282172b"></script>
     <script src="sizes.js?v=2"></script>
-    <script src="catalog.js?v=sizes2"></script>
+    <script src="catalog.js?v=title-link1"></script>
     <script src="igdb-metadata.js?v=8d5c6f270b4f6e5f"></script>
     <script src="sorting.js?v=1"></script>
     <script src="paging.js?v=2"></script>
@@ -398,7 +398,7 @@
                     
                     const title = document.createElement('div');
                     title.className = 'game-title';
-                    title.textContent = game.name;
+                    gameCatalog.renderTitle(title, game, true);
                     gameDiv.appendChild(title);
                     catalogSorting.describe(gameDiv, game);
                     
