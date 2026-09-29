@@ -1,0 +1,21 @@
+name: Test small 1fichier API download
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/test_fichier_download.py', '.github/workflows/test-fichier-download.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: fichier-download-test
+  cancel-in-progress: false
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test one file up to 10 MiB using CDN credits
+        env:
+          FICHIER_API_KEY: ${{ secrets.FICHIER_API_KEY }}
+        run: python3 scripts/test_fichier_download.py
