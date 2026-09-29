@@ -42,6 +42,11 @@ class FileSizesTest(unittest.TestCase):
         self.assertEqual(inspect('https://vikingfile.com/f/C0Ug5qAtxz',opener=Opener())['status'],'missing')
         self.assertEqual(inspect('https://vikingfile.com/f/Other',opener=Opener())['status'],'unknown')
 
+    def test_fichier_missing_vs_private(self):
+        self.assertEqual(from_api('1fichier.com',{'status':'KO','message':'Resource not found #469'})['status'],'missing')
+        self.assertEqual(from_api('1fichier.com',{'status':'KO','message':'Resource not allowed #631'})['status'],'restricted_file')
+        self.assertEqual(from_api('1fichier.com',{'status':'KO','message':'Flood detected: IP Locked #374'})['status'],'unknown')
+
     def test_names(self):
         self.assertEqual(url_name('https://filekeeper.net/id/Game.pkg'),'Game.pkg')
         self.assertEqual(multipart('game.7z.003')['part_number'],3)

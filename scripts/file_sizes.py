@@ -68,6 +68,12 @@ def multipart(name):
 
 def from_api(host, data):
     if not isinstance(data,dict): return {'status':'unknown','reason':'Unexpected metadata response'}
+    if host=='1fichier.com' and data.get('status')=='KO':
+        message=data.get('message','')
+        if isinstance(message,str) and re.fullmatch(r'Resource not found #\d+',message,re.I):
+            return {'status':'missing','reason':'1fichier API explicitly reports resource not found','evidence':'host API'}
+        if isinstance(message,str) and re.fullmatch(r'Resource not allowed #\d+',message,re.I):
+            return {'status':'restricted_file','reason':'File access is restricted; not evidence of deletion','evidence':'host API'}
     if host=='vikingfile.com' and data.get('exist') is False:
         return {'status':'missing','reason':'Host API explicitly reports file absent'}
     if host=='pixeldrain.com' and data.get('success') is False and data.get('value')=='not_found':
@@ -172,6 +178,12 @@ def inspect(url, api_key='', opener=None):
         except urllib.error.HTTPError as exc: response=exc
         with response:
             code=response.code
+            if code==403 and host=='1fichier.com' and response.headers.get_content_type()=='application/json':
+                try:
+                    result=from_api(host,json.loads(response.read(MAX_BODY).decode('utf-8','replace')))
+                    if result['status'] in ('missing','restricted_file'): return result
+                except ValueError: pass
+                return {'status':'held','reason':'1fichier API access restriction (HTTP 403)'}
             if code in (401,403,429) or code>=500: return {'status':'held','reason':'Host or network restriction (HTTP '+str(code)+')'}
             if 300<=code<400: return {'status':'unknown','reason':'Redirect not followed; no file fetched'}
             kind=response.headers.get_content_type()
@@ -212,6 +224,11 @@ def run(root, limit=3000, minutes=15):
         for url,value in list(files.items()):
             if family(url)=='1fichier.com' and value.get('status')=='unknown': files.pop(url)
         data['adapter_revision']=3
+    if data.get('adapter_revision',1)<4:
+        for url,value in list(files.items()):
+            if family(url)=='1fichier.com' and value.get('status')=='unknown': files.pop(url)
+        if 'adapter needs review' in holds.get('1fichier.com',{}).get('reason',''): holds.pop('1fichier.com')
+        data['adapter_revision']=4
     keys={c['url'] for c in candidates}
     data['files']=files={k:v for k,v in files.items() if k in keys}
     queues=collections.defaultdict(list); api_key=os.environ.get('FICHIER_API_KEY','')
