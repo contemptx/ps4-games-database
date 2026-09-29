@@ -178,7 +178,7 @@ var gameCatalog = (function() {
         var names = { base: 'Base game', update: 'Update', dlc: 'DLC', fix: 'Fix', patch: 'Language / mod patch', bundle: 'Combined package' };
         game.releases.forEach(function(release) {
             var m = release.metadata, wrapper = document.createElement('div');
-            wrapper.className = 'release-group';
+            wrapper.className = 'release-group release-' + (names[m.kind] && !m.conflict ? m.kind : 'unknown');
             var heading = document.createElement('div');
             heading.className = 'release-heading';
             var parts = [names[m.kind] || (m.evidence ? 'File — type unspecified' : 'Release details unknown')];

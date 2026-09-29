@@ -28,16 +28,43 @@ var catalogSorting = (function() {
     }
     function describe(container, game) {
         var m = metadata(game);
-        if (!m.igdb_id) return;
+        var cover = document.createElement('div');
+        cover.className = 'game-cover';
+        var fallback = document.createElement('span');
+        fallback.className = 'cover-placeholder';
+        fallback.textContent = 'PS4';
+        cover.appendChild(fallback);
+        if (m.cover_url && /^https:\/\/images\.igdb\.com\/igdb\/image\/upload\/t_cover_big\/[A-Za-z0-9_]+\.jpg$/.test(m.cover_url)) {
+            var image = document.createElement('img');
+            image.src = m.cover_url; image.alt = game.name + ' cover';
+            image.loading = 'lazy'; image.decoding = 'async';
+            image.width = 264; image.height = 352;
+            image.onerror = function() { image.style.display = 'none'; };
+            cover.appendChild(image);
+        }
+        container.insertBefore(cover, container.firstChild);
         var line = document.createElement('div');
-        line.className = 'link-count';
+        line.className = 'game-metadata';
         line.textContent = m.release_date ? 'PS4 release: ' + m.release_date + ' · ' : 'PS4 release date unknown · ';
         if (m.url && /^https:\/\/www\.igdb\.com\/games\//.test(m.url)) {
             var link = document.createElement('a');
             link.href = m.url; link.textContent = 'IGDB'; link.target = '_blank'; link.rel = 'noopener noreferrer';
             line.appendChild(link);
-        } else line.appendChild(document.createTextNode('IGDB'));
+        } else line.appendChild(document.createTextNode(m.igdb_id ? 'IGDB' : 'No IGDB match'));
         container.appendChild(line);
+        var score = document.createElement('div');
+        score.className = 'game-rating';
+        if (typeof m.rating === 'number' && m.rating_count > 0) {
+            score.textContent = '★ ' + (m.rating / 10).toFixed(1) + '/10';
+            var count = document.createElement('span');
+            count.textContent = 'IGDB users · ' + m.rating_count.toLocaleString() + ' ratings';
+            score.appendChild(count);
+            score.title = 'IGDB user score across platforms, not a PS4-only score';
+        } else {
+            score.className += ' unrated';
+            score.textContent = 'No IGDB user rating';
+        }
+        container.appendChild(score);
     }
     function init() {
         var label = document.createElement('label');

@@ -1,5 +1,8 @@
 name: Refresh IGDB metadata
 on:
+  push:
+    branches: [main]
+    paths: ['scripts/igdb_metadata.py', '.github/workflows/igdb.yml']
   workflow_dispatch:
   schedule:
     - cron: '23 3 * * *'
@@ -22,7 +25,7 @@ jobs:
         run: |
           python3 -m unittest discover -s tests -p 'test_igdb.py'
           node tests/test_sorting.cjs
-      - name: Import PS4 release dates and IGDB visits
+      - name: Import PS4 dates, covers, ratings and IGDB visits
         env:
           IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
           IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}

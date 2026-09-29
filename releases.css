@@ -14,3 +14,57 @@
 .catalog-pager button { border: 1px solid #003791; background: #003791; color: white; padding: 9px 18px; border-radius: 5px; cursor: pointer; }
 .catalog-pager button:disabled { opacity: .4; cursor: default; }
 #indexingSummary { font-size: 13px; }
+
+/* Library cards */
+body { background: #eef2f8; color: #1d2b43; }
+.container { max-width: 1200px; }
+header { background: linear-gradient(115deg,#102a50,#144785); border-radius: 18px 18px 0 0; }
+.search-container { background: #fff; border-bottom: 1px solid #e1e7f0; }
+.source-filter { display: inline-block; margin: 12px 20px 4px 0; font-weight: 600; color: #40516b; }
+.source-filter select { border-color: #d0dae7; min-height: 42px; }
+.search-info { line-height: 1.6; }
+.games-container { background: #eef2f8; padding: 24px; }
+.letter-header { background: transparent; color: #60708a; border-bottom: 1px solid #d5deeb; padding: 12px 0; font-size: 15px; letter-spacing: .06em; }
+.game-item { position: relative; min-height: 244px; margin: 18px 0 26px; padding: 24px 24px 24px 206px; background: #fff; border: 1px solid #dce4f0; border-radius: 14px; box-shadow: 0 4px 18px rgba(23,44,78,.045); }
+.game-item:hover { transform: none; border-color: #a6bddb; box-shadow: 0 6px 22px rgba(23,44,78,.08); }
+.game-cover { position: absolute; top: 24px; left: 24px; width: 158px; height: 211px; border-radius: 9px; overflow: hidden; background: linear-gradient(145deg,#122d52,#42658e); box-shadow: 0 5px 14px #162d4b22; }
+.game-cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.cover-placeholder { display: block; text-align: center; padding-top: 88px; color: #d7e7ff; font-size: 24px; font-weight: bold; letter-spacing: .1em; }
+.game-title { font-size: 23px; line-height: 1.3; margin-bottom: 8px; color: #142b4b; overflow-wrap: anywhere; }
+.game-title a { text-decoration: none; }
+.game-title a:hover { text-decoration: underline; color: #1559bd !important; }
+.game-metadata { font-size: 12px; line-height: 1.7; color: #65758b; margin-bottom: 8px; }
+.game-metadata a { color: #305e9c; }
+.game-rating { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 9px; padding: 6px 10px; border-radius: 6px; background: #edf6f0; color: #20623d; font-weight: 700; font-size: 15px; margin-bottom: 16px; }
+.game-rating span { font-size: 11px; font-weight: 400; color: #456852; }
+.game-rating.unrated { background: #f3f5f8; color: #788599; font-size: 12px; font-weight: 400; }
+.download-links { display: block; }
+.source-label { color: #6b7b90; font-size: 11px; margin-bottom: 12px; }
+.release-group { box-sizing: border-box; width: 100%; border: 1px solid #dce5f1; border-left: 4px solid #7890ac; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; background: #f8fafd; }
+.release-group:first-child { border-top: 1px solid #dce5f1; padding-top: 14px; }
+.release-base { border-left-color: #2563eb; background: #f3f7ff; }
+.release-update { border-left-color: #13825b; background: #f2faf6; }
+.release-dlc { border-left-color: #8554c5; background: #f8f4fd; }
+.release-bundle { border-left-color: #c07a12; background: #fff9ef; }
+.release-heading { font-size: 14px; color: #314762; line-height: 1.6; }
+.release-base .release-heading { color: #234f9a; }
+.release-update .release-heading { color: #246548; }
+.release-dlc .release-heading { color: #684193; }
+.release-detail { color: #586b82; opacity: 1; }
+.release-group .download-btn { display: inline-block; background: #fff; color: #244363; border: 1px solid #c5d4e6; border-radius: 6px; padding: 9px 12px; font-size: 12px; font-weight: 600; box-shadow: none; text-decoration: none; line-height: 1.5; overflow-wrap: anywhere; }
+.release-group .download-btn:hover { background: #e7effa; color: #17395f; transform: none; }
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible { outline: 3px solid #db9c28; outline-offset: 3px; }
+.game-item > .link-count { color: #6b7b90; font-size: 11px; margin-top: 12px; }
+@media(max-width: 640px) {
+ .games-container { padding: 10px; }
+ .game-item { padding: 18px; min-height: 0; }
+ .game-cover { left: 18px; top: 18px; width: 76px; height: 102px; }
+ .cover-placeholder { padding-top: 39px; font-size: 16px; }
+ .game-title,.game-metadata,.game-rating { margin-left: 90px; }
+ .game-title { font-size: 18px; min-height: 42px; }
+ .game-rating { font-size: 12px; margin-bottom: 18px; }
+ .game-rating span { font-size: 10px; }
+ .download-links { clear: both; margin-top: 12px; }
+ .source-filter { display: block; margin-right: 0; }
+ .release-group { padding: 12px; }
+}

@@ -147,7 +147,7 @@ def names_from_catalogue(root):
 
 def main(root=ROOT):
     api = API()
-    games = api.all('games', 'name,url,alternative_names.name', f'platforms = ({PS4})')
+    games = api.all('games', 'name,url,alternative_names.name,cover.image_id,rating,rating_count', f'platforms = ({PS4})')
     if not games:
         raise RuntimeError('No PS4 games returned; existing metadata preserved')
     matches, review = match_titles(names_from_catalogue(root), games)
@@ -178,10 +178,19 @@ def main(root=ROOT):
         if game['id'] in popular:
             row = popular[game['id']]
             record.update(popularity=row['value'], popularity_calculated_at=row.get('calculated_at'))
+        cover = game.get('cover') or {}
+        image_id = cover.get('image_id', '') if isinstance(cover, dict) else ''
+        if re.fullmatch(r'[A-Za-z0-9_]+', image_id):
+            record['cover_url'] = 'https://images.igdb.com/igdb/image/upload/t_cover_big/' + image_id + '.jpg'
+        rating, count = game.get('rating'), game.get('rating_count')
+        if isinstance(rating, (int, float)) and math.isfinite(rating) and 0 <= rating <= 100 and isinstance(count, int) and count > 0:
+            record.update(rating=round(rating, 1), rating_count=count)
         records[name] = record
     output = {'schema_version': 1, 'source': 'IGDB', 'updated_at': dt.datetime.now(dt.timezone.utc).isoformat(),
               'popularity_metric': 'IGDB visits', 'release_policy': 'Earliest known PS4 release across regions; partial dates retain precision',
               'summary': {'titles': len(matches) + len(review), 'matched': len(matches), 'review': len(review),
+                          'with_covers': sum('cover_url' in r for r in records.values()),
+                          'with_ratings': sum('rating' in r for r in records.values()),
                           'with_dates': sum('release_date' in r for r in records.values()),
                           'with_popularity': sum('popularity' in r for r in records.values())}, 'records': records}
     # Only allowlisted metadata is serialized. Tokens and credentials never enter outputs.
