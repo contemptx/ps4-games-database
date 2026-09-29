@@ -1,17 +1,17 @@
 var gameIdentities = {
   "schema_version": 1,
-  "updated_at": "2026-09-29T19:23:15.338210+00:00",
+  "updated_at": "2026-09-29T19:31:25.504053+00:00",
   "source": "IGDB",
   "policy": "Count each identified game once by IGDB ID, following explicit edition version_parent links. Standalone expansions, remakes and remasters remain distinct. DLC, non-standalone expansions, bundles, mods, packs and updates are separate. Unresolved titles are not included in the verified identity count.",
   "input_sha256": "78ce8b2d45d88ae3f152a17a7bfb06ad05b3a0cf875bbe9dd6b3f24b151ca1b8",
   "summary": {
     "visible_listings": 6264,
-    "identified_unique_games": 4718,
-    "identified_game_listings": 4894,
-    "unresolved_listings": 1189,
-    "non_game_listings": 181,
-    "edition_listings": 202,
-    "duplicate_game_listings": 176
+    "identified_unique_games": 4892,
+    "identified_game_listings": 5072,
+    "unresolved_listings": 1008,
+    "non_game_listings": 184,
+    "edition_listings": 203,
+    "duplicate_game_listings": 180
   },
   "records": {
     "#KILLALLZOMBIES": {
@@ -205,9 +205,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/3d-minigolf--1"
     },
     "3M Spain Foundation Stem+VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 187449,
+      "canonical_id": 187449,
+      "canonical_name": "3M Spain Foundation: Stem + VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/3m-spain-foundation-stem-plus-vr"
     },
     "3Xtreme": {
       "status": "identified",
@@ -237,9 +241,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/428-shibuya-scramble"
     },
     "4×4 World Trophy": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 49905,
+      "canonical_id": 49905,
+      "canonical_name": "Test Drive: Off-Road 3",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/test-drive-off-road-3"
     },
     "5 Star Racing": {
       "status": "identified",
@@ -329,9 +337,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/a-boy-and-his-blob--1"
     },
     "A Fishermans Tale": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 106992,
+      "canonical_id": 106992,
+      "canonical_name": "A Fisherman's Tale",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/a-fishermans-tale"
     },
     "A Hat in Time": {
       "status": "identified",
@@ -1615,9 +1627,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/angry-birds-star-wars"
     },
     "Angry Birds VR Isle of Pigs": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 113434,
+      "canonical_id": 113434,
+      "canonical_name": "Angry Birds VR: Isle of Pigs",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/angry-birds-vr-isle-of-pigs"
     },
     "Angry Video Game Nerd I and II Deluxe": {
       "status": "identified",
@@ -1774,9 +1790,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/antz-extreme-racing"
     },
     "AnywhereVR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 115772,
+      "canonical_id": 115772,
+      "canonical_name": "AnywhereVR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/anywherevr"
     },
     "AO International Tennis": {
       "status": "review",
@@ -1870,9 +1890,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/ape-quest"
     },
     "Apex Construct": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 75283,
+      "canonical_id": 75283,
+      "canonical_name": "Apex Construct",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/apex-construct"
     },
     "Apollo 11 VR Experience": {
       "status": "identified",
@@ -2239,9 +2263,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/arise-a-simple-story"
     },
     "Arizona Sunshine": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 18303,
+      "canonical_id": 18303,
+      "canonical_name": "Arizona Sunshine",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/arizona-sunshine"
     },
     "Ark of Time": {
       "status": "identified",
@@ -2253,9 +2281,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/ark-of-time"
     },
     "Ark Park": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 31250,
+      "canonical_id": 31250,
+      "canonical_name": "ARK Park",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/ark-park"
     },
     "ARK Ultimate Survivor Edition": {
       "status": "identified",
@@ -2789,9 +2821,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/assetto-corsa-competizione"
     },
     "Astal": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 45495,
+      "canonical_id": 45495,
+      "canonical_name": "Astal",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/astal"
     },
     "Astalon Tears of The Earth": {
       "status": "identified",
@@ -2867,9 +2903,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/asteroids--1"
     },
     "Astra Superstars": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 39603,
+      "canonical_id": 39603,
+      "canonical_name": "Astra Superstars",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/astra-superstars"
     },
     "Astria Ascending": {
       "status": "identified",
@@ -2881,9 +2921,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/astria-ascending"
     },
     "Astro Bot Rescue Mission": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 102129,
+      "canonical_id": 102129,
+      "canonical_name": "Astro Bot: Rescue Mission",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/astro-bot-rescue-mission"
     },
     "Astroneer": {
       "status": "identified",
@@ -3692,13 +3736,12 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/bastion"
     },
     "Batman and Robin": {
-      "status": "identified",
-      "igdb_id": 79820,
-      "canonical_id": 79820,
-      "canonical_name": "Batman & Robin",
-      "game_type": "main_game",
-      "match_method": "Unique normalized IGDB title/alias",
-      "url": "https://www.igdb.com/games/batman-and-robin"
+      "status": "review",
+      "reason": "Ambiguous title",
+      "candidate_ids": [
+        79820,
+        234179
+      ]
     },
     "Batman Arkham Knight Premium Edition": {
       "status": "identified",
@@ -3710,9 +3753,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/batman-arkham-knight"
     },
     "Batman Arkham VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 19563,
+      "canonical_id": 19563,
+      "canonical_name": "Batman: Arkham VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/batman-arkham-vr"
     },
     "Batman Begins": {
       "status": "identified",
@@ -3765,9 +3812,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/bats-bloodsucker-anti-terror-squad"
     },
     "Batsugun": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 16126,
+      "canonical_id": 16126,
+      "canonical_name": "Batsugun",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/batsugun"
     },
     "Batsugun Saturn Tribute Boosted": {
       "status": "identified",
@@ -3923,9 +3974,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/battletanx-global-assault"
     },
     "Battlewake": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 118306,
+      "canonical_id": 118306,
+      "canonical_name": "Battlewake",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/battlewake"
     },
     "Battlezone VR": {
       "status": "identified",
@@ -4000,9 +4055,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/beat-cop"
     },
     "Beat Saber": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 83731,
+      "canonical_id": 83731,
+      "canonical_name": "Beat Saber",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/beat-saber"
     },
     "Beatmania": {
       "status": "review",
@@ -4014,9 +4073,13 @@ var gameIdentities = {
       ]
     },
     "Beats Fever": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 30173,
+      "canonical_id": 30173,
+      "canonical_name": "Beats Fever",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/beats-fever"
     },
     "Beautiful Desolation": {
       "status": "identified",
@@ -4744,9 +4807,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/blazing-chrome"
     },
     "Blazing Heroes (Mystaria The Realms of Lore)": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 45390,
+      "canonical_id": 45390,
+      "canonical_name": "Blazing Heroes",
+      "game_type": "main_game",
+      "match_method": "Both regional title spellings identify the same game",
+      "url": "https://www.igdb.com/games/blazing-heroes"
     },
     "Blazing Strike": {
       "status": "identified",
@@ -5237,9 +5304,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/boomerang-fu"
     },
     "Borderlands 2 VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 110835,
+      "canonical_id": 110835,
+      "canonical_name": "Borderlands 2 VR",
+      "game_type": "port",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/borderlands-2-vr"
     },
     "Borderlands 3 Ultimate Edition": {
       "status": "identified",
@@ -5314,9 +5385,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/boxing--8"
     },
     "BoxVR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 91208,
+      "canonical_id": 91208,
+      "canonical_name": "BoxVR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/boxvr"
     },
     "BPM Bullets Per Minute": {
       "status": "identified",
@@ -5697,14 +5772,22 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/buddy-simulator-1984"
     },
     "Budget Cuts": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 18970,
+      "canonical_id": 18970,
+      "canonical_name": "Budget Cuts",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/budget-cuts"
     },
     "Bug": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 19735,
+      "canonical_id": 19735,
+      "canonical_name": "Bug!",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/bug"
     },
     "Bug Fables The Everlasting Sapling": {
       "status": "identified",
@@ -5716,9 +5799,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/bug-fables-the-everlasting-sapling"
     },
     "Bug Too": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 45524,
+      "canonical_id": 45524,
+      "canonical_name": "Bug Too!",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/bug-too"
     },
     "Bugs Bunny and Taz Time Busters": {
       "status": "identified",
@@ -5739,9 +5826,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/bugsnax"
     },
     "Bulk Slash": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 45462,
+      "canonical_id": 45462,
+      "canonical_name": "Bulk Slash",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/bulk-slash"
     },
     "Bullet Girls Phantasia": {
       "status": "identified",
@@ -5794,9 +5885,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/burly-men-at-sea"
     },
     "Burning Rangers": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 19666,
+      "canonical_id": 19666,
+      "canonical_name": "Burning Rangers",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/burning-rangers"
     },
     "Burning Road": {
       "status": "identified",
@@ -6057,8 +6152,13 @@ var gameIdentities = {
     },
     "Call of Duty Infinite Warfare Jackal Assault VR Experience": {
       "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "igdb_id": 296540,
+      "canonical_id": 296540,
+      "canonical_name": "Call of Duty: Infinite Warfare - Jackal Assault VR Experience",
+      "game_type": "dlc",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/call-of-duty-infinite-warfare-jackal-assault-vr-experience",
+      "reason": "Game type needs review"
     },
     "Call of Duty Modern Warfare": {
       "status": "identified",
@@ -6363,9 +6463,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/cardinal-syn"
     },
     "Carly and The Reaperman Escape From The Underworld": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 96172,
+      "canonical_id": 96172,
+      "canonical_name": "Carly and the Reaperman: Escape from the Underworld",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/carly-and-the-reaperman-escape-from-the-underworld"
     },
     "Carmageddon": {
       "status": "review",
@@ -6394,9 +6498,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/carnage-heart"
     },
     "Carnival Games VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 25339,
+      "canonical_id": 25339,
+      "canonical_name": "Carnival Games VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/carnival-games-vr"
     },
     "Carrion": {
       "status": "identified",
@@ -6611,9 +6719,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/catan-console-edition"
     },
     "Catan VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 56868,
+      "canonical_id": 56868,
+      "canonical_name": "Catan VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/catan-vr"
     },
     "Catastronauts": {
       "status": "identified",
@@ -6991,9 +7103,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/chris-kamaras-street-soccer"
     },
     "Christmas Nights into Dreams": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 45501,
+      "canonical_id": 45501,
+      "canonical_name": "Christmas Nights into Dreams",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/christmas-nights-into-dreams"
     },
     "Chroma Quaternion": {
       "status": "identified",
@@ -7014,9 +7130,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/chromagun"
     },
     "ChromaGun VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 118742,
+      "canonical_id": 118742,
+      "canonical_name": "ChromaGun VR",
+      "game_type": "port",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/chromagun-vr"
     },
     "Chronicles of Teddy Harmony of Exidus": {
       "status": "identified",
@@ -7380,9 +7500,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/cold-fear"
     },
     "Cold Iron": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 30768,
+      "canonical_id": 30768,
+      "canonical_name": "Cold Iron: Quick Draw Western Duels",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/cold-iron-quick-draw-western-duels"
     },
     "Cold Winter": {
       "status": "identified",
@@ -7609,9 +7733,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/construction-simulator-3-console-edition"
     },
     "Contagion VR Outbreak": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 82047,
+      "canonical_id": 82047,
+      "canonical_name": "Contagion VR: Outbreak",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/contagion-vr-outbreak"
     },
     "Contender 2": {
       "status": "identified",
@@ -7754,9 +7882,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/cool-boarders-4"
     },
     "Coolpaintr VR Deluxe Edition": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 269945,
+      "canonical_id": 104022,
+      "canonical_name": "CoolPaintr VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/coolpaintr-vr"
     },
     "Coraline": {
       "status": "identified",
@@ -8066,9 +8198,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/creatures--4"
     },
     "Creed Rise To Glory": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 102134,
+      "canonical_id": 102134,
+      "canonical_name": "Creed: Rise to Glory",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/creed-rise-to-glory"
     },
     "Creepy Road": {
       "status": "identified",
@@ -8157,14 +8293,22 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/crisis-core-final-fantasy-vii-reunion"
     },
     "Crisis on The Planet of The Apes VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 89552,
+      "canonical_id": 89552,
+      "canonical_name": "Crisis on the Planet of the Apes VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/crisis-on-the-planet-of-the-apes-vr"
     },
     "Crisis Vrigade": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 109894,
+      "canonical_id": 109894,
+      "canonical_name": "Crisis VRigade",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/crisis-vrigade"
     },
     "Crisis Vrigade 2": {
       "status": "identified",
@@ -8312,9 +8456,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/crows-burning-edge"
     },
     "Crows The Battle Action for SegaSaturn": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 45473,
+      "canonical_id": 45473,
+      "canonical_name": "Crows: The Battle Action For Sega Saturn",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias (spacing/numerals)",
+      "url": "https://www.igdb.com/games/crows-the-battle-action-for-sega-saturn"
     },
     "Crusaders of Might and Magic": {
       "status": "identified",
@@ -8416,9 +8564,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/ct-special-forces-back-to-hell"
     },
     "Ctrl": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 78068,
+      "canonical_id": 78068,
+      "canonical_name": "Ctrl",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/ctrl"
     },
     "Cubix Robots for Everyone Race N Robots": {
       "status": "identified",
@@ -9334,9 +9486,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/deadcraft"
     },
     "DEADLAND VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 118911,
+      "canonical_id": 118911,
+      "canonical_name": "Dead Land VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias (spacing/numerals)",
+      "url": "https://www.igdb.com/games/dead-land-vr"
     },
     "Deadlight Directors Cut": {
       "status": "identified",
@@ -9723,9 +9879,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/deponia"
     },
     "Deracine": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 103332,
+      "canonical_id": 103332,
+      "canonical_name": "Déraciné",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/deracine"
     },
     "Descenders": {
       "status": "identified",
@@ -9968,9 +10128,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "DEXED": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 24932,
+      "canonical_id": 24932,
+      "canonical_name": "Dexed",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/dexed"
     },
     "Dexter Laboratory Mandarks Lab": {
       "status": "review",
@@ -10018,9 +10182,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/dick-wilde"
     },
     "Dick Wilde 2": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 114006,
+      "canonical_id": 114006,
+      "canonical_name": "Dick Wilde 2",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/dick-wilde-2"
     },
     "Die Hard Trilogy": {
       "status": "non_game",
@@ -10656,9 +10824,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/doctor-who-the-edge-of-reality"
     },
     "Doctor Who The Edge of Time": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 118784,
+      "canonical_id": 118784,
+      "canonical_name": "Doctor Who: The Edge of Time",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/doctor-who-the-edge-of-time"
     },
     "Doctor Who The Lonely Assassins": {
       "status": "identified",
@@ -10869,9 +11041,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/doom-3--2"
     },
     "DOOM 3 VR Edition": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 144524,
+      "canonical_id": 144524,
+      "canonical_name": "Doom 3: VR Edition",
+      "game_type": "port",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/doom-3-vr-edition"
     },
     "DOOM 64": {
       "status": "identified",
@@ -10897,9 +11073,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "DOOM VFR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 37031,
+      "canonical_id": 37031,
+      "canonical_name": "Doom VFR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/doom-vfr"
     },
     "Door Kickers Action Squad": {
       "status": "identified",
@@ -10956,9 +11136,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/maximum-football-2019"
     },
     "Down The Rabbit Hole": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 174560,
+      "canonical_id": 174560,
+      "canonical_name": "Down the Rabbit Hole",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/down-the-rabbit-hole"
     },
     "Downward Spiral Horus Station": {
       "status": "identified",
@@ -11110,14 +11294,22 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/dragon-fin-soup"
     },
     "Dragon Force": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 2968,
+      "canonical_id": 2968,
+      "canonical_name": "Dragon Force",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/dragon-force"
     },
     "Dragon Force 2": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 45461,
+      "canonical_id": 45461,
+      "canonical_name": "Dragon Force II: Kamisarishi Daichi ni",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/dragon-force-ii-kamisarishi-daichi-ni"
     },
     "Dragon Quest Builders": {
       "status": "identified",
@@ -11437,9 +11629,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/driveclub"
     },
     "DRIVECLUB VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 24921,
+      "canonical_id": 24921,
+      "canonical_name": "Driveclub VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/driveclub-vr"
     },
     "Driver You Are The Wheelman": {
       "status": "identified",
@@ -11465,9 +11661,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "Drunkn Bar Fight": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 31302,
+      "canonical_id": 31302,
+      "canonical_name": "Drunkn Bar Fight",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/drunkn-bar-fight"
     },
     "DS Dal Segno": {
       "status": "identified",
@@ -11578,9 +11778,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/dungeon-explorer-warriors-of-ancient-arts"
     },
     "Dungeon Master Nexus": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 3801,
+      "canonical_id": 3801,
+      "canonical_name": "Dungeon Master Nexus",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/dungeon-master-nexus"
     },
     "Dungeon Munchies": {
       "status": "identified",
@@ -11637,9 +11841,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/dungeons-3"
     },
     "Dungeons and Dragons Collection": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "non_game",
+      "igdb_id": 22831,
+      "canonical_id": 22831,
+      "canonical_name": "Dungeons & Dragons Collection",
+      "game_type": "bundle",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/dungeons-and-dragons-collection"
     },
     "Dungeons and Dragons Dark Alliance": {
       "status": "identified",
@@ -11710,9 +11918,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/dustwind-the-last-resort"
     },
     "DWVR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 31502,
+      "canonical_id": 31502,
+      "canonical_name": "DWVR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/dwvr"
     },
     "Dying Light": {
       "status": "identified",
@@ -11751,18 +11963,21 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/dying-light-the-following"
     },
     "DYING Reborn VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 188144,
+      "canonical_id": 188144,
+      "canonical_name": "Dying: Reborn VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/dying-reborn-vr"
     },
     "Dynamite Deka": {
-      "status": "identified",
-      "igdb_id": 71434,
-      "canonical_id": 71434,
-      "canonical_name": "Sega Ages 2500 Vol. 26: Dynamite Deka",
-      "game_type": "remaster",
-      "match_method": "Unique normalized IGDB title/alias",
-      "url": "https://www.igdb.com/games/sega-ages-2500-vol-26-dynamite-deka"
+      "status": "review",
+      "reason": "Ambiguous title",
+      "candidate_ids": [
+        71434,
+        296787
+      ]
     },
     "Dynamite Fishing World Games": {
       "status": "identified",
@@ -12263,9 +12478,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/elemental-war-2"
     },
     "Elevator Action Returns": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 11729,
+      "canonical_id": 11729,
+      "canonical_name": "Elevator Action Returns",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/elevator-action-returns"
     },
     "ELEX": {
       "status": "identified",
@@ -12345,9 +12564,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "End Space": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 69415,
+      "canonical_id": 69415,
+      "canonical_name": "End Space",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/end-space"
     },
     "Ender Lilies Quietus of The Knights": {
       "status": "identified",
@@ -12503,9 +12726,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/esp-ra-dot-de-psi"
     },
     "Esper": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 23893,
+      "canonical_id": 23893,
+      "canonical_name": "Esper",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/esper"
     },
     "ESPN International Track & Field": {
       "status": "identified",
@@ -12567,9 +12794,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "EVE Gunjack": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 18363,
+      "canonical_id": 18363,
+      "canonical_name": "Gunjack",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/gunjack"
     },
     "EVE Valkyrie VR": {
       "status": "review",
@@ -12595,9 +12826,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/everafter-falls"
     },
     "Everest VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 18971,
+      "canonical_id": 18971,
+      "canonical_name": "Everest VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/everest-vr"
     },
     "Evergrace": {
       "status": "identified",
@@ -12635,9 +12870,13 @@ var gameIdentities = {
       ]
     },
     "Everybodys Golf VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 109273,
+      "canonical_id": 109273,
+      "canonical_name": "Everybody's Golf VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/everybodys-golf-vr"
     },
     "Everybodys Gone To The Rapture": {
       "status": "identified",
@@ -13415,9 +13654,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "FATED The Silent Oath": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 19013,
+      "canonical_id": 19013,
+      "canonical_name": "Fated: The Silent Oath",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/fated-the-silent-oath"
     },
     "Fe": {
       "status": "identified",
@@ -14516,9 +14759,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/fruit-mountain"
     },
     "Fruit Ninja VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 22709,
+      "canonical_id": 22709,
+      "canonical_name": "Fruit Ninja VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/fruit-ninja-vr"
     },
     "Full Metal Panic Fight Who Dares Wins": {
       "status": "identified",
@@ -14756,9 +15003,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/gale-of-windoria"
     },
     "Gale Racer": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 72317,
+      "canonical_id": 72317,
+      "canonical_name": "Gale Racer",
+      "game_type": "port",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/gale-racer"
     },
     "Game of Thrones A Telltale Games Series": {
       "status": "identified",
@@ -14870,9 +15121,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/garou-mark-of-the-wolves"
     },
     "Gary The Gull": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 33169,
+      "canonical_id": 33169,
+      "canonical_name": "Gary the Gull",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/gary-the-gull"
     },
     "Gas Guzzlers Extreme": {
       "status": "identified",
@@ -16063,9 +16318,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/grounded"
     },
     "Groundhog Day Like Father Like Son": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 114782,
+      "canonical_id": 114782,
+      "canonical_name": "Groundhog Day: Like Father Like Son",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/groundhog-day-like-father-like-son"
     },
     "Grow Home": {
       "status": "identified",
@@ -16176,9 +16435,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/guitar-hero-ii"
     },
     "Gun Club VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 74516,
+      "canonical_id": 74516,
+      "canonical_name": "Gun Club VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/gun-club-vr"
     },
     "Gundam Breaker 3": {
       "status": "identified",
@@ -16709,9 +16972,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/hatsune-miku-project-diva-x"
     },
     "Hatsune Miku VR Future Live": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 99752,
+      "canonical_id": 99752,
+      "canonical_name": "Hatsune Miku: VR Future Live",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/hatsune-miku-vr-future-live"
     },
     "Haunted House": {
       "status": "identified",
@@ -16759,9 +17026,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/headlander"
     },
     "Headmaster": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 24975,
+      "canonical_id": 24975,
+      "canonical_name": "Headmaster",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/headmaster"
     },
     "Heart and Slash": {
       "status": "identified",
@@ -16967,9 +17238,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/hero-defense"
     },
     "Heroes of The Seven Seas": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 33673,
+      "canonical_id": 33673,
+      "canonical_name": "Heroes of the Seven Seas",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/heroes-of-the-seven-seas"
     },
     "Heroine Anthem Zero Episode 1": {
       "status": "identified",
@@ -16990,13 +17265,12 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/heroland"
     },
     "Hexen": {
-      "status": "identified",
-      "igdb_id": 93643,
-      "canonical_id": 93643,
-      "canonical_name": "Hexen: Beyond Heretic",
-      "game_type": "port",
-      "match_method": "Unique normalized IGDB title/alias",
-      "url": "https://www.igdb.com/games/hexen-beyond-heretic--1"
+      "status": "review",
+      "reason": "Ambiguous title",
+      "candidate_ids": [
+        93642,
+        93643
+      ]
     },
     "Hidden Agenda": {
       "status": "identified",
@@ -17661,14 +17935,22 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/i-am-setsuna"
     },
     "I Expect You To Die": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 25948,
+      "canonical_id": 25948,
+      "canonical_name": "I Expect You to Die",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/i-expect-you-to-die"
     },
     "I Expect You To Die 2 The Spy and The Liar": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 152218,
+      "canonical_id": 152218,
+      "canonical_name": "I Expect You to Die 2",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/i-expect-you-to-die-2"
     },
     "I Saw Black Clouds": {
       "status": "identified",
@@ -17770,9 +18052,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/ill-kill-her"
     },
     "Immortal Legacy The Jade Cipher": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 116010,
+      "canonical_id": 116010,
+      "canonical_name": "Immortal Legacy: The Jade Cipher",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/immortal-legacy-the-jade-cipher"
     },
     "Immortal Realms Vampire Wars": {
       "status": "identified",
@@ -18401,9 +18687,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/jamestown-plus"
     },
     "Japan Studio VR Music Festival": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 68296,
+      "canonical_id": 68296,
+      "canonical_name": "Japan Studio VR Music Festival",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/japan-studio-vr-music-festival"
     },
     "Jay and Silent Bob Mall Brawl Arcade Edition": {
       "status": "identified",
@@ -18559,9 +18849,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/jitsu-squad"
     },
     "Job Simulator": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 12596,
+      "canonical_id": 12596,
+      "canonical_name": "Job Simulator: The 2050 Archives",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/job-simulator-the-2050-archives"
     },
     "Joe Devers Lone Wolf Console Edition": {
       "status": "identified",
@@ -18753,9 +19047,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/jumpjet-rex"
     },
     "Jung Rhythm": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 55856,
+      "canonical_id": 55856,
+      "canonical_name": "Jung Rhythm",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/jung-rhythm"
     },
     "Jupiter and Mars": {
       "status": "identified",
@@ -18911,9 +19209,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/just-die-already"
     },
     "Just In Time Incorporated": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 42925,
+      "canonical_id": 42925,
+      "canonical_name": "Just In Time Incorporated",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/just-in-time-incorporated"
     },
     "Just Shapes and Beats": {
       "status": "identified",
@@ -19116,9 +19418,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/keep-talking-and-nobody-explodes"
     },
     "Keio Flying Squadron 2": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 19417,
+      "canonical_id": 19417,
+      "canonical_name": "Keio Flying Squadron 2",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/keio-flying-squadron-2"
     },
     "Ken Folletts The Pillars of The Earth": {
       "status": "identified",
@@ -19397,9 +19703,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/kingdom-hearts-melody-of-memory"
     },
     "Kingdom Hearts VR Experience": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 109275,
+      "canonical_id": 109275,
+      "canonical_name": "Kingdom Hearts: VR Experience",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/kingdom-hearts-vr-experience"
     },
     "Kingdom New Lands": {
       "status": "identified",
@@ -19504,9 +19814,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/kitaria-fables"
     },
     "Kitchen": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 218719,
+      "canonical_id": 218719,
+      "canonical_name": "Kitchen",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/kitchen"
     },
     "Kitten Squad": {
       "status": "identified",
@@ -19700,9 +20014,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "Korix": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 22755,
+      "canonical_id": 22755,
+      "canonical_name": "Korix",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/korix"
     },
     "Kotodama The 7 Mysteries of Fujisawa": {
       "status": "identified",
@@ -19899,9 +20217,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/l-a-noire"
     },
     "LA Noire The VR Case Files": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 59587,
+      "canonical_id": 59587,
+      "canonical_name": "L.A. Noire: The VR Case Files",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias (spacing/numerals)",
+      "url": "https://www.igdb.com/games/la-noire-the-vr-case-files"
     },
     "Labyrinth": {
       "status": "identified",
@@ -20047,9 +20369,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/last-day-of-june"
     },
     "Last Labyrinth": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 109245,
+      "canonical_id": 109245,
+      "canonical_name": "Last Labyrinth",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/last-labyrinth"
     },
     "Last Stop": {
       "status": "identified",
@@ -20124,9 +20450,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/layers-of-fear-2"
     },
     "Layers of Fear VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 147987,
+      "canonical_id": 147987,
+      "canonical_name": "Layers of Fear VR",
+      "game_type": "port",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/layers-of-fear-vr"
     },
     "Le Mans 24 Hours": {
       "status": "identified",
@@ -20905,9 +21235,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/linda-cube-again"
     },
     "Linkle Liver Story": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 94005,
+      "canonical_id": 94005,
+      "canonical_name": "Linkle Liver Story",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/linkle-liver-story"
     },
     "Little Big Adventure Twinsens Quest": {
       "status": "identified",
@@ -20991,9 +21325,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/little-witch-academia-chamber-of-time"
     },
     "Little Witch Academia VR Broom Racing": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 139341,
+      "canonical_id": 139341,
+      "canonical_name": "Little Witch Academia: VR Broom Racing",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/little-witch-academia-vr-broom-racing"
     },
     "Little Witch Nobeta": {
       "status": "identified",
@@ -21023,9 +21361,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/live-a-live--1"
     },
     "Loading Human Chapter 1": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 42897,
+      "canonical_id": 42897,
+      "canonical_name": "Loading Human: Chapter 1",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/loading-human-chapter-1"
     },
     "Loadout": {
       "status": "identified",
@@ -21746,9 +22088,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/magic-knight-grand-charion--1"
     },
     "Magic Knight Rayearth": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 105043,
+      "canonical_id": 105043,
+      "canonical_name": "Magic Knight Rayearth",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/magic-knight-rayearth--1"
     },
     "Magic Pengel The Quest for Color": {
       "status": "identified",
@@ -22173,9 +22519,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/mashed-fully-loaded"
     },
     "MASKMAKER": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 135920,
+      "canonical_id": 135920,
+      "canonical_name": "Maskmaker",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/maskmaker"
     },
     "Mass Effect Andromeda": {
       "status": "identified",
@@ -22495,9 +22845,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/mega-man-11"
     },
     "Mega Man 8 Anniversary Collectors Edition": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 45182,
+      "canonical_id": 45182,
+      "canonical_name": "Mega Man 8: Anniversary Collector's Edition",
+      "game_type": "port",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/mega-man-8-anniversary-collectors-edition"
     },
     "Mega Man Battle Network Legacy Collection": {
       "status": "non_game",
@@ -23302,9 +23656,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/milos-quest--1"
     },
     "Mind Labyrinth VR Dreams": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 100311,
+      "canonical_id": 100311,
+      "canonical_name": "Mind Labyrinth VR Dreams",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/mind-labyrinth-vr-dreams"
     },
     "Minecraft Dungeons Ultimate Edition": {
       "status": "identified",
@@ -23375,9 +23733,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/minit"
     },
     "MiniWood VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 118159,
+      "canonical_id": 118159,
+      "canonical_name": "MiniWood VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/miniwood-vr"
     },
     "Minna no Doubutsu Shogi Lets Catch The Lion": {
       "status": "review",
@@ -24151,9 +24513,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/mortal-shell"
     },
     "Moss Book 2": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 154839,
+      "canonical_id": 154839,
+      "canonical_name": "Moss: Book II",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/moss-book-ii"
     },
     "Moss VR": {
       "status": "review",
@@ -25030,13 +25396,12 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/nascar-21-ignition"
     },
     "NASCAR 98": {
-      "status": "identified",
-      "igdb_id": 176683,
-      "canonical_id": 176683,
-      "canonical_name": "NASCAR 98",
-      "game_type": "port",
-      "match_method": "Unique normalized IGDB title/alias",
-      "url": "https://www.igdb.com/games/nascar-98--1"
+      "status": "review",
+      "reason": "Ambiguous title",
+      "candidate_ids": [
+        45515,
+        176683
+      ]
     },
     "NASCAR Heat 2": {
       "status": "identified",
@@ -26241,13 +26606,12 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/nightmares-from-the-deep-3-davy-jones"
     },
     "Nights into Dreams": {
-      "status": "identified",
-      "igdb_id": 19903,
-      "canonical_id": 19903,
-      "canonical_name": "Nights Into Dreams",
-      "game_type": "port",
-      "match_method": "Unique normalized IGDB title/alias",
-      "url": "https://www.igdb.com/games/nights-into-dreams"
+      "status": "review",
+      "reason": "Ambiguous title",
+      "candidate_ids": [
+        5075,
+        19903
+      ]
     },
     "Nights of Azure": {
       "status": "identified",
@@ -26326,9 +26690,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "Ninja Legends": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 116922,
+      "canonical_id": 116922,
+      "canonical_name": "Ninja Legends",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/ninja-legends"
     },
     "Ninja Pizza Girl": {
       "status": "identified",
@@ -26566,9 +26934,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/northgard"
     },
     "Not For Broadcast VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 237204,
+      "canonical_id": 237204,
+      "canonical_name": "Not for Broadcast VR",
+      "game_type": "port",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/not-for-broadcast-vr"
     },
     "Nour Play With Your Food": {
       "status": "identified",
@@ -26822,9 +27194,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/offroad-racing"
     },
     "OhShape": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 124406,
+      "canonical_id": 124406,
+      "canonical_name": "OhShape",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/ohshape"
     },
     "OK KO Lets Play Heroes": {
       "status": "identified",
@@ -27581,9 +27957,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/panzer-dragoon-remake"
     },
     "Paper Beast": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 117293,
+      "canonical_id": 117293,
+      "canonical_name": "Paper Beast",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/paper-beast"
     },
     "Paper Cut Mansion": {
       "status": "identified",
@@ -27595,9 +27975,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/paper-cut-mansion"
     },
     "Paper Dolls": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 99053,
+      "canonical_id": 99053,
+      "canonical_name": "Paper Dolls",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/paper-dolls"
     },
     "Paperman Adventure Delivered": {
       "status": "identified",
@@ -28194,9 +28578,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/pier-solar-and-the-great-architects"
     },
     "Pierhead Arcade": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 33687,
+      "canonical_id": 33687,
+      "canonical_name": "Pierhead Arcade",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/pierhead-arcade"
     },
     "Pile Up Box by Box": {
       "status": "identified",
@@ -28262,9 +28650,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/pinball-fx--1"
     },
     "Pinball FX2 VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 26292,
+      "canonical_id": 26292,
+      "canonical_name": "Pinball FX2 VR",
+      "game_type": "port",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/pinball-fx2-vr"
     },
     "Pinball FX3": {
       "status": "identified",
@@ -28317,14 +28709,22 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/pipe--1"
     },
     "Pirate Flight": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 100601,
+      "canonical_id": 100601,
+      "canonical_name": "Pirate Flight",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/pirate-flight"
     },
     "Pistol Whip": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 119341,
+      "canonical_id": 119341,
+      "canonical_name": "Pistol Whip",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/pistol-whip"
     },
     "Pix The Cat": {
       "status": "identified",
@@ -28359,14 +28759,22 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/pixel-heroes-byte-and-magic"
     },
     "Pixel Ripped 1989": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 29839,
+      "canonical_id": 29839,
+      "canonical_name": "Pixel Ripped 1989",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/pixel-ripped-1989"
     },
     "Pixel Ripped 1995": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 119336,
+      "canonical_id": 119336,
+      "canonical_name": "Pixel Ripped 1995",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/pixel-ripped-1995"
     },
     "PixelJunk Monsters 2": {
       "status": "identified",
@@ -28522,9 +28930,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "PlayStation VR Worlds": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 24781,
+      "canonical_id": 24781,
+      "canonical_name": "PlayStation VR Worlds",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/playstation-vr-worlds"
     },
     "Pocket Bravery": {
       "status": "identified",
@@ -28933,9 +29345,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/prison-architect"
     },
     "Prison Boss VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 55474,
+      "canonical_id": 55474,
+      "canonical_name": "Prison Boss VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/prison-boss-vr"
     },
     "Pro Evolution Soccer 2015 [PES 2015]": {
       "status": "review",
@@ -29036,9 +29452,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/project-cars-complete-edition"
     },
     "Project LUX": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 29955,
+      "canonical_id": 29955,
+      "canonical_name": "Project LUX",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/project-lux"
     },
     "Project Nimbus Code Mirai": {
       "status": "identified",
@@ -29167,9 +29587,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/psychonauts-2"
     },
     "Psychonauts in The Rhombus of Ruin": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 15572,
+      "canonical_id": 15572,
+      "canonical_name": "Psychonauts in the Rhombus of Ruin",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/psychonauts-in-the-rhombus-of-ruin"
     },
     "Puchi Carat": {
       "status": "identified",
@@ -29213,9 +29637,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/punch-line"
     },
     "Pupil Wandering VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 117834,
+      "canonical_id": 117834,
+      "canonical_name": "Pupil: Wandering VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/pupil-wandering-vr"
     },
     "Pure Chess": {
       "status": "identified",
@@ -29250,9 +29678,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/pure-pool"
     },
     "Purikura Daisakusen": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 39572,
+      "canonical_id": 39572,
+      "canonical_name": "Purikura Daisakusen",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/purikura-daisakusen"
     },
     "Pursuit Force": {
       "status": "identified",
@@ -29386,7 +29818,7 @@ var gameIdentities = {
       "canonical_id": 165247,
       "canonical_name": "Quake",
       "game_type": "remaster",
-      "match_method": "Unique normalized IGDB title/alias",
+      "match_method": "Unique PS4 title/alias with catalogue CUSA evidence",
       "url": "https://www.igdb.com/games/quake--1"
     },
     "Quake 2": {
@@ -29408,9 +29840,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/quake-iii-revolution"
     },
     "Quar Infernal Machines": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 116239,
+      "canonical_id": 116239,
+      "canonical_name": "Quar: Infernal Machines",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/quar-infernal-machines"
     },
     "QUBE 2": {
       "status": "identified",
@@ -29580,9 +30016,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/rack-n-ruin"
     },
     "Racket Fury Table Tennis VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 28303,
+      "canonical_id": 28303,
+      "canonical_name": "Racket Fury: Table Tennis VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/racket-fury-table-tennis-vr"
     },
     "RAD": {
       "status": "identified",
@@ -29874,9 +30314,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/ravenswatch"
     },
     "Raw Data": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 19169,
+      "canonical_id": 19169,
+      "canonical_name": "Raw Data",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/raw-data"
     },
     "Raycrisis Series Termination": {
       "status": "identified",
@@ -30621,9 +31065,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/rhapsody-a-musical-adventure"
     },
     "Richies Plank Experience": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 26449,
+      "canonical_id": 26449,
+      "canonical_name": "Richie's Plank Experience",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/richies-plank-experience"
     },
     "Richman 10": {
       "status": "identified",
@@ -30635,9 +31083,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/richman-10"
     },
     "Rick and Morty Virtual Rick Ality": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 20459,
+      "canonical_id": 20459,
+      "canonical_name": "Rick and Morty: Virtual Rick-ality",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/rick-and-morty-virtual-rick-ality"
     },
     "RICO": {
       "status": "identified",
@@ -30935,9 +31387,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/road-96"
     },
     "Road and Track Presents The Need for Speed": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 45465,
+      "canonical_id": 45465,
+      "canonical_name": "Road & Track Presents: The Need for Speed",
+      "game_type": "port",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/road-and-track-presents-the-need-for-speed"
     },
     "Road Bustle": {
       "status": "identified",
@@ -31572,9 +32028,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/rush-hour--1"
     },
     "RUSH VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 110864,
+      "canonical_id": 110864,
+      "canonical_name": "Rush VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/rush-vr"
     },
     "Russian Pinocchio": {
       "status": "identified",
@@ -31735,9 +32195,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/saints-row-the-third-remastered"
     },
     "Sairento VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 30522,
+      "canonical_id": 30522,
+      "canonical_name": "Sairento VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/sairento-vr"
     },
     "Saiyuki Reload Gunlock": {
       "status": "identified",
@@ -31812,9 +32276,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/sam-and-max-save-the-world"
     },
     "Sam and Max This Time Its Virtual": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 138199,
+      "canonical_id": 138199,
+      "canonical_name": "Sam & Max: This Time It's Virtual",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/sam-and-max-this-time-its-virtual"
     },
     "Samurai Bringer": {
       "status": "identified",
@@ -32254,9 +32722,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "Sega Ages Fantasy Zone": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 205208,
+      "canonical_id": 205208,
+      "canonical_name": "Sega Ages Vol. 6: Fantasy Zone",
+      "game_type": "port",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/sega-ages-vol-6-fantasy-zone"
     },
     "Sega Ages I Love Mickey Mouse and I Love Donald Duck": {
       "status": "review",
@@ -32274,9 +32746,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "Sega Ages Volume 1": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "non_game",
+      "igdb_id": 45482,
+      "canonical_id": 45482,
+      "canonical_name": "Sega Ages",
+      "game_type": "bundle",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/sega-ages--1"
     },
     "Sega Classics Collection": {
       "status": "non_game",
@@ -32543,9 +33019,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/shadow-hearts-from-the-new-world"
     },
     "Shadow Legend VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 112926,
+      "canonical_id": 112926,
+      "canonical_name": "Shadow Legend VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/shadow-legend-vr"
     },
     "Shadow Man Remastered": {
       "status": "identified",
@@ -32620,9 +33100,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/shadow-of-the-tomb-raider"
     },
     "Shadow Point": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 123157,
+      "canonical_id": 123157,
+      "canonical_name": "Shadow Point",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/shadow-point"
     },
     "Shadow Tactics Blades of The Shogun": {
       "status": "identified",
@@ -33052,14 +33536,22 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/shining-tears"
     },
     "Shining The Holy Ark": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 46063,
+      "canonical_id": 46063,
+      "canonical_name": "Shining the Holy Ark",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/shining-the-holy-ark"
     },
     "Shining Wisdom": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 46059,
+      "canonical_id": 46059,
+      "canonical_name": "Shining Wisdom",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/shining-wisdom"
     },
     "Shinobi": {
       "status": "identified",
@@ -33080,9 +33572,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/shinobi-art-of-vengeance"
     },
     "Shinobi X": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 10221,
+      "canonical_id": 10221,
+      "canonical_name": "Shinobi Legions",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/shinobi-legions"
     },
     "Shinobido Way of The Ninja": {
       "status": "identified",
@@ -33117,9 +33613,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "Shooty Fruity": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 54700,
+      "canonical_id": 54700,
+      "canonical_name": "Shooty Fruity",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/shooty-fruity"
     },
     "Shoppe Keep": {
       "status": "identified",
@@ -33833,9 +34333,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/smash-court-tennis-pro-tournament"
     },
     "Smash Hit Plunder": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 112180,
+      "canonical_id": 112180,
+      "canonical_name": "Smash Hit Plunder",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/smash-hit-plunder"
     },
     "Smoke and Sacrifice": {
       "status": "identified",
@@ -33924,9 +34428,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/sniper-elite-v2-remastered"
     },
     "Sniper Elite VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 116466,
+      "canonical_id": 116466,
+      "canonical_name": "Sniper Elite VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/sniper-elite-vr"
     },
     "Sniper Ghost Warrior 3 Season Pass Edition": {
       "status": "review",
@@ -34087,9 +34595,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/somerville"
     },
     "Song in The Smoke": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 145450,
+      "canonical_id": 145450,
+      "canonical_name": "Song in the Smoke",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/song-in-the-smoke"
     },
     "Song of Horror": {
       "status": "identified",
@@ -34407,13 +34919,12 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/space-hulk-tactics"
     },
     "Space Invaders": {
-      "status": "identified",
-      "igdb_id": 18133,
-      "canonical_id": 18133,
-      "canonical_name": "Space Invaders",
-      "game_type": "main_game",
-      "match_method": "Unique normalized IGDB title/alias",
-      "url": "https://www.igdb.com/games/space-invaders--1"
+      "status": "review",
+      "reason": "Ambiguous title",
+      "candidate_ids": [
+        18133,
+        266960
+      ]
     },
     "Space Invaders Forever": {
       "status": "non_game",
@@ -34642,9 +35153,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "Spider Man Homecoming Virtual Reality Experience": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 43066,
+      "canonical_id": 43066,
+      "canonical_name": "Spider-Man: Homecoming - Virtual Reality Experience",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/spider-man-homecoming-virtual-reality-experience"
     },
     "Spider Man The Movie": {
       "status": "identified",
@@ -34814,9 +35329,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/spot-goes-to-hollywood--1"
     },
     "Sprint Vector": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 27506,
+      "canonical_id": 27506,
+      "canonical_name": "Sprint Vector",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/sprint-vector"
     },
     "Spy Chameleon": {
       "status": "identified",
@@ -34923,9 +35442,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/square-heroes"
     },
     "Squishies": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 111451,
+      "canonical_id": 111451,
+      "canonical_name": "Squishies",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/squishies"
     },
     "SRX The Game": {
       "status": "identified",
@@ -35843,9 +36366,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/streets-of-rogue"
     },
     "STRIDE": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 132959,
+      "canonical_id": 132959,
+      "canonical_name": "Stride",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/stride"
     },
     "Strider": {
       "status": "identified",
@@ -36000,9 +36527,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/submerged-hidden-depths"
     },
     "Submersed": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 128303,
+      "canonical_id": 128303,
+      "canonical_name": "Submersed",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/submersed"
     },
     "Subnautica": {
       "status": "identified",
@@ -36096,9 +36627,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "Summer Lesson Hikari Miyamoto": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 136765,
+      "canonical_id": 136765,
+      "canonical_name": "Summer Lesson: Hikari Miyamoto",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/summer-lesson-hikari-miyamoto"
     },
     "Summer Sports Games": {
       "status": "identified",
@@ -36468,9 +37003,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/super-sunny-island"
     },
     "Super Tempo": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 46050,
+      "canonical_id": 46050,
+      "canonical_name": "Super Tempo",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/super-tempo"
     },
     "Super Time Force Ultra": {
       "status": "identified",
@@ -36545,9 +37084,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/superhot-mind-control-delete"
     },
     "SUPERHOT VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 25632,
+      "canonical_id": 25632,
+      "canonical_name": "SuperHot VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/superhot-vr"
     },
     "Superliminal": {
       "status": "identified",
@@ -36613,9 +37156,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/surgeon-simulator-2013"
     },
     "Surgeon Simulator Experience Reality": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 26299,
+      "canonical_id": 26299,
+      "canonical_name": "Surgeon Simulator: Experience Reality",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/surgeon-simulator-experience-reality"
     },
     "Surviving Mars": {
       "status": "identified",
@@ -36762,9 +37309,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/swords-of-destiny"
     },
     "Swordsman VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 149881,
+      "canonical_id": 149881,
+      "canonical_name": "Swordsman VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/swordsman-vr"
     },
     "Syberia": {
       "status": "identified",
@@ -36830,9 +37381,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/syndrome"
     },
     "Synth Riders": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 105333,
+      "canonical_id": 105333,
+      "canonical_name": "Synth Riders",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/synth-riders"
     },
     "Syphon Filter": {
       "status": "identified",
@@ -37491,9 +38046,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/terminator-resistance"
     },
     "Terra Cresta 3D": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 58549,
+      "canonical_id": 58549,
+      "canonical_name": "Terra Cresta 3D",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/terra-cresta-3d"
     },
     "Terra Trilogy": {
       "status": "non_game",
@@ -37762,14 +38321,22 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/the-amazing-virtual-sea-monkeys"
     },
     "The American Dream": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 25866,
+      "canonical_id": 25866,
+      "canonical_name": "The American Dream",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/the-american-dream"
     },
     "The Angry Birds Movie 2 VR Under Pressure": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 119333,
+      "canonical_id": 119333,
+      "canonical_name": "The Angry Birds Movie 2 VR: Under Pressure",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/the-angry-birds-movie-2-vr-under-pressure"
     },
     "The Aquatic Adventure of The Last Human": {
       "status": "identified",
@@ -37853,9 +38420,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/the-bards-tale-remastered-and-resnarkled"
     },
     "The Bellows": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 31238,
+      "canonical_id": 31238,
+      "canonical_name": "The Bellows",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/the-bellows"
     },
     "The Binding of Isaac Afterbirth Plus": {
       "status": "review",
@@ -38121,9 +38692,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/the-cub"
     },
     "The Curious Tale of The Stolen Pets": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 119332,
+      "canonical_id": 119332,
+      "canonical_name": "The Curious Tale of the Stolen Pets",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/the-curious-tale-of-the-stolen-pets"
     },
     "The Da Vinci Code": {
       "status": "identified",
@@ -38306,9 +38881,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/the-elder-scrolls-v-skyrim-special-edition"
     },
     "The Elder Scrolls V Skyrim VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 37088,
+      "canonical_id": 37088,
+      "canonical_name": "The Elder Scrolls V: Skyrim VR",
+      "game_type": "port",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/the-elder-scrolls-v-skyrim-vr"
     },
     "The End is Nigh": {
       "status": "identified",
@@ -39648,9 +40227,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/the-playroom"
     },
     "The Playroom VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 25263,
+      "canonical_id": 25263,
+      "canonical_name": "The Playroom VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/the-playroom-vr"
     },
     "The Powerpuff Girls Chemical X Traction": {
       "status": "identified",
@@ -39734,9 +40317,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/the-redress-of-mira"
     },
     "The Room VR A Dark Matter": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 123991,
+      "canonical_id": 123991,
+      "canonical_name": "The Room VR: A Dark Matter",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/the-room-vr-a-dark-matter"
     },
     "The Rumble Fish": {
       "status": "review",
@@ -40302,9 +40889,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/the-witness"
     },
     "The Wizards Enhanced Edition": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 116134,
+      "canonical_id": 116134,
+      "canonical_name": "The Wizards: Enhanced Edition",
+      "game_type": "expanded_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/the-wizards-enhanced-edition"
     },
     "The Wolf Among Us": {
       "status": "identified",
@@ -40600,9 +41191,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/through-the-woods"
     },
     "Throw Anything": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 86622,
+      "canonical_id": 86622,
+      "canonical_name": "Throw Anything",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/throw-anything"
     },
     "Thumper": {
       "status": "identified",
@@ -40623,14 +41218,22 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/thunder"
     },
     "Thunder Force Gold Pack 2": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "non_game",
+      "igdb_id": 80164,
+      "canonical_id": 80164,
+      "canonical_name": "Thunder Force: Gold Pack 2",
+      "game_type": "bundle",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/thunder-force-gold-pack-2"
     },
     "Thunder Force V": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 22021,
+      "canonical_id": 22021,
+      "canonical_name": "Thunder Force V",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/thunder-force-v"
     },
     "Thunder Truck Rally": {
       "status": "identified",
@@ -40705,9 +41308,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/timberman-vs"
     },
     "Time Carnage": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 30587,
+      "canonical_id": 30587,
+      "canonical_name": "Time Carnage",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/time-carnage"
     },
     "Time Commando": {
       "status": "identified",
@@ -41007,9 +41614,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/to-leave"
     },
     "To The Top": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 31874,
+      "canonical_id": 31874,
+      "canonical_name": "To the Top",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/to-the-top"
     },
     "TOBAL No 1": {
       "status": "identified",
@@ -41090,9 +41701,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/tokyo-42"
     },
     "Tokyo Chronos": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 101059,
+      "canonical_id": 101059,
+      "canonical_name": "Tokyo Chronos",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/tokyo-chronos"
     },
     "Tokyo Dark Remembrance": {
       "status": "identified",
@@ -41465,9 +42080,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/tormented-souls"
     },
     "TORN": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 90106,
+      "canonical_id": 90106,
+      "canonical_name": "Torn",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/torn--1"
     },
     "Torneko The Last Hope World of Dragon Warrior": {
       "status": "review",
@@ -41760,9 +42379,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/trackmania-turbo"
     },
     "Traffic Jams": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 135112,
+      "canonical_id": 135112,
+      "canonical_name": "Traffic Jams",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/traffic-jams"
     },
     "Trailblazers": {
       "status": "identified",
@@ -41856,9 +42479,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/train-valley-console-edition"
     },
     "TrainerVR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 77166,
+      "canonical_id": 77166,
+      "canonical_name": "TrainerVR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/trainervr"
     },
     "TramSim Console Edition": {
       "status": "identified",
@@ -41982,9 +42609,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "Transpose": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 109417,
+      "canonical_id": 109417,
+      "canonical_name": "Transpose",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/transpose"
     },
     "Trap Gunner Countdown to Oblivion": {
       "status": "identified",
@@ -42258,9 +42889,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/true-crime-streets-of-la"
     },
     "Tryrush Deppy": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 45405,
+      "canonical_id": 45405,
+      "canonical_name": "Tryrush Deppy",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/tryrush-deppy"
     },
     "Tsugunai Atonement": {
       "status": "identified",
@@ -42326,9 +42961,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/tt-isle-of-man-ride-on-the-edge-3"
     },
     "Tumble VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 18400,
+      "canonical_id": 18400,
+      "canonical_name": "Tumble VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/tumble-vr"
     },
     "Tumblestone": {
       "status": "identified",
@@ -42466,9 +43105,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/twinbee-taisen-puzzle-dama"
     },
     "Twinkle Star Sprites": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 35378,
+      "canonical_id": 35378,
+      "canonical_name": "Twinkle Star Sprites",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/twinkle-star-sprites"
     },
     "Twins of Legacy Elemental": {
       "status": "identified",
@@ -42695,9 +43338,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/ultraman-fighting-evolution-3"
     },
     "Ultrawings": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 27323,
+      "canonical_id": 27323,
+      "canonical_name": "Ultrawings",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/ultrawings"
     },
     "Ultrawings Flat": {
       "status": "identified",
@@ -42966,9 +43613,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/unearthing-mars"
     },
     "Unearthing Mars 2 The Ancient War": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 107243,
+      "canonical_id": 107243,
+      "canonical_name": "Unearthing Mars 2: The Ancient War",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/unearthing-mars-2-the-ancient-war"
     },
     "Unepic": {
       "status": "identified",
@@ -43129,9 +43780,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "Until You Fall": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 115478,
+      "canonical_id": 115478,
+      "canonical_name": "Until You Fall",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/until-you-fall"
     },
     "Untitled Goose Game": {
       "status": "identified",
@@ -43251,14 +43906,22 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/va-11-hall-a-cyberpunk-bartender-action"
     },
     "Vacation Simulator": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 76878,
+      "canonical_id": 76878,
+      "canonical_name": "Vacation Simulator",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/vacation-simulator"
     },
     "Vader Immortal A Star Wars VR Series": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 125987,
+      "canonical_id": 125987,
+      "canonical_name": "Vader Immortal: A Star Wars VR Series",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/vader-immortal-a-star-wars-vr-series"
     },
     "Vagante": {
       "status": "identified",
@@ -43762,14 +44425,22 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/vostok-inc"
     },
     "VR Karts": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 35536,
+      "canonical_id": 35536,
+      "canonical_name": "VR Karts",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/vr-karts"
     },
     "VR Ping Pong Pro": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 120470,
+      "canonical_id": 120470,
+      "canonical_name": "VR Ping Pong Pro",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/vr-ping-pong-pro"
     },
     "VRobot": {
       "status": "review",
@@ -43839,9 +44510,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/walt-disney-world-quest-magical-racing-tour"
     },
     "Wanderer": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 95426,
+      "canonical_id": 95426,
+      "canonical_name": "Wanderer",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/wanderer--1"
     },
     "Wandersong": {
       "status": "identified",
@@ -44182,9 +44857,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/we-happy-few"
     },
     "We Happy Few Uncle Jack Live VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 106852,
+      "canonical_id": 106852,
+      "canonical_name": "We Happy Few: Uncle Jack Live VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/we-happy-few-uncle-jack-live-vr"
     },
     "We Love Katamari REROLL+ Royal Reverie": {
       "status": "identified",
@@ -44534,14 +45213,22 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/windjammers-2"
     },
     "Windlands": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 15932,
+      "canonical_id": 15932,
+      "canonical_name": "Windlands",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/windlands"
     },
     "Windlands 2": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 96542,
+      "canonical_id": 96542,
+      "canonical_name": "Windlands 2",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/windlands-2"
     },
     "Winds and Leaves VR": {
       "status": "review",
@@ -44652,9 +45339,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/witch-on-the-holy-night"
     },
     "Witching Tower": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 90121,
+      "canonical_id": 90121,
+      "canonical_name": "Witching Tower",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/witching-tower"
     },
     "Within The Blade": {
       "status": "identified",
@@ -44747,9 +45438,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/wolfenstein-ii-the-new-colossus"
     },
     "Wolfenstein Cyberpilot": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 103302,
+      "canonical_id": 103302,
+      "canonical_name": "Wolfenstein: Cyberpilot",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/wolfenstein-cyberpilot"
     },
     "Wolfenstein The New Order": {
       "status": "identified",
@@ -45616,9 +46311,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/yooka-laylee-and-the-impossible-lair"
     },
     "You Are Being Followed": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 152293,
+      "canonical_id": 152293,
+      "canonical_name": "You Are Being Followed",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/you-are-being-followed"
     },
     "You Suck At Parking": {
       "status": "identified",
@@ -45762,9 +46461,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/yuoni"
     },
     "Yupitergrad": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 142438,
+      "canonical_id": 142438,
+      "canonical_name": "Yupitergrad",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/yupitergrad"
     },
     "Yuppie Psycho Executive Edition": {
       "status": "identified",
@@ -45817,9 +46520,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/zanki-zero-last-beginning"
     },
     "Zanma Chou Ougi Valhollian": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 45396,
+      "canonical_id": 45396,
+      "canonical_name": "Zanma Chouougi: Valhollian",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias (spacing/numerals)",
+      "url": "https://www.igdb.com/games/zanma-chouougi-valhollian"
     },
     "Zathura": {
       "status": "identified",
@@ -46886,9 +47593,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "Farpoint": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 19575,
+      "canonical_id": 19575,
+      "canonical_name": "Farpoint",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/farpoint"
     },
     "Nhl 15 2": {
       "status": "review",
@@ -47020,9 +47731,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/assassins-creed-odyssey"
     },
     "Firewall Zero Hour": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 76966,
+      "canonical_id": 76966,
+      "canonical_name": "Firewall Zero Hour",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/firewall-zero-hour"
     },
     "The Binding Of Isaac Rebirth 2": {
       "status": "review",
@@ -48083,9 +48798,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "Doom 3 Vr": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 144524,
+      "canonical_id": 144524,
+      "canonical_name": "Doom 3: VR Edition",
+      "game_type": "port",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/doom-3-vr-edition"
     },
     "Atelier Ryza Ever Darkness The Secret Hideout": {
       "status": "review",
@@ -48159,9 +48878,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/my-friend-pedro"
     },
     "Moss Book Ii": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 154839,
+      "canonical_id": 154839,
+      "canonical_name": "Moss: Book II",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/moss-book-ii"
     },
     "The Peanuts Movie Snoopys Grand Adventure 3": {
       "status": "review",
@@ -48778,9 +49501,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/spellforce-3"
     },
     "Cold Iron Quick Draw Western Duels": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 30768,
+      "canonical_id": 30768,
+      "canonical_name": "Cold Iron: Quick Draw Western Duels",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/cold-iron-quick-draw-western-duels"
     },
     "Koi 2": {
       "status": "review",
@@ -48930,9 +49657,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/aleste-collection"
     },
     "All-In-One Sports VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 150755,
+      "canonical_id": 150755,
+      "canonical_name": "All-In-One Sports VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/all-in-one-sports-vr"
     },
     "Alone In The Dark 2": {
       "status": "identified",
@@ -49731,6 +50462,7 @@ var gameIdentities = {
         7351,
         165206,
         170995,
+        259943,
         313161
       ]
     },
@@ -50049,9 +50781,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/geometry-wars-3-dimensions"
     },
     "Ghost Giant": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 103272,
+      "canonical_id": 103272,
+      "canonical_name": "Ghost Giant",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/ghost-giant"
     },
     "Ghost of a Tale": {
       "status": "identified",
@@ -50503,9 +51239,13 @@ var gameIdentities = {
       "candidate_ids": []
     },
     "Marvels Iron Man VR": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 116585,
+      "canonical_id": 116585,
+      "canonical_name": "Marvel's Iron Man VR",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/marvels-iron-man-vr"
     },
     "Mat Hoffman’s Pro BMX 2 PS2-PS4 Ported": {
       "status": "review",
@@ -51209,9 +51949,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/sam-and-max-the-devils-playhouse--3"
     },
     "Sam & Max This Time It’s Virtual": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 138199,
+      "canonical_id": 138199,
+      "canonical_name": "Sam & Max: This Time It's Virtual",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/sam-and-max-this-time-its-virtual"
     },
     "Samurai Shodown V Special": {
       "status": "identified",
@@ -51689,9 +52433,13 @@ var gameIdentities = {
       "url": "https://www.igdb.com/games/the-walking-dead-onslaught"
     },
     "The Walking Dead Saints & Sinners": {
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "status": "identified",
+      "igdb_id": 105416,
+      "canonical_id": 105416,
+      "canonical_name": "The Walking Dead: Saints & Sinners",
+      "game_type": "main_game",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/the-walking-dead-saints-and-sinners"
     },
     "The Warriors PS2-PS4 Ported": {
       "status": "review",

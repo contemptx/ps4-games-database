@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T19:23:15.338210+00:00",
+  "updated_at": "2026-09-29T19:31:25.504053+00:00",
   "unresolved": [
     {
       "name": "007 The World Is Not Enough",
@@ -35,18 +35,6 @@
       "candidate_ids": []
     },
     {
-      "name": "3M Spain Foundation Stem+VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "4×4 World Trophy",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "8 To Glory The Official Game of The PBR",
       "status": "review",
       "reason": "No title match",
@@ -60,12 +48,6 @@
     },
     {
       "name": "9th Dawn 3 Shadow of Erthil",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "A Fishermans Tale",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -137,12 +119,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Angry Birds VR Isle of Pigs",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Animaniacs in Ten Pin Alley",
       "status": "review",
       "reason": "No title match",
@@ -155,12 +131,6 @@
       "candidate_ids": []
     },
     {
-      "name": "AnywhereVR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "AO International Tennis",
       "status": "review",
       "reason": "No title match",
@@ -168,12 +138,6 @@
     },
     {
       "name": "Aoki Kakumeki no Valkyria (Valkyria Azure Revolution)",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Apex Construct",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -248,18 +212,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Arizona Sunshine",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Ark Park",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Army Men World War Land Sea and Air",
       "status": "review",
       "reason": "No title match",
@@ -281,12 +233,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Astal",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Asterigos Curse of The Stars Deluxe Edition",
       "status": "review",
       "reason": "No title match",
@@ -294,18 +240,6 @@
     },
     {
       "name": "Asterix and Obelix XXL 2 Roman Rumble in Las Vegum",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Astra Superstars",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Astro Bot Rescue Mission",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -359,31 +293,16 @@
       "candidate_ids": []
     },
     {
-      "name": "Batman Arkham VR",
+      "name": "Batman and Robin",
       "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "reason": "Ambiguous title",
+      "candidate_ids": [
+        79820,
+        234179
+      ]
     },
     {
       "name": "Batman The Enemy Within The Telltale Series",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Batsugun",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Battlewake",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Beat Saber",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -397,12 +316,6 @@
         138955,
         379146
       ]
-    },
-    {
-      "name": "Beats Fever",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "BioHazard 7 Resident Evil (Grotesque Deluxe Edition)",
@@ -432,12 +345,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Blazing Heroes (Mystaria The Realms of Lore)",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Blood and Truth VR",
       "status": "review",
       "reason": "No title match",
@@ -457,18 +364,6 @@
     },
     {
       "name": "Bonfire Peaks Complete Edition",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Borderlands 2 VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "BoxVR",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -495,37 +390,7 @@
       ]
     },
     {
-      "name": "Budget Cuts",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Bug",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Bug Too",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Bulk Slash",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Bully (Canis Canem Edit)",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Burning Rangers",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -539,17 +404,16 @@
     {
       "name": "Call of Duty Infinite Warfare Jackal Assault VR Experience",
       "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "igdb_id": 296540,
+      "canonical_id": 296540,
+      "canonical_name": "Call of Duty: Infinite Warfare - Jackal Assault VR Experience",
+      "game_type": "dlc",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/call-of-duty-infinite-warfare-jackal-assault-vr-experience",
+      "reason": "Game type needs review"
     },
     {
       "name": "Capcom Generation Dai 3 Shuu Koko ni Rekishi Hajimaru",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Carly and The Reaperman Escape From The Underworld",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -562,12 +426,6 @@
         626,
         246895
       ]
-    },
-    {
-      "name": "Carnival Games VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "Castle of Pixels Skulls",
@@ -597,12 +455,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Catan VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Catherine Full Body Digital Deluxe Edition",
       "status": "review",
       "reason": "No title match",
@@ -621,18 +473,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Christmas Nights into Dreams",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "ChromaGun VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Clock Tower Deluxe Hack Collection",
       "status": "review",
       "reason": "No title match",
@@ -640,12 +480,6 @@
     },
     {
       "name": "Clockwork Tower Rewind",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Cold Iron",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -660,19 +494,7 @@
       ]
     },
     {
-      "name": "Contagion VR Outbreak",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Contra Memory Collection",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Coolpaintr VR Deluxe Edition",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -690,25 +512,7 @@
       "candidate_ids": []
     },
     {
-      "name": "Creed Rise To Glory",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Creepy Tale Ingrid Penance",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Crisis on The Planet of The Apes VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Crisis Vrigade",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -721,18 +525,6 @@
     },
     {
       "name": "Crow The Legend",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Crows The Battle Action for SegaSaturn",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Ctrl",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -786,12 +578,6 @@
       "candidate_ids": []
     },
     {
-      "name": "DEADLAND VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Deaths Gambit",
       "status": "review",
       "reason": "Ambiguous title",
@@ -826,12 +612,6 @@
     },
     {
       "name": "Densha de Go Hashiro Yamanote Line",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Deracine",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -918,12 +698,6 @@
       "candidate_ids": []
     },
     {
-      "name": "DEXED",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Dexter Laboratory Mandarks Lab",
       "status": "review",
       "reason": "No title match",
@@ -943,12 +717,6 @@
         3182,
         47452
       ]
-    },
-    {
-      "name": "Dick Wilde 2",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "Disgaea 4 Complete Plus",
@@ -1029,12 +797,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Doctor Who The Edge of Time",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "DoDonPachi Blissful Death Re Incarnation",
       "status": "review",
       "reason": "No title match",
@@ -1047,43 +809,13 @@
       "candidate_ids": []
     },
     {
-      "name": "DOOM 3 VR Edition",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "DOOM Master Edition",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
     },
     {
-      "name": "DOOM VFR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Down The Rabbit Hole",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Dragon Ball Evolution",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Dragon Force",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Dragon Force 2",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -1113,31 +845,7 @@
       "candidate_ids": []
     },
     {
-      "name": "DRIVECLUB VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Drova Forsaken Kin",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Drunkn Bar Fight",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Dungeon Master Nexus",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Dungeons and Dragons Collection",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -1149,16 +857,13 @@
       "candidate_ids": []
     },
     {
-      "name": "DWVR",
+      "name": "Dynamite Deka",
       "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "DYING Reborn VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "reason": "Ambiguous title",
+      "candidate_ids": [
+        71434,
+        296787
+      ]
     },
     {
       "name": "EA Sports Rory McIlroy PGA Tour",
@@ -1197,25 +902,7 @@
       "candidate_ids": []
     },
     {
-      "name": "Elevator Action Returns",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "End of Eternity 4K HD Edtion",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "End Space",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Esper",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -1227,19 +914,7 @@
       "candidate_ids": []
     },
     {
-      "name": "EVE Gunjack",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "EVE Valkyrie VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Everest VR",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -1252,12 +927,6 @@
         28187,
         206487
       ]
-    },
-    {
-      "name": "Everybodys Golf VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "Fahrenheit",
@@ -1288,12 +957,6 @@
     },
     {
       "name": "Fate/Samurai Remnant Digital Deluxe Edition",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "FATED The Silent Oath",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -1422,12 +1085,6 @@
       ]
     },
     {
-      "name": "Fruit Ninja VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Funky Head Boxers Plus",
       "status": "review",
       "reason": "No title match",
@@ -1460,12 +1117,6 @@
       ]
     },
     {
-      "name": "Gale Racer",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Game Tengoku The Game Paradise",
       "status": "review",
       "reason": "No title match",
@@ -1473,12 +1124,6 @@
     },
     {
       "name": "Ganryu 2 Hakuma Kojiro",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Gary The Gull",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -1610,18 +1255,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Groundhog Day Like Father Like Son",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Gun Club VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Gunducky Industries",
       "status": "review",
       "reason": "Ambiguous title",
@@ -1712,28 +1345,19 @@
       "candidate_ids": []
     },
     {
-      "name": "Hatsune Miku VR Future Live",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Headmaster",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Here They Lie VR",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
     },
     {
-      "name": "Heroes of The Seven Seas",
+      "name": "Hexen",
       "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
+      "reason": "Ambiguous title",
+      "candidate_ids": [
+        93642,
+        93643
+      ]
     },
     {
       "name": "Hishou Same Same Same Toaplan Arcade Garage",
@@ -1761,24 +1385,6 @@
         147908,
         187765
       ]
-    },
-    {
-      "name": "I Expect You To Die",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "I Expect You To Die 2 The Spy and The Liar",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Immortal Legacy The Jade Cipher",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "Immortal Unchained Ultimate Edition",
@@ -1839,18 +1445,6 @@
       ]
     },
     {
-      "name": "Japan Studio VR Music Festival",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Job Simulator",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Joshua Bell VR Experience",
       "status": "review",
       "reason": "No title match",
@@ -1867,18 +1461,6 @@
     },
     {
       "name": "Jujutsu Kaisen Cursed Clash Ultimate Edition",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Jung Rhythm",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Just In Time Incorporated",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -1908,12 +1490,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Keio Flying Squadron 2",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Killing Time (Prototype)",
       "status": "review",
       "reason": "No title match",
@@ -1927,12 +1503,6 @@
     },
     {
       "name": "Kingdom Hearts HD 1.5 and 2.5 Remix",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Kingdom Hearts VR Experience",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -1962,12 +1532,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Kitchen",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Kizumonogatari VR",
       "status": "review",
       "reason": "No title match",
@@ -1992,19 +1556,7 @@
       "candidate_ids": []
     },
     {
-      "name": "Korix",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Kyukyoku Tiger Heli Toaplan Arcade Garage",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "LA Noire The VR Case Files",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -2017,18 +1569,6 @@
         109284,
         118480
       ]
-    },
-    {
-      "name": "Last Labyrinth",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Layers of Fear VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "LEGO Pirates of The Caribbean The Video Game",
@@ -2107,24 +1647,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Linkle Liver Story",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Little Witch Academia VR Broom Racing",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Loading Human Chapter 1",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Lode Runner",
       "status": "review",
       "reason": "No title match",
@@ -2160,12 +1682,6 @@
     },
     {
       "name": "Madden NFL 25 (2013)",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Magic Knight Rayearth",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -2222,12 +1738,6 @@
       ]
     },
     {
-      "name": "MASKMAKER",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Mato Kurenai Yuugekitai Daybreak Special Gigs",
       "status": "review",
       "reason": "No title match",
@@ -2257,12 +1767,6 @@
     },
     {
       "name": "MediEvil (1998)",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Mega Man 8 Anniversary Collectors Edition",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -2331,19 +1835,7 @@
       "candidate_ids": []
     },
     {
-      "name": "Mind Labyrinth VR Dreams",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Minecraft Story Mode Season Two The Telltale Series",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "MiniWood VR",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -2388,12 +1880,6 @@
       ]
     },
     {
-      "name": "Moss Book 2",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Moss VR",
       "status": "review",
       "reason": "No title match",
@@ -2425,6 +1911,15 @@
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
+    },
+    {
+      "name": "NASCAR 98",
+      "status": "review",
+      "reason": "Ambiguous title",
+      "candidate_ids": [
+        45515,
+        176683
+      ]
     },
     {
       "name": "NASCAR Thunder 2003",
@@ -2485,6 +1980,15 @@
       "candidate_ids": []
     },
     {
+      "name": "Nights into Dreams",
+      "status": "review",
+      "reason": "Ambiguous title",
+      "candidate_ids": [
+        5075,
+        19903
+      ]
+    },
+    {
       "name": "Nightshade",
       "status": "review",
       "reason": "Ambiguous title",
@@ -2500,12 +2004,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Ninja Legends",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "No Time To Explain",
       "status": "review",
       "reason": "No title match",
@@ -2513,12 +2011,6 @@
     },
     {
       "name": "Nora to Koujo to Noraneko Heart HD",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Not For Broadcast VR",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -2552,12 +2044,6 @@
         999,
         351909
       ]
-    },
-    {
-      "name": "OhShape",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "On The Road The Truck Simulator",
@@ -2611,18 +2097,6 @@
       ]
     },
     {
-      "name": "Paper Beast",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Paper Dolls",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Persona 4 The Ultimax Ultra Suplex Hold Remastered",
       "status": "review",
       "reason": "No title match",
@@ -2644,49 +2118,13 @@
       "candidate_ids": []
     },
     {
-      "name": "Pierhead Arcade",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Pinball FX2 VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Ping Pong VR",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
     },
     {
-      "name": "Pirate Flight",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Pistol Whip",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Pixel Gear VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Pixel Ripped 1989",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Pixel Ripped 1995",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -2713,12 +2151,6 @@
       "candidate_ids": []
     },
     {
-      "name": "PlayStation VR Worlds",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Portal Knights Legendary Edition",
       "status": "review",
       "reason": "No title match",
@@ -2726,12 +2158,6 @@
     },
     {
       "name": "PREY Complete Edition",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Prison Boss VR",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -2779,25 +2205,7 @@
       "candidate_ids": []
     },
     {
-      "name": "Project LUX",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Psychonauts in The Rhombus of Ruin",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Pumped BMX Plus",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Pupil Wandering VR",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -2809,25 +2217,7 @@
       "candidate_ids": []
     },
     {
-      "name": "Purikura Daisakusen",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Quar Infernal Machines",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "R Type Final 3",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Racket Fury Table Tennis VR",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -2863,12 +2253,6 @@
         253141,
         416114
       ]
-    },
-    {
-      "name": "Raw Data",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "RBI Baseball 2017",
@@ -2970,18 +2354,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Richies Plank Experience",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Rick and Morty Virtual Rick Ality",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Ridge Racer Bonus Turbo Mode Disc",
       "status": "review",
       "reason": "No title match",
@@ -3006,12 +2378,6 @@
     },
     {
       "name": "Rival Schools Evolution",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Road and Track Presents The Need for Speed",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -3062,12 +2428,6 @@
       "candidate_ids": []
     },
     {
-      "name": "RUSH VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Ryu ga Gotoku 6 Inochi no Uta",
       "status": "review",
       "reason": "No title match",
@@ -3093,18 +2453,6 @@
         1981,
         7707
       ]
-    },
-    {
-      "name": "Sairento VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Sam and Max This Time Its Virtual",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "Samurai Showdown Anthology",
@@ -3167,12 +2515,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Sega Ages Fantasy Zone",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Sega Ages I Love Mickey Mouse and I Love Donald Duck",
       "status": "review",
       "reason": "No title match",
@@ -3186,12 +2528,6 @@
     },
     {
       "name": "Sega Ages Space Harrier",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Sega Ages Volume 1",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -3233,18 +2569,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Shadow Legend VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Shadow Point",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Shantae Riskys Revenge Directors Cut",
       "status": "review",
       "reason": "Ambiguous title",
@@ -3281,31 +2605,7 @@
       "candidate_ids": []
     },
     {
-      "name": "Shining The Holy Ark",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Shining Wisdom",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Shinobi X",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Shizuku",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Shooty Fruity",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -3374,31 +2674,13 @@
       "candidate_ids": []
     },
     {
-      "name": "Smash Hit Plunder",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "SNES Station",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
     },
     {
-      "name": "Sniper Elite VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Sniper Ghost Warrior 3 Season Pass Edition",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Song in The Smoke",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -3425,6 +2707,15 @@
       ]
     },
     {
+      "name": "Space Invaders",
+      "status": "review",
+      "reason": "Ambiguous title",
+      "candidate_ids": [
+        18133,
+        266960
+      ]
+    },
+    {
       "name": "Space Quest V The Next Mutation",
       "status": "review",
       "reason": "No title match",
@@ -3437,31 +2728,13 @@
       "candidate_ids": []
     },
     {
-      "name": "Spider Man Homecoming Virtual Reality Experience",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Sports Bar VR Hangout 2.0",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
     },
     {
-      "name": "Sprint Vector",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Spyro 3 Year of The Dragon",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Squishies",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -3527,12 +2800,6 @@
       "candidate_ids": []
     },
     {
-      "name": "STRIDE",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Strikers 1945",
       "status": "review",
       "reason": "Ambiguous title",
@@ -3542,12 +2809,6 @@
       ]
     },
     {
-      "name": "Submersed",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Sudden Strike 4 Complete Edition",
       "status": "review",
       "reason": "No title match",
@@ -3555,12 +2816,6 @@
     },
     {
       "name": "Summer Lesson Allison Snow and Shinjo Chisato",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Summer Lesson Hikari Miyamoto",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -3593,36 +2848,6 @@
       "match_method": "Existing unique PS4 title/alias match",
       "url": "https://www.igdb.com/games/super-stardust-ultra-vr",
       "reason": "Game type needs review"
-    },
-    {
-      "name": "Super Tempo",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "SUPERHOT VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Surgeon Simulator Experience Reality",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Swordsman VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Synth Riders",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "Tactics Ogre Let Us Cling Together",
@@ -3697,31 +2922,7 @@
       "candidate_ids": []
     },
     {
-      "name": "Terra Cresta 3D",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "The Alliance Alive HD Remaster",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "The American Dream",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "The Angry Birds Movie 2 VR Under Pressure",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "The Bellows",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -3746,18 +2947,6 @@
     },
     {
       "name": "The Council Complete Edition",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "The Curious Tale of The Stolen Pets",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "The Elder Scrolls V Skyrim VR",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -3865,18 +3054,6 @@
       "candidate_ids": []
     },
     {
-      "name": "The Playroom VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "The Room VR A Dark Matter",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "The Rumble Fish",
       "status": "review",
       "reason": "Ambiguous title",
@@ -3935,12 +3112,6 @@
       "candidate_ids": []
     },
     {
-      "name": "The Wizards Enhanced Edition",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "The X Files",
       "status": "review",
       "reason": "No title match",
@@ -3968,30 +3139,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Throw Anything",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Thunder Force Gold Pack 2",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Thunder Force V",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Time Carnage",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "TMNT",
       "status": "review",
       "reason": "Ambiguous title",
@@ -4000,12 +3147,6 @@
         248513,
         248514
       ]
-    },
-    {
-      "name": "To The Top",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "TOCA 2 Touring Car",
@@ -4021,12 +3162,6 @@
     },
     {
       "name": "Toki Tori 2 Plus",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Tokyo Chronos",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -4106,12 +3241,6 @@
       ]
     },
     {
-      "name": "TORN",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Torneko The Last Hope World of Dragon Warrior",
       "status": "review",
       "reason": "No title match",
@@ -4136,12 +3265,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Traffic Jams",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Train Sim World 2 Rush Hour Deluxe Edition",
       "status": "review",
       "igdb_id": 165858,
@@ -4151,12 +3274,6 @@
       "match_method": "Existing unique PS4 title/alias match",
       "url": "https://www.igdb.com/games/train-sim-world-2-rush-hour",
       "reason": "Game type needs review"
-    },
-    {
-      "name": "TrainerVR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "Transformers The Game",
@@ -4174,12 +3291,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Transpose",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "TRAX",
       "status": "review",
       "reason": "No title match",
@@ -4187,24 +3298,6 @@
     },
     {
       "name": "Tropico 5 Complete Collection",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Tryrush Deppy",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Tumble VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Twinkle Star Sprites",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -4219,43 +3312,13 @@
       ]
     },
     {
-      "name": "Ultrawings",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Umurangi Generation",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
     },
     {
-      "name": "Unearthing Mars 2 The Ancient War",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Until Dawn Rush of Blood VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Until You Fall",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Vacation Simulator",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Vader Immortal A Star Wars VR Series",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -4279,18 +3342,6 @@
       "candidate_ids": []
     },
     {
-      "name": "VR Karts",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "VR Ping Pong Pro",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "VRobot",
       "status": "review",
       "reason": "No title match",
@@ -4304,12 +3355,6 @@
         43447,
         81548
       ]
-    },
-    {
-      "name": "Wanderer",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "War of The Monsters",
@@ -4334,12 +3379,6 @@
     },
     {
       "name": "Wayward Sky VR",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "We Happy Few Uncle Jack Live VR",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -4372,18 +3411,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Windlands",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Windlands 2",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Winds and Leaves VR",
       "status": "review",
       "reason": "No title match",
@@ -4403,18 +3430,6 @@
         116679,
         219342
       ]
-    },
-    {
-      "name": "Witching Tower",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Wolfenstein Cyberpilot",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
     },
     {
       "name": "WRC 5 World Rally Championship",
@@ -4492,12 +3507,6 @@
       "candidate_ids": []
     },
     {
-      "name": "You Are Being Followed",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Your Diary Plus",
       "status": "review",
       "reason": "No title match",
@@ -4516,19 +3525,7 @@
       "candidate_ids": []
     },
     {
-      "name": "Yupitergrad",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Yuragiso no Yuna san Yukemuri Dungeon",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Zanma Chou Ougi Valhollian",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -5173,12 +4170,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Farpoint",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Nhl 15 2",
       "status": "review",
       "reason": "No title match",
@@ -5264,12 +4255,6 @@
     },
     {
       "name": "Zen Pinball 2 2",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Firewall Zero Hour",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -6012,12 +4997,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Doom 3 Vr",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Atelier Ryza Ever Darkness The Secret Hideout",
       "status": "review",
       "reason": "No title match",
@@ -6055,12 +5034,6 @@
     },
     {
       "name": "Final Fantasy Xv Pocket Edition",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Moss Book Ii",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -6543,12 +5516,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Cold Iron Quick Draw Western Duels",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Koi 2",
       "status": "review",
       "reason": "No title match",
@@ -6580,12 +5547,6 @@
     },
     {
       "name": ".hack//QUARANTINE PS2-PS4 Ported",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "All-In-One Sports VR",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -6756,6 +5717,7 @@
         7351,
         165206,
         170995,
+        259943,
         313161
       ]
     },
@@ -6851,12 +5813,6 @@
     },
     {
       "name": "Futurama PS2 – PS4 Ported",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Ghost Giant",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -7007,12 +5963,6 @@
     },
     {
       "name": "Marvel vs Capcom 2 PS2-PS4 Ported",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "Marvels Iron Man VR",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -7285,12 +6235,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Sam & Max This Time It’s Virtual",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
       "name": "Scarface The World Is Yours PS2-PS4 Ported",
       "status": "review",
       "reason": "No title match",
@@ -7424,12 +6368,6 @@
     },
     {
       "name": "The Sims 2 PS2 – PS4 Ported",
-      "status": "review",
-      "reason": "No title match",
-      "candidate_ids": []
-    },
-    {
-      "name": "The Walking Dead Saints & Sinners",
       "status": "review",
       "reason": "No title match",
       "candidate_ids": []
@@ -8128,6 +7066,16 @@
       "url": "https://www.igdb.com/games/dreadout-remastered-collection"
     },
     {
+      "name": "Dungeons and Dragons Collection",
+      "status": "non_game",
+      "igdb_id": 22831,
+      "canonical_id": 22831,
+      "canonical_name": "Dungeons & Dragons Collection",
+      "game_type": "bundle",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/dungeons-and-dragons-collection"
+    },
+    {
       "name": "Dying Light The Following Enhanced Edition",
       "status": "non_game",
       "igdb_id": 21762,
@@ -8718,6 +7666,16 @@
       "url": "https://www.igdb.com/games/scribblenauts-mega-pack"
     },
     {
+      "name": "Sega Ages Volume 1",
+      "status": "non_game",
+      "igdb_id": 45482,
+      "canonical_id": 45482,
+      "canonical_name": "Sega Ages",
+      "game_type": "bundle",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/sega-ages--1"
+    },
+    {
       "name": "Sega Classics Collection",
       "status": "non_game",
       "igdb_id": 22570,
@@ -9036,6 +7994,16 @@
       "game_type": "bundle",
       "match_method": "Existing unique PS4 title/alias match",
       "url": "https://www.igdb.com/games/the-walking-dead-the-telltale-series-collection--1"
+    },
+    {
+      "name": "Thunder Force Gold Pack 2",
+      "status": "non_game",
+      "igdb_id": 80164,
+      "canonical_id": 80164,
+      "canonical_name": "Thunder Force: Gold Pack 2",
+      "game_type": "bundle",
+      "match_method": "Unique normalized IGDB title/alias",
+      "url": "https://www.igdb.com/games/thunder-force-gold-pack-2"
     },
     {
       "name": "Tony Hawks Pro Skater 1 + 2",
