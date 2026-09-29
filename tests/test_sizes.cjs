@@ -14,3 +14,8 @@ c.fileSizes.files[k('four')]={status:'known',filename:'same.pkg',size_bytes:100,
 c.fileSizes.files[k('five')]={status:'known',filename:'same.pkg',size_bytes:100,size_precision:'exact'};
 s=c.catalogSizes.summarize([k('four'),k('five')]);assert.equal(s.bytes,200,'Equal filenames and sizes alone must not collapse files');
 console.log('Size accounting: mirrors with checksum, affiliate URLs, zero, estimates, unknowns and ambiguous names PASS');
+c.fileSizes.files['https://vikingfile.com/f/Absent']={status:'missing'};
+assert.equal(c.gameCatalog.describeLink('https://vik1ngfile.site/f/Absent'),null);
+assert.equal(c.gameCatalog.describeLink('https://vikingfile.com/f/Absent'),null);
+assert.equal(c.gameCatalog.statusKey('https://vik1ngfile.site/f/Alive'),'https://vikingfile.com/f/Alive');
+console.log('VikingFile canonical alias and API-confirmed missing filter PASS');

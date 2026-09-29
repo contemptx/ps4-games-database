@@ -2,7 +2,7 @@
 
 `Index file sizes` checkpoints into file-sizes.json/js and publishes each batch to Pages.
 It operates on exactly the listings included by catalog.js, including release links and all sources.
-The first push runs a short three-minute pass, then up to 39 further finite batches run automatically
+The first push runs a short three-minute pass, then up to 119 further finite batches run automatically
 while work remains. Manual runs resume unchecked links. Access-held hosts stay paused, not retried
 on every batch. Unsupported/container links remain explicitly unknown.
 
@@ -14,13 +14,15 @@ Supported APIs: VikingFile check-file (POST, public), Pixeldrain file info (GET,
 1fichier file/info.cgi (POST). The latter requires repository Actions secret FICHIER_API_KEY.
 Only public metadata fields are retained. No download token requests, private account listings,
 file transfers or CDN credit consumption are requested. No username/password login automation.
-1fichier and MediaFire's previous public-access restrictions are preserved.
+1fichier uses the configured API key; MediaFire's previous public-access restriction is preserved.
+VikingFile .com and its observed vik1ngfile.site redirect share canonical file identity.
+After three consecutive unparseable landing pages, an adapter queue is paused for review.
 
 Other supported host landing pages are parsed conservatively for explicit File size labels and
-JSON-LD contentSize. Redirects are not followed; responses are bounded; binary/attachment responses
+JSON-LD contentSize. Only the observed AkiraBox .com → .to same-file redirect is followed; responses are bounded; binary/attachment responses
 are closed without reading bodies. HTTP errors, CAPTCHA and network failures never prove deletion.
 A host restriction stops its queue and is checkpointed. API explicit missing results remain recorded
-in file-sizes.json; this pass does not rewrite the separate link availability manifest.
+in file-sizes.json; the catalogue hides them directly using file-sizes.json, without rewriting the separate link availability manifest.
 
 Rounded webpage units are estimates: GB=10^9, GiB=2^30. HTML response Content-Length is NEVER the
 file size. Unknown sizes are not zero. Stale/unavailable metadata is not fabricated.

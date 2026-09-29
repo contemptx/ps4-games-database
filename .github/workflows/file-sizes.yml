@@ -8,7 +8,7 @@ on:
       batches_left:
         description: Maximum remaining batches (1-120)
         required: true
-        default: '40'
+        default: '120'
 permissions:
   contents: write
   actions: write
@@ -56,7 +56,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
-          BATCHES_LEFT: ${{ inputs.batches_left || '40' }}
+          BATCHES_LEFT: ${{ inputs.batches_left || '120' }}
           CAN_CONTINUE: ${{ steps.sizes.outputs.continue }}
         run: |
           python3 scripts/continue_sizes.py

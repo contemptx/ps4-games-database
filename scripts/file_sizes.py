@@ -21,7 +21,7 @@ from check_links import VisibleText
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 MAX_BODY = 768 * 1024
 UA = 'PS4CatalogueFileMetadata/1.0 (metadata only)'
-PAGE_HOSTS = {'mediafire.com', 'akirabox.com', 'filekeeper.net', 'rootz.so', 'ranoz.gg', 'datanodes.to', 'filefactory.com', 'mocha.my'}
+PAGE_HOSTS = {'mediafire.com', 'akirabox.com', 'akirabox.to', 'filekeeper.net', 'rootz.so', 'ranoz.gg', 'datanodes.to', 'filefactory.com', 'mocha.my'}
 API_HOSTS = {'vikingfile.com', 'pixeldrain.com', '1fichier.com'}
 FILE_NAME = re.compile(r'\.(?:pkg|rar|zip|7z|iso|bin|part\d+|\d{3})$', re.I)
 
@@ -29,7 +29,8 @@ def now():
     return datetime.datetime.now(datetime.timezone.utc).isoformat()
 
 def family(url):
-    return (urllib.parse.urlsplit(url).hostname or '').lower().removeprefix('www.')
+    host=(urllib.parse.urlsplit(url).hostname or '').lower().removeprefix('www.')
+    return 'vikingfile.com' if host=='vik1ngfile.site' else host
 
 def clean_name(value):
     if not isinstance(value,str): return None
@@ -84,6 +85,25 @@ def from_api(host, data):
             result.setdefault('checksums',{})[alg]=value.lower()
     return result
 
+def akira_metadata(body,url):
+    # Decode inert JSON strings only. Never evaluate the scripts embedded in a host page.
+    file_id=urllib.parse.urlsplit(url).path.strip('/').split('/')[0]
+    decoder=json.JSONDecoder()
+    for match in re.finditer(r'self\.__next_f\.push\((\[.*?\])\)</script>',body,re.S):
+        try: flight=json.loads(match[1])
+        except ValueError: continue
+        if not isinstance(flight,list) or len(flight)<2 or not isinstance(flight[1],str): continue
+        for start in re.finditer(r'"file"\s*:\s*(?=\{)',flight[1]):
+            try: item,_=decoder.raw_decode(flight[1][start.end():])
+            except ValueError: continue
+            if item.get('id')!=file_id or item.get('kind')!='file': continue
+            n=size_number(item.get('size'));name=clean_name(item.get('name'));ext=clean_name(item.get('extension'))
+            if n is None or not name: continue
+            if ext and not name.lower().endswith('.'+ext.lower()): name+='.'+ext
+            return dict(status='known',size_bytes=n,size_precision='exact',filename=name,
+                        evidence='host embedded file metadata',filename_evidence='host embedded file metadata',**multipart(name))
+    return None
+
 def from_html(body):
     parser=VisibleText(); parser.feed(body)
     lines=[re.sub(r'\s+',' ',p).strip() for p in parser.parts if p.strip()]
@@ -120,6 +140,15 @@ def from_html(body):
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,*args,**kwargs): return None
 
+class MetadataRedirects(urllib.request.HTTPRedirectHandler):
+    max_redirections=3
+    def redirect_request(self,req,fp,code,msg,headers,newurl):
+        old,new=urllib.parse.urlsplit(req.full_url),urllib.parse.urlsplit(newurl)
+        allowed=(old.hostname or '').removeprefix('www.')=='akirabox.com' and (new.hostname or '').removeprefix('www.')=='akirabox.to' and old.path==new.path
+        if allowed and new.scheme=='https' and not new.username and not new.password:
+            return super().redirect_request(req,fp,code,msg,headers,newurl)
+        return None
+
 def inspect(url, api_key='', opener=None):
     host=family(url); p=urllib.parse.urlsplit(url)
     headers={'User-Agent':UA,'Accept':'application/json,text/html','Accept-Encoding':'identity'}
@@ -138,7 +167,7 @@ def inspect(url, api_key='', opener=None):
     elif host not in PAGE_HOSTS: return {'status':'unsupported','reason':'No metadata adapter for this host or container'}
     req=urllib.request.Request(target,data=body,headers=headers)
     try:
-        op=opener or urllib.request.build_opener(NoRedirect())
+        op=opener or urllib.request.build_opener(NoRedirect() if host in API_HOSTS else MetadataRedirects())
         try: response=op.open(req,timeout=20)
         except urllib.error.HTTPError as exc: response=exc
         with response:
@@ -154,10 +183,15 @@ def inspect(url, api_key='', opener=None):
             if len(raw)>MAX_BODY: return {'status':'unknown','reason':'Metadata page exceeded size limit'}
             raw=raw.decode('utf-8','replace')
             if host in API_HOSTS:
-                try: return from_api(host,json.loads(raw))
+                try:
+                    payload=json.loads(raw)
+                    if host=='vikingfile.com' and isinstance(payload,list):
+                        matches=[v for v in payload if isinstance(v,dict) and v.get('hash')==m[1]]
+                        payload=matches[0] if len(matches)==1 else None
+                    return from_api(host,payload)
                 except ValueError: return {'status':'held','reason':'Metadata API returned a non-JSON response'}
             if code!=200: return {'status':'unknown','reason':'HTTP error alone does not prove deletion'}
-            return from_html(raw)
+            return (akira_metadata(raw,url) if host in ('akirabox.com','akirabox.to') else None) or from_html(raw)
     except Exception as exc:
         return {'status':'held','reason':'Metadata request failed ('+type(exc).__name__+')'}
 
@@ -169,6 +203,11 @@ def run(root, limit=3000, minutes=15):
     path=root/'file-sizes.json'
     data=json.loads(path.read_text()) if path.exists() else {'schema':1,'files':{},'holds':{}}
     files=data['files']; holds=data.setdefault('holds',{})
+    if data.get('adapter_revision',1)<2:
+        # Revisit only results affected by verified parser fixes, preserving valid data.
+        for url,value in list(files.items()):
+            if family(url) in ('vikingfile.com','akirabox.com','akirabox.to') and value.get('status')=='unknown': files.pop(url)
+        data['adapter_revision']=2
     keys={c['url'] for c in candidates}
     data['files']=files={k:v for k,v in files.items() if k in keys}
     queues=collections.defaultdict(list); api_key=os.environ.get('FICHIER_API_KEY','')
@@ -185,10 +224,13 @@ def run(root, limit=3000, minutes=15):
     elif holds.get('1fichier.com',{}).get('reason','').startswith('API key not configured'): holds.pop('1fichier.com')
     # Previous access restrictions stay paused instead of retrying every batch.
     holds.setdefault('mediafire.com',{'reason':'Prior metadata pass hit network restriction','at':now()})
+    priority_path=root/'file-size-priority.json'
+    priority=set(json.loads(priority_path.read_text())) if priority_path.exists() else set()
+    for urls in queues.values(): urls.sort(key=lambda u: u not in priority)
     deadline=time.monotonic()+minutes*60
     host_budget=max(1,limit//max(1,len([h for h in queues if h not in holds])))
     def worker(host,urls):
-        results={}; hold=None
+        results={}; hold=None; unresolved=0
         if host in holds: return host,results,hold
         for url in urls[:host_budget]:
             if time.monotonic()>=deadline: break
@@ -199,6 +241,9 @@ def run(root, limit=3000, minutes=15):
             results[url]=value
             if value['status']=='held':
                 hold={'reason':value['reason'],'at':now()};break
+            unresolved = unresolved+1 if value['status']=='unknown' else 0
+            if unresolved>=3 and host not in API_HOSTS:
+                hold={'reason':'Three pages returned no usable metadata; host adapter needs review','at':now()};break
             time.sleep(3)
         return host,results,hold
     attempted=0

@@ -23,6 +23,19 @@ class FileSizesTest(unittest.TestCase):
         self.assertEqual(d['part_number'],2)
         self.assertEqual(d['checksums'],{'sha256':'a'*64})
         self.assertNotIn('token',d);self.assertNotIn('download_url',d)
+    def test_viking_array_response(self):
+        class Response:
+            code=200
+            headers=Message()
+            headers['Content-Type']='application/json'
+            def __enter__(self):return self
+            def __exit__(self,*a):pass
+            def read(self,*a):return b'[{"exist":false,"hash":"C0Ug5qAtxz"}]'
+        class Opener:
+            def open(self,*a,**kw):return Response()
+        self.assertEqual(inspect('https://vikingfile.com/f/C0Ug5qAtxz',opener=Opener())['status'],'missing')
+        self.assertEqual(inspect('https://vikingfile.com/f/Other',opener=Opener())['status'],'unknown')
+
     def test_names(self):
         self.assertEqual(url_name('https://filekeeper.net/id/Game.pkg'),'Game.pkg')
         self.assertEqual(multipart('game.7z.003')['part_number'],3)

@@ -67,7 +67,7 @@ var catalogSizes = (function() {
         listingNode=document.createElement('pre');listingNode.style.cssText='white-space:pre-wrap;max-height:220px;overflow:auto;font-size:12px;';panel.appendChild(listingNode);
         if(typeof fileSizes==='object' && fileSizes.summary) {
             var status=document.createElement('p'), states=fileSizes.summary.states || {};
-            status.textContent='Size pass: '+(states.pending || 0)+' pending · '+(states.held || 0)+' paused by access restrictions · '+(states.unsupported || 0)+' unsupported/container links. Updated '+(fileSizes.updated_at || 'not yet run')+'.';panel.appendChild(status);
+            status.textContent='Size pass: '+(states.pending || 0)+' pending · '+(states.held || 0)+' paused for access or adapter review · '+(states.unsupported || 0)+' unsupported/container links. Updated '+(fileSizes.updated_at || 'not yet run')+'.';panel.appendChild(status);
         }
         anchor.parentNode.insertBefore(panel,anchor);update();
     }

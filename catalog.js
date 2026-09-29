@@ -47,7 +47,7 @@ var gameCatalog = (function() {
         else if (matchesHost(host, 'akirabox.com')) label = 'AkiraBox';
         else if (matchesHost(host, 'anotepad.com')) label = 'Link list';
         else if (matchesHost(host, 'bit.ly')) label = 'Short link';
-        else if (matchesHost(host, 'vikingfile.com')) label = 'VikingFile';
+        else if (matchesHost(host, 'vikingfile.com') || matchesHost(host, 'vik1ngfile.site')) label = 'VikingFile';
         else if (matchesHost(host, 'mocha.my')) label = 'Mocha';
         else if (matchesHost(host, 'filekeeper.net')) label = 'FileKeeper';
         else if (matchesHost(host, 'rootz.so')) label = 'Rootz';
@@ -61,6 +61,10 @@ var gameCatalog = (function() {
     function statusKey(value) {
         var url = normalizeUrl(value);
         if (!url) return null;
+        if (matchesHost(url.hostname, 'vikingfile.com') || matchesHost(url.hostname, 'vik1ngfile.site')) {
+            var vikingId = url.pathname.match(/^\/f\/([a-zA-Z0-9]+)\/?$/);
+            if (vikingId) return 'https://vikingfile.com/f/' + vikingId[1];
+        }
         // Affiliate parameters do not change a 1fichier file's identity.
         if (matchesHost(url.hostname, '1fichier.com')) {
             var id = url.search.match(/^\?([a-z0-9]+)/i);
@@ -76,7 +80,8 @@ var gameCatalog = (function() {
     function isMissing(value) {
         var key = statusKey(value);
         var statuses = typeof linkStatuses === 'object' && linkStatuses ? linkStatuses.links : null;
-        return !!(key && statuses && statuses[key] && statuses[key].status === 'missing');
+        var sizes = typeof fileSizes === 'object' && fileSizes ? fileSizes.files : null;
+        return !!(key && ((statuses && statuses[key] && statuses[key].status === 'missing') || (sizes && sizes[key] && sizes[key].status === 'missing')));
     }
 
     function isExcluded(value) {
@@ -327,7 +332,10 @@ var gameCatalog = (function() {
         var summary = document.getElementById('linkStatusSummary');
         if (summary) {
             var statuses = typeof linkStatuses === 'object' && linkStatuses ? linkStatuses.links || {} : {};
-            var missing = Object.keys(statuses).filter(function(key) { return statuses[key].status === 'missing'; }).length;
+            var missingKeys = Object.create(null);
+            Object.keys(statuses).forEach(function(key) { if (statuses[key].status === 'missing') missingKeys[key] = true; });
+            if (typeof fileSizes === 'object' && fileSizes.files) Object.keys(fileSizes.files).forEach(function(key) { if (fileSizes.files[key].status === 'missing') missingKeys[key] = true; });
+            var missing = Object.keys(missingKeys).length;
             summary.textContent = 'Filecrypt.cc links hidden. ' + missing.toLocaleString('en-US') + ' confirmed missing link' + (missing === 1 ? '' : 's') + ' hidden. Other links may be unchecked.';
         }
     }
