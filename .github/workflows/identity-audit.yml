@@ -1,0 +1,28 @@
+name: Collect identity review evidence
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/identity_reference.py', 'identity-queries.json', '.github/workflows/identity-audit.yml']
+permissions:
+  contents: read
+concurrency:
+  group: identity-review-evidence
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect public title and platform evidence
+        env:
+          IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
+          IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
+        run: python3 scripts/identity_reference.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: identity-review-evidence
+          path: .identity-audit/*.json
+          include-hidden-files: true
+          retention-days: 14
