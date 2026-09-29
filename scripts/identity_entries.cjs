@@ -10,6 +10,6 @@ vm.createContext(c);
 vm.runInContext(fs.readFileSync(path.join(root, 'catalog.js'), 'utf8'), c);
 const rows = read('ps4_games_expanded.json').concat(read('superpsx-catalog.json').records, read('additional-catalog.json').records);
 const games = c.gameCatalog.groupGames(c.gameCatalog.prepare(rows));
-process.stdout.write(JSON.stringify(games.map(g => ({name:g.name, aliases:g.aliases, igdb_id:g.igdb_id || null,
+process.stdout.write(JSON.stringify(games.map(g => ({name:g.name, aliases:g.aliases, sources:g.sources || [], igdb_id:g.igdb_id || null,
     title_ids:[...new Set(g.releases.filter(r => r.metadata.kind === 'base' && !r.metadata.conflict)
         .map(r => r.metadata.title_id).filter(Boolean))], kinds:[...new Set(g.releases.map(r => r.metadata.kind || 'unknown'))]}))));

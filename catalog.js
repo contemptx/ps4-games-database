@@ -373,8 +373,12 @@ var gameCatalog = (function() {
         var ids = Object.create(null), matched = 0, unresolved = 0, other = 0;
         games.forEach(function(game) {
             var record = records[game.name];
-            if (!record || (game.igdb_id && record.igdb_id && game.igdb_id !== record.igdb_id)) { unresolved++; return; }
-            if (record.status === 'identified' && typeof record.canonical_id === 'number') {
+            if (!record) { unresolved++; return; }
+            var inputId = Object.prototype.hasOwnProperty.call(record, 'input_igdb_id') ? record.input_igdb_id : record.igdb_id;
+            if ((Object.prototype.hasOwnProperty.call(record, 'input_igdb_id') && (game.igdb_id || null) !== (inputId || null)) ||
+                (!Object.prototype.hasOwnProperty.call(record, 'input_igdb_id') && game.igdb_id && inputId && game.igdb_id !== inputId)) { unresolved++; return; }
+            if (record.source_urls && record.source_urls.length && !(game.sources || []).some(function(s) { return record.source_urls.indexOf(s.page_url) !== -1; })) { unresolved++; return; }
+            if (record.status === 'identified' && (typeof record.canonical_id === 'number' || /^local:[a-z0-9-]+$/.test(record.canonical_id || ''))) {
                 ids[record.canonical_id] = true; matched++;
             } else if (record.status === 'non_game') other++;
             else unresolved++;

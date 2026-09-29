@@ -10,6 +10,42 @@ def game(i, name, kind='Main Game', **extra):
 
 
 class IdentityTests(unittest.TestCase):
+    def test_reviewed_identity_requires_the_reviewed_source(self):
+        games = {1:game(1,'Same Name',platforms=[7]),2:game(2,'Same Name','Remake')}
+        overrides = {'records':{'Same Name':{'igdb_id':1,'source_urls':['https://example.com/old'],
+            'reason':'Source is the original', 'reviewed_at':'2026-09-29'}}}
+        old = {'name':'Same Name','igdb_id':2,'sources':[{'page_url':'https://example.com/old'}]}
+        record = resolve([old],games,overrides)[0]['Same Name']
+        self.assertEqual(record['canonical_id'],1)
+        self.assertEqual(record['input_igdb_id'],2)
+        changed = dict(old,sources=[{'page_url':'https://example.com/remake'}])
+        self.assertEqual(resolve([changed],games,overrides)[1]['unresolved_listings'],1)
+        self.assertEqual(resolve([old],{2:games[2]},overrides)[1]['unresolved_listings'],1)
+
+    def test_reviewed_local_games_exclusions_and_ambiguity(self):
+        names = ['Local Game','Local Alias','Demo','Ambiguous']
+        entries = [{'name':n,'sources':[{'page_url':'https://example.com/'+n}]} for n in names]
+        rules = {n:{'source_urls':['https://example.com/'+n], 'reviewed_at':'2026-09-29'} for n in names}
+        for n in names[:2]:
+            rules[n].update(status='identified',canonical_id='local:one-game',canonical_name='One Game',game_type='main_game')
+        rules['Demo'].update(status='non_game',game_type='demo')
+        rules['Ambiguous'].update(status='review',reason='Sequel number or URL suffix')
+        summary = resolve(entries,{}, {'records':rules})[1]
+        self.assertEqual(summary['identified_unique_games'],1)
+        self.assertEqual(summary['local_unique_games'],1)
+        self.assertEqual(summary['duplicate_game_listings'],1)
+        self.assertEqual(summary['non_game_listings'],1)
+        self.assertEqual(summary['unresolved_listings'],1)
+
+    def test_reviewed_duplicate_ids_and_real_api_dlc_types(self):
+        games = {1:game(1,'A'), 2:game(2,'Regional A'), 3:game(3,'Remake','Remake'),
+                 4:game(4,'DLC','DLC'), 5:game(5,'Pack','Pack / Addon')}
+        entries = [{'name':g['name']} for g in games.values()]
+        summary = resolve(entries,games,{'aliases':{'2':1}})[1]
+        self.assertEqual(summary['identified_unique_games'],2)
+        self.assertEqual(summary['non_game_listings'],2)
+        self.assertIsNone(root_id(1,games,{'1':2,'2':1}))
+
     def test_aliases_editions_and_non_games(self):
         games = {1:game(1,'One Game', alternative_names=[{'name':'Another Name'}]),
                  2:game(2,'One Game: Gold Edition', version_parent=1),

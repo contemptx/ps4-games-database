@@ -2,7 +2,7 @@ name: Resolve unique game identities
 on:
   push:
     branches: [main]
-    paths: ['scripts/game_identities.py', 'scripts/identity_entries.cjs', '.github/workflows/identities.yml']
+    paths: ['scripts/game_identities.py', 'scripts/identity_entries.cjs', 'identity-overrides.json', '.github/workflows/identities.yml']
   workflow_dispatch:
   workflow_run:
     workflows: ['Refresh IGDB metadata']
@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add game-identities.json game-identities.js identity-review.json index.html ps4-games-optimized.html ps4-pwa-optimized.html processing.html
+          git add game-identities.json game-identities.js identity-review.json identity-review.md index.html ps4-games-optimized.html ps4-pwa-optimized.html processing.html
           if ! git diff --cached --quiet; then
             git commit -m 'Resolve unique game identities and edition relationships'
             git fetch origin main
