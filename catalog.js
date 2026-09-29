@@ -211,10 +211,12 @@ var gameCatalog = (function() {
                 button.setAttribute('href', link.url);
                 button.className = 'download-btn btn-' + link.group;
                 button.textContent = link.label + ' ' + hostCounts[link.label];
+                if (typeof catalogSizes !== 'undefined') button.textContent += ' · ' + catalogSizes.label(link.url);
                 button.title = m.source_label ? m.source_label + '\n' + link.url : link.url;
                 if (newTab) button.target = '_blank';
                 button.rel = 'noopener noreferrer';
                 wrapper.appendChild(button);
+                if (typeof catalogSizes !== 'undefined') catalogSizes.addSelector(wrapper, link, game);
             });
             container.appendChild(wrapper);
         });
@@ -290,6 +292,7 @@ var gameCatalog = (function() {
     }
 
     function updateStatistics(games) {
+        if (typeof catalogSizes !== 'undefined') catalogSizes.init(games);
         var links = games.reduce(function(total, game) { return total + game.total_links; }, 0);
         var gameCount = games.length.toLocaleString('en-US');
         var linkCount = links.toLocaleString('en-US');
@@ -329,5 +332,5 @@ var gameCatalog = (function() {
         }
     }
 
-    return { prepare: prepare, updateStatistics: updateStatistics, describeLink: describeLink, isMissing: isMissing, isExcluded: isExcluded, renderLinks: renderLinks, compareVersions: compareVersions };
+    return { statusKey: statusKey, prepare: prepare, updateStatistics: updateStatistics, describeLink: describeLink, isMissing: isMissing, isExcluded: isExcluded, renderLinks: renderLinks, compareVersions: compareVersions };
 }());

@@ -1,0 +1,16 @@
+const fs=require('node:fs'), vm=require('node:vm'), assert=require('node:assert/strict'),path=require('node:path');
+const root=path.resolve(__dirname,'..');
+const c={URL,fileSizes:{files:{}}};vm.createContext(c);
+for(const f of ['catalog.js','sizes.js'])vm.runInContext(fs.readFileSync(path.join(root,f),'utf8'),c);
+const k=n=>'https://1fichier.com/?'+n;
+c.fileSizes.files[k('one')]={status:'known',size_bytes:100,size_precision:'exact',checksums:{sha256:'a'.repeat(64)}};
+c.fileSizes.files[k('two')]={status:'known',size_bytes:100,size_precision:'exact',checksums:{sha256:'a'.repeat(64)}};
+c.fileSizes.files[k('three')]={status:'known',size_bytes:200,size_precision:'estimated'};
+c.fileSizes.files[k('zero')]={status:'known',size_bytes:0,size_precision:'exact'};
+let s=c.catalogSizes.summarize([k('one')+'&af=1',k('one')+'&af=2',k('two'),k('three'),k('missing'),k('zero')]);
+assert.equal(s.bytes,300);assert.equal(s.duplicates,2);assert.equal(s.unknown,1);assert.equal(s.estimated,1);assert.equal(s.count,4);
+assert.equal(c.catalogSizes.label(k('zero')),'0 B');assert.equal(c.catalogSizes.label(k('missing')),'Size unknown');
+c.fileSizes.files[k('four')]={status:'known',filename:'same.pkg',size_bytes:100,size_precision:'exact'};
+c.fileSizes.files[k('five')]={status:'known',filename:'same.pkg',size_bytes:100,size_precision:'exact'};
+s=c.catalogSizes.summarize([k('four'),k('five')]);assert.equal(s.bytes,200,'Equal filenames and sizes alone must not collapse files');
+console.log('Size accounting: mirrors with checksum, affiliate URLs, zero, estimates, unknowns and ambiguous names PASS');

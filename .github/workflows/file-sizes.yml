@@ -1,0 +1,69 @@
+name: Index file sizes
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/file_sizes.py', 'scripts/size_candidates.cjs', '.github/workflows/file-sizes.yml']
+  workflow_dispatch:
+    inputs:
+      batches_left:
+        description: Maximum remaining batches (1-120)
+        required: true
+        default: '40'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: file-size-index
+  cancel-in-progress: false
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Test metadata and size totals
+        run: |
+          python3 -m unittest discover -s tests -p 'test_file_sizes.py'
+          node tests/test_sizes.cjs
+          node tests/test_catalog.cjs
+      - name: Collect file metadata without downloading packages
+        id: sizes
+        env:
+          FICHIER_API_KEY: ${{ secrets.FICHIER_API_KEY }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT" = 'push' ]; then
+            python3 scripts/file_sizes.py --limit 800 --minutes 3
+          else
+            python3 scripts/file_sizes.py --limit 3000 --minutes 15
+          fi
+      - name: Stamp and publish sizes
+        run: |
+          python3 scripts/stamp_catalog.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add file-sizes.json file-sizes.js index.html ps4-games-optimized.html ps4-pwa-optimized.html processing.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'Index download sizes and public file metadata'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
+      - name: Deploy and continue pending metadata
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          BATCHES_LEFT: ${{ inputs.batches_left || '40' }}
+          CAN_CONTINUE: ${{ steps.sizes.outputs.continue }}
+        run: |
+          python3 scripts/continue_sizes.py
+      - name: Preserve progress on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: file-size-checkpoint-${{ github.run_id }}
+          path: file-sizes.*
+          retention-days: 7
