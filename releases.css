@@ -86,3 +86,5 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible { 
  .source-filter { display: block; margin-right: 0; }
  .release-group { padding: 12px; }
 }
+
+.identity-summary { color: #dae8fb; font-size: 12px; line-height: 1.6; max-width: 1000px; margin: 18px auto 0; }

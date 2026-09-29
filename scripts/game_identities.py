@@ -16,12 +16,14 @@ ROMAN = dict(zip(['ii','iii','iv','vi','vii','viii','ix','xi','xii','xiii'],
                  ['2','3','4','6','7','8','9','11','12','13']))
 GAME_TYPES = {'main_game', 'standalone_expansion', 'episode', 'season', 'remake', 'remaster', 'expanded_game', 'port', 'fork'}
 NON_GAME_TYPES = {'dlc_addon', 'expansion', 'bundle', 'mod', 'pack', 'update'}
+PLATFORM_NAMES = {'PlayStation', 'PlayStation 2', 'PlayStation 3', 'PlayStation 4',
+                  'PlayStation Portable', 'PlayStation Vita', 'PlayStation VR', 'Sega Saturn'}
 
 
 def normalize(value, relaxed=False):
     value = html.unescape(value).casefold()
     value = re.sub(r'\s+(?:ps4|fpkg|pkg)(?:\s+(?:ps4|fpkg|pkg|download))*\s*$', '', value)
-    value = value.replace('&', ' and ')
+    value = value.replace('&', ' and ').replace('×', 'x')
     value = re.sub(r"['’‘`\u200b\ufeff]", '', value)
     value = ''.join(ch for ch in unicodedata.normalize('NFKD', value) if not unicodedata.combining(ch))
     words = re.sub(r'[^\w]+', ' ', value).strip().split()
@@ -75,6 +77,18 @@ def choose_match(entry, games, indexes):
             return min(ps4), 'Unique PS4 title/alias with catalogue CUSA evidence', []
         # Ambiguity in a stricter match is not resolved by a looser spelling rule.
         break
+    if not candidates:
+        # Sources sometimes append a regional alternative title in parentheses.
+        # Require BOTH titles to identify the same game; never just discard a suffix.
+        for name in names:
+            pair = re.fullmatch(r'(.+?)\s*\(([^()]+)\)\s*', name)
+            if not pair:
+                continue
+            for relaxed in (False, True):
+                sides = [indexes[int(relaxed)].get(normalize(n, relaxed), set()) for n in pair.groups()]
+                roots = [{root_id(i, games) for i in side} for side in sides]
+                if all(len(r) == 1 and None not in r for r in roots) and roots[0] == roots[1]:
+                    return min(sides[0]), 'Both regional title spellings identify the same game', []
     return None, 'Ambiguous title' if candidates else 'No title match', sorted(candidates)
 
 
@@ -112,11 +126,12 @@ def resolve(entries, games):
 def main(root=ROOT):
     entries = json.loads(subprocess.check_output(['node', str(root / 'scripts/identity_entries.cjs')], text=True))
     api = API()
-    platforms = api.query('platforms', 'fields name; where id = (7,8,9,38,46,48); limit 20;')
+    platforms = [p for p in api.all('platforms', 'name', 'id > 0') if p['name'] in PLATFORM_NAMES]
     if not any(p['id'] == 48 and p['name'] == 'PlayStation 4' for p in platforms):
         raise RuntimeError('Unexpected platform identities; counts preserved')
     print('Fetching identities for ' + ', '.join(p['name'] for p in platforms), flush=True)
-    games = {g['id']:g for g in api.all('games', FIELDS, 'platforms = (7,8,9,38,46,48)')}
+    platform_ids = ','.join(str(p['id']) for p in platforms)
+    games = {g['id']:g for g in api.all('games', FIELDS, f'platforms = ({platform_ids})')}
     # Retain existing matched identities even if a platform flag has changed.
     missing = {e['igdb_id'] for e in entries if e.get('igdb_id')} - games.keys()
     for _ in range(8):

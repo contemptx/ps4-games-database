@@ -24,17 +24,21 @@ jobs:
           ref: main
           fetch-depth: 0
       - name: Test identity rules
-        run: python3 -m unittest discover -s tests -p 'test_game_identities.py'
+        run: |
+          python3 -m unittest discover -s tests -p 'test_game_identities.py'
+          node tests/test_identity_counts.cjs
       - name: Resolve identities and edition parents
         env:
           IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
           IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
         run: python3 scripts/game_identities.py
+      - name: Version identity data for browser caches
+        run: python3 scripts/stamp_catalog.py
       - name: Publish counts and review queue
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add game-identities.json game-identities.js identity-review.json
+          git add game-identities.json game-identities.js identity-review.json index.html ps4-games-optimized.html ps4-pwa-optimized.html processing.html
           if ! git diff --cached --quiet; then
             git commit -m 'Resolve unique game identities and edition relationships'
             git fetch origin main

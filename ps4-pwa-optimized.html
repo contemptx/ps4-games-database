@@ -254,7 +254,7 @@
             transition: width 0.3s;
         }
     </style>
-    <link rel="stylesheet" href="releases.css?v=recommendations1">
+    <link rel="stylesheet" href="releases.css?v=identities1">
 </head>
 <body>
     <div class="container">
@@ -263,13 +263,14 @@
             <div class="stats">
                 <div class="stat-item">
                     <span class="stat-number" id="totalGames">—</span>
-                    <span class="stat-label">Game listings</span>
+                    <span class="stat-label" id="gameCountLabel">Unique games identified</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number" id="totalLinks">—</span>
                     <span class="stat-label">Links</span>
                 </div>
             </div>
+            <p id="identitySummary" class="identity-summary">Resolving unique game identities…</p>
         </header>
         
         <div class="search-container">
@@ -343,7 +344,8 @@
     <script src="file-sizes.js?v=d148d8a05282172b"></script>
     <script src="sizes.js?v=2"></script>
     <script src="recommendations.js?v=1"></script>
-    <script src="catalog.js?v=recommendations1"></script>
+    <script src="game-identities.js?v=1"></script>
+    <script src="catalog.js?v=identities1"></script>
     <script src="igdb-metadata.js?v=1393ef8433c2c90d"></script>
     <script src="sorting.js?v=groups1"></script>
     <script src="paging.js?v=recommendations1"></script>

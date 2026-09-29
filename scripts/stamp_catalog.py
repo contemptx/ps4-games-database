@@ -4,7 +4,7 @@ import hashlib
 import pathlib
 import re
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-DATA = ['release-metadata.js', 'superpsx-catalog.js', 'additional-catalog.js', 'link-status.js', 'index-progress.js', 'igdb-metadata.js', 'file-sizes.js']
+DATA = ['release-metadata.js', 'superpsx-catalog.js', 'additional-catalog.js', 'link-status.js', 'index-progress.js', 'igdb-metadata.js', 'file-sizes.js', 'game-identities.js']
 PAGES = ['index.html', 'ps4-games-optimized.html', 'ps4-pwa-optimized.html', 'processing.html']
 
 def stamp(root=ROOT):

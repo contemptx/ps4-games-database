@@ -367,14 +367,39 @@ var gameCatalog = (function() {
         return grouped;
     }
 
+    function identityCounts(games) {
+        var records = typeof gameIdentities === 'object' && gameIdentities ? gameIdentities.records : null;
+        if (!records) return null;
+        var ids = Object.create(null), matched = 0, unresolved = 0, other = 0;
+        games.forEach(function(game) {
+            var record = records[game.name];
+            if (!record || (game.igdb_id && record.igdb_id && game.igdb_id !== record.igdb_id)) { unresolved++; return; }
+            if (record.status === 'identified' && typeof record.canonical_id === 'number') {
+                ids[record.canonical_id] = true; matched++;
+            } else if (record.status === 'non_game') other++;
+            else unresolved++;
+        });
+        return {unique: Object.keys(ids).length, matched: matched, unresolved: unresolved, other: other,
+            duplicateListings: matched - Object.keys(ids).length};
+    }
+
     function updateStatistics(games) {
         if (typeof catalogSizes !== 'undefined') catalogSizes.init(games);
         var links = games.reduce(function(total, game) { return total + game.total_links; }, 0);
         var gameCount = games.length.toLocaleString('en-US');
         var linkCount = links.toLocaleString('en-US');
-        document.getElementById('totalGames').textContent = gameCount;
+        var identities = identityCounts(games);
+        document.getElementById('totalGames').textContent = identities ? identities.unique.toLocaleString('en-US') : gameCount;
+        var countLabel = document.getElementById('gameCountLabel');
+        if (countLabel) countLabel.textContent = identities ? 'Unique games identified' : 'Game listings';
+        var identitySummary = document.getElementById('identitySummary');
+        if (identitySummary) identitySummary.textContent = identities ?
+            gameCount + ' listings · ' + identities.duplicateListings.toLocaleString('en-US') + ' duplicate/edition listings counted once · ' +
+            identities.unresolved.toLocaleString('en-US') + ' listings need identity review · ' + identities.other.toLocaleString('en-US') +
+            ' collections, add-ons or other entries counted separately. Unresolved listings are excluded from the unique count. Remakes/remasters remain distinct.' :
+            'Unique-game identities unavailable; showing the listing count.';
         document.getElementById('totalLinks').textContent = linkCount;
-        document.getElementById('catalogTotals').textContent = gameCount + ' Game Listings | ' + linkCount + ' Download Links';
+        document.getElementById('catalogTotals').textContent = (identities ? identities.unique.toLocaleString('en-US') + ' Unique Games Identified | ' : '') + gameCount + ' Game Listings | ' + linkCount + ' Download Links';
         var sources = Object.create(null);
         games.forEach(function(game) { (game.sources || [{name:game.source}]).forEach(function(s) { sources[s.name] = true; }); });
         var sourceFilter = document.getElementById('sourceFilter');
@@ -411,5 +436,5 @@ var gameCatalog = (function() {
         }
     }
 
-    return { statusKey: statusKey, prepare: prepare, groupGames: groupGames, updateStatistics: updateStatistics, describeLink: describeLink, isMissing: isMissing, isExcluded: isExcluded, renderLinks: renderLinks, renderTitle: renderTitle, compareVersions: compareVersions };
+    return { statusKey: statusKey, prepare: prepare, groupGames: groupGames, identityCounts: identityCounts, updateStatistics: updateStatistics, describeLink: describeLink, isMissing: isMissing, isExcluded: isExcluded, renderLinks: renderLinks, renderTitle: renderTitle, compareVersions: compareVersions };
 }());
