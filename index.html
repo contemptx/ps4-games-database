@@ -266,7 +266,7 @@
             .download-btn { padding: 6px 12px; font-size: 12px; }
         }
     </style>
-    <link rel="stylesheet" href="releases.css?v=cards1">
+    <link rel="stylesheet" href="releases.css?v=recommendations1">
 </head>
 <body>
     <div class="container">
@@ -311,6 +311,21 @@
                     <option value="unknown">Unknown / conflicting type</option>
                 </select>
             </label>
+            <div class="recommendation-controls">
+                <label class="source-filter" for="consoleFirmware">Console firmware
+                    <input id="consoleFirmware" type="text" inputmode="decimal" maxlength="5" placeholder="e.g. 9.00" list="firmwareVersions" aria-describedby="recommendationHelp" onchange="catalogRecommendations.savePreferences(); searchGames()">
+                </label>
+                <datalist id="firmwareVersions"><option value="5.05"><option value="6.72"><option value="7.02"><option value="7.55"><option value="9.00"><option value="11.00"><option value="12.00"><option value="12.52"></datalist>
+                <label class="source-filter" for="preferredHost">Preferred host
+                    <select id="preferredHost" onchange="catalogRecommendations.savePreferences(); searchGames()">
+                        <option value="1fichier.com">1fichier</option>
+                        <option value="mediafire.com">MediaFire</option>
+                        <option value="pixeldrain.com">Pixeldrain</option>
+                        <option value="">Tested hosts first</option>
+                    </select>
+                </label>
+                <p class="recommendation-help" id="recommendationHelp">Blank firmware: requirements unchecked. Suggestions use source labels; all releases remain available.</p>
+            </div>
             <div class="search-info" id="searchInfo">Loading games database...</div>
         </div>
         
@@ -343,15 +358,17 @@
     <script src="index-progress.js?v=165772d06e33c1c6"></script>
     <script src="file-sizes.js?v=d148d8a05282172b"></script>
     <script src="sizes.js?v=2"></script>
-    <script src="catalog.js?v=groups1"></script>
+    <script src="recommendations.js?v=1"></script>
+    <script src="catalog.js?v=recommendations1"></script>
     <script src="igdb-metadata.js?v=1393ef8433c2c90d"></script>
     <script src="sorting.js?v=groups1"></script>
-    <script src="paging.js?v=groups1"></script>
+    <script src="paging.js?v=recommendations1"></script>
     <script>
         let allGames = [];
         
         // Load games data
         async function loadGames() {
+            catalogRecommendations.init();
             try {
                 const response = await fetch('ps4_games_expanded.json');
                 if (!response.ok) {

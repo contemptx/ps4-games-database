@@ -15,6 +15,10 @@ var catalogPaging = (function() {
             var copy = {};
             Object.keys(game).forEach(function(key) { copy[key] = game[key]; });
             copy.releases = releases;
+            // Keep matching bases available to the advisor while viewing only updates/DLC.
+            copy.recommendationReleases = (game.releases || []).filter(function(release) {
+                return !source || (release.source || game.source) === source;
+            });
             if (source && game.sources) copy.sources = game.sources.filter(function(s) { return s.name === source; });
             copy.links = [];
             releases.forEach(function(release) { copy.links = copy.links.concat(release.links); });

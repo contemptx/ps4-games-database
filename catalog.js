@@ -182,8 +182,15 @@ var gameCatalog = (function() {
             source.appendChild(anchor);
         });
         container.appendChild(source);
+        var recommendations = typeof catalogRecommendations === 'object' ? catalogRecommendations : null;
+        var suggested = recommendations ? recommendations.analyze(game) : null;
+        if (recommendations) recommendations.renderSummary(container, game, suggested, function() {
+            container.textContent = ''; renderLinks(container, game, newTab);
+        });
         var names = { base: 'Base game', update: 'Update', dlc: 'DLC', fix: 'Fix', patch: 'Language / mod patch', bundle: 'Combined package' };
-        game.releases.forEach(function(release) {
+        var orderedReleases = game.releases.slice();
+        if (recommendations) orderedReleases.sort(function(a, b) { return recommendations.rank(a, suggested) - recommendations.rank(b, suggested); });
+        orderedReleases.forEach(function(release) {
             var m = release.metadata, wrapper = document.createElement('div');
             wrapper.className = 'release-group release-' + (names[m.kind] && !m.conflict ? m.kind : 'unknown');
             var heading = document.createElement('div');
@@ -206,7 +213,8 @@ var gameCatalog = (function() {
                 if (newTab) origin.target = '_blank';
                 wrapper.appendChild(origin);
             }
-            if (release.newest) {
+            if (recommendations) recommendations.decorateRelease(wrapper, release, suggested);
+            if (release.newest && !recommendations) {
                 var badge = document.createElement('span');
                 badge.className = 'release-latest';
                 badge.textContent = 'Highest listed update — check firmware';
@@ -225,15 +233,23 @@ var gameCatalog = (function() {
                 wrapper.appendChild(note);
             }
             if (m.source_label) wrapper.title = m.source_label;
+            if (recommendations) recommendations.renderMirrorNote(wrapper, release, suggested.options.host);
             var hostCounts = Object.create(null);
-            release.links.forEach(function(link) {
+            var orderedLinks = recommendations ? recommendations.orderedLinks(release, suggested.options.host) : release.links;
+            var firstHost = recommendations ? recommendations.suggestedHost(release, suggested.options.host) : '';
+            orderedLinks.forEach(function(link) {
                 hostCounts[link.label] = (hostCounts[link.label] || 0) + 1;
                 var button = document.createElement('a');
                 button.setAttribute('href', link.url);
                 button.className = 'download-btn btn-' + link.group;
                 button.textContent = link.label + ' ' + hostCounts[link.label];
+                if (recommendations && recommendations.host(link) === firstHost) {
+                    button.className += ' preferred-mirror';
+                    button.textContent += ' · Try first';
+                }
                 if (typeof catalogSizes !== 'undefined') button.textContent += ' · ' + catalogSizes.label(link.url);
                 button.title = m.source_label ? m.source_label + '\n' + link.url : link.url;
+                if (recommendations && recommendations.host(link) === firstHost) button.title += '\nPreferred host; this individual download may be unverified. Keep all required archive parts.';
                 if (newTab) button.target = '_blank';
                 button.rel = 'noopener noreferrer';
                 wrapper.appendChild(button);
