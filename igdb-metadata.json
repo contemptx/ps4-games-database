@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "IGDB",
-  "updated_at": "2026-09-29T04:30:16.113320+00:00",
+  "updated_at": "2026-09-29T10:00:26.912001+00:00",
   "popularity_metric": "IGDB visits",
   "release_policy": "Earliest known PS4 release across regions; partial dates retain precision",
   "summary": {
