@@ -1,0 +1,20 @@
+name: Test download hosts
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/test_download_hosts.py', '.github/workflows/test-download-hosts.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sample file transfers across hosts
+        run: python3 scripts/test_download_hosts.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: host-download-tests
+          path: host-download-tests.json
