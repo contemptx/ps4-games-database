@@ -1,0 +1,68 @@
+name: Review file availability
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/review_availability.py', '.github/workflows/availability.yml']
+  workflow_dispatch:
+    inputs:
+      batches_left:
+        description: Maximum remaining review batches (1-120)
+        default: '120'
+        required: true
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: file-size-index
+  cancel-in-progress: false
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Review supported hosts without downloading files
+        id: review
+        env:
+          FICHIER_API_KEY: ${{ secrets.FICHIER_API_KEY }}
+          EVENT: ${{ github.event_name }}
+        run: python3 scripts/review_availability.py
+      - name: Publish confirmed missing links
+        run: |
+          python3 scripts/stamp_catalog.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add availability-review.json link-status.json link-status.js index.html ps4-games-optimized.html ps4-pwa-optimized.html processing.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'Review host availability and hide confirmed missing links'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
+      - name: Deploy and continue review
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          CAN_CONTINUE: ${{ steps.review.outputs.continue }}
+          BATCHES_LEFT: ${{ inputs.batches_left || '120' }}
+        run: |
+          gh workflow run static.yml --ref main
+          python3 - <<'PY'
+          import os,subprocess
+          n=int(os.environ['BATCHES_LEFT'])
+          if not 1<=n<=120: raise ValueError('Batch count outside 1-120')
+          if os.environ['CAN_CONTINUE']=='true' and n>1:
+              subprocess.run(['gh','workflow','run','availability.yml','--ref','main','-f','batches_left='+str(n-1)],check=True)
+          PY
+      - name: Preserve review checkpoint on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: availability-checkpoint-${{ github.run_id }}
+          path: |
+            availability-review.json
+            link-status.json
+          retention-days: 7
