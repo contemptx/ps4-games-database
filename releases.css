@@ -88,3 +88,8 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible { 
 }
 
 .identity-summary { color: #dae8fb; font-size: 12px; line-height: 1.6; max-width: 1000px; margin: 18px auto 0; }
+
+
+.region-summary,.coverage-link {margin:10px 0;color:#adb9d6;font-size:13px;line-height:1.6}
+.coverage-link a {color:#91c8ff}
+.region-evidence {display:inline-block;margin:6px 0;color:#a7bad7;font-size:11px;border-bottom:1px dotted currentColor;cursor:help}

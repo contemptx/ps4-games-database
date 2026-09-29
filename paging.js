@@ -1,11 +1,12 @@
 // Keep the catalogue usable as source indexing adds more release links.
 var catalogPaging = (function() {
     var page = 0, size = 50;
-    function filter(games, text, source, kind) {
+    function filter(games, text, source, kind, region) {
         var query = (text || '').trim().toLowerCase();
-        var candidates = (kind || source) ? games.map(function(game) {
+        var candidates = (kind || source || region) ? games.map(function(game) {
             var releases = (game.releases || []).filter(function(release) {
                 if (source && (release.source || game.source) !== source) return false;
+                if (region && !catalogRegions.matches(release.metadata, region)) return false;
                 if (!kind) return true;
                 var m = release.metadata || {};
                 var known = ['base', 'update', 'dlc', 'fix', 'patch', 'bundle'];
@@ -17,7 +18,7 @@ var catalogPaging = (function() {
             copy.releases = releases;
             // Keep matching bases available to the advisor while viewing only updates/DLC.
             copy.recommendationReleases = (game.releases || []).filter(function(release) {
-                return !source || (release.source || game.source) === source;
+                return (!source || (release.source || game.source) === source) && (!region || catalogRegions.matches(release.metadata, region));
             });
             if (source && game.sources) copy.sources = game.sources.filter(function(s) { return s.name === source; });
             copy.links = [];
@@ -46,7 +47,9 @@ var catalogPaging = (function() {
         var source = document.getElementById('sourceFilter').value || '';
         var releaseFilter = document.getElementById('releaseFilter');
         var kind = releaseFilter ? releaseFilter.value : '';
-        var matches = filter(games, input.value, source, kind);
+        var regionFilter = document.getElementById('regionFilter');
+        var region = regionFilter ? regionFilter.value : '';
+        var matches = filter(games, input.value, source, kind, region);
         if (typeof catalogSorting === 'object') matches = catalogSorting.sort(matches, catalogSorting.mode());
         var pages = Math.ceil(matches.length / size);
         page = Math.max(0, Math.min(page, pages - 1));
@@ -58,7 +61,8 @@ var catalogPaging = (function() {
         document.getElementById('pageStatus').textContent = pages ? 'Page ' + (page + 1) + ' of ' + pages : 'No matches';
         document.getElementById('searchInfo').textContent = 'Showing ' + (matches.length ? start + 1 : 0) + '–' + end +
             ' of ' + matches.length.toLocaleString() + ' game listing' + (matches.length === 1 ? '' : 's') +
-            (source ? ' from ' + source : '') + (kind ? ' · ' + releaseFilter.options[releaseFilter.selectedIndex].text : '') + (input.value.trim() ? ' matching "' + input.value + '"' : '');
+            (source ? ' from ' + source : '') + (kind ? ' · ' + releaseFilter.options[releaseFilter.selectedIndex].text : '') +
+            (region ? ' · ' + regionFilter.options[regionFilter.selectedIndex].text : '') + (input.value.trim() ? ' matching "' + input.value + '"' : '');
         if (!matches.length) {
             var message = document.createElement('div');
             message.className = 'loading';

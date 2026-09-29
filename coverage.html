@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PS4 catalogue coverage</title>
+    <style>
+        :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0d1321;color:#e7edf8;font:16px/1.6 system-ui,sans-serif}main{max-width:1180px;margin:auto;padding:32px 20px 60px}a{color:#8dc8ff}h1{font-size:clamp(26px,5vw,40px);line-height:1.2;margin:22px 0 10px}h2{font-size:21px;margin:34px 0 10px}p{max-width:950px}.muted{color:#a8b7d1}.notice{border-left:3px solid #73aeff;background:#152238;padding:14px 18px;margin:22px 0}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:24px 0}.stat{background:#172338;padding:20px;border:1px solid #2c3a55;border-radius:12px}.stat strong{display:block;font-size:31px;color:#b3daff}.stat span{color:#adbad0;font-size:13px}.table-wrap{overflow:auto;border:1px solid #2b3850;border-radius:10px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:12px 15px;border-bottom:1px solid #27344b}th{background:#192740;white-space:nowrap}td{vertical-align:top}tbody tr:last-child td{border-bottom:0}.controls{display:flex;gap:14px;flex-wrap:wrap;margin:18px 0}.controls label{display:flex;flex-direction:column;font-size:13px;color:#afbfda;flex:1;min-width:180px}input,select,button{font:inherit;color:inherit;background:#1b2941;border:1px solid #425570;border-radius:7px;padding:10px;margin-top:5px}button{cursor:pointer}button:disabled{opacity:.4;cursor:default}.pager{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px}.small{font-size:13px}.policy{margin-top:28px}summary{cursor:pointer;color:#adceff}.policy p{font-size:14px;color:#afbdd3}#error{color:#ffd5a2}@media(max-width:700px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}main{padding:22px 14px}th,td{padding:10px}.stat{padding:14px}}
+    </style>
+</head>
+<body><main>
+    <a href="index.html">← Games catalogue</a>
+    <h1>Catalogue coverage</h1>
+    <p class="muted">Unique game identities, regional releases and reference titles to review.</p>
+    <div class="notice">Sony publishes <strong>4,000+ PS4 games</strong>. That wording appeared in the
+        <a href="https://blog.playstation.com/2020/11/09/ps5-the-ultimate-faq/">2020 PS5 FAQ</a> and remains on
+        <a href="https://www.playstation.com/en-us/support/games/ps5-backward-compatibility-games/">PlayStation Support</a>.
+        It is a lower bound, not an exact current total or a completeness target.</div>
+    <p id="snapshot" class="muted">Loading the latest reconciliation…</p>
+    <p id="error" role="alert"></p>
+    <div class="stats" id="stats"></div>
+    <p id="platformSummary"></p>
+    <p class="muted small">The comparison covers games from all publishers. Our overall identity count also includes older-console conversions and other platforms.
+        A title match does not verify a download, package contents, or every regional edition.</p>
+    <h2>Regions in our download listings</h2>
+    <p id="regionSummary"></p>
+    <div class="table-wrap"><table><thead><tr><th>Region label</th><th>Distinct links</th><th>Unique identities</th><th>With labelled base</th><th>PS4 reference matches with base</th></tr></thead><tbody id="regions"></tbody></table></div>
+    <p class="muted small">Regions come from source labels and filenames, not language or a guess from a CUSA number.
+        Counts overlap when an identity has several regional versions. “With labelled base” requires an explicit base-game link.
+        <a href="region-review.json">Download unknown/conflicting region queue</a>.</p>
+    <h2>Reconcile the reference</h2>
+    <p class="muted small">Unmatched IGDB identities are candidate gaps for review. IGDB can contain missing dates, duplicate records or mistakes.
+        Its release markets describe publishing history; they do not prove we have a file for that market.</p>
+    <div class="controls">
+        <label>Show<select id="scope"><option value="gaps">Reference titles not matched</option><option value="matched">Reference titles matched</option><option value="outside">Our identities outside the dated reference</option><option value="all">All reference titles</option></select></label>
+        <label>Search titles<input id="search" type="search" placeholder="e.g. Final Fantasy"></label>
+        <label>IGDB release market<select id="market"><option value="">All recorded markets</option></select></label>
+    </div>
+    <p id="resultSummary" class="muted small"></p>
+    <div class="table-wrap"><table><thead><tr><th>Game identity</th><th>PS4 release recorded</th><th>IGDB markets / platforms</th><th>Catalogue evidence</th></tr></thead><tbody id="results"></tbody></table></div>
+    <div class="pager"><button id="previous" disabled>Previous</button><span id="page" class="small"></span><button id="next" disabled>Next</button></div>
+    <details class="policy"><summary>Counting rules and downloadable data</summary><p id="policy"></p><p>Partial release dates qualify only after the end of their stated month or year. Remakes and remasters remain distinct; explicit editions count once. Delisted games remain when their release qualifies.</p><p><a href="catalogue-coverage.json">Full reconciliation JSON</a> · <a href="https://github.com/contemptx/ps4-games-database/blob/main/catalogue-coverage.md">Report and methodology</a> · <a href="https://www.igdb.com/">IGDB reference</a></p></details>
+</main><script src="coverage.js?v=1"></script></body></html>

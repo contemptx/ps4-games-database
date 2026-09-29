@@ -133,7 +133,7 @@ var gameCatalog = (function() {
         var groups = [], index = Object.create(null), versions = Object.create(null);
         links.forEach(function(link) {
             var meta = link.release || {};
-            var fields = ['kind', 'version', 'title_id', 'region', 'firmware', 'variant', 'edition', 'source_section', 'source_label', 'evidence', 'conflict'];
+            var fields = ['kind', 'version', 'title_id', 'region', 'region_status', 'firmware', 'variant', 'edition', 'source_section', 'source_label', 'evidence', 'conflict'];
             var key = fields.map(function(field) { return meta[field] || ''; }).join('|');
             if (!index[key]) {
                 index[key] = { metadata: meta, links: [] };
@@ -202,6 +202,7 @@ var gameCatalog = (function() {
             if (m.version) parts.push('v' + m.version);
             if (m.title_id) parts.push(m.title_id);
             if (m.region) parts.push(m.region);
+            else parts.push(m.region_conflict ? 'Region conflict' : 'Region unknown');
             heading.textContent = parts.join(' · ');
             wrapper.appendChild(heading);
             if (release.source) {
@@ -226,6 +227,15 @@ var gameCatalog = (function() {
             if (m.source_section) details.push('Source section: ' + m.source_section);
             if (m.evidence === 'URL filename') details.push('From filename; package contents unverified');
             if (m.conflict) details.push('Conflicting labels — check source page');
+            if (m.region_conflict) details.push('Source and filename regions disagree');
+            if (m.region_evidence && m.region_evidence.length) {
+                var regionEvidence = document.createElement('span');
+                regionEvidence.className = 'region-evidence';
+                regionEvidence.textContent = m.region_conflict ? 'Review region evidence' : 'Region evidence';
+                regionEvidence.title = m.region_evidence.map(function(e) { return e.source + ': ' + e.label; }).join('\n');
+                regionEvidence.tabIndex = 0;
+                wrapper.appendChild(regionEvidence);
+            }
             if (details.length) {
                 var note = document.createElement('div');
                 note.className = 'release-detail';
@@ -310,6 +320,10 @@ var gameCatalog = (function() {
                     if (!link || seen[key]) return;
                     seen[key] = true;
                     link.release = metadata[key] || filenameDetails(link.url);
+                    if (typeof catalogRegions === 'object') {
+                        var files = typeof fileSizes === 'object' && fileSizes.files || {};
+                        link.release = catalogRegions.enrich(link.release, link.url, files[key]);
+                    }
                     downloadLinks[link.group].push(link.url);
                     destinations.push(link);
             });
@@ -390,6 +404,12 @@ var gameCatalog = (function() {
     function updateStatistics(games) {
         if (typeof catalogSizes !== 'undefined') catalogSizes.init(games);
         var links = games.reduce(function(total, game) { return total + game.total_links; }, 0);
+        var regionSummary = document.getElementById('regionSummary');
+        if (regionSummary && typeof catalogRegions === 'object') {
+            var regionCounts = catalogRegions.summary(games);
+            regionSummary.textContent = regionCounts.identified_links.toLocaleString('en-US') + ' links have region evidence · ' +
+                regionCounts.unknown_links.toLocaleString('en-US') + ' unknown or conflicting. Region labels describe releases, not languages.';
+        }
         var gameCount = games.length.toLocaleString('en-US');
         var linkCount = links.toLocaleString('en-US');
         var identities = identityCounts(games);

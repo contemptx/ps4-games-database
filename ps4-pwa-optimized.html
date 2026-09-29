@@ -254,7 +254,7 @@
             transition: width 0.3s;
         }
     </style>
-    <link rel="stylesheet" href="releases.css?v=identities1">
+    <link rel="stylesheet" href="releases.css?v=regions1-identities1">
 </head>
 <body>
     <div class="container">
@@ -284,6 +284,22 @@
                     <option value="ArabicPS4Games">ArabicPS4Games</option>
                 </select>
             </label>
+            <label class="source-filter" for="regionFilter">Release region
+                <select id="regionFilter" onchange="searchGames()">
+                    <option value="">All regions</option>
+                    <option value="USA">USA / North America</option>
+                    <option value="EUR">EUR / Europe</option>
+                    <option value="JPN">JPN / Japan</option>
+                    <option value="ASIA">Asia</option>
+                    <option value="KOR">Korea</option>
+                    <option value="CHN">China</option>
+                    <option value="AUS">Australia</option>
+                    <option value="NZL">New Zealand</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="WORLD">Worldwide</option>
+                    <option value="unknown">Unknown / conflicting region</option>
+                </select>
+            </label>
             <label class="source-filter" for="releaseFilter">Release type
                 <select id="releaseFilter" onchange="searchGames()">
                     <option value="">All release types</option>
@@ -311,6 +327,8 @@
                 </label>
                 <p class="recommendation-help" id="recommendationHelp">Blank firmware: requirements unchecked. Suggestions use source labels; all releases remain available.</p>
             </div>
+            <p class="region-summary" id="regionSummary"></p>
+            <p class="coverage-link"><a href="coverage.html">Catalogue coverage and regional reconciliation</a></p>
             <div class="search-info" id="searchInfo">Loading...</div>
             <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
         </div>
@@ -343,12 +361,13 @@
     <script src="index-progress.js?v=165772d06e33c1c6"></script>
     <script src="file-sizes.js?v=d148d8a05282172b"></script>
     <script src="sizes.js?v=2"></script>
-    <script src="recommendations.js?v=1"></script>
+    <script src="regions.js?v=31d7000954143b84"></script>
+    <script src="recommendations.js?v=86ba6c79b76fac91"></script>
     <script src="game-identities.js?v=25fe3427cafc47a7"></script>
-    <script src="catalog.js?v=bbf6e4573c2fbeb4"></script>
+    <script src="catalog.js?v=25f7db7e5c07f958"></script>
     <script src="igdb-metadata.js?v=1393ef8433c2c90d"></script>
     <script src="sorting.js?v=groups1"></script>
-    <script src="paging.js?v=recommendations1"></script>
+    <script src="paging.js?v=da0883055351902c"></script>
     <script>
         var allGames = [];
         var loadedCount = 0;
@@ -492,4 +511,5 @@
     </script>
 </body>
 </html>
+
 

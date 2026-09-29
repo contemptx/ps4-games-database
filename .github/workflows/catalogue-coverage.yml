@@ -1,0 +1,58 @@
+name: Reconcile PS4 catalogue and regions
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/catalogue_coverage.py', 'scripts/region_entries.cjs', 'regions.js', 'tests/test_catalogue_coverage.py', 'tests/test_regions.cjs', '.github/workflows/catalogue-coverage.yml']
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['Resolve unique game identities']
+    types: [completed]
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: catalogue-coverage
+  cancel-in-progress: false
+jobs:
+  reconcile:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Verify evidence and counting rules
+        run: |
+          node tests/test_regions.cjs
+          python3 -m unittest discover -s tests -p 'test_catalogue_coverage.py'
+      - name: Reconcile against dated PS4 and PS VR releases
+        env:
+          IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
+          IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
+        run: python3 scripts/catalogue_coverage.py --save-reference /tmp/ps4-reference.json
+      - name: Preserve public reference evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: ps4-reference
+          path: /tmp/ps4-reference.json
+          retention-days: 30
+      - name: Version catalogue scripts
+        run: python3 scripts/stamp_catalog.py
+      - name: Publish coverage and region review queue
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add catalogue-coverage.json catalogue-coverage.md region-review.json index.html ps4-games-optimized.html ps4-pwa-optimized.html processing.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'Reconcile PS4 reference titles and regional release evidence'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
+      - name: Deploy updated catalogue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: gh workflow run static.yml --ref main

@@ -58,7 +58,7 @@ var catalogRecommendations = (function() {
     }
     function familyKey(release) {
         var m = release.metadata || {};
-        if (m.conflict || !/^CUSA\d{5}$/.test(normal(m.title_id)) || !region(m.region) || !release.page_url) return null;
+        if (m.conflict || m.region_conflict || (m.regions && m.regions.length !== 1) || !/^CUSA\d{5}$/.test(normal(m.title_id)) || !region(m.region) || !release.page_url) return null;
         // Keep source sections and editions separate: the same CUSA alone is insufficient.
         return JSON.stringify([normal(m.title_id), region(m.region), normal(m.edition), release.page_url, normal(m.source_section)]);
     }
