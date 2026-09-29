@@ -6,6 +6,7 @@ on:
     paths: ['scripts/identity_reference.py', 'identity-queries.json', '.github/workflows/identity-audit.yml']
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: identity-review-evidence
   cancel-in-progress: false
@@ -15,6 +16,11 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+      - name: Reuse collected public reference evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: gh run download 36621163059 --name identity-review-evidence --dir .identity-audit
       - name: Collect public title and platform evidence
         env:
           IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
