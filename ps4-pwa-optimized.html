@@ -283,6 +283,18 @@
                     <option value="ArabicPS4Games">ArabicPS4Games</option>
                 </select>
             </label>
+            <label class="source-filter" for="releaseFilter">Release type
+                <select id="releaseFilter" onchange="searchGames()">
+                    <option value="">All release types</option>
+                    <option value="base">Base game</option>
+                    <option value="update">Updates</option>
+                    <option value="dlc">DLC</option>
+                    <option value="bundle">Combined packages</option>
+                    <option value="fix">Fixes</option>
+                    <option value="patch">Language / mod patches</option>
+                    <option value="unknown">Unknown / conflicting type</option>
+                </select>
+            </label>
             <div class="search-info" id="searchInfo">Loading...</div>
             <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
         </div>
@@ -318,7 +330,7 @@
     <script src="catalog.js?v=title-link1"></script>
     <script src="igdb-metadata.js?v=8d5c6f270b4f6e5f"></script>
     <script src="sorting.js?v=1"></script>
-    <script src="paging.js?v=2"></script>
+    <script src="paging.js?v=release-filter1"></script>
     <script>
         var allGames = [];
         var loadedCount = 0;

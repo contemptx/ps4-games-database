@@ -1,9 +1,25 @@
 // Keep the catalogue usable as source indexing adds more release links.
 var catalogPaging = (function() {
     var page = 0, size = 50;
-    function filter(games, text, source) {
+    function filter(games, text, source, kind) {
         var query = (text || '').trim().toLowerCase();
-        return games.filter(function(game) {
+        var candidates = kind ? games.map(function(game) {
+            var releases = (game.releases || []).filter(function(release) {
+                var m = release.metadata || {};
+                var known = ['base', 'update', 'dlc', 'fix', 'patch', 'bundle'];
+                return kind === 'unknown' ? (!m.kind || known.indexOf(m.kind) === -1 || m.conflict) : m.kind === kind && !m.conflict;
+            });
+            if (!releases.length) return null;
+            var copy = {};
+            Object.keys(game).forEach(function(key) { copy[key] = game[key]; });
+            copy.releases = releases;
+            copy.links = [];
+            releases.forEach(function(release) { copy.links = copy.links.concat(release.links); });
+            copy.total_links = copy.links.length;
+            copy.searchText = '';
+            return copy;
+        }).filter(function(game) { return game !== null; }) : games;
+        return candidates.filter(function(game) {
             if (source && game.source !== source) return false;
             if (!query) return true;
             if (!game.searchText) {
@@ -21,7 +37,9 @@ var catalogPaging = (function() {
         page = delta === 0 ? 0 : page + delta;
         var input = document.getElementById('searchInput');
         var source = document.getElementById('sourceFilter').value || '';
-        var matches = filter(games, input.value, source);
+        var releaseFilter = document.getElementById('releaseFilter');
+        var kind = releaseFilter ? releaseFilter.value : '';
+        var matches = filter(games, input.value, source, kind);
         if (typeof catalogSorting === 'object') matches = catalogSorting.sort(matches, catalogSorting.mode());
         var pages = Math.ceil(matches.length / size);
         page = Math.max(0, Math.min(page, pages - 1));
@@ -33,7 +51,7 @@ var catalogPaging = (function() {
         document.getElementById('pageStatus').textContent = pages ? 'Page ' + (page + 1) + ' of ' + pages : 'No matches';
         document.getElementById('searchInfo').textContent = 'Showing ' + (matches.length ? start + 1 : 0) + '–' + end +
             ' of ' + matches.length.toLocaleString() + ' game listing' + (matches.length === 1 ? '' : 's') +
-            (source ? ' from ' + source : '') + (input.value.trim() ? ' matching "' + input.value + '"' : '');
+            (source ? ' from ' + source : '') + (kind ? ' · ' + releaseFilter.options[releaseFilter.selectedIndex].text : '') + (input.value.trim() ? ' matching "' + input.value + '"' : '');
         if (!matches.length) {
             var message = document.createElement('div');
             message.className = 'loading';
