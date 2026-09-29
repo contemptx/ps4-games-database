@@ -17,6 +17,12 @@ class CoverageTests(unittest.TestCase):
         self.assertIsNone(release_day({'platform':48,'y':2020,'status':{'name':'Cancelled'}},self.today))
         self.assertIsNone(release_day({'platform':48,'y':2020,'status':{'name':'Early Access'}},self.today))
         self.assertEqual(release_day({'platform':165,'y':2019,'m':1,'d':4},self.today),'2019-01-04')
+        self.assertEqual(release_day({'platform':48,'y':2026,'m':9,'human':'Sep 24, 2026'},self.today),'2026-09-24')
+        self.assertIsNone(release_day({'platform':48,'y':2026,'m':9,'human':'Q3 2026'},self.today))
+        self.assertIsNone(release_day({'platform':48,'y':2026,'m':1,'human':'2026'},self.today))
+        self.assertIsNone(release_day({'platform':48,'y':2020,'status':{'name':'Advanced Access'}},self.today))
+        self.assertEqual(release_day({'platform':48,'y':2013,'m':11,'date':1384473600,
+            'date_format':{'format':'YYYYMMMMDD'}},self.today),'2013-11-15')
 
     def test_unique_titles_regional_variants_editions_and_legacy(self):
         def game(i,kind='Main Game',**kw):

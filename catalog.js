@@ -420,7 +420,7 @@ var gameCatalog = (function() {
         if (identitySummary) identitySummary.textContent = identities ?
             gameCount + ' listings · ' + identities.duplicateListings.toLocaleString('en-US') + ' duplicate/edition listings counted once · ' +
             identities.unresolved.toLocaleString('en-US') + ' listings need identity review · ' + identities.other.toLocaleString('en-US') +
-            ' collections, add-ons or other entries counted separately. Unresolved listings are excluded from the unique count. Remakes/remasters remain distinct.' :
+            ' collections, add-ons or other entries counted separately. Includes older-console conversions and other-platform identities. Unresolved listings are excluded from the unique count. Remakes/remasters remain distinct.' :
             'Unique-game identities unavailable; showing the listing count.';
         document.getElementById('totalLinks').textContent = linkCount;
         document.getElementById('catalogTotals').textContent = (identities ? identities.unique.toLocaleString('en-US') + ' Unique Games Identified | ' : '') + gameCount + ' Game Listings | ' + linkCount + ' Download Links';

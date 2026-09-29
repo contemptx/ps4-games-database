@@ -30,7 +30,7 @@ def normal(value):
 
 
 def unreleased(value):
-    return any(word in normal(value) for word in ('cancel', 'alpha', 'beta', 'early_access', 'rumor', 'rumour', 'unreleased'))
+    return any(word in normal(value) for word in ('cancel', 'alpha', 'beta', 'early_access', 'advanced_access', 'rumor', 'rumour', 'unreleased'))
 
 
 def release_day(row, today):
@@ -38,9 +38,26 @@ def release_day(row, today):
     if row.get('platform') not in PLATFORMS or unreleased((row.get('status') or {}).get('name', '')):
         return None
     year, month, day = row.get('y'), row.get('m'), row.get('d')
-    if not year or year < 2013 or 'tbd' in str(row.get('human', '')).lower():
+    human = str(row.get('human', ''))
+    precision = (row.get('date_format') or {}).get('format', '').upper()
+    if not year or year < 2013 or 'tbd' in human.lower() or precision == 'TBD':
         return None
     try:
+        # IGDB often omits `d` even for exact dates. The format/human field preserves precision.
+        if re.fullmatch(r'[A-Za-z]+ \d{1,2}, \d{4}', human):
+            try:
+                exact = dt.datetime.strptime(human, '%b %d, %Y').date()
+            except ValueError:
+                exact = dt.datetime.strptime(human, '%B %d, %Y').date()
+            return exact.isoformat() if dt.date(2013,1,1) <= exact <= today else None
+        if precision == 'YYYYMMMMDD' and row.get('date') is not None:
+            exact = dt.datetime.fromtimestamp(row['date'], dt.timezone.utc).date()
+            return exact.isoformat() if dt.date(2013,1,1) <= exact <= today else None
+        quarter = re.search(r'Q([1-4])', human.upper() + ' ' + precision)
+        if quarter:
+            month, day = int(quarter[1]) * 3, None
+        elif precision == 'YYYY' or re.fullmatch(r'\d{4}', human):
+            month, day = 12, 31
         # Conservatively use the end of a month/year when precision is incomplete.
         month = month or 12
         day = day or calendar.monthrange(year, month)[1]
@@ -56,7 +73,7 @@ def fetch_reference(api, identities, aliases):
     if names.get(48) != 'PlayStation 4' or names.get(165) != 'PlayStation VR':
         raise RuntimeError('Unexpected PS4/PS VR platform IDs; reference preserved')
     games = {g['id']:g for g in api.all('games', FIELDS, 'platforms = (48,165)')}
-    releases = api.all('release_dates', 'game,platform,y,m,d,human,date,release_region.region,status.name', 'platform = (48,165)')
+    releases = api.all('release_dates', 'game,platform,y,m,d,human,date,date_format.format,release_region.region,status.name', 'platform = (48,165)')
     if len(games) < 1000 or len(releases) < 1000:
         raise RuntimeError('Incomplete IGDB reference; previous report preserved')
     print('Fetched', len(games), 'PS4/PS VR records and', len(releases), 'release dates', flush=True)
@@ -120,7 +137,7 @@ def reconcile(reference, entries, aliases, today):
         for day, release in dated[game_id]:
             if not row['first_ps4_release'] or day < row['first_ps4_release']:
                 row['first_ps4_release'] = day
-                row['release_date_label'] = str(release['y']) + (f"-{release['m']:02}" if release.get('m') else '') + (f"-{release['d']:02}" if release.get('m') and release.get('d') else '')
+                row['release_date_label'] = release.get('human') or str(release['y']) + (f"-{release['m']:02}" if release.get('m') else '') + (f"-{release['d']:02}" if release.get('m') and release.get('d') else '')
             value = normal((release.get('release_region') or {}).get('region', ''))
             if value:
                 row['reference_regions'].add(REGIONS.get(value, value.upper()))
