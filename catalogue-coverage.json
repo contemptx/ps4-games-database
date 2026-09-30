@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-09-29",
-  "reference_fetched_at": "2026-09-29T20:48:41.703220+00:00",
+  "as_of": "2026-09-30",
+  "reference_fetched_at": "2026-09-30T09:54:53.392286+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13174,
+    "reference_unique_games": 13176,
     "reference_matches": 4137,
-    "reference_gaps": 9037,
+    "reference_gaps": 9039,
     "matches_with_labelled_base": 3678,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1225,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 766,
+      "future_undated_or_unreleased_date": 764,
       "out_of_scope_type": 5292,
       "unreleased_status": 317,
       "unresolved_edition_parent": 12
@@ -155657,6 +155657,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 201417,
+      "name": "Murders on the Yangtze River",
+      "url": "https://www.igdb.com/games/murders-on-the-yangtze-river",
+      "game_type": "main_game",
+      "reference_ids": [
+        201417
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-09-30",
+      "release_date_label": "Q3 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 127465,
       "name": "Musashi vs. Cthulhu",
       "url": "https://www.igdb.com/games/musashi-vs-cthulhu",
@@ -273114,6 +273133,25 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 287707,
+      "name": "Whirlight: No Time To Trip",
+      "url": "https://www.igdb.com/games/whirlight-no-time-to-trip",
+      "game_type": "main_game",
+      "reference_ids": [
+        287707
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-09-30",
+      "release_date_label": "Q3 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 117253,
       "name": "Whiskey & Zombies",
       "url": "https://www.igdb.com/games/whiskey-and-zombies",
@@ -299265,7 +299303,7 @@
       ]
     }
   ],
-  "updated_at": "2026-09-29T20:48:42.893505+00:00",
+  "updated_at": "2026-09-30T09:54:54.422113+00:00",
   "regions": {
     "summary": {
       "links": 45403,
