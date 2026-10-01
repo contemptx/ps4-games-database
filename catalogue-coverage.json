@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-09-30",
-  "reference_fetched_at": "2026-09-30T09:54:53.392286+00:00",
+  "as_of": "2026-10-01",
+  "reference_fetched_at": "2026-10-01T10:21:56.862343+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
-    "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13176,
-    "reference_matches": 4137,
-    "reference_gaps": 9039,
-    "matches_with_labelled_base": 3678,
-    "local_ps4_or_psvr_reference": 4197,
+    "catalogue_unique_identities": 5361,
+    "reference_unique_games": 13178,
+    "reference_matches": 4136,
+    "reference_gaps": 9042,
+    "matches_with_labelled_base": 3677,
+    "local_ps4_or_psvr_reference": 4196,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1225,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 764,
-      "out_of_scope_type": 5292,
+      "future_undated_or_unreleased_date": 765,
+      "out_of_scope_type": 5302,
       "unreleased_status": 317,
       "unresolved_edition_parent": 12
     }
@@ -5872,7 +5872,7 @@
       "canonical_id": 103847,
       "name": "ACA Neo Geo: Shock Troopers 2nd Squad",
       "url": "https://www.igdb.com/games/aca-neo-geo-shock-troopers-2nd-squad",
-      "game_type": "main_game",
+      "game_type": "port",
       "reference_ids": [
         103847
       ],
@@ -18672,6 +18672,28 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 99560,
+      "name": "Arcade Archives: Gradius",
+      "url": "https://www.igdb.com/games/arcade-archives-gradius",
+      "game_type": "port",
+      "reference_ids": [
+        99560
+      ],
+      "reference_regions": [
+        "ASIA",
+        "EUR",
+        "JPN",
+        "USA"
+      ],
+      "first_ps4_release": "2015-01-29",
+      "release_date_label": "Jan 29, 2015",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 99541,
       "name": "Arcade Archives: Gradius II",
       "url": "https://www.igdb.com/games/arcade-archives-gradius-ii",
@@ -20585,6 +20607,28 @@
       ],
       "first_ps4_release": "2022-10-27",
       "release_date_label": "Oct 27, 2022",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 185986,
+      "name": "Arcade Archives: Orius",
+      "url": "https://www.igdb.com/games/arcade-archives-orius",
+      "game_type": "port",
+      "reference_ids": [
+        185986
+      ],
+      "reference_regions": [
+        "ASIA",
+        "EUR",
+        "JPN",
+        "USA"
+      ],
+      "first_ps4_release": "2021-12-23",
+      "release_date_label": "Dec 23, 2021",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -23418,7 +23462,7 @@
       "canonical_id": 122746,
       "name": "Arcade Archives: Time Tunnel",
       "url": "https://www.igdb.com/games/arcade-archives-time-tunnel",
-      "game_type": "main_game",
+      "game_type": "port",
       "reference_ids": [
         122746
       ],
@@ -28438,9 +28482,17 @@
       "reference_ids": [
         314943,
         333715,
-        333716
+        333716,
+        418513,
+        418514,
+        418515,
+        418558,
+        418560,
+        418562,
+        418563
       ],
       "reference_regions": [
+        "JPN",
         "WORLD"
       ],
       "first_ps4_release": "2025-03-21",
@@ -45618,7 +45670,6 @@
       "reference_ids": [
         6632,
         86667,
-        99788,
         102718,
         136290,
         261088
@@ -110286,6 +110337,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 132711,
+      "name": "Heartworm",
+      "url": "https://www.igdb.com/games/heartworm",
+      "game_type": "main_game",
+      "reference_ids": [
+        132711
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-01",
+      "release_date_label": "Oct 01, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 120069,
       "name": "Heaven Dust",
       "url": "https://www.igdb.com/games/heaven-dust",
@@ -133788,9 +133858,7 @@
       "url": "https://www.igdb.com/games/lego-star-wars-the-skywalker-saga",
       "game_type": "main_game",
       "reference_ids": [
-        119305,
-        138105,
-        216281
+        119305
       ],
       "reference_regions": [
         "WORLD"
@@ -179968,8 +180036,7 @@
       "game_type": "main_game",
       "reference_ids": [
         152297,
-        210908,
-        293933
+        210908
       ],
       "reference_regions": [
         "EUR",
@@ -184937,7 +185004,7 @@
       "canonical_id": 250107,
       "name": "Pursuit Force",
       "url": "https://www.igdb.com/games/pursuit-force--1",
-      "game_type": "remaster",
+      "game_type": "port",
       "reference_ids": [
         250107
       ],
@@ -208464,14 +208531,13 @@
       "url": "https://www.igdb.com/games/shinobi-art-of-vengeance",
       "game_type": "main_game",
       "reference_ids": [
-        279630,
-        349598
+        279630
       ],
       "reference_regions": [
         "WORLD"
       ],
-      "first_ps4_release": "2025-08-26",
-      "release_date_label": "Aug 26, 2025",
+      "first_ps4_release": "2025-08-29",
+      "release_date_label": "Aug 29, 2025",
       "catalogued": true,
       "listings": [
         "Shinobi",
@@ -226425,31 +226491,6 @@
       "has_labelled_base": false
     },
     {
-      "canonical_id": 166976,
-      "name": "Summer Lesson: Allison Snow & Chisato Shinjo",
-      "url": "https://www.igdb.com/games/summer-lesson-allison-snow-and-chisato-shinjo",
-      "game_type": "main_game",
-      "reference_ids": [
-        166976
-      ],
-      "reference_regions": [
-        "JPN"
-      ],
-      "first_ps4_release": "2018-08-23",
-      "release_date_label": "Aug 23, 2018",
-      "catalogued": true,
-      "listings": [
-        "Summer Lesson Allison Snow and Shinjo Chisato"
-      ],
-      "package_regions": [
-        "ASIA"
-      ],
-      "base_regions": [
-        "ASIA"
-      ],
-      "has_labelled_base": true
-    },
-    {
       "canonical_id": 219030,
       "name": "Summer Lesson: Chisato Shinjo - Shichiyou no Etude",
       "url": "https://www.igdb.com/games/summer-lesson-chisato-shinjo-shichiyou-no-etude",
@@ -235874,8 +235915,7 @@
       "url": "https://www.igdb.com/games/the-ascent",
       "game_type": "main_game",
       "reference_ids": [
-        133307,
-        193530
+        133307
       ],
       "reference_regions": [
         "WORLD"
@@ -299303,7 +299343,7 @@
       ]
     }
   ],
-  "updated_at": "2026-09-30T09:54:54.422113+00:00",
+  "updated_at": "2026-10-01T10:21:58.158148+00:00",
   "regions": {
     "summary": {
       "links": 45403,
@@ -299319,8 +299359,8 @@
       "ASIA": {
         "links": 563,
         "listings": 102,
-        "identities": 94,
-        "base_identities": 80
+        "identities": 93,
+        "base_identities": 79
       },
       "EUR": {
         "links": 20713,
@@ -299344,10 +299384,10 @@
     "note": "Regions are source/filename claims about individual releases, not language or licensing verification. Counts per region overlap; a game or file can have more than one label. Base counts require an explicit base label. Unknown/conflicting regions remain visible and never imply worldwide availability."
   },
   "identity_summary": {
-    "unique": 5362,
-    "matched": 5968,
+    "unique": 5361,
+    "matched": 5967,
     "unresolved": 13,
-    "other": 283,
+    "other": 284,
     "duplicateListings": 606
   },
   "sony": {
