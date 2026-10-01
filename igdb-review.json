@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T09:52:12.024795+00:00",
+  "updated_at": "2026-10-01T10:19:26.681477+00:00",
   "records": [
     {
       "name": ".hack//Infection PS2-PS4 Ported",
@@ -15388,16 +15388,6 @@
     },
     {
       "name": "Tomb Raider I-III Remastered",
-      "status": "unmatched",
-      "candidate_ids": []
-    },
-    {
-      "name": "Tomb Raider IV-VI Remastered",
-      "status": "unmatched",
-      "candidate_ids": []
-    },
-    {
-      "name": "Tomb Raider IV-VI Remastered PS4",
       "status": "unmatched",
       "candidate_ids": []
     },
