@@ -1,15 +1,15 @@
 var gameIdentities = {
   "schema_version": 2,
-  "updated_at": "2026-09-30T09:53:21.280822+00:00",
+  "updated_at": "2026-10-01T10:20:26.132542+00:00",
   "source": "IGDB and reviewed source identities",
   "policy": "Count identified game identities once, following explicit IGDB edition version_parent links and reviewed duplicate-ID aliases. Standalone expansions, remakes and remasters remain distinct. Source-reviewed games lacking a reliable IGDB match use explicit local identities. DLC, non-standalone expansions, collections, mods, demos, prototypes, utilities and passive video experiences are separate. Ambiguous source titles are excluded pending confirmation. This is a title identity count, not a download availability or package-content guarantee.",
-  "input_sha256": "830e1ae3639cacb36e5d931a93253d0ef35518e5bfa5bd0dddb0623892e702ff",
+  "input_sha256": "106345212bd9e7b05deada5a09b381c2bf1e943d092923f0eafcc31b75034164",
   "summary": {
     "visible_listings": 6264,
-    "identified_unique_games": 5362,
-    "identified_game_listings": 5968,
+    "identified_unique_games": 5361,
+    "identified_game_listings": 5967,
     "unresolved_listings": 13,
-    "non_game_listings": 283,
+    "non_game_listings": 284,
     "reviewed_listings": 1008,
     "local_unique_games": 8,
     "edition_listings": 226,
@@ -46823,7 +46823,7 @@ var gameIdentities = {
       "igdb_id": 250107,
       "canonical_id": 250107,
       "canonical_name": "Pursuit Force",
-      "game_type": "remaster",
+      "game_type": "port",
       "match_method": "Existing unique PS4 title/alias match",
       "url": "https://www.igdb.com/games/pursuit-force--1",
       "input_igdb_id": 250107,
@@ -57869,11 +57869,11 @@ var gameIdentities = {
       ]
     },
     "Summer Lesson Allison Snow and Shinjo Chisato": {
-      "status": "identified",
+      "status": "non_game",
       "igdb_id": 166976,
       "canonical_id": 166976,
       "canonical_name": "Summer Lesson: Allison Snow & Chisato Shinjo",
-      "game_type": "main_game",
+      "game_type": "bundle",
       "match_method": "Reviewed: Reviewed full title, subtitle, regional wording or explicit original release year",
       "url": "https://www.igdb.com/games/summer-lesson-allison-snow-and-chisato-shinjo",
       "input_igdb_id": null,
@@ -66139,7 +66139,7 @@ var gameIdentities = {
       "game_type": "bundle",
       "match_method": "Reviewed: Reviewed full title, subtitle, regional wording or explicit original release year",
       "url": "https://www.igdb.com/games/tomb-raider-iv-star-v-star-vi-remastered",
-      "input_igdb_id": null,
+      "input_igdb_id": 319480,
       "source_urls": [
         "https://dlpsgame.com/tomb-raider-iv-vi-remastered-ps4-pkg/",
         "https://www.superpsx.com/tomb-raider-iv-vi-remastered-ps4-fpkg/"

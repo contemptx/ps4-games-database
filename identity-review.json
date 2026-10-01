@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30T09:53:21.280822+00:00",
+  "updated_at": "2026-10-01T10:20:26.132542+00:00",
   "unresolved": [
     {
       "name": "Streets of Rage Remake",
@@ -3038,6 +3038,24 @@
       ]
     },
     {
+      "name": "Summer Lesson Allison Snow and Shinjo Chisato",
+      "status": "non_game",
+      "igdb_id": 166976,
+      "canonical_id": 166976,
+      "canonical_name": "Summer Lesson: Allison Snow & Chisato Shinjo",
+      "game_type": "bundle",
+      "match_method": "Reviewed: Reviewed full title, subtitle, regional wording or explicit original release year",
+      "url": "https://www.igdb.com/games/summer-lesson-allison-snow-and-chisato-shinjo",
+      "input_igdb_id": null,
+      "source_urls": [
+        "https://dlpsgame.com/summer-lesson-allison-snow-and-shinjo-chisato-ps4-pkg/"
+      ],
+      "reviewed_at": "2026-09-29",
+      "evidence": [
+        "https://dlpsgame.com/summer-lesson-allison-snow-and-shinjo-chisato-ps4-pkg/"
+      ]
+    },
+    {
       "name": "Super Mario Kart Horizons",
       "status": "non_game",
       "igdb_id": 302715,
@@ -3407,7 +3425,7 @@
       "game_type": "bundle",
       "match_method": "Reviewed: Reviewed full title, subtitle, regional wording or explicit original release year",
       "url": "https://www.igdb.com/games/tomb-raider-iv-star-v-star-vi-remastered",
-      "input_igdb_id": null,
+      "input_igdb_id": 319480,
       "source_urls": [
         "https://dlpsgame.com/tomb-raider-iv-vi-remastered-ps4-pkg/",
         "https://www.superpsx.com/tomb-raider-iv-vi-remastered-ps4-fpkg/"

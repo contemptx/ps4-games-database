@@ -1,10 +1,10 @@
 # Game identity review
 
-Updated: 2026-09-30T09:53:21.280822+00:00
+Updated: 2026-10-01T10:20:26.132542+00:00
 
-**5,362 identified unique games** across 6,264 visible listings.
+**5,361 identified unique games** across 6,264 visible listings.
 
-606 duplicate/edition listings count once; 283 collections, add-ons, demos and other entries are separate; 13 listings remain unresolved.
+606 duplicate/edition listings count once; 284 collections, add-ons, demos and other entries are separate; 13 listings remain unresolved.
 
 Count identified game identities once, following explicit IGDB edition version_parent links and reviewed duplicate-ID aliases. Standalone expansions, remakes and remasters remain distinct. Source-reviewed games lacking a reliable IGDB match use explicit local identities. DLC, non-standalone expansions, collections, mods, demos, prototypes, utilities and passive video experiences are separate. Ambiguous source titles are excluded pending confirmation. This is a title identity count, not a download availability or package-content guarantee.
 
