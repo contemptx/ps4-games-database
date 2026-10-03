@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-02",
-  "reference_fetched_at": "2026-10-02T09:58:46.500161+00:00",
+  "as_of": "2026-10-03",
+  "reference_fetched_at": "2026-10-03T09:21:35.882973+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13178,
+    "reference_unique_games": 13191,
     "reference_matches": 4136,
-    "reference_gaps": 9042,
+    "reference_gaps": 9055,
     "matches_with_labelled_base": 3677,
     "local_ps4_or_psvr_reference": 4196,
     "local_without_ps4_reference": 1157,
@@ -14443,6 +14443,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 401560,
+      "name": "Anime Uni 3D: Hot Vacay",
+      "url": "https://www.igdb.com/games/anime-uni-3d-hot-vacay",
+      "game_type": "main_game",
+      "reference_ids": [
+        401560
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-05-15",
+      "release_date_label": "May 15, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 375566,
       "name": "Anime Uni 4",
       "url": "https://www.igdb.com/games/anime-uni-4",
@@ -14607,6 +14626,25 @@
       ],
       "first_ps4_release": "2026-01-14",
       "release_date_label": "Jan 14, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 392866,
+      "name": "Anime: Fantasy Uni 3",
+      "url": "https://www.igdb.com/games/anime-fantasy-uni-3",
+      "game_type": "main_game",
+      "reference_ids": [
+        392866
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-02-25",
+      "release_date_label": "Feb 25, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -19316,6 +19354,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 420642,
+      "name": "Arcade Archives: Karnov",
+      "url": "https://www.igdb.com/games/arcade-archives-karnov",
+      "game_type": "port",
+      "reference_ids": [
+        420642
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-09-10",
+      "release_date_label": "Sep 10, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 84759,
       "name": "Arcade Archives: Kid Niki - Radical Ninja",
       "url": "https://www.igdb.com/games/arcade-archives-kid-niki-radical-ninja",
@@ -20217,6 +20274,25 @@
       ],
       "first_ps4_release": "2026-05-15",
       "release_date_label": "May 15, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 420643,
+      "name": "Arcade Archives: Mr.Do!'s Castle",
+      "url": "https://www.igdb.com/games/arcade-archives-mr-dot-do-s-castle",
+      "game_type": "port",
+      "reference_ids": [
+        420643
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-09-17",
+      "release_date_label": "Sep 17, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -54735,6 +54811,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 401137,
+      "name": "Code Blue",
+      "url": "https://www.igdb.com/games/code-blue--2",
+      "game_type": "main_game",
+      "reference_ids": [
+        401137
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-04-17",
+      "release_date_label": "Apr 17, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 128062,
       "name": "Code Shifter",
       "url": "https://www.igdb.com/games/code-shifter",
@@ -55313,6 +55408,25 @@
         "USA"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 401395,
+      "name": "Color Inverter",
+      "url": "https://www.igdb.com/games/color-inverter",
+      "game_type": "main_game",
+      "reference_ids": [
+        401395
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-02-24",
+      "release_date_label": "Feb 24, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 223301,
@@ -56795,6 +56909,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 401393,
+      "name": "Cook the Word",
+      "url": "https://www.igdb.com/games/cook-the-word",
+      "game_type": "main_game",
+      "reference_ids": [
+        401393
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-04-18",
+      "release_date_label": "Apr 18, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 11238,
       "name": "Cook, Serve, Delicious!",
       "url": "https://www.igdb.com/games/cook-serve-delicious",
@@ -57176,6 +57309,25 @@
       ],
       "first_ps4_release": "2024-10-25",
       "release_date_label": "Oct 25, 2024",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 409273,
+      "name": "Cornfield",
+      "url": "https://www.igdb.com/games/cornfield--1",
+      "game_type": "main_game",
+      "reference_ids": [
+        409273
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-06-19",
+      "release_date_label": "Jun 19, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -90555,6 +90707,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 378802,
+      "name": "Finger Punch",
+      "url": "https://www.igdb.com/games/finger-punch",
+      "game_type": "main_game",
+      "reference_ids": [
+        378802
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-11-27",
+      "release_date_label": "Nov 27, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 213013,
       "name": "Finis",
       "url": "https://www.igdb.com/games/finis",
@@ -91983,6 +92154,25 @@
       ],
       "first_ps4_release": "2025-10-02",
       "release_date_label": "Oct 02, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 401356,
+      "name": "Flipolio",
+      "url": "https://www.igdb.com/games/flipolio",
+      "game_type": "main_game",
+      "reference_ids": [
+        401356
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-05-15",
+      "release_date_label": "May 15, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -117478,6 +117668,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 378762,
+      "name": "Hypercar Racing",
+      "url": "https://www.igdb.com/games/hypercar-racing",
+      "game_type": "main_game",
+      "reference_ids": [
+        378762
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-12-25",
+      "release_date_label": "Dec 25, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 39758,
       "name": "Hypercharge: Unboxed",
       "url": "https://www.igdb.com/games/hypercharge-unboxed",
@@ -124850,6 +125059,25 @@
       ],
       "first_ps4_release": "2022-12-01",
       "release_date_label": "Dec 01, 2022",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 372444,
+      "name": "Junkyard Fury 3",
+      "url": "https://www.igdb.com/games/junkyard-fury-3",
+      "game_type": "main_game",
+      "reference_ids": [
+        372444
+      ],
+      "reference_regions": [
+        "USA"
+      ],
+      "first_ps4_release": "2025-11-27",
+      "release_date_label": "Nov 27, 2025",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -226285,6 +226513,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 331520,
+      "name": "Suikaiju",
+      "url": "https://www.igdb.com/games/suikaiju",
+      "game_type": "main_game",
+      "reference_ids": [
+        331520
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-03-05",
+      "release_date_label": "Mar 05, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 328110,
       "name": "Suikoden I HD Remaster: Gate Rune War",
       "url": "https://www.igdb.com/games/suikoden-i-hd-remaster-gate-rune-war",
@@ -293225,7 +293472,9 @@
       "reason": "No PS4/PS VR reference match; platform/conversion review needed",
       "url": "https://www.igdb.com/games/phix-the-adventure",
       "platforms": [
-        "PlayStation"
+        "PlayStation 3",
+        "PlayStation",
+        "PlayStation Portable"
       ],
       "listings": [
         "Phix The Adventure"
@@ -299343,7 +299592,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-02T09:58:47.656848+00:00",
+  "updated_at": "2026-10-03T09:21:36.673039+00:00",
   "regions": {
     "summary": {
       "links": 45403,
