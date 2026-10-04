@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-03",
-  "reference_fetched_at": "2026-10-03T09:21:35.882973+00:00",
+  "as_of": "2026-10-04",
+  "reference_fetched_at": "2026-10-04T10:01:03.523342+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13191,
+    "reference_unique_games": 13193,
     "reference_matches": 4136,
-    "reference_gaps": 9055,
+    "reference_gaps": 9057,
     "matches_with_labelled_base": 3677,
     "local_ps4_or_psvr_reference": 4196,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1225,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 765,
-      "out_of_scope_type": 5303,
+      "future_undated_or_unreleased_date": 766,
+      "out_of_scope_type": 5305,
       "unreleased_status": 317,
       "unresolved_edition_parent": 12
     }
@@ -15226,6 +15226,25 @@
         "USA"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 152766,
+      "name": "Anvil Saga",
+      "url": "https://www.igdb.com/games/anvil-saga",
+      "game_type": "main_game",
+      "reference_ids": [
+        152766
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-01",
+      "release_date_label": "Oct 01, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 118160,
@@ -232611,6 +232630,25 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 414437,
+      "name": "Tales of Formentera",
+      "url": "https://www.igdb.com/games/tales-of-formentera",
+      "game_type": "main_game",
+      "reference_ids": [
+        414437
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-09-04",
+      "release_date_label": "Sep 04, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 314945,
       "name": "Tales of Graces F Remastered",
       "url": "https://www.igdb.com/games/tales-of-graces-f-remastered",
@@ -299592,7 +299630,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-03T09:21:36.673039+00:00",
+  "updated_at": "2026-10-04T10:01:04.671699+00:00",
   "regions": {
     "summary": {
       "links": 45403,
