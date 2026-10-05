@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-04",
-  "reference_fetched_at": "2026-10-04T10:01:03.523342+00:00",
+  "as_of": "2026-10-05",
+  "reference_fetched_at": "2026-10-05T10:44:12.481530+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13193,
+    "reference_unique_games": 13198,
     "reference_matches": 4136,
-    "reference_gaps": 9057,
+    "reference_gaps": 9062,
     "matches_with_labelled_base": 3677,
     "local_ps4_or_psvr_reference": 4196,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1225,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 766,
-      "out_of_scope_type": 5305,
+      "future_undated_or_unreleased_date": 768,
+      "out_of_scope_type": 5307,
       "unreleased_status": 317,
       "unresolved_edition_parent": 12
     }
@@ -13522,6 +13522,25 @@
       ],
       "first_ps4_release": "2019-04-02",
       "release_date_label": "Apr 02, 2019",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 377098,
+      "name": "Angle of Attack",
+      "url": "https://www.igdb.com/games/angle-of-attack--1",
+      "game_type": "main_game",
+      "reference_ids": [
+        377098
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-09-25",
+      "release_date_label": "Sep 25, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -70706,6 +70725,26 @@
       ],
       "first_ps4_release": "2025-12-12",
       "release_date_label": "Dec 12, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 417895,
+      "name": "Dino Odyssey",
+      "url": "https://www.igdb.com/games/dino-odyssey",
+      "game_type": "main_game",
+      "reference_ids": [
+        417895
+      ],
+      "reference_regions": [
+        "EUR",
+        "USA"
+      ],
+      "first_ps4_release": "2026-09-11",
+      "release_date_label": "Sep 11, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -128153,6 +128192,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 226868,
+      "name": "King's Blade",
+      "url": "https://www.igdb.com/games/kings-blade",
+      "game_type": "main_game",
+      "reference_ids": [
+        226868
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-09-30",
+      "release_date_label": "Sep 30, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 121881,
       "name": "King's Bounty II",
       "url": "https://www.igdb.com/games/kings-bounty-ii",
@@ -150932,6 +150990,25 @@
         "USA"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 342222,
+      "name": "Mister Scary",
+      "url": "https://www.igdb.com/games/mister-scary",
+      "game_type": "main_game",
+      "reference_ids": [
+        342222
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-02",
+      "release_date_label": "Oct 02, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 116145,
@@ -282837,6 +282914,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 420634,
+      "name": "Zombuffoonery",
+      "url": "https://www.igdb.com/games/zombuffoonery",
+      "game_type": "main_game",
+      "reference_ids": [
+        420634
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-09-17",
+      "release_date_label": "Sep 17, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 68284,
       "name": "Zone of The Enders: The 2nd Runner Mars",
       "url": "https://www.igdb.com/games/zone-of-the-enders-the-2nd-runner-mars",
@@ -299630,7 +299726,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-04T10:01:04.671699+00:00",
+  "updated_at": "2026-10-05T10:44:13.698267+00:00",
   "regions": {
     "summary": {
       "links": 45403,
