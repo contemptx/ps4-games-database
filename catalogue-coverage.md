@@ -1,6 +1,6 @@
 # PS4 catalogue coverage
 
-Snapshot: 2026-10-06
+Snapshot: 2026-10-07
 
 **Sony publishes “4,000+” PS4 games, not an exact current total.** The same lower-bound wording appeared in the [November 2020 PS5 FAQ](https://blog.playstation.com/2020/11/09/ps5-the-ultimate-faq/) and is still on [PlayStation Support](https://www.playstation.com/en-us/support/games/ps5-backward-compatibility-games/). It cannot establish catalogue completeness.
 
