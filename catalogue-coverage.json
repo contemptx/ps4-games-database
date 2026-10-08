@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-07",
-  "reference_fetched_at": "2026-10-07T03:46:07.978437+00:00",
+  "as_of": "2026-10-08",
+  "reference_fetched_at": "2026-10-08T03:46:36.494977+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13199,
+    "reference_unique_games": 13202,
     "reference_matches": 4136,
-    "reference_gaps": 9063,
+    "reference_gaps": 9066,
     "matches_with_labelled_base": 3677,
     "local_ps4_or_psvr_reference": 4196,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1225,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 769,
-      "out_of_scope_type": 5311,
+      "future_undated_or_unreleased_date": 768,
+      "out_of_scope_type": 5313,
       "unreleased_status": 317,
       "unresolved_edition_parent": 12
     }
@@ -29097,6 +29097,25 @@
       ],
       "first_ps4_release": "2025-03-11",
       "release_date_label": "Mar 11, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 307878,
+      "name": "Au Revoir",
+      "url": "https://www.igdb.com/games/au-revoir",
+      "game_type": "main_game",
+      "reference_ids": [
+        307878
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-09-17",
+      "release_date_label": "Sep 17, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -156833,7 +156852,7 @@
     },
     {
       "canonical_id": 71263,
-      "name": "My brother ate my pudding",
+      "name": "My Brother Ate My Pudding",
       "url": "https://www.igdb.com/games/my-brother-ate-my-pudding",
       "game_type": "main_game",
       "reference_ids": [
@@ -158123,6 +158142,25 @@
       ],
       "first_ps4_release": "2025-02-28",
       "release_date_label": "Feb 28, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 294744,
+      "name": "MyPopgoes",
+      "url": "https://www.igdb.com/games/mypopgoes--1",
+      "game_type": "expanded_game",
+      "reference_ids": [
+        294744
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-08",
+      "release_date_label": "Oct 08, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -212470,6 +212508,25 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 400170,
+      "name": "Skyship Quest Story",
+      "url": "https://www.igdb.com/games/skyship-quest-story",
+      "game_type": "main_game",
+      "reference_ids": [
+        400170
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-01",
+      "release_date_label": "Oct 01, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 31794,
       "name": "SkyTime",
       "url": "https://www.igdb.com/games/skytime",
@@ -219302,6 +219359,7 @@
         353943
       ],
       "reference_regions": [
+        "JPN",
         "WORLD"
       ],
       "first_ps4_release": "2026-04-14",
@@ -272003,7 +272061,7 @@
     },
     {
       "canonical_id": 132400,
-      "name": "We should talk.",
+      "name": "We Should Talk.",
       "url": "https://www.igdb.com/games/we-should-talk",
       "game_type": "main_game",
       "reference_ids": [
@@ -299745,7 +299803,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-07T03:46:09.348228+00:00",
+  "updated_at": "2026-10-08T03:46:37.616166+00:00",
   "regions": {
     "summary": {
       "links": 45403,
