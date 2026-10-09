@@ -1,21 +1,21 @@
 {
-  "as_of": "2026-10-08",
-  "reference_fetched_at": "2026-10-08T03:46:36.494977+00:00",
+  "as_of": "2026-10-09",
+  "reference_fetched_at": "2026-10-09T03:47:38.651029+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13202,
+    "reference_unique_games": 13204,
     "reference_matches": 4136,
-    "reference_gaps": 9066,
+    "reference_gaps": 9068,
     "matches_with_labelled_base": 3677,
     "local_ps4_or_psvr_reference": 4196,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1225,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 768,
-      "out_of_scope_type": 5313,
-      "unreleased_status": 317,
+      "future_undated_or_unreleased_date": 773,
+      "out_of_scope_type": 5320,
+      "unreleased_status": 316,
       "unresolved_edition_parent": 12
     }
   },
@@ -206306,6 +206306,25 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 406240,
+      "name": "Sesame Street: Friends & Fun",
+      "url": "https://www.igdb.com/games/sesame-street-friends-and-fun",
+      "game_type": "main_game",
+      "reference_ids": [
+        406240
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-09",
+      "release_date_label": "Oct 09, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 75694,
       "name": "Session: Skate Sim",
       "url": "https://www.igdb.com/games/session-skate-sim",
@@ -274212,6 +274231,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 411646,
+      "name": "Wild Gunman Remake",
+      "url": "https://www.igdb.com/games/wild-gunman-remake",
+      "game_type": "main_game",
+      "reference_ids": [
+        411646
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2019-12-31",
+      "release_date_label": "2019",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 25675,
       "name": "Wild Guns Reloaded",
       "url": "https://www.igdb.com/games/wild-guns-reloaded",
@@ -299803,7 +299841,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-08T03:46:37.616166+00:00",
+  "updated_at": "2026-10-09T03:47:39.473411+00:00",
   "regions": {
     "summary": {
       "links": 45403,
