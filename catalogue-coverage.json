@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-09",
-  "reference_fetched_at": "2026-10-09T03:47:38.651029+00:00",
+  "as_of": "2026-10-10",
+  "reference_fetched_at": "2026-10-10T03:45:31.296008+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13204,
+    "reference_unique_games": 13203,
     "reference_matches": 4136,
-    "reference_gaps": 9068,
+    "reference_gaps": 9067,
     "matches_with_labelled_base": 3677,
     "local_ps4_or_psvr_reference": 4196,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1225,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 773,
-      "out_of_scope_type": 5320,
+      "future_undated_or_unreleased_date": 778,
+      "out_of_scope_type": 5323,
       "unreleased_status": 316,
       "unresolved_edition_parent": 12
     }
@@ -200988,25 +200988,6 @@
       "has_labelled_base": false
     },
     {
-      "canonical_id": 401448,
-      "name": "S.E.X. Project: Simulated Emotional Xenotech",
-      "url": "https://www.igdb.com/games/sex-project-simulated-emotional-xenotech",
-      "game_type": "main_game",
-      "reference_ids": [
-        401448
-      ],
-      "reference_regions": [
-        "WORLD"
-      ],
-      "first_ps4_release": "2026-04-09",
-      "release_date_label": "Apr 09, 2026",
-      "catalogued": false,
-      "listings": [],
-      "package_regions": [],
-      "base_regions": [],
-      "has_labelled_base": false
-    },
-    {
       "canonical_id": 154380,
       "name": "S.O.L: Search of Light",
       "url": "https://www.igdb.com/games/s-dot-o-l-search-of-light",
@@ -299841,7 +299822,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-09T03:47:39.473411+00:00",
+  "updated_at": "2026-10-10T03:45:32.323140+00:00",
   "regions": {
     "summary": {
       "links": 45403,
