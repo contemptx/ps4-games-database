@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-10",
-  "reference_fetched_at": "2026-10-10T03:45:31.296008+00:00",
+  "as_of": "2026-10-11",
+  "reference_fetched_at": "2026-10-11T03:48:53.853681+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13203,
+    "reference_unique_games": 13209,
     "reference_matches": 4136,
-    "reference_gaps": 9067,
+    "reference_gaps": 9073,
     "matches_with_labelled_base": 3677,
     "local_ps4_or_psvr_reference": 4196,
     "local_without_ps4_reference": 1157,
@@ -14,7 +14,7 @@
     "local_outside_dated_benchmark": 1225,
     "excluded_reference_records": {
       "future_undated_or_unreleased_date": 778,
-      "out_of_scope_type": 5323,
+      "out_of_scope_type": 5332,
       "unreleased_status": 316,
       "unresolved_edition_parent": 12
     }
@@ -763,6 +763,25 @@
         "18 Floors",
         "The 18th Floor"
       ],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 376924,
+      "name": "1964 Operation Velvet Twins",
+      "url": "https://www.igdb.com/games/1964-operation-velvet-twins",
+      "game_type": "main_game",
+      "reference_ids": [
+        376924
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-08-28",
+      "release_date_label": "Aug 28, 2026",
+      "catalogued": false,
+      "listings": [],
       "package_regions": [],
       "base_regions": [],
       "has_labelled_base": false
@@ -54980,6 +54999,26 @@
       ],
       "first_ps4_release": "2023-06-20",
       "release_date_label": "Jun 20, 2023",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 372226,
+      "name": "Codename: Black Crow",
+      "url": "https://www.igdb.com/games/codename-black-crow",
+      "game_type": "main_game",
+      "reference_ids": [
+        372226
+      ],
+      "reference_regions": [
+        "EUR",
+        "USA"
+      ],
+      "first_ps4_release": "2026-05-08",
+      "release_date_label": "May 08, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -142512,6 +142551,26 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 152033,
+      "name": "Manafinder",
+      "url": "https://www.igdb.com/games/manafinder",
+      "game_type": "main_game",
+      "reference_ids": [
+        152033
+      ],
+      "reference_regions": [
+        "EUR",
+        "USA"
+      ],
+      "first_ps4_release": "2026-04-03",
+      "release_date_label": "Apr 03, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 46800,
       "name": "Maneater",
       "url": "https://www.igdb.com/games/maneater",
@@ -148828,6 +148887,26 @@
       ],
       "first_ps4_release": "2023-02-23",
       "release_date_label": "Feb 23, 2023",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 220416,
+      "name": "Middle Evil: The Priest",
+      "url": "https://www.igdb.com/games/middle-evil-the-priest",
+      "game_type": "main_game",
+      "reference_ids": [
+        220416
+      ],
+      "reference_regions": [
+        "EUR",
+        "USA"
+      ],
+      "first_ps4_release": "2026-05-15",
+      "release_date_label": "May 15, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -157569,6 +157648,26 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 262790,
+      "name": "My Lovey-Dovey Demon",
+      "url": "https://www.igdb.com/games/my-lovey-dovey-demon",
+      "game_type": "main_game",
+      "reference_ids": [
+        262790
+      ],
+      "reference_regions": [
+        "EUR",
+        "USA"
+      ],
+      "first_ps4_release": "2026-10-09",
+      "release_date_label": "Oct 09, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 152515,
       "name": "My Maitê",
       "url": "https://www.igdb.com/games/my-maite",
@@ -164143,6 +164242,25 @@
       ],
       "first_ps4_release": "2018-09-04",
       "release_date_label": "Sep 04, 2018",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 391120,
+      "name": "Ninjora Echoes",
+      "url": "https://www.igdb.com/games/ninjora-echoes",
+      "game_type": "main_game",
+      "reference_ids": [
+        391120
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-04-10",
+      "release_date_label": "Apr 10, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -299822,7 +299940,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-10T03:45:32.323140+00:00",
+  "updated_at": "2026-10-11T03:48:54.904306+00:00",
   "regions": {
     "summary": {
       "links": 45403,
