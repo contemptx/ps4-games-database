@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-10-12",
-  "reference_fetched_at": "2026-10-12T03:56:23.234204+00:00",
+  "as_of": "2026-10-13",
+  "reference_fetched_at": "2026-10-13T03:51:09.175139+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
@@ -13,7 +13,7 @@
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1225,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 777,
+      "future_undated_or_unreleased_date": 778,
       "out_of_scope_type": 5332,
       "unreleased_status": 316,
       "unresolved_edition_parent": 12
@@ -299959,7 +299959,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-12T03:56:24.038191+00:00",
+  "updated_at": "2026-10-13T03:51:10.322327+00:00",
   "regions": {
     "summary": {
       "links": 45403,
