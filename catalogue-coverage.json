@@ -1,21 +1,21 @@
 {
-  "as_of": "2026-10-13",
-  "reference_fetched_at": "2026-10-13T03:51:09.175139+00:00",
+  "as_of": "2026-10-14",
+  "reference_fetched_at": "2026-10-14T03:40:35.226140+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13210,
+    "reference_unique_games": 13213,
     "reference_matches": 4136,
-    "reference_gaps": 9074,
+    "reference_gaps": 9077,
     "matches_with_labelled_base": 3677,
     "local_ps4_or_psvr_reference": 4196,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1225,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 778,
-      "out_of_scope_type": 5332,
-      "unreleased_status": 316,
+      "future_undated_or_unreleased_date": 780,
+      "out_of_scope_type": 5337,
+      "unreleased_status": 315,
       "unresolved_edition_parent": 12
     }
   },
@@ -93891,6 +93891,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 248904,
+      "name": "Forest of Deceit",
+      "url": "https://www.igdb.com/games/forest-of-deceit",
+      "game_type": "main_game",
+      "reference_ids": [
+        248904
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-07-13",
+      "release_date_label": "Jul 13, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 369875,
       "name": "Forest Of Terenu",
       "url": "https://www.igdb.com/games/forest-of-terenu",
@@ -153026,6 +153045,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 187866,
+      "name": "Monster Prom 2: Monster Camp XXL",
+      "url": "https://www.igdb.com/games/monster-prom-2-monster-camp-xxl",
+      "game_type": "expanded_game",
+      "reference_ids": [
+        187866
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2024-11-15",
+      "release_date_label": "Nov 15, 2024",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 260900,
       "name": "Monster Prom 3: Monster Roadtrip XXL",
       "url": "https://www.igdb.com/games/monster-prom-3-monster-roadtrip-xxl",
@@ -156195,8 +156233,8 @@
       "reference_regions": [
         "WORLD"
       ],
-      "first_ps4_release": "2026-09-30",
-      "release_date_label": "Q3 2026",
+      "first_ps4_release": "2026-08-27",
+      "release_date_label": "Aug 27, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -209482,6 +209520,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 335466,
+      "name": "Shockwave Triggers",
+      "url": "https://www.igdb.com/games/shockwave-triggers",
+      "game_type": "main_game",
+      "reference_ids": [
+        335466
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-14",
+      "release_date_label": "Oct 14, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 378280,
       "name": "Shoe Salesman Mania",
       "url": "https://www.igdb.com/games/shoe-salesman-mania",
@@ -260756,7 +260813,7 @@
     },
     {
       "canonical_id": 33569,
-      "name": "True Fear: Forsaken Souls Part 1",
+      "name": "True Fear: Forsaken Souls - Part 1",
       "url": "https://www.igdb.com/games/true-fear-forsaken-souls-part-1",
       "game_type": "main_game",
       "reference_ids": [
@@ -260775,7 +260832,7 @@
     },
     {
       "canonical_id": 111276,
-      "name": "True Fear: Forsaken Souls Part 2",
+      "name": "True Fear: Forsaken Souls - Part 2",
       "url": "https://www.igdb.com/games/true-fear-forsaken-souls-part-2",
       "game_type": "main_game",
       "reference_ids": [
@@ -260794,7 +260851,7 @@
     },
     {
       "canonical_id": 217625,
-      "name": "True Fear: Forsaken Souls Part 3",
+      "name": "True Fear: Forsaken Souls - Part 3",
       "url": "https://www.igdb.com/games/true-fear-forsaken-souls-part-3",
       "game_type": "main_game",
       "reference_ids": [
@@ -299959,7 +300016,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-13T03:51:10.322327+00:00",
+  "updated_at": "2026-10-14T03:40:36.107425+00:00",
   "regions": {
     "summary": {
       "links": 45403,
