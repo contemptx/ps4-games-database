@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-15",
-  "reference_fetched_at": "2026-10-15T03:40:55.118878+00:00",
+  "as_of": "2026-10-16",
+  "reference_fetched_at": "2026-10-16T03:41:37.303884+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13216,
+    "reference_unique_games": 13219,
     "reference_matches": 4136,
-    "reference_gaps": 9080,
+    "reference_gaps": 9083,
     "matches_with_labelled_base": 3677,
     "local_ps4_or_psvr_reference": 4196,
     "local_without_ps4_reference": 1157,
@@ -14,8 +14,8 @@
     "local_outside_dated_benchmark": 1225,
     "excluded_reference_records": {
       "future_undated_or_unreleased_date": 779,
-      "out_of_scope_type": 5337,
-      "unreleased_status": 314,
+      "out_of_scope_type": 5339,
+      "unreleased_status": 315,
       "unresolved_edition_parent": 12
     }
   },
@@ -50277,6 +50277,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 291983,
+      "name": "Cavern Adventurers",
+      "url": "https://www.igdb.com/games/cavern-adventurers",
+      "game_type": "main_game",
+      "reference_ids": [
+        291983
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-07-16",
+      "release_date_label": "Jul 16, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 55872,
       "name": "Cavernous Wastes",
       "url": "https://www.igdb.com/games/cavernous-wastes",
@@ -73201,26 +73220,6 @@
       ],
       "first_ps4_release": "2018-08-14",
       "release_date_label": "Aug 14, 2018",
-      "catalogued": false,
-      "listings": [],
-      "package_regions": [],
-      "base_regions": [],
-      "has_labelled_base": false
-    },
-    {
-      "canonical_id": 332749,
-      "name": "Don Bradman Cricket",
-      "url": "https://www.igdb.com/games/don-bradman-cricket--1",
-      "game_type": "main_game",
-      "reference_ids": [
-        332749
-      ],
-      "reference_regions": [
-        "EUR",
-        "USA"
-      ],
-      "first_ps4_release": "2015-02-11",
-      "release_date_label": "Feb 11, 2015",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -96845,26 +96844,6 @@
       "has_labelled_base": false
     },
     {
-      "canonical_id": 262946,
-      "name": "Fun With the Fitzgeralds",
-      "url": "https://www.igdb.com/games/fun-with-the-fitzgeralds",
-      "game_type": "main_game",
-      "reference_ids": [
-        262946
-      ],
-      "reference_regions": [
-        "EUR",
-        "USA"
-      ],
-      "first_ps4_release": "2024-05-11",
-      "release_date_label": "May 11, 2024",
-      "catalogued": false,
-      "listings": [],
-      "package_regions": [],
-      "base_regions": [],
-      "has_labelled_base": false
-    },
-    {
       "canonical_id": 377228,
       "name": "Fundación 3M España: The Recycling Heroes",
       "url": "https://www.igdb.com/games/fundacion-3m-espana-the-recycling-heroes",
@@ -103764,6 +103743,25 @@
       ],
       "first_ps4_release": "2025-12-16",
       "release_date_label": "Dec 16, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 351646,
+      "name": "Golftacular!",
+      "url": "https://www.igdb.com/games/golftacular",
+      "game_type": "main_game",
+      "reference_ids": [
+        351646
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-08-27",
+      "release_date_label": "Aug 27, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -175373,6 +175371,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 411145,
+      "name": "Pets Survivors",
+      "url": "https://www.igdb.com/games/pets-survivors",
+      "game_type": "main_game",
+      "reference_ids": [
+        411145
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-08-12",
+      "release_date_label": "Aug 12, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 133939,
       "name": "PGA Tour 2K21",
       "url": "https://www.igdb.com/games/pga-tour-2k21",
@@ -215174,6 +215191,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 406059,
+      "name": "Soccer Kick-ups",
+      "url": "https://www.igdb.com/games/soccer-kick-ups",
+      "game_type": "main_game",
+      "reference_ids": [
+        406059
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-06-26",
+      "release_date_label": "Jun 26, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 403733,
       "name": "Soccer Kid Collection",
       "url": "https://www.igdb.com/games/soccer-kid-collection",
@@ -233015,6 +233051,25 @@
         "USA"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 405458,
+      "name": "Tales of Eternia: Remastered",
+      "url": "https://www.igdb.com/games/tales-of-eternia-remastered",
+      "game_type": "remaster",
+      "reference_ids": [
+        405458
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-16",
+      "release_date_label": "Oct 16, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 414437,
@@ -300074,7 +300129,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-15T03:40:56.336877+00:00",
+  "updated_at": "2026-10-16T03:41:38.210276+00:00",
   "regions": {
     "summary": {
       "links": 45403,
