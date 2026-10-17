@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-16",
-  "reference_fetched_at": "2026-10-16T03:41:37.303884+00:00",
+  "as_of": "2026-10-17",
+  "reference_fetched_at": "2026-10-17T03:38:29.408070+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13219,
+    "reference_unique_games": 13223,
     "reference_matches": 4136,
-    "reference_gaps": 9083,
+    "reference_gaps": 9087,
     "matches_with_labelled_base": 3677,
     "local_ps4_or_psvr_reference": 4196,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1225,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 779,
-      "out_of_scope_type": 5339,
+      "future_undated_or_unreleased_date": 782,
+      "out_of_scope_type": 5340,
       "unreleased_status": 315,
       "unresolved_edition_parent": 12
     }
@@ -15264,6 +15264,25 @@
         "USA"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 201752,
+      "name": "Antonblast",
+      "url": "https://www.igdb.com/games/antonblast",
+      "game_type": "main_game",
+      "reference_ids": [
+        201752
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-15",
+      "release_date_label": "Oct 15, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 152766,
@@ -56187,7 +56206,8 @@
       "url": "https://www.igdb.com/games/commandos-origins",
       "game_type": "main_game",
       "reference_ids": [
-        255936
+        255936,
+        339554
       ],
       "reference_regions": [
         "WORLD"
@@ -112240,6 +112260,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 369047,
+      "name": "Heroes of Magic & Cards",
+      "url": "https://www.igdb.com/games/heroes-of-magic-and-cards",
+      "game_type": "main_game",
+      "reference_ids": [
+        369047
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-09-24",
+      "release_date_label": "Sep 24, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 32360,
       "name": "Heroes of the Monkey Tavern",
       "url": "https://www.igdb.com/games/heroes-of-the-monkey-tavern",
@@ -113014,6 +113053,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 333412,
+      "name": "Hidden Dogs",
+      "url": "https://www.igdb.com/games/hidden-dogs",
+      "game_type": "main_game",
+      "reference_ids": [
+        333412
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-08",
+      "release_date_label": "Oct 08, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 45095,
       "name": "Hidden Dragon: Legend",
       "url": "https://www.igdb.com/games/hidden-dragon-legend",
@@ -113262,6 +113320,25 @@
       ],
       "first_ps4_release": "2021-09-08",
       "release_date_label": "Sep 08, 2021",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 20688,
+      "name": "Highway Blossoms",
+      "url": "https://www.igdb.com/games/highway-blossoms",
+      "game_type": "main_game",
+      "reference_ids": [
+        20688
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-07",
+      "release_date_label": "Oct 07, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -214730,7 +214807,8 @@
       "url": "https://www.igdb.com/games/sniper-ghost-warrior-3",
       "game_type": "main_game",
       "reference_ids": [
-        10964
+        10964,
+        82416
       ],
       "reference_regions": [
         "EUR",
@@ -284799,7 +284877,7 @@
     },
     {
       "canonical_id": 4143,
-      "name": "Attack of the Saucerman",
+      "name": "Attack of the Saucerman!",
       "reason": "No PS4/PS VR reference match; platform/conversion review needed",
       "url": "https://www.igdb.com/games/attack-of-the-saucerman",
       "platforms": [
@@ -300129,7 +300207,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-16T03:41:38.210276+00:00",
+  "updated_at": "2026-10-17T03:38:30.612485+00:00",
   "regions": {
     "summary": {
       "links": 45403,
