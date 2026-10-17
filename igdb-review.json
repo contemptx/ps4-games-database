@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T03:38:56.959319+00:00",
+  "updated_at": "2026-10-17T03:36:11.554834+00:00",
   "records": [
     {
       "name": ".hack//Infection PS2-PS4 Ported",
@@ -3747,11 +3747,6 @@
     },
     {
       "name": "Commander Cherrys Puzzled Journey PS4",
-      "status": "unmatched",
-      "candidate_ids": []
-    },
-    {
-      "name": "Commandos Origins Deluxe Edition PS4",
       "status": "unmatched",
       "candidate_ids": []
     },
@@ -13138,11 +13133,6 @@
     },
     {
       "name": "Sniper Elite VR PS4",
-      "status": "unmatched",
-      "candidate_ids": []
-    },
-    {
-      "name": "Sniper Ghost Warrior 3 Season Pass Edition",
       "status": "unmatched",
       "candidate_ids": []
     },
