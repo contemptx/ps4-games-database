@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-16T03:40:10.135905+00:00",
+  "updated_at": "2026-10-17T03:37:18.937810+00:00",
   "source": "IGDB and reviewed source identities",
   "policy": "Count identified game identities once, following explicit IGDB edition version_parent links and reviewed duplicate-ID aliases. Standalone expansions, remakes and remasters remain distinct. Source-reviewed games lacking a reliable IGDB match use explicit local identities. DLC, non-standalone expansions, collections, mods, demos, prototypes, utilities and passive video experiences are separate. Ambiguous source titles are excluded pending confirmation. This is a title identity count, not a download availability or package-content guarantee.",
-  "input_sha256": "106345212bd9e7b05deada5a09b381c2bf1e943d092923f0eafcc31b75034164",
+  "input_sha256": "c88d2fe30de50b7f83cdcd65595a2f11f2a26c3a1cc75fa9be42d34f429242eb",
   "summary": {
     "visible_listings": 6264,
     "identified_unique_games": 5361,
@@ -5003,7 +5003,7 @@
       "status": "identified",
       "igdb_id": 4143,
       "canonical_id": 4143,
-      "canonical_name": "Attack of the Saucerman",
+      "canonical_name": "Attack of the Saucerman!",
       "game_type": "main_game",
       "match_method": "Unique normalized IGDB title/alias",
       "url": "https://www.igdb.com/games/attack-of-the-saucerman",
@@ -54456,7 +54456,7 @@
       "game_type": "main_game",
       "match_method": "Reviewed: Edition label",
       "url": "https://www.igdb.com/games/sniper-ghost-warrior-3",
-      "input_igdb_id": null,
+      "input_igdb_id": 82416,
       "source_urls": [
         "https://dlpsgame.com/sniper-ghost-warrior-3-season-pass-edition-ps4-download-free/"
       ],
@@ -82055,7 +82055,7 @@
       "game_type": "main_game",
       "match_method": "Reviewed: Edition label",
       "url": "https://www.igdb.com/games/commandos-origins",
-      "input_igdb_id": null,
+      "input_igdb_id": 339554,
       "source_urls": [
         "https://www.superpsx.com/commandos-origins-deluxe-edition-ps4-fpkg/"
       ],
