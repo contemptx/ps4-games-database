@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T03:40:04.625710+00:00",
+  "updated_at": "2026-10-19T03:44:35.565981+00:00",
   "conflicts": [
     {
       "listing": "Armored Core 6 Fires of Rubicon",
@@ -22707,7 +22707,7 @@
     },
     {
       "listing": "DoDonPachi Blissful Death Re Incarnation",
-      "canonical_id": null,
+      "canonical_id": 262133,
       "sources": [
         {
           "name": "DLPSGame",

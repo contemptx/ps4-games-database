@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-18",
-  "reference_fetched_at": "2026-10-18T03:40:03.653879+00:00",
+  "as_of": "2026-10-19",
+  "reference_fetched_at": "2026-10-19T03:44:34.158371+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
-    "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13227,
-    "reference_matches": 4136,
-    "reference_gaps": 9091,
-    "matches_with_labelled_base": 3677,
-    "local_ps4_or_psvr_reference": 4196,
+    "catalogue_unique_identities": 5362,
+    "reference_unique_games": 13232,
+    "reference_matches": 4137,
+    "reference_gaps": 9095,
+    "matches_with_labelled_base": 3678,
+    "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1225,
     "excluded_reference_records": {
       "future_undated_or_unreleased_date": 781,
-      "out_of_scope_type": 5343,
+      "out_of_scope_type": 5342,
       "unreleased_status": 315,
       "unresolved_edition_parent": 12
     }
@@ -34344,6 +34344,25 @@
       ],
       "first_ps4_release": "2025-11-28",
       "release_date_label": "Nov 28, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 411149,
+      "name": "Bee With Gun",
+      "url": "https://www.igdb.com/games/bee-with-gun",
+      "game_type": "main_game",
+      "reference_ids": [
+        411149
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-07-31",
+      "release_date_label": "Jul 31, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -72712,6 +72731,31 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 262133,
+      "name": "DoDonPachi Dai-Ou-Jou Re:Incarnation",
+      "url": "https://www.igdb.com/games/dodonpachi-dai-ou-jou-re-incarnation",
+      "game_type": "expanded_game",
+      "reference_ids": [
+        262133
+      ],
+      "reference_regions": [
+        "JPN"
+      ],
+      "first_ps4_release": "2023-12-07",
+      "release_date_label": "Dec 07, 2023",
+      "catalogued": true,
+      "listings": [
+        "DoDonPachi Blissful Death Re Incarnation"
+      ],
+      "package_regions": [
+        "JPN"
+      ],
+      "base_regions": [
+        "JPN"
+      ],
+      "has_labelled_base": true
+    },
+    {
       "canonical_id": 156826,
       "name": "Dofamine",
       "url": "https://www.igdb.com/games/dofamine",
@@ -103692,7 +103736,9 @@
       "url": "https://www.igdb.com/games/golf-with-your-friends",
       "game_type": "main_game",
       "reference_ids": [
-        24985
+        24985,
+        277883,
+        277884
       ],
       "reference_regions": [
         "WORLD"
@@ -137841,6 +137887,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 311584,
+      "name": "Lizards Must Die 2",
+      "url": "https://www.igdb.com/games/lizards-must-die-2",
+      "game_type": "main_game",
+      "reference_ids": [
+        311584
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-08-27",
+      "release_date_label": "Aug 27, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 392148,
       "name": "Loaders, Inc.",
       "url": "https://www.igdb.com/games/loaders-inc",
@@ -144778,6 +144843,25 @@
         "EUR"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 373343,
+      "name": "Mate'Morphosis",
+      "url": "https://www.igdb.com/games/matemorphosis",
+      "game_type": "main_game",
+      "reference_ids": [
+        373343
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-08-05",
+      "release_date_label": "Aug 05, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 312798,
@@ -154899,6 +154983,25 @@
       ],
       "first_ps4_release": "2022-02-25",
       "release_date_label": "Feb 25, 2022",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 423989,
+      "name": "Moto X",
+      "url": "https://www.igdb.com/games/moto-x--1",
+      "game_type": "main_game",
+      "reference_ids": [
+        423989
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-16",
+      "release_date_label": "Oct 16, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -300283,7 +300386,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-18T03:40:04.625710+00:00",
+  "updated_at": "2026-10-19T03:44:35.565981+00:00",
   "regions": {
     "summary": {
       "links": 45403,
@@ -300311,8 +300414,8 @@
       "JPN": {
         "links": 1635,
         "listings": 340,
-        "identities": 303,
-        "base_identities": 259
+        "identities": 304,
+        "base_identities": 260
       },
       "USA": {
         "links": 15678,
@@ -300324,10 +300427,10 @@
     "note": "Regions are source/filename claims about individual releases, not language or licensing verification. Counts per region overlap; a game or file can have more than one label. Base counts require an explicit base label. Unknown/conflicting regions remain visible and never imply worldwide availability."
   },
   "identity_summary": {
-    "unique": 5361,
-    "matched": 5967,
+    "unique": 5362,
+    "matched": 5968,
     "unresolved": 13,
-    "other": 284,
+    "other": 283,
     "duplicateListings": 606
   },
   "sony": {
