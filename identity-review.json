@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T03:38:36.593806+00:00",
+  "updated_at": "2026-10-19T03:43:16.535922+00:00",
   "unresolved": [
     {
       "name": "Streets of Rage Remake",
@@ -1156,26 +1156,6 @@
       "input_igdb_id": 172397,
       "source_urls": [
         "https://dlpsgame.com/disney-classic-games-collection-aladdin-the-lion-king-and-the-jungle-book-ps4-pkg/"
-      ]
-    },
-    {
-      "name": "DoDonPachi Blissful Death Re Incarnation",
-      "status": "non_game",
-      "igdb_id": 262133,
-      "canonical_id": 262133,
-      "canonical_name": "DoDonPachi Dai-Ou-Jou Re:Incarnation",
-      "game_type": "bundle",
-      "match_method": "Reviewed: Reviewed title spelling, subtitle or regional name against the IGDB title/aliases",
-      "url": "https://www.igdb.com/games/dodonpachi-dai-ou-jou-re-incarnation",
-      "input_igdb_id": null,
-      "source_urls": [
-        "https://dlpsgame.com/dodonpachi-blissful-death-re-incarnation-ps4-pkg/",
-        "https://www.superpsx.com/dodonpachi-blissful-death-reincarnation-ps4-fpkg/"
-      ],
-      "reviewed_at": "2026-09-29",
-      "evidence": [
-        "https://dlpsgame.com/dodonpachi-blissful-death-re-incarnation-ps4-pkg/",
-        "https://www.superpsx.com/dodonpachi-blissful-death-reincarnation-ps4-fpkg/"
       ]
     },
     {

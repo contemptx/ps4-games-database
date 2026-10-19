@@ -1,15 +1,15 @@
 var gameIdentities = {
   "schema_version": 2,
-  "updated_at": "2026-10-18T03:38:36.593806+00:00",
+  "updated_at": "2026-10-19T03:43:16.535922+00:00",
   "source": "IGDB and reviewed source identities",
   "policy": "Count identified game identities once, following explicit IGDB edition version_parent links and reviewed duplicate-ID aliases. Standalone expansions, remakes and remasters remain distinct. Source-reviewed games lacking a reliable IGDB match use explicit local identities. DLC, non-standalone expansions, collections, mods, demos, prototypes, utilities and passive video experiences are separate. Ambiguous source titles are excluded pending confirmation. This is a title identity count, not a download availability or package-content guarantee.",
   "input_sha256": "c88d2fe30de50b7f83cdcd65595a2f11f2a26c3a1cc75fa9be42d34f429242eb",
   "summary": {
     "visible_listings": 6264,
-    "identified_unique_games": 5361,
-    "identified_game_listings": 5967,
+    "identified_unique_games": 5362,
+    "identified_game_listings": 5968,
     "unresolved_listings": 13,
-    "non_game_listings": 284,
+    "non_game_listings": 283,
     "reviewed_listings": 1008,
     "local_unique_games": 8,
     "edition_listings": 226,
@@ -17142,11 +17142,11 @@ var gameIdentities = {
       ]
     },
     "DoDonPachi Blissful Death Re Incarnation": {
-      "status": "non_game",
+      "status": "identified",
       "igdb_id": 262133,
       "canonical_id": 262133,
       "canonical_name": "DoDonPachi Dai-Ou-Jou Re:Incarnation",
-      "game_type": "bundle",
+      "game_type": "expanded_game",
       "match_method": "Reviewed: Reviewed title spelling, subtitle or regional name against the IGDB title/aliases",
       "url": "https://www.igdb.com/games/dodonpachi-dai-ou-jou-re-incarnation",
       "input_igdb_id": null,
