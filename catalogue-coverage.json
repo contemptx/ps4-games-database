@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-10-19",
-  "reference_fetched_at": "2026-10-19T03:44:34.158371+00:00",
+  "as_of": "2026-10-20",
+  "reference_fetched_at": "2026-10-20T03:41:20.412427+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13232,
-    "reference_matches": 4137,
-    "reference_gaps": 9095,
-    "matches_with_labelled_base": 3678,
+    "reference_unique_games": 13236,
+    "reference_matches": 4138,
+    "reference_gaps": 9098,
+    "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
-    "local_outside_dated_benchmark": 1225,
+    "local_outside_dated_benchmark": 1224,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 781,
+      "future_undated_or_unreleased_date": 782,
       "out_of_scope_type": 5342,
       "unreleased_status": 315,
       "unresolved_edition_parent": 12
@@ -70836,6 +70836,27 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 416083,
+      "name": "Dino Crisis 2",
+      "url": "https://www.igdb.com/games/dino-crisis-2--2",
+      "game_type": "port",
+      "reference_ids": [
+        416083
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-20",
+      "release_date_label": "Oct 20, 2026",
+      "catalogued": true,
+      "listings": [
+        "Dino Crisis 2"
+      ],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": true
+    },
+    {
       "canonical_id": 19591,
       "name": "Dino Dini's Kick Off Revival",
       "url": "https://www.igdb.com/games/dino-dinis-kick-off-revival",
@@ -108914,6 +108935,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 424296,
+      "name": "Hamventure",
+      "url": "https://www.igdb.com/games/hamventure",
+      "game_type": "main_game",
+      "reference_ids": [
+        424296
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-02",
+      "release_date_label": "Oct 02, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 111649,
       "name": "Hana Saki Work Spring!",
       "url": "https://www.igdb.com/games/hana-saki-work-spring",
@@ -110147,6 +110187,25 @@
         "EUR",
         "USA"
       ],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 120801,
+      "name": "Hatsune Miku: VR Future Live 2nd Stage",
+      "url": "https://www.igdb.com/games/hatsune-miku-vr-future-live-2nd-stage",
+      "game_type": "main_game",
+      "reference_ids": [
+        120801
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2016-11-10",
+      "release_date_label": "Nov 10, 2016",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
       "base_regions": [],
       "has_labelled_base": false
     },
@@ -270677,6 +270736,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 411997,
+      "name": "Wand & Order: Tidy Up the Magic Shop!",
+      "url": "https://www.igdb.com/games/wand-and-order-tidy-up-the-magic-shop",
+      "game_type": "main_game",
+      "reference_ids": [
+        411997
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-15",
+      "release_date_label": "Oct 15, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 33992,
       "name": "Wand Wars",
       "url": "https://www.igdb.com/games/wand-wars",
@@ -288128,19 +288206,6 @@
       ]
     },
     {
-      "canonical_id": 416083,
-      "name": "Dino Crisis 2",
-      "reason": "PS4/PS VR reference exists but type/date/status is outside this benchmark",
-      "url": "https://www.igdb.com/games/dino-crisis-2--2",
-      "platforms": [
-        "PlayStation 4",
-        "PlayStation 5"
-      ],
-      "listings": [
-        "Dino Crisis 2"
-      ]
-    },
-    {
       "canonical_id": 64455,
       "name": "Dinosaurs",
       "reason": "No PS4/PS VR reference match; platform/conversion review needed",
@@ -300386,7 +300451,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-19T03:44:35.565981+00:00",
+  "updated_at": "2026-10-20T03:41:21.194851+00:00",
   "regions": {
     "summary": {
       "links": 45403,
