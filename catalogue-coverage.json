@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-10-21",
-  "reference_fetched_at": "2026-10-21T03:41:54.904227+00:00",
+  "as_of": "2026-10-22",
+  "reference_fetched_at": "2026-10-22T03:42:35.348866+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13236,
+    "reference_unique_games": 13237,
     "reference_matches": 4138,
-    "reference_gaps": 9098,
+    "reference_gaps": 9099,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1224,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 784,
+      "future_undated_or_unreleased_date": 782,
       "out_of_scope_type": 5343,
       "unreleased_status": 314,
       "unresolved_edition_parent": 12
@@ -180482,6 +180482,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 211637,
+      "name": "Pocket Mirror: GoldenerTraum",
+      "url": "https://www.igdb.com/games/pocket-mirror-goldenertraum",
+      "game_type": "remaster",
+      "reference_ids": [
+        211637
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-21",
+      "release_date_label": "Oct 21, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 401430,
       "name": "Pocket Putts",
       "url": "https://www.igdb.com/games/pocket-putts",
@@ -273660,9 +273679,11 @@
       "url": "https://www.igdb.com/games/west-of-dead",
       "game_type": "main_game",
       "reference_ids": [
-        125625
+        125625,
+        154954
       ],
       "reference_regions": [
+        "USA",
         "WORLD"
       ],
       "first_ps4_release": "2020-08-05",
@@ -300451,7 +300472,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-21T03:41:56.089193+00:00",
+  "updated_at": "2026-10-22T03:42:36.507133+00:00",
   "regions": {
     "summary": {
       "links": 45403,
