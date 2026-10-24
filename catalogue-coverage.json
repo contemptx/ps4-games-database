@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-23",
-  "reference_fetched_at": "2026-10-23T03:42:14.376426+00:00",
+  "as_of": "2026-10-24",
+  "reference_fetched_at": "2026-10-24T03:40:09.714824+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13238,
+    "reference_unique_games": 13240,
     "reference_matches": 4138,
-    "reference_gaps": 9100,
+    "reference_gaps": 9102,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1157,
@@ -14,8 +14,8 @@
     "local_outside_dated_benchmark": 1224,
     "excluded_reference_records": {
       "future_undated_or_unreleased_date": 785,
-      "out_of_scope_type": 5344,
-      "unreleased_status": 314,
+      "out_of_scope_type": 5347,
+      "unreleased_status": 315,
       "unresolved_edition_parent": 12
     }
   },
@@ -168087,6 +168087,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 425359,
+      "name": "Omni Growth",
+      "url": "https://www.igdb.com/games/omni-growth",
+      "game_type": "main_game",
+      "reference_ids": [
+        425359
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-23",
+      "release_date_label": "Oct 23, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 111661,
       "name": "Omno",
       "url": "https://www.igdb.com/games/omno",
@@ -208480,6 +208499,25 @@
       ],
       "first_ps4_release": "2026-03-26",
       "release_date_label": "Mar 26, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 425386,
+      "name": "Shardwatch Dominion",
+      "url": "https://www.igdb.com/games/shardwatch-dominion",
+      "game_type": "main_game",
+      "reference_ids": [
+        425386
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-23",
+      "release_date_label": "Oct 23, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -300491,7 +300529,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-23T03:42:15.152886+00:00",
+  "updated_at": "2026-10-24T03:40:10.697287+00:00",
   "regions": {
     "summary": {
       "links": 45403,
