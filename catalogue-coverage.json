@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-25",
-  "reference_fetched_at": "2026-10-25T03:43:43.207177+00:00",
+  "as_of": "2026-10-26",
+  "reference_fetched_at": "2026-10-26T03:46:38.115419+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13240,
+    "reference_unique_games": 13244,
     "reference_matches": 4138,
-    "reference_gaps": 9102,
+    "reference_gaps": 9106,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1224,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 786,
-      "out_of_scope_type": 5347,
+      "future_undated_or_unreleased_date": 787,
+      "out_of_scope_type": 5349,
       "unreleased_status": 315,
       "unresolved_edition_parent": 12
     }
@@ -52055,6 +52055,28 @@
       ],
       "first_ps4_release": "2025-10-24",
       "release_date_label": "Oct 24, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 425519,
+      "name": "Chicken Terror",
+      "url": "https://www.igdb.com/games/chicken-terror",
+      "game_type": "main_game",
+      "reference_ids": [
+        425519
+      ],
+      "reference_regions": [
+        "AUS",
+        "EUR",
+        "JPN",
+        "USA"
+      ],
+      "first_ps4_release": "2026-10-16",
+      "release_date_label": "Oct 16, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -153609,6 +153631,25 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 401411,
+      "name": "Monster's Death",
+      "url": "https://www.igdb.com/games/monsters-death",
+      "game_type": "main_game",
+      "reference_ids": [
+        401411
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-03-27",
+      "release_date_label": "Mar 27, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 334083,
       "name": "Monstrix TCG Card Shop",
       "url": "https://www.igdb.com/games/monstrix-tcg-card-shop",
@@ -205730,6 +205771,25 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 425486,
+      "name": "Seahorse Soap Patrol",
+      "url": "https://www.igdb.com/games/seahorse-soap-patrol",
+      "game_type": "main_game",
+      "reference_ids": [
+        425486
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-23",
+      "release_date_label": "Oct 23, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 17787,
       "name": "Season Match",
       "url": "https://www.igdb.com/games/season-match",
@@ -216236,6 +216296,25 @@
       ],
       "first_ps4_release": "2025-01-31",
       "release_date_label": "Jan 31, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 378770,
+      "name": "Solid Void Art Nonograms",
+      "url": "https://www.igdb.com/games/solid-void-art-nonograms",
+      "game_type": "main_game",
+      "reference_ids": [
+        378770
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-11-20",
+      "release_date_label": "Nov 20, 2025",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -300530,7 +300609,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-25T03:43:44.191895+00:00",
+  "updated_at": "2026-10-26T03:46:39.267414+00:00",
   "regions": {
     "summary": {
       "links": 45403,
