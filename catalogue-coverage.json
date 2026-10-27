@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-26",
-  "reference_fetched_at": "2026-10-26T03:46:38.115419+00:00",
+  "as_of": "2026-10-27",
+  "reference_fetched_at": "2026-10-27T03:43:05.946354+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13244,
+    "reference_unique_games": 13248,
     "reference_matches": 4138,
-    "reference_gaps": 9106,
+    "reference_gaps": 9110,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1224,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 787,
-      "out_of_scope_type": 5349,
+      "future_undated_or_unreleased_date": 786,
+      "out_of_scope_type": 5353,
       "unreleased_status": 315,
       "unresolved_edition_parent": 12
     }
@@ -72875,6 +72875,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 417896,
+      "name": "Dog Man: Bark in Action",
+      "url": "https://www.igdb.com/games/dog-man-bark-in-action",
+      "game_type": "main_game",
+      "reference_ids": [
+        417896
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-27",
+      "release_date_label": "Oct 27, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 316875,
       "name": "Dog Man: Mission Impawsible",
       "url": "https://www.igdb.com/games/dog-man-mission-impawsible",
@@ -83948,6 +83967,25 @@
       ],
       "first_ps4_release": "2020-11-12",
       "release_date_label": "Nov 12, 2020",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 142497,
+      "name": "Estigma",
+      "url": "https://www.igdb.com/games/estigma",
+      "game_type": "main_game",
+      "reference_ids": [
+        142497
+      ],
+      "reference_regions": [
+        "USA"
+      ],
+      "first_ps4_release": "2023-09-14",
+      "release_date_label": "Sep 14, 2023",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -235731,6 +235769,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 144568,
+      "name": "Teocida",
+      "url": "https://www.igdb.com/games/teocida",
+      "game_type": "main_game",
+      "reference_ids": [
+        144568
+      ],
+      "reference_regions": [
+        "USA"
+      ],
+      "first_ps4_release": "2023-09-14",
+      "release_date_label": "Sep 14, 2023",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 283231,
       "name": "Teppo and The Secret Ancient City",
       "url": "https://www.igdb.com/games/teppo-and-the-secret-ancient-city",
@@ -269817,6 +269874,25 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 425864,
+      "name": "Vixen 357",
+      "url": "https://www.igdb.com/games/vixen-357--1",
+      "game_type": "port",
+      "reference_ids": [
+        425864
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-23",
+      "release_date_label": "Oct 23, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 219779,
       "name": "Vlad Circus: Descend Into Madness",
       "url": "https://www.igdb.com/games/vlad-circus-descend-into-madness",
@@ -300609,7 +300685,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-26T03:46:39.267414+00:00",
+  "updated_at": "2026-10-27T03:43:07.147160+00:00",
   "regions": {
     "summary": {
       "links": 45403,
