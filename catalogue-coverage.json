@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-10-27",
-  "reference_fetched_at": "2026-10-27T03:43:05.946354+00:00",
+  "as_of": "2026-10-28",
+  "reference_fetched_at": "2026-10-28T03:34:42.771099+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13248,
+    "reference_unique_games": 13252,
     "reference_matches": 4138,
-    "reference_gaps": 9110,
+    "reference_gaps": 9114,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1224,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 786,
+      "future_undated_or_unreleased_date": 783,
       "out_of_scope_type": 5353,
       "unreleased_status": 315,
       "unresolved_edition_parent": 12
@@ -59683,6 +59683,25 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 425955,
+      "name": "Croc's World 5",
+      "url": "https://www.igdb.com/games/crocs-world-5",
+      "game_type": "main_game",
+      "reference_ids": [
+        425955
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-16",
+      "release_date_label": "Oct 16, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 115465,
       "name": "Croc's World Run",
       "url": "https://www.igdb.com/games/crocs-world-run",
@@ -86722,6 +86741,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 172817,
+      "name": "Fallen City Brawl",
+      "url": "https://www.igdb.com/games/fallen-city-brawl",
+      "game_type": "main_game",
+      "reference_ids": [
+        172817
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-28",
+      "release_date_label": "Oct 28, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 133698,
       "name": "Fallen Knight",
       "url": "https://www.igdb.com/games/fallen-knight",
@@ -99876,6 +99914,25 @@
       ],
       "first_ps4_release": "2017-09-28",
       "release_date_label": "Sep 28, 2017",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 252013,
+      "name": "Gennady",
+      "url": "https://www.igdb.com/games/gennady",
+      "game_type": "main_game",
+      "reference_ids": [
+        252013
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-28",
+      "release_date_label": "Oct 28, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -227483,6 +227540,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 233970,
+      "name": "Sulfur",
+      "url": "https://www.igdb.com/games/sulfur",
+      "game_type": "main_game",
+      "reference_ids": [
+        233970
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-28",
+      "release_date_label": "Oct 28, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 328387,
       "name": "Sum10",
       "url": "https://www.igdb.com/games/sum10",
@@ -300685,7 +300761,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-27T03:43:07.147160+00:00",
+  "updated_at": "2026-10-28T03:34:43.975075+00:00",
   "regions": {
     "summary": {
       "links": 45403,
