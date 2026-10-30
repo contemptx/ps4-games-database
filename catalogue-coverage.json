@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-10-29",
-  "reference_fetched_at": "2026-10-29T03:35:39.889670+00:00",
+  "as_of": "2026-10-30",
+  "reference_fetched_at": "2026-10-30T03:35:03.338503+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13256,
+    "reference_unique_games": 13260,
     "reference_matches": 4138,
-    "reference_gaps": 9118,
+    "reference_gaps": 9122,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1224,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 782,
-      "out_of_scope_type": 5355,
+      "future_undated_or_unreleased_date": 780,
+      "out_of_scope_type": 5356,
       "unreleased_status": 315,
       "unresolved_edition_parent": 12
     }
@@ -28007,6 +28007,25 @@
         "EUR"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 86391,
+      "name": "Asylum",
+      "url": "https://www.igdb.com/games/asylum--1",
+      "game_type": "main_game",
+      "reference_ids": [
+        86391
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-30",
+      "release_date_label": "Oct 30, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 27998,
@@ -67522,6 +67541,25 @@
         "EUR"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 412575,
+      "name": "Deep Sea Delivery & Co.",
+      "url": "https://www.igdb.com/games/deep-sea-delivery-and-co",
+      "game_type": "main_game",
+      "reference_ids": [
+        412575
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-08-05",
+      "release_date_label": "Aug 05, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 54793,
@@ -138637,6 +138675,25 @@
       ],
       "first_ps4_release": "2024-08-23",
       "release_date_label": "Aug 23, 2024",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 328140,
+      "name": "Look Outside",
+      "url": "https://www.igdb.com/games/look-outside",
+      "game_type": "main_game",
+      "reference_ids": [
+        328140
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-30",
+      "release_date_label": "Oct 30, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -222451,31 +222508,6 @@
       "has_labelled_base": true
     },
     {
-      "canonical_id": 329227,
-      "name": "Star Wars Episode I: The Phantom Menace",
-      "url": "https://www.igdb.com/games/star-wars-episode-i-the-phantom-menace--1",
-      "game_type": "port",
-      "reference_ids": [
-        329227
-      ],
-      "reference_regions": [
-        "WORLD"
-      ],
-      "first_ps4_release": "2024-01-16",
-      "release_date_label": "Jan 16, 2024",
-      "catalogued": true,
-      "listings": [
-        "Star Wars Episode I The Phantom Menace"
-      ],
-      "package_regions": [
-        "USA"
-      ],
-      "base_regions": [
-        "USA"
-      ],
-      "has_labelled_base": true
-    },
-    {
       "canonical_id": 74701,
       "name": "Star Wars Jedi: Fallen Order",
       "url": "https://www.igdb.com/games/star-wars-jedi-fallen-order",
@@ -222687,6 +222719,31 @@
       ],
       "base_regions": [
         "EUR",
+        "USA"
+      ],
+      "has_labelled_base": true
+    },
+    {
+      "canonical_id": 329227,
+      "name": "Star Wars: Episode I - The Phantom Menace",
+      "url": "https://www.igdb.com/games/star-wars-episode-i-the-phantom-menace--1",
+      "game_type": "port",
+      "reference_ids": [
+        329227
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2024-01-16",
+      "release_date_label": "Jan 16, 2024",
+      "catalogued": true,
+      "listings": [
+        "Star Wars Episode I The Phantom Menace"
+      ],
+      "package_regions": [
+        "USA"
+      ],
+      "base_regions": [
         "USA"
       ],
       "has_labelled_base": true
@@ -236854,7 +236911,7 @@
       "canonical_id": 30221,
       "name": "The 25th Ward: The Silver Case",
       "url": "https://www.igdb.com/games/the-25th-ward-the-silver-case",
-      "game_type": "remaster",
+      "game_type": "remake",
       "reference_ids": [
         30221
       ],
@@ -247600,6 +247657,25 @@
       ],
       "first_ps4_release": "2018-06-26",
       "release_date_label": "Jun 26, 2018",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 332788,
+      "name": "The Night of the Exorcism",
+      "url": "https://www.igdb.com/games/the-night-of-the-exorcism",
+      "game_type": "main_game",
+      "reference_ids": [
+        332788
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-30",
+      "release_date_label": "Oct 30, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -300838,7 +300914,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-29T03:35:40.843622+00:00",
+  "updated_at": "2026-10-30T03:35:04.335328+00:00",
   "regions": {
     "summary": {
       "links": 45403,
