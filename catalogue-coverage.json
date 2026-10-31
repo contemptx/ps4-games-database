@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-10-30",
-  "reference_fetched_at": "2026-10-30T03:35:03.338503+00:00",
+  "as_of": "2026-10-31",
+  "reference_fetched_at": "2026-10-31T03:30:57.007669+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13260,
+    "reference_unique_games": 13263,
     "reference_matches": 4138,
-    "reference_gaps": 9122,
+    "reference_gaps": 9125,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1157,
@@ -15,7 +15,7 @@
     "excluded_reference_records": {
       "future_undated_or_unreleased_date": 780,
       "out_of_scope_type": 5356,
-      "unreleased_status": 315,
+      "unreleased_status": 314,
       "unresolved_edition_parent": 12
     }
   },
@@ -116421,6 +116421,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 120814,
+      "name": "HorrorVale",
+      "url": "https://www.igdb.com/games/horrorvale",
+      "game_type": "main_game",
+      "reference_ids": [
+        120814
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-31",
+      "release_date_label": "Oct 31, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 144526,
       "name": "Horse Club Adventures",
       "url": "https://www.igdb.com/games/horse-club-adventures",
@@ -206316,6 +206335,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 391066,
+      "name": "Secrets of Velendar Castle: Escape Room",
+      "url": "https://www.igdb.com/games/secrets-of-velendar-castle-escape-room",
+      "game_type": "main_game",
+      "reference_ids": [
+        391066
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-07-16",
+      "release_date_label": "Jul 16, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 327438,
       "name": "Sector Beam",
       "url": "https://www.igdb.com/games/sector-beam",
@@ -225873,6 +225911,25 @@
       ],
       "first_ps4_release": "2024-08-16",
       "release_date_label": "Aug 16, 2024",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 280252,
+      "name": "Streetdog BMX",
+      "url": "https://www.igdb.com/games/streetdog-bmx",
+      "game_type": "main_game",
+      "reference_ids": [
+        280252
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-07-16",
+      "release_date_label": "Jul 16, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -300914,7 +300971,7 @@
       ]
     }
   ],
-  "updated_at": "2026-10-30T03:35:04.335328+00:00",
+  "updated_at": "2026-10-31T03:30:57.993667+00:00",
   "regions": {
     "summary": {
       "links": 45403,
