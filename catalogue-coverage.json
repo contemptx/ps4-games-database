@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-11-02",
-  "reference_fetched_at": "2026-11-02T03:33:33.802234+00:00",
+  "as_of": "2026-11-03",
+  "reference_fetched_at": "2026-11-03T03:32:01.109315+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5362,
@@ -13,9 +13,9 @@
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1224,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 785,
+      "future_undated_or_unreleased_date": 784,
       "out_of_scope_type": 5358,
-      "unreleased_status": 314,
+      "unreleased_status": 315,
       "unresolved_edition_parent": 12
     }
   },
@@ -55086,6 +55086,7 @@
         105000
       ],
       "reference_regions": [
+        "EUR",
         "JPN",
         "USA"
       ],
@@ -135884,6 +135885,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 412641,
+      "name": "Let's Sing Presents: Abba",
+      "url": "https://www.igdb.com/games/lets-sing-presents-abba",
+      "game_type": "main_game",
+      "reference_ids": [
+        412641
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-03",
+      "release_date_label": "Nov 03, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 138761,
       "name": "Let's Sing Queen",
       "url": "https://www.igdb.com/games/lets-sing-queen",
@@ -171342,25 +171362,6 @@
         "USA"
       ],
       "has_labelled_base": true
-    },
-    {
-      "canonical_id": 138211,
-      "name": "Ova Magica",
-      "url": "https://www.igdb.com/games/ova-magica",
-      "game_type": "main_game",
-      "reference_ids": [
-        138211
-      ],
-      "reference_regions": [
-        "WORLD"
-      ],
-      "first_ps4_release": "2026-09-08",
-      "release_date_label": "Sep 08, 2026",
-      "catalogued": false,
-      "listings": [],
-      "package_regions": [],
-      "base_regions": [],
-      "has_labelled_base": false
     },
     {
       "canonical_id": 214604,
@@ -300971,7 +300972,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-02T03:33:34.928407+00:00",
+  "updated_at": "2026-11-03T03:32:02.141093+00:00",
   "regions": {
     "summary": {
       "links": 45403,
