@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-03",
-  "reference_fetched_at": "2026-11-03T03:32:01.109315+00:00",
+  "as_of": "2026-11-04",
+  "reference_fetched_at": "2026-11-04T03:31:03.779133+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13263,
+    "reference_unique_games": 13265,
     "reference_matches": 4138,
-    "reference_gaps": 9125,
+    "reference_gaps": 9127,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1157,
@@ -14,7 +14,7 @@
     "local_outside_dated_benchmark": 1224,
     "excluded_reference_records": {
       "future_undated_or_unreleased_date": 784,
-      "out_of_scope_type": 5358,
+      "out_of_scope_type": 5360,
       "unreleased_status": 315,
       "unresolved_edition_parent": 12
     }
@@ -71327,7 +71327,7 @@
     },
     {
       "canonical_id": 136176,
-      "name": "DiRT Rally: VR Edition",
+      "name": "Dirt Rally: VR Edition",
       "url": "https://www.igdb.com/games/dirt-rally-vr-edition",
       "game_type": "port",
       "reference_ids": [
@@ -194175,7 +194175,7 @@
     },
     {
       "canonical_id": 109580,
-      "name": "Resonance of Fate 4k/HD Edition",
+      "name": "Resonance of Fate 4K/HD Edition",
       "url": "https://www.igdb.com/games/resonance-of-fate-4k-slash-hd-edition",
       "game_type": "remaster",
       "reference_ids": [
@@ -238748,6 +238748,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 403720,
+      "name": "The Cat in the Hat: Rainy Day Mayhem",
+      "url": "https://www.igdb.com/games/the-cat-in-the-hat-rainy-day-mayhem",
+      "game_type": "main_game",
+      "reference_ids": [
+        403720
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-30",
+      "release_date_label": "Oct 30, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 376620,
       "name": "The Cat With Amazing Hat",
       "url": "https://www.igdb.com/games/the-cat-with-amazing-hat",
@@ -273100,6 +273119,25 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 191656,
+      "name": "We are Eva",
+      "url": "https://www.igdb.com/games/we-are-eva",
+      "game_type": "main_game",
+      "reference_ids": [
+        191656
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-04",
+      "release_date_label": "Nov 04, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 152177,
       "name": "We Are OFK",
       "url": "https://www.igdb.com/games/we-are-ofk--1",
@@ -300972,7 +301010,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-03T03:32:02.141093+00:00",
+  "updated_at": "2026-11-04T03:31:04.872699+00:00",
   "regions": {
     "summary": {
       "links": 45403,
