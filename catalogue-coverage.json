@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-11-04",
-  "reference_fetched_at": "2026-11-04T03:31:03.779133+00:00",
+  "as_of": "2026-11-05",
+  "reference_fetched_at": "2026-11-05T03:32:12.270664+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13265,
+    "reference_unique_games": 13266,
     "reference_matches": 4138,
-    "reference_gaps": 9127,
+    "reference_gaps": 9128,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1224,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 784,
-      "out_of_scope_type": 5360,
+      "future_undated_or_unreleased_date": 785,
+      "out_of_scope_type": 5361,
       "unreleased_status": 315,
       "unresolved_edition_parent": 12
     }
@@ -52631,25 +52631,6 @@
         "USA"
       ],
       "has_labelled_base": true
-    },
-    {
-      "canonical_id": 395340,
-      "name": "Chou Shin Jikuu Geimu Neptune: Unlimited",
-      "url": "https://www.igdb.com/games/chou-shin-jikuu-geimu-neptune-unlimited",
-      "game_type": "main_game",
-      "reference_ids": [
-        395340
-      ],
-      "reference_regions": [
-        "JPN"
-      ],
-      "first_ps4_release": "2026-08-27",
-      "release_date_label": "Aug 27, 2026",
-      "catalogued": false,
-      "listings": [],
-      "package_regions": [],
-      "base_regions": [],
-      "has_labelled_base": false
     },
     {
       "canonical_id": 210085,
@@ -118442,6 +118423,25 @@
       ],
       "first_ps4_release": "2025-03-13",
       "release_date_label": "Mar 13, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 395340,
+      "name": "Hyperspace Neptunia: Unlimited",
+      "url": "https://www.igdb.com/games/hyperspace-neptunia-unlimited",
+      "game_type": "main_game",
+      "reference_ids": [
+        395340
+      ],
+      "reference_regions": [
+        "JPN"
+      ],
+      "first_ps4_release": "2026-08-27",
+      "release_date_label": "Aug 27, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -219608,6 +219608,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 409294,
+      "name": "Specter Smash",
+      "url": "https://www.igdb.com/games/specter-smash",
+      "game_type": "main_game",
+      "reference_ids": [
+        409294
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-02-27",
+      "release_date_label": "Feb 27, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 154987,
       "name": "Spectrewoods",
       "url": "https://www.igdb.com/games/spectrewoods",
@@ -301010,7 +301029,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-04T03:31:04.872699+00:00",
+  "updated_at": "2026-11-05T03:32:13.379274+00:00",
   "regions": {
     "summary": {
       "links": 45403,
