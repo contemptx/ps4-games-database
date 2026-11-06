@@ -1,21 +1,21 @@
 {
-  "as_of": "2026-11-05",
-  "reference_fetched_at": "2026-11-05T03:32:12.270664+00:00",
+  "as_of": "2026-11-06",
+  "reference_fetched_at": "2026-11-06T03:31:19.554719+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13266,
+    "reference_unique_games": 13269,
     "reference_matches": 4138,
-    "reference_gaps": 9128,
+    "reference_gaps": 9131,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1157,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1224,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 785,
-      "out_of_scope_type": 5361,
-      "unreleased_status": 315,
+      "future_undated_or_unreleased_date": 784,
+      "out_of_scope_type": 5359,
+      "unreleased_status": 316,
       "unresolved_edition_parent": 12
     }
   },
@@ -16441,6 +16441,25 @@
       ],
       "first_ps4_release": "2015-05-12",
       "release_date_label": "May 12, 2015",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 310367,
+      "name": "Arcade Archives VS. The Adventures of Valkyrie",
+      "url": "https://www.igdb.com/games/arcade-archives-vs-the-adventures-of-valkyrie",
+      "game_type": "port",
+      "reference_ids": [
+        310367
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2024-07-25",
+      "release_date_label": "Jul 25, 2024",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -110074,6 +110093,25 @@
         "USA"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 412107,
+      "name": "Hasbro Games Junior Collection",
+      "url": "https://www.igdb.com/games/hasbro-games-junior-collection",
+      "game_type": "main_game",
+      "reference_ids": [
+        412107
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-06",
+      "release_date_label": "Nov 06, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 186282,
@@ -231037,6 +231075,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 305561,
+      "name": "Supermarket Simulation Grocery Empire 3D",
+      "url": "https://www.igdb.com/games/supermarket-simulation-grocery-empire-3d",
+      "game_type": "main_game",
+      "reference_ids": [
+        305561
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2024-06-12",
+      "release_date_label": "Jun 12, 2024",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 315320,
       "name": "Supermarket Simulator 2024",
       "url": "https://www.igdb.com/games/supermarket-simulator-2024",
@@ -235886,7 +235943,7 @@
       "canonical_id": 79156,
       "name": "Tengai",
       "url": "https://www.igdb.com/games/tengai",
-      "game_type": "main_game",
+      "game_type": "port",
       "reference_ids": [
         79156
       ],
@@ -301029,7 +301086,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-05T03:32:13.379274+00:00",
+  "updated_at": "2026-11-06T03:31:20.718081+00:00",
   "regions": {
     "summary": {
       "links": 45403,
