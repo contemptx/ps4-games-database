@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-06T03:29:59.412606+00:00",
+  "updated_at": "2026-11-07T03:29:05.028112+00:00",
   "source": "IGDB and reviewed source identities",
   "policy": "Count identified game identities once, following explicit IGDB edition version_parent links and reviewed duplicate-ID aliases. Standalone expansions, remakes and remasters remain distinct. Source-reviewed games lacking a reliable IGDB match use explicit local identities. DLC, non-standalone expansions, collections, mods, demos, prototypes, utilities and passive video experiences are separate. Ambiguous source titles are excluded pending confirmation. This is a title identity count, not a download availability or package-content guarantee.",
   "input_sha256": "c88d2fe30de50b7f83cdcd65595a2f11f2a26c3a1cc75fa9be42d34f429242eb",
   "summary": {
     "visible_listings": 6264,
-    "identified_unique_games": 5362,
-    "identified_game_listings": 5968,
-    "unresolved_listings": 13,
+    "identified_unique_games": 5361,
+    "identified_game_listings": 5967,
+    "unresolved_listings": 14,
     "non_game_listings": 283,
     "reviewed_listings": 1008,
     "local_unique_games": 8,
@@ -51825,13 +51825,12 @@
       ]
     },
     "Sega Rally Revo": {
-      "status": "identified",
-      "igdb_id": 1574,
-      "canonical_id": 1574,
-      "canonical_name": "Sega Rally Revo",
-      "game_type": "main_game",
-      "match_method": "Unique normalized IGDB title/alias",
-      "url": "https://www.igdb.com/games/sega-rally-revo",
+      "status": "review",
+      "reason": "Ambiguous title",
+      "candidate_ids": [
+        1574,
+        209018
+      ],
       "input_igdb_id": null,
       "source_urls": [
         "https://dlpsgame.com/sega-rally-revo-ps4-pkg/"
