@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-11-06",
-  "reference_fetched_at": "2026-11-06T03:31:19.554719+00:00",
+  "as_of": "2026-11-07",
+  "reference_fetched_at": "2026-11-07T03:30:33.873231+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
-    "catalogue_unique_identities": 5362,
-    "reference_unique_games": 13269,
+    "catalogue_unique_identities": 5361,
+    "reference_unique_games": 13270,
     "reference_matches": 4138,
-    "reference_gaps": 9131,
+    "reference_gaps": 9132,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
-    "local_without_ps4_reference": 1157,
+    "local_without_ps4_reference": 1156,
     "local_identities_without_igdb": 8,
-    "local_outside_dated_benchmark": 1224,
+    "local_outside_dated_benchmark": 1223,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 784,
+      "future_undated_or_unreleased_date": 785,
       "out_of_scope_type": 5359,
       "unreleased_status": 316,
       "unresolved_edition_parent": 12
@@ -123624,6 +123624,25 @@
       ],
       "first_ps4_release": "2023-06-25",
       "release_date_label": "Jun 25, 2023",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 265453,
+      "name": "Japanese Rural Life Adventure",
+      "url": "https://www.igdb.com/games/japanese-rural-life-adventure",
+      "game_type": "main_game",
+      "reference_ids": [
+        265453
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-06",
+      "release_date_label": "Nov 06, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -296396,21 +296415,6 @@
       ]
     },
     {
-      "canonical_id": 1574,
-      "name": "Sega Rally Revo",
-      "reason": "No PS4/PS VR reference match; platform/conversion review needed",
-      "url": "https://www.igdb.com/games/sega-rally-revo",
-      "platforms": [
-        "PlayStation 3",
-        "PC (Microsoft Windows)",
-        "PlayStation Portable",
-        "Xbox 360"
-      ],
-      "listings": [
-        "Sega Rally Revo"
-      ]
-    },
-    {
       "canonical_id": 72578,
       "name": "Sengoku Basara 2 Heroes",
       "reason": "No PS4/PS VR reference match; platform/conversion review needed",
@@ -301086,7 +301090,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-06T03:31:20.718081+00:00",
+  "updated_at": "2026-11-07T03:30:34.872746+00:00",
   "regions": {
     "summary": {
       "links": 45403,
@@ -301127,9 +301131,9 @@
     "note": "Regions are source/filename claims about individual releases, not language or licensing verification. Counts per region overlap; a game or file can have more than one label. Base counts require an explicit base label. Unknown/conflicting regions remain visible and never imply worldwide availability."
   },
   "identity_summary": {
-    "unique": 5362,
-    "matched": 5968,
-    "unresolved": 13,
+    "unique": 5361,
+    "matched": 5967,
+    "unresolved": 14,
     "other": 283,
     "duplicateListings": 606
   },

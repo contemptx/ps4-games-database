@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T03:31:20.718081+00:00",
+  "updated_at": "2026-11-07T03:30:34.872746+00:00",
   "conflicts": [
     {
       "listing": "Armored Core 6 Fires of Rubicon",
@@ -63251,7 +63251,7 @@
     },
     {
       "listing": "Sega Rally Revo",
-      "canonical_id": 1574,
+      "canonical_id": null,
       "sources": [
         {
           "name": "DLPSGame",
@@ -63267,7 +63267,7 @@
     },
     {
       "listing": "Sega Rally Revo",
-      "canonical_id": 1574,
+      "canonical_id": null,
       "sources": [
         {
           "name": "DLPSGame",
