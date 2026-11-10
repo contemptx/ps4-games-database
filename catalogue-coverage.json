@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-11-09",
-  "reference_fetched_at": "2026-11-09T03:34:18.585154+00:00",
+  "as_of": "2026-11-10",
+  "reference_fetched_at": "2026-11-10T03:39:18.453127+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13271,
+    "reference_unique_games": 13275,
     "reference_matches": 4138,
-    "reference_gaps": 9133,
+    "reference_gaps": 9137,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1156,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1223,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 785,
-      "out_of_scope_type": 5360,
+      "future_undated_or_unreleased_date": 786,
+      "out_of_scope_type": 5361,
       "unreleased_status": 316,
       "unresolved_edition_parent": 12
     }
@@ -27110,6 +27110,25 @@
         "USA"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 428613,
+      "name": "Assassin's Creed Valhalla: Title Update 1.8.0",
+      "url": "https://www.igdb.com/games/assassins-creed-valhalla-title-update-1-dot-8-0",
+      "game_type": "main_game",
+      "reference_ids": [
+        428613
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-05",
+      "release_date_label": "Nov 05, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 3775,
@@ -59601,7 +59620,7 @@
     },
     {
       "canonical_id": 411706,
-      "name": "Croc 2: Kingdom of the Gobbos",
+      "name": "Croc 2 Kingdom of the Gobbos",
       "url": "https://www.igdb.com/games/croc-2-kingdom-of-the-gobbos",
       "game_type": "remaster",
       "reference_ids": [
@@ -81071,6 +81090,25 @@
       ],
       "first_ps4_release": "2020-06-17",
       "release_date_label": "Jun 17, 2020",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 409922,
+      "name": "Educational Family Games",
+      "url": "https://www.igdb.com/games/educational-family-games",
+      "game_type": "main_game",
+      "reference_ids": [
+        409922
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-07-10",
+      "release_date_label": "Jul 10, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -171440,6 +171478,25 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 138211,
+      "name": "Ova Magica",
+      "url": "https://www.igdb.com/games/ova-magica",
+      "game_type": "main_game",
+      "reference_ids": [
+        138211
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-10",
+      "release_date_label": "Nov 10, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 214604,
       "name": "Overboss",
       "url": "https://www.igdb.com/games/overboss",
@@ -209302,13 +209359,14 @@
       "game_type": "main_game",
       "reference_ids": [
         11542,
+        154513,
         296044
       ],
       "reference_regions": [
         "WORLD"
       ],
-      "first_ps4_release": "2019-11-19",
-      "release_date_label": "Nov 19, 2019",
+      "first_ps4_release": "2019-11-18",
+      "release_date_label": "Nov 18, 2019",
       "catalogued": true,
       "listings": [
         "Shenmue 3 Digital Deluxe Edition"
@@ -234690,6 +234748,25 @@
       ],
       "first_ps4_release": "2022-11-02",
       "release_date_label": "Nov 02, 2022",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 317817,
+      "name": "Tanuki: Pon's Summer",
+      "url": "https://www.igdb.com/games/tanuki-pons-summer",
+      "game_type": "main_game",
+      "reference_ids": [
+        317817
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-10",
+      "release_date_label": "Nov 10, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -301109,7 +301186,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-09T03:34:19.598536+00:00",
+  "updated_at": "2026-11-10T03:39:19.333692+00:00",
   "regions": {
     "summary": {
       "links": 45403,
