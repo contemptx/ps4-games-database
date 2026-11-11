@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-11-10",
-  "reference_fetched_at": "2026-11-10T03:39:18.453127+00:00",
+  "as_of": "2026-11-11",
+  "reference_fetched_at": "2026-11-11T03:32:02.114482+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13275,
+    "reference_unique_games": 13279,
     "reference_matches": 4138,
-    "reference_gaps": 9137,
+    "reference_gaps": 9141,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1156,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1223,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 786,
-      "out_of_scope_type": 5361,
+      "future_undated_or_unreleased_date": 785,
+      "out_of_scope_type": 5362,
       "unreleased_status": 316,
       "unresolved_edition_parent": 12
     }
@@ -86822,7 +86822,25 @@
       "url": "https://www.igdb.com/games/fall-of-porcupine",
       "game_type": "main_game",
       "reference_ids": [
-        165271,
+        165271
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2023-06-15",
+      "release_date_label": "Jun 15, 2023",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 257281,
+      "name": "Fall of Porcupine: Prologue",
+      "url": "https://www.igdb.com/games/fall-of-porcupine-prologue",
+      "game_type": "main_game",
+      "reference_ids": [
         257281
       ],
       "reference_regions": [
@@ -197671,6 +197689,26 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 205028,
+      "name": "Robo Revenge Squad",
+      "url": "https://www.igdb.com/games/robo-revenge-squad",
+      "game_type": "main_game",
+      "reference_ids": [
+        205028
+      ],
+      "reference_regions": [
+        "JPN",
+        "USA"
+      ],
+      "first_ps4_release": "2023-09-22",
+      "release_date_label": "Sep 22, 2023",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 324037,
       "name": "Robobit8",
       "url": "https://www.igdb.com/games/robobit8",
@@ -206210,6 +206248,26 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 302232,
+      "name": "Season Match 3",
+      "url": "https://www.igdb.com/games/season-match-3",
+      "game_type": "main_game",
+      "reference_ids": [
+        302232
+      ],
+      "reference_regions": [
+        "JPN",
+        "USA"
+      ],
+      "first_ps4_release": "2024-05-23",
+      "release_date_label": "May 23, 2024",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 141541,
       "name": "Season: A Letter to the Future",
       "url": "https://www.igdb.com/games/season-a-letter-to-the-future",
@@ -213254,6 +213312,25 @@
       ],
       "first_ps4_release": "2026-04-24",
       "release_date_label": "Apr 24, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 425221,
+      "name": "Skygrid Courier",
+      "url": "https://www.igdb.com/games/skygrid-courier",
+      "game_type": "main_game",
+      "reference_ids": [
+        425221
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-11",
+      "release_date_label": "Nov 11, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -301186,7 +301263,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-10T03:39:19.333692+00:00",
+  "updated_at": "2026-11-11T03:32:03.117762+00:00",
   "regions": {
     "summary": {
       "links": 45403,
