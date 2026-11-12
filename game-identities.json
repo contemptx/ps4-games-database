@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T03:30:34.117193+00:00",
+  "updated_at": "2026-11-12T03:30:51.279813+00:00",
   "source": "IGDB and reviewed source identities",
   "policy": "Count identified game identities once, following explicit IGDB edition version_parent links and reviewed duplicate-ID aliases. Standalone expansions, remakes and remasters remain distinct. Source-reviewed games lacking a reliable IGDB match use explicit local identities. DLC, non-standalone expansions, collections, mods, demos, prototypes, utilities and passive video experiences are separate. Ambiguous source titles are excluded pending confirmation. This is a title identity count, not a download availability or package-content guarantee.",
-  "input_sha256": "c88d2fe30de50b7f83cdcd65595a2f11f2a26c3a1cc75fa9be42d34f429242eb",
+  "input_sha256": "456f8f7ddab6d7fc89130481eccc63f54d5594f732cec367031c1fe366b7f620",
   "summary": {
     "visible_listings": 6264,
     "identified_unique_games": 5361,
@@ -32460,13 +32460,13 @@
     },
     "Legacy of Kain Soul Reaver 2": {
       "status": "identified",
-      "igdb_id": 7893,
-      "canonical_id": 7893,
+      "igdb_id": 429118,
+      "canonical_id": 429118,
       "canonical_name": "Legacy of Kain: Soul Reaver 2",
-      "game_type": "main_game",
-      "match_method": "Unique normalized IGDB title/alias",
-      "url": "https://www.igdb.com/games/legacy-of-kain-soul-reaver-2",
-      "input_igdb_id": null,
+      "game_type": "port",
+      "match_method": "Existing unique PS4 title/alias match",
+      "url": "https://www.igdb.com/games/legacy-of-kain-soul-reaver-2--1",
+      "input_igdb_id": 429118,
       "source_urls": [
         "https://dlpsgame.com/legacy-of-kain-soul-reaver-2-ps4-pkg/"
       ]
@@ -33396,7 +33396,7 @@
       "status": "identified",
       "igdb_id": 144775,
       "canonical_id": 144775,
-      "canonical_name": "Life is Strange Remastered",
+      "canonical_name": "Life Is Strange Remastered",
       "game_type": "remaster",
       "match_method": "Existing unique PS4 title/alias match",
       "url": "https://www.igdb.com/games/life-is-strange-remastered",
@@ -61616,10 +61616,10 @@
       "status": "identified",
       "igdb_id": 148040,
       "canonical_id": 121709,
-      "canonical_name": "The Falconeer: Revolution Remaster",
+      "canonical_name": "The Falconeer",
       "game_type": "main_game",
       "match_method": "Existing unique PS4 title/alias match",
-      "url": "https://www.igdb.com/games/the-falconeer-revolution-remaster",
+      "url": "https://www.igdb.com/games/the-falconeer",
       "input_igdb_id": 148040,
       "source_urls": [
         "https://dlpsgame.com/the-falconeer-warrior-edition-ps4-pkg/",
@@ -71463,7 +71463,7 @@
       "game_type": "main_game",
       "match_method": "Reviewed: Source page original platform/release year disambiguates same-name games",
       "url": "https://www.igdb.com/games/windstorm-an-unexpected-arrival--1",
-      "input_igdb_id": null,
+      "input_igdb_id": 116679,
       "source_urls": [
         "https://dlpsgame.com/windstorm-an-unexpected-arrival-ps4-pkg/"
       ],
