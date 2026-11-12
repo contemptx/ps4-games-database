@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-11-11",
-  "reference_fetched_at": "2026-11-11T03:32:02.114482+00:00",
+  "as_of": "2026-11-12",
+  "reference_fetched_at": "2026-11-12T03:32:08.985092+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13279,
+    "reference_unique_games": 13277,
     "reference_matches": 4138,
-    "reference_gaps": 9141,
+    "reference_gaps": 9139,
     "matches_with_labelled_base": 3679,
-    "local_ps4_or_psvr_reference": 4197,
-    "local_without_ps4_reference": 1156,
+    "local_ps4_or_psvr_reference": 4198,
+    "local_without_ps4_reference": 1155,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1223,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 785,
-      "out_of_scope_type": 5362,
+      "future_undated_or_unreleased_date": 788,
+      "out_of_scope_type": 5364,
       "unreleased_status": 316,
       "unresolved_edition_parent": 12
     }
@@ -27091,6 +27091,9 @@
         191960
       ],
       "reference_regions": [
+        "AUS",
+        "EUR",
+        "JPN",
         "USA",
         "WORLD"
       ],
@@ -89985,25 +89988,6 @@
       "has_labelled_base": false
     },
     {
-      "canonical_id": 318193,
-      "name": "Fight Life: Vanguard",
-      "url": "https://www.igdb.com/games/fight-life-vanguard",
-      "game_type": "main_game",
-      "reference_ids": [
-        318193
-      ],
-      "reference_regions": [
-        "WORLD"
-      ],
-      "first_ps4_release": "2026-06-30",
-      "release_date_label": "Q2 2026",
-      "catalogued": false,
-      "listings": [],
-      "package_regions": [],
-      "base_regions": [],
-      "has_labelled_base": false
-    },
-    {
       "canonical_id": 127088,
       "name": "Fight of Animals",
       "url": "https://www.igdb.com/games/fight-of-animals",
@@ -136652,7 +136636,7 @@
     },
     {
       "canonical_id": 144775,
-      "name": "Life is Strange Remastered",
+      "name": "Life Is Strange Remastered",
       "url": "https://www.igdb.com/games/life-is-strange-remastered",
       "game_type": "remaster",
       "reference_ids": [
@@ -241206,10 +241190,11 @@
     },
     {
       "canonical_id": 121709,
-      "name": "The Falconeer: Revolution Remaster",
-      "url": "https://www.igdb.com/games/the-falconeer-revolution-remaster",
+      "name": "The Falconeer",
+      "url": "https://www.igdb.com/games/the-falconeer",
       "game_type": "main_game",
       "reference_ids": [
+        121709,
         148040
       ],
       "reference_regions": [
@@ -276431,25 +276416,6 @@
       "has_labelled_base": true
     },
     {
-      "canonical_id": 219342,
-      "name": "Windstorm: An Unexpected Arrival",
-      "url": "https://www.igdb.com/games/windstorm-an-unexpected-arrival",
-      "game_type": "main_game",
-      "reference_ids": [
-        219342
-      ],
-      "reference_regions": [
-        "WORLD"
-      ],
-      "first_ps4_release": "2023-02-28",
-      "release_date_label": "Feb 28, 2023",
-      "catalogued": false,
-      "listings": [],
-      "package_regions": [],
-      "base_regions": [],
-      "has_labelled_base": false
-    },
-    {
       "canonical_id": 186557,
       "name": "Windstorm: Start of a Great Friendship",
       "url": "https://www.igdb.com/games/windstorm-start-of-a-great-friendship",
@@ -292227,13 +292193,13 @@
       ]
     },
     {
-      "canonical_id": 7893,
+      "canonical_id": 429118,
       "name": "Legacy of Kain: Soul Reaver 2",
-      "reason": "No PS4/PS VR reference match; platform/conversion review needed",
-      "url": "https://www.igdb.com/games/legacy-of-kain-soul-reaver-2",
+      "reason": "PS4/PS VR reference exists but type/date/status is outside this benchmark",
+      "url": "https://www.igdb.com/games/legacy-of-kain-soul-reaver-2--1",
       "platforms": [
-        "PC (Microsoft Windows)",
-        "PlayStation 2"
+        "PlayStation 4",
+        "PlayStation 5"
       ],
       "listings": [
         "Legacy of Kain Soul Reaver 2"
@@ -301263,7 +301229,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-11T03:32:03.117762+00:00",
+  "updated_at": "2026-11-12T03:32:10.158510+00:00",
   "regions": {
     "summary": {
       "links": 45403,
