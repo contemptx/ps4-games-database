@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T03:29:27.488045+00:00",
+  "updated_at": "2026-11-12T03:29:31.832770+00:00",
   "records": [
     {
       "name": ".hack//Infection PS2-PS4 Ported",
@@ -8429,11 +8429,6 @@
       "candidate_ids": []
     },
     {
-      "name": "Legacy of Kain Soul Reaver 2",
-      "status": "unmatched",
-      "candidate_ids": []
-    },
-    {
       "name": "Legaia 2 Duel Saga",
       "status": "unmatched",
       "candidate_ids": []
@@ -16460,14 +16455,6 @@
       "name": "Windstorm",
       "status": "unmatched",
       "candidate_ids": []
-    },
-    {
-      "name": "Windstorm An Unexpected Arrival",
-      "status": "ambiguous",
-      "candidate_ids": [
-        116679,
-        219342
-      ]
     },
     {
       "name": "Wipeout",
