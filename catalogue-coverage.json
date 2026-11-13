@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-11-12",
-  "reference_fetched_at": "2026-11-12T03:32:08.985092+00:00",
+  "as_of": "2026-11-13",
+  "reference_fetched_at": "2026-11-13T03:33:13.180413+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13277,
+    "reference_unique_games": 13278,
     "reference_matches": 4138,
-    "reference_gaps": 9139,
+    "reference_gaps": 9140,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4198,
     "local_without_ps4_reference": 1155,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1223,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 788,
+      "future_undated_or_unreleased_date": 790,
       "out_of_scope_type": 5364,
       "unreleased_status": 316,
       "unresolved_edition_parent": 12
@@ -104284,6 +104284,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 425025,
+      "name": "Good President Simulator",
+      "url": "https://www.igdb.com/games/good-president-simulator",
+      "game_type": "main_game",
+      "reference_ids": [
+        425025
+      ],
+      "reference_regions": [
+        "USA"
+      ],
+      "first_ps4_release": "2026-11-12",
+      "release_date_label": "Nov 12, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 5064,
       "name": "Goodbye Deponia",
       "url": "https://www.igdb.com/games/goodbye-deponia",
@@ -163769,7 +163788,7 @@
     },
     {
       "canonical_id": 11208,
-      "name": "NieR: Automata",
+      "name": "NieR:Automata",
       "url": "https://www.igdb.com/games/nier-automata",
       "game_type": "main_game",
       "reference_ids": [
@@ -169996,25 +170015,6 @@
       ],
       "first_ps4_release": "2024-09-06",
       "release_date_label": "Sep 06, 2024",
-      "catalogued": false,
-      "listings": [],
-      "package_regions": [],
-      "base_regions": [],
-      "has_labelled_base": false
-    },
-    {
-      "canonical_id": 366619,
-      "name": "Operation Highjump: The Fall of Berlin",
-      "url": "https://www.igdb.com/games/operation-highjump-the-fall-of-berlin",
-      "game_type": "main_game",
-      "reference_ids": [
-        366619
-      ],
-      "reference_regions": [
-        "WORLD"
-      ],
-      "first_ps4_release": "2026-06-30",
-      "release_date_label": "Q2 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -188320,6 +188320,25 @@
       ],
       "first_ps4_release": "2016-01-28",
       "release_date_label": "Jan 28, 2016",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 426460,
+      "name": "QUTAS67: Qubic Ultimate Tap Adventure Simulator 2067",
+      "url": "https://www.igdb.com/games/qutas67-qubic-ultimate-tap-adventure-simulator-2067",
+      "game_type": "main_game",
+      "reference_ids": [
+        426460
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-13",
+      "release_date_label": "Nov 13, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -301229,7 +301248,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-12T03:32:10.158510+00:00",
+  "updated_at": "2026-11-13T03:33:14.226138+00:00",
   "regions": {
     "summary": {
       "links": 45403,
