@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-13",
-  "reference_fetched_at": "2026-11-13T03:33:13.180413+00:00",
+  "as_of": "2026-11-14",
+  "reference_fetched_at": "2026-11-14T03:30:47.625080+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13278,
+    "reference_unique_games": 13279,
     "reference_matches": 4138,
-    "reference_gaps": 9140,
+    "reference_gaps": 9141,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4198,
     "local_without_ps4_reference": 1155,
@@ -255622,6 +255622,25 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 410834,
+      "name": "To the Basement: Before",
+      "url": "https://www.igdb.com/games/to-the-basement-before",
+      "game_type": "main_game",
+      "reference_ids": [
+        410834
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-07-23",
+      "release_date_label": "Jul 23, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 31874,
       "name": "To the Top",
       "url": "https://www.igdb.com/games/to-the-top",
@@ -301248,7 +301267,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-13T03:33:14.226138+00:00",
+  "updated_at": "2026-11-14T03:30:48.484034+00:00",
   "regions": {
     "summary": {
       "links": 45403,
