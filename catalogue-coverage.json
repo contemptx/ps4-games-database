@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-11-14",
-  "reference_fetched_at": "2026-11-14T03:30:47.625080+00:00",
+  "as_of": "2026-11-15",
+  "reference_fetched_at": "2026-11-15T03:32:42.332047+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13279,
+    "reference_unique_games": 13284,
     "reference_matches": 4138,
-    "reference_gaps": 9141,
+    "reference_gaps": 9146,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4198,
     "local_without_ps4_reference": 1155,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1223,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 790,
-      "out_of_scope_type": 5364,
+      "future_undated_or_unreleased_date": 792,
+      "out_of_scope_type": 5366,
       "unreleased_status": 316,
       "unresolved_edition_parent": 12
     }
@@ -27115,25 +27115,6 @@
       "has_labelled_base": true
     },
     {
-      "canonical_id": 428613,
-      "name": "Assassin's Creed Valhalla: Title Update 1.8.0",
-      "url": "https://www.igdb.com/games/assassins-creed-valhalla-title-update-1-dot-8-0",
-      "game_type": "main_game",
-      "reference_ids": [
-        428613
-      ],
-      "reference_regions": [
-        "WORLD"
-      ],
-      "first_ps4_release": "2026-11-05",
-      "release_date_label": "Nov 05, 2026",
-      "catalogued": false,
-      "listings": [],
-      "package_regions": [],
-      "base_regions": [],
-      "has_labelled_base": false
-    },
-    {
       "canonical_id": 3775,
       "name": "Assassin's Creed: Freedom Cry",
       "url": "https://www.igdb.com/games/assassins-creed-freedom-cry",
@@ -47652,6 +47633,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 329439,
+      "name": "Card Collector Trading Shop",
+      "url": "https://www.igdb.com/games/card-collector-trading-shop",
+      "game_type": "main_game",
+      "reference_ids": [
+        329439
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-10-29",
+      "release_date_label": "Oct 29, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 324160,
       "name": "Card Guesser: Red or Black",
       "url": "https://www.igdb.com/games/card-guesser-red-or-black",
@@ -49416,6 +49416,26 @@
       ],
       "first_ps4_release": "2025-01-31",
       "release_date_label": "Jan 31, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 148990,
+      "name": "Cat President 2: Purrlitical Revolution",
+      "url": "https://www.igdb.com/games/cat-president-2-purrlitical-revolution",
+      "game_type": "main_game",
+      "reference_ids": [
+        148990
+      ],
+      "reference_regions": [
+        "JPN",
+        "USA"
+      ],
+      "first_ps4_release": "2026-11-02",
+      "release_date_label": "Nov 02, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -70634,6 +70654,25 @@
       ],
       "first_ps4_release": "2021-01-13",
       "release_date_label": "Jan 13, 2021",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 396603,
+      "name": "Difficult Climbing Game",
+      "url": "https://www.igdb.com/games/difficult-climbing-game",
+      "game_type": "main_game",
+      "reference_ids": [
+        396603
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2024-06-01",
+      "release_date_label": "Jun 01, 2024",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -226570,7 +226609,7 @@
     },
     {
       "canonical_id": 248270,
-      "name": "Stroke The Beaver",
+      "name": "Stroke the Beaver",
       "url": "https://www.igdb.com/games/stroke-the-beaver",
       "game_type": "main_game",
       "reference_ids": [
@@ -226627,7 +226666,7 @@
     },
     {
       "canonical_id": 251640,
-      "name": "Stroke The Dik-Dik",
+      "name": "Stroke the Dik-Dik",
       "url": "https://www.igdb.com/games/stroke-the-dik-dik",
       "game_type": "main_game",
       "reference_ids": [
@@ -235108,6 +235147,25 @@
       ],
       "first_ps4_release": "2023-03-23",
       "release_date_label": "Mar 23, 2023",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 312271,
+      "name": "Tattoo Tycoon",
+      "url": "https://www.igdb.com/games/tattoo-tycoon",
+      "game_type": "main_game",
+      "reference_ids": [
+        312271
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-10-24",
+      "release_date_label": "Oct 24, 2025",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -267787,6 +267845,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 317179,
+      "name": "Use Your Words 2",
+      "url": "https://www.igdb.com/games/use-your-words-2",
+      "game_type": "main_game",
+      "reference_ids": [
+        317179
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-11-13",
+      "release_date_label": "Nov 13, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 411595,
       "name": "Useless Healer",
       "url": "https://www.igdb.com/games/useless-healer",
@@ -278016,6 +278093,25 @@
         "EUR"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 287664,
+      "name": "Woodturning 3D",
+      "url": "https://www.igdb.com/games/woodturning-3d",
+      "game_type": "main_game",
+      "reference_ids": [
+        287664
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-04-30",
+      "release_date_label": "Apr 30, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 105070,
@@ -301267,7 +301363,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-14T03:30:48.484034+00:00",
+  "updated_at": "2026-11-15T03:32:43.372364+00:00",
   "regions": {
     "summary": {
       "links": 45403,
