@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T03:36:06.707097+00:00",
+  "updated_at": "2026-11-17T03:30:24.887785+00:00",
   "records": [
     {
       "name": ".hack//Infection PS2-PS4 Ported",
@@ -6453,14 +6453,6 @@
       "candidate_ids": []
     },
     {
-      "name": "From Shadows",
-      "status": "ambiguous",
-      "candidate_ids": [
-        29680,
-        147675
-      ]
-    },
-    {
       "name": "Front Mission 3",
       "status": "unmatched",
       "candidate_ids": []
@@ -7486,14 +7478,6 @@
       "name": "Hulk",
       "status": "unmatched",
       "candidate_ids": []
-    },
-    {
-      "name": "Hunt",
-      "status": "ambiguous",
-      "candidate_ids": [
-        147908,
-        187765
-      ]
     },
     {
       "name": "Hunters Legacy",
