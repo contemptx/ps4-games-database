@@ -1,16 +1,16 @@
 var gameIdentities = {
   "schema_version": 2,
-  "updated_at": "2026-11-16T03:37:18.367266+00:00",
+  "updated_at": "2026-11-17T03:31:32.344061+00:00",
   "source": "IGDB and reviewed source identities",
   "policy": "Count identified game identities once, following explicit IGDB edition version_parent links and reviewed duplicate-ID aliases. Standalone expansions, remakes and remasters remain distinct. Source-reviewed games lacking a reliable IGDB match use explicit local identities. DLC, non-standalone expansions, collections, mods, demos, prototypes, utilities and passive video experiences are separate. Ambiguous source titles are excluded pending confirmation. This is a title identity count, not a download availability or package-content guarantee.",
-  "input_sha256": "456f8f7ddab6d7fc89130481eccc63f54d5594f732cec367031c1fe366b7f620",
+  "input_sha256": "db07365fbd8d5db46c4c478d01dba94c72ee15036b2bf2b6ff31a4584f2012b9",
   "summary": {
     "visible_listings": 6264,
-    "identified_unique_games": 5361,
-    "identified_game_listings": 5967,
-    "unresolved_listings": 14,
+    "identified_unique_games": 5360,
+    "identified_game_listings": 5966,
+    "unresolved_listings": 15,
     "non_game_listings": 283,
-    "reviewed_listings": 1008,
+    "reviewed_listings": 1007,
     "local_unique_games": 8,
     "edition_listings": 226,
     "duplicate_game_listings": 606
@@ -23235,21 +23235,14 @@ var gameIdentities = {
       ]
     },
     "From Shadows": {
-      "status": "identified",
-      "igdb_id": 147675,
-      "canonical_id": 147675,
-      "canonical_name": "From Shadows",
-      "game_type": "main_game",
-      "match_method": "Reviewed: Source page original platform/release year disambiguates same-name games",
-      "url": "https://www.igdb.com/games/from-shadows--1",
-      "input_igdb_id": null,
+      "status": "review",
+      "reason": "Reviewed IGDB identity unavailable; match not replaced by a guess",
+      "input_igdb_id": 29680,
       "source_urls": [
         "https://dlpsgame.com/from-shadows-ps4-pkg/"
       ],
-      "reviewed_at": "2026-09-29",
-      "evidence": [
-        "https://dlpsgame.com/from-shadows-ps4-pkg/"
-      ]
+      "reviewed_at": null,
+      "evidence": []
     },
     "Front Mission 1st Remake": {
       "status": "identified",
@@ -28235,7 +28228,7 @@ var gameIdentities = {
       "game_type": "main_game",
       "match_method": "Reviewed: Reviewed source release year, original platform, serial and/or full game title against candidate records",
       "url": "https://www.igdb.com/games/hunt--1",
-      "input_igdb_id": null,
+      "input_igdb_id": 147908,
       "source_urls": [
         "https://dlpsgame.com/hunt-ps4-pkg/"
       ],

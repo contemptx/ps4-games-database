@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-11-16T03:37:18.367266+00:00",
+  "updated_at": "2026-11-17T03:31:32.344061+00:00",
   "unresolved": [
+    {
+      "name": "From Shadows",
+      "status": "review",
+      "reason": "Reviewed IGDB identity unavailable; match not replaced by a guess",
+      "input_igdb_id": 29680,
+      "source_urls": [
+        "https://dlpsgame.com/from-shadows-ps4-pkg/"
+      ],
+      "reviewed_at": null,
+      "evidence": []
+    },
     {
       "name": "Sega Rally Revo",
       "status": "review",
