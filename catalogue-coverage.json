@@ -1,21 +1,21 @@
 {
-  "as_of": "2026-11-15",
-  "reference_fetched_at": "2026-11-15T03:32:42.332047+00:00",
+  "as_of": "2026-11-17",
+  "reference_fetched_at": "2026-11-17T03:33:03.018998+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
-    "catalogue_unique_identities": 5361,
-    "reference_unique_games": 13284,
+    "catalogue_unique_identities": 5360,
+    "reference_unique_games": 13288,
     "reference_matches": 4138,
-    "reference_gaps": 9146,
+    "reference_gaps": 9150,
     "matches_with_labelled_base": 3679,
-    "local_ps4_or_psvr_reference": 4198,
+    "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1155,
     "local_identities_without_igdb": 8,
-    "local_outside_dated_benchmark": 1223,
+    "local_outside_dated_benchmark": 1222,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 792,
-      "out_of_scope_type": 5366,
-      "unreleased_status": 316,
+      "future_undated_or_unreleased_date": 788,
+      "out_of_scope_type": 5367,
+      "unreleased_status": 317,
       "unresolved_edition_parent": 12
     }
   },
@@ -29617,25 +29617,6 @@
         "EUR"
       ],
       "has_labelled_base": true
-    },
-    {
-      "canonical_id": 187674,
-      "name": "Awekening of Cthulhu",
-      "url": "https://www.igdb.com/games/awekening-of-cthulhu",
-      "game_type": "main_game",
-      "reference_ids": [
-        187674
-      ],
-      "reference_regions": [
-        "WORLD"
-      ],
-      "first_ps4_release": "2020-06-12",
-      "release_date_label": "Jun 12, 2020",
-      "catalogued": false,
-      "listings": [],
-      "package_regions": [],
-      "base_regions": [],
-      "has_labelled_base": false
     },
     {
       "canonical_id": 239291,
@@ -96456,31 +96437,6 @@
       "has_labelled_base": false
     },
     {
-      "canonical_id": 147675,
-      "name": "From Shadows",
-      "url": "https://www.igdb.com/games/from-shadows--1",
-      "game_type": "main_game",
-      "reference_ids": [
-        147675
-      ],
-      "reference_regions": [
-        "WORLD"
-      ],
-      "first_ps4_release": "2021-05-26",
-      "release_date_label": "May 26, 2021",
-      "catalogued": true,
-      "listings": [
-        "From Shadows"
-      ],
-      "package_regions": [
-        "USA"
-      ],
-      "base_regions": [
-        "USA"
-      ],
-      "has_labelled_base": true
-    },
-    {
       "canonical_id": 157916,
       "name": "From Space",
       "url": "https://www.igdb.com/games/from-space",
@@ -103396,6 +103352,25 @@
         "USA"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 389443,
+      "name": "God of War Sons of Sparta",
+      "url": "https://www.igdb.com/games/god-of-war-sons-of-sparta",
+      "game_type": "main_game",
+      "reference_ids": [
+        389443
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-16",
+      "release_date_label": "Nov 16, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 25312,
@@ -117937,8 +117912,7 @@
       "url": "https://www.igdb.com/games/hunt--1",
       "game_type": "main_game",
       "reference_ids": [
-        147908,
-        187765
+        147908
       ],
       "reference_regions": [
         "USA",
@@ -134079,6 +134053,27 @@
       "base_regions": [
         "JPN"
       ],
+      "has_labelled_base": true
+    },
+    {
+      "canonical_id": 429118,
+      "name": "Legacy of Kain: Soul Reaver 2",
+      "url": "https://www.igdb.com/games/legacy-of-kain-soul-reaver-2--1",
+      "game_type": "port",
+      "reference_ids": [
+        429118
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-17",
+      "release_date_label": "Nov 17, 2026",
+      "catalogued": true,
+      "listings": [
+        "Legacy of Kain Soul Reaver 2"
+      ],
+      "package_regions": [],
+      "base_regions": [],
       "has_labelled_base": true
     },
     {
@@ -161302,6 +161297,25 @@
         "USA"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 429542,
+      "name": "Needle in a Haystack",
+      "url": "https://www.igdb.com/games/needle-in-a-haystack--1",
+      "game_type": "main_game",
+      "reference_ids": [
+        429542
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-03",
+      "release_date_label": "Nov 03, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 146564,
@@ -190966,6 +190980,25 @@
         "USA"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 416114,
+      "name": "Ratchet & Clank",
+      "url": "https://www.igdb.com/games/ratchet-and-clank--3",
+      "game_type": "port",
+      "reference_ids": [
+        416114
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-17",
+      "release_date_label": "Nov 17, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 308039,
@@ -243167,6 +243200,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 400686,
+      "name": "The Jackbox Party Pack 12",
+      "url": "https://www.igdb.com/games/the-jackbox-party-pack-12",
+      "game_type": "main_game",
+      "reference_ids": [
+        400686
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-10-15",
+      "release_date_label": "Oct 15, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 19081,
       "name": "The Jackbox Party Pack 2",
       "url": "https://www.igdb.com/games/the-jackbox-party-pack-2",
@@ -266542,6 +266594,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 410966,
+      "name": "Unicorn Academy: Island of Magic",
+      "url": "https://www.igdb.com/games/unicorn-academy-island-of-magic",
+      "game_type": "main_game",
+      "reference_ids": [
+        410966
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-17",
+      "release_date_label": "Nov 17, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 188134,
       "name": "Unicorn Break",
       "url": "https://www.igdb.com/games/unicorn-break",
@@ -277697,13 +277768,17 @@
       "url": "https://www.igdb.com/games/wolcen-lords-of-mayhem",
       "game_type": "main_game",
       "reference_ids": [
-        18148
+        18148,
+        241835
       ],
       "reference_regions": [
+        "JPN",
+        "KOR",
+        "USA",
         "WORLD"
       ],
-      "first_ps4_release": "2023-03-15",
-      "release_date_label": "Mar 15, 2023",
+      "first_ps4_release": "2023-03-14",
+      "release_date_label": "Mar 14, 2023",
       "catalogued": true,
       "listings": [
         "Wolcen Lords of Mayhem"
@@ -292327,19 +292402,6 @@
       ]
     },
     {
-      "canonical_id": 429118,
-      "name": "Legacy of Kain: Soul Reaver 2",
-      "reason": "PS4/PS VR reference exists but type/date/status is outside this benchmark",
-      "url": "https://www.igdb.com/games/legacy-of-kain-soul-reaver-2--1",
-      "platforms": [
-        "PlayStation 4",
-        "PlayStation 5"
-      ],
-      "listings": [
-        "Legacy of Kain Soul Reaver 2"
-      ]
-    },
-    {
       "canonical_id": 28161,
       "name": "Legaia 2: Duel Saga",
       "reason": "No PS4/PS VR reference match; platform/conversion review needed",
@@ -301363,7 +301425,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-15T03:32:43.372364+00:00",
+  "updated_at": "2026-11-17T03:33:04.001563+00:00",
   "regions": {
     "summary": {
       "links": 45403,
@@ -301397,16 +301459,16 @@
       "USA": {
         "links": 15678,
         "listings": 2474,
-        "identities": 2308,
-        "base_identities": 2022
+        "identities": 2307,
+        "base_identities": 2021
       }
     },
     "note": "Regions are source/filename claims about individual releases, not language or licensing verification. Counts per region overlap; a game or file can have more than one label. Base counts require an explicit base label. Unknown/conflicting regions remain visible and never imply worldwide availability."
   },
   "identity_summary": {
-    "unique": 5361,
-    "matched": 5967,
-    "unresolved": 14,
+    "unique": 5360,
+    "matched": 5966,
+    "unresolved": 15,
     "other": 283,
     "duplicateListings": 606
   },
