@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-18",
-  "reference_fetched_at": "2026-11-18T03:33:32.747560+00:00",
+  "as_of": "2026-11-19",
+  "reference_fetched_at": "2026-11-19T03:33:21.363944+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5360,
-    "reference_unique_games": 13288,
+    "reference_unique_games": 13287,
     "reference_matches": 4138,
-    "reference_gaps": 9150,
+    "reference_gaps": 9149,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1155,
@@ -14,7 +14,7 @@
     "local_outside_dated_benchmark": 1222,
     "excluded_reference_records": {
       "future_undated_or_unreleased_date": 788,
-      "out_of_scope_type": 5367,
+      "out_of_scope_type": 5369,
       "unreleased_status": 317,
       "unresolved_edition_parent": 12
     }
@@ -10957,8 +10957,8 @@
       "reference_regions": [
         "WORLD"
       ],
-      "first_ps4_release": "2026-07-31",
-      "release_date_label": "Jul 2026",
+      "first_ps4_release": "2026-11-04",
+      "release_date_label": "Nov 04, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -138641,25 +138641,6 @@
       "has_labelled_base": false
     },
     {
-      "canonical_id": 375019,
-      "name": "Lofi Mahjong",
-      "url": "https://www.igdb.com/games/lofi-mahjong",
-      "game_type": "main_game",
-      "reference_ids": [
-        375019
-      ],
-      "reference_regions": [
-        "WORLD"
-      ],
-      "first_ps4_release": "2026-04-30",
-      "release_date_label": "Apr 2026",
-      "catalogued": false,
-      "listings": [],
-      "package_regions": [],
-      "base_regions": [],
-      "has_labelled_base": false
-    },
-    {
       "canonical_id": 263886,
       "name": "Logiart Grimoire",
       "url": "https://www.igdb.com/games/logiart-grimoire",
@@ -242611,6 +242592,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 286340,
+      "name": "The House of Tesla: Definitive Edition",
+      "url": "https://www.igdb.com/games/the-house-of-tesla-definitive-edition",
+      "game_type": "main_game",
+      "reference_ids": [
+        286340
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-19",
+      "release_date_label": "Nov 19, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 327808,
       "name": "The House of the Dead 2: Remake",
       "url": "https://www.igdb.com/games/the-house-of-the-dead-2-remake",
@@ -275251,25 +275251,6 @@
       "has_labelled_base": true
     },
     {
-      "canonical_id": 287707,
-      "name": "Whirlight: No Time To Trip",
-      "url": "https://www.igdb.com/games/whirlight-no-time-to-trip",
-      "game_type": "main_game",
-      "reference_ids": [
-        287707
-      ],
-      "reference_regions": [
-        "WORLD"
-      ],
-      "first_ps4_release": "2026-09-30",
-      "release_date_label": "Q3 2026",
-      "catalogued": false,
-      "listings": [],
-      "package_regions": [],
-      "base_regions": [],
-      "has_labelled_base": false
-    },
-    {
       "canonical_id": 117253,
       "name": "Whiskey & Zombies",
       "url": "https://www.igdb.com/games/whiskey-and-zombies",
@@ -301425,7 +301406,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-18T03:33:33.536640+00:00",
+  "updated_at": "2026-11-19T03:33:21.881570+00:00",
   "regions": {
     "summary": {
       "links": 45403,
