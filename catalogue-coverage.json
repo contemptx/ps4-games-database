@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-11-20",
-  "reference_fetched_at": "2026-11-20T03:33:22.672785+00:00",
+  "as_of": "2026-11-21",
+  "reference_fetched_at": "2026-11-21T03:32:14.079094+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5360,
@@ -14,7 +14,7 @@
     "local_outside_dated_benchmark": 1222,
     "excluded_reference_records": {
       "future_undated_or_unreleased_date": 790,
-      "out_of_scope_type": 5369,
+      "out_of_scope_type": 5371,
       "unreleased_status": 317,
       "unresolved_edition_parent": 12
     }
@@ -292021,7 +292021,9 @@
       "url": "https://www.igdb.com/games/judge-dredd--2",
       "platforms": [
         "Arcade",
-        "PlayStation"
+        "PlayStation 3",
+        "PlayStation",
+        "PlayStation Portable"
       ],
       "listings": [
         "Judge Dredd"
@@ -293825,8 +293827,10 @@
       "reason": "No PS4/PS VR reference match; platform/conversion review needed",
       "url": "https://www.igdb.com/games/motorhead",
       "platforms": [
+        "PlayStation 3",
         "PC (Microsoft Windows)",
-        "PlayStation"
+        "PlayStation",
+        "PlayStation Portable"
       ],
       "listings": [
         "Motorhead"
@@ -301425,7 +301429,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-20T03:33:23.239206+00:00",
+  "updated_at": "2026-11-21T03:32:14.916203+00:00",
   "regions": {
     "summary": {
       "links": 45403,
