@@ -1,12 +1,12 @@
 {
-  "as_of": "2026-11-21",
-  "reference_fetched_at": "2026-11-21T03:32:14.079094+00:00",
+  "as_of": "2026-11-22",
+  "reference_fetched_at": "2026-11-22T03:32:25.192744+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5360,
-    "reference_unique_games": 13288,
+    "reference_unique_games": 13290,
     "reference_matches": 4138,
-    "reference_gaps": 9150,
+    "reference_gaps": 9152,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1155,
@@ -14,7 +14,7 @@
     "local_outside_dated_benchmark": 1222,
     "excluded_reference_records": {
       "future_undated_or_unreleased_date": 790,
-      "out_of_scope_type": 5371,
+      "out_of_scope_type": 5372,
       "unreleased_status": 317,
       "unresolved_edition_parent": 12
     }
@@ -104680,6 +104680,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 231049,
+      "name": "Grabitoons",
+      "url": "https://www.igdb.com/games/grabitoons",
+      "game_type": "main_game",
+      "reference_ids": [
+        231049
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-03-25",
+      "release_date_label": "Mar 25, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 118166,
       "name": "Grace of Letoile",
       "url": "https://www.igdb.com/games/grace-of-letoile",
@@ -140556,6 +140575,25 @@
       ],
       "first_ps4_release": "2025-06-06",
       "release_date_label": "Jun 06, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 293604,
+      "name": "Lucky Hunter",
+      "url": "https://www.igdb.com/games/lucky-hunter--1",
+      "game_type": "main_game",
+      "reference_ids": [
+        293604
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-10-30",
+      "release_date_label": "Oct 30, 2025",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -301429,7 +301467,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-21T03:32:14.916203+00:00",
+  "updated_at": "2026-11-22T03:32:26.038550+00:00",
   "regions": {
     "summary": {
       "links": 45403,
