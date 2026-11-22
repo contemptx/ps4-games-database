@@ -1,6 +1,6 @@
 # Game identity review
 
-Updated: 2026-11-21T03:30:44.452756+00:00
+Updated: 2026-11-22T03:30:52.024459+00:00
 
 **5,360 identified unique games** across 6,264 visible listings.
 
