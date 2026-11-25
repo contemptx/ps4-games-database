@@ -1,6 +1,6 @@
 var gameIdentities = {
   "schema_version": 2,
-  "updated_at": "2026-11-24T03:32:24.945560+00:00",
+  "updated_at": "2026-11-25T03:33:46.175461+00:00",
   "source": "IGDB and reviewed source identities",
   "policy": "Count identified game identities once, following explicit IGDB edition version_parent links and reviewed duplicate-ID aliases. Standalone expansions, remakes and remasters remain distinct. Source-reviewed games lacking a reliable IGDB match use explicit local identities. DLC, non-standalone expansions, collections, mods, demos, prototypes, utilities and passive video experiences are separate. Ambiguous source titles are excluded pending confirmation. This is a title identity count, not a download availability or package-content guarantee.",
   "input_sha256": "db07365fbd8d5db46c4c478d01dba94c72ee15036b2bf2b6ff31a4584f2012b9",
