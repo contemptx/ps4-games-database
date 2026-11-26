@@ -1,21 +1,21 @@
 {
-  "as_of": "2026-11-25",
-  "reference_fetched_at": "2026-11-25T03:35:17.815075+00:00",
+  "as_of": "2026-11-26",
+  "reference_fetched_at": "2026-11-26T03:33:37.399620+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5360,
-    "reference_unique_games": 13291,
+    "reference_unique_games": 13304,
     "reference_matches": 4138,
-    "reference_gaps": 9153,
+    "reference_gaps": 9166,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1155,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1222,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 790,
-      "out_of_scope_type": 5374,
-      "unreleased_status": 316,
+      "future_undated_or_unreleased_date": 787,
+      "out_of_scope_type": 5381,
+      "unreleased_status": 317,
       "unresolved_edition_parent": 12
     }
   },
@@ -35541,6 +35541,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 378748,
+      "name": "Bible Puzzle: Christian Game",
+      "url": "https://www.igdb.com/games/bible-puzzle-christian-game",
+      "game_type": "main_game",
+      "reference_ids": [
+        378748
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-11-28",
+      "release_date_label": "Nov 28, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 296196,
       "name": "Bicolor Bird",
       "url": "https://www.igdb.com/games/bicolor-bird",
@@ -40870,6 +40889,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 142558,
+      "name": "Bossgame: The Final Boss Is My Heart",
+      "url": "https://www.igdb.com/games/bossgame-the-final-boss-is-my-heart",
+      "game_type": "main_game",
+      "reference_ids": [
+        142558
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-11-21",
+      "release_date_label": "Nov 21, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 96218,
       "name": "Bot Gaiden",
       "url": "https://www.igdb.com/games/bot-gaiden",
@@ -45842,6 +45880,25 @@
       ],
       "first_ps4_release": "2025-08-18",
       "release_date_label": "Aug 18, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 430519,
+      "name": "Calculus of Rot",
+      "url": "https://www.igdb.com/games/calculus-of-rot",
+      "game_type": "main_game",
+      "reference_ids": [
+        430519
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-26",
+      "release_date_label": "Nov 26, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -68453,7 +68510,8 @@
         148525
       ],
       "reference_regions": [
-        "JPN"
+        "JPN",
+        "USA"
       ],
       "first_ps4_release": "2021-09-02",
       "release_date_label": "Sep 02, 2021",
@@ -81420,13 +81478,14 @@
       "url": "https://www.igdb.com/games/eiyuden-chronicle-hundred-heroes",
       "game_type": "main_game",
       "reference_ids": [
-        137451
+        137451,
+        267962
       ],
       "reference_regions": [
         "WORLD"
       ],
-      "first_ps4_release": "2024-04-23",
-      "release_date_label": "Apr 23, 2024",
+      "first_ps4_release": "2024-04-21",
+      "release_date_label": "Apr 21, 2024",
       "catalogued": true,
       "listings": [
         "Eiyuden Chronicle Hundred Heroes Digital Deluxe Edition"
@@ -86755,6 +86814,25 @@
         "EUR"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 422318,
+      "name": "Fakin It XL",
+      "url": "https://www.igdb.com/games/fakin-it-xl",
+      "game_type": "main_game",
+      "reference_ids": [
+        422318
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-12",
+      "release_date_label": "Nov 12, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 107212,
@@ -103378,7 +103456,8 @@
       "url": "https://www.igdb.com/games/god-of-war-sons-of-sparta",
       "game_type": "main_game",
       "reference_ids": [
-        389443
+        389443,
+        407463
       ],
       "reference_regions": [
         "WORLD"
@@ -104917,25 +104996,6 @@
         "USA"
       ],
       "has_labelled_base": true
-    },
-    {
-      "canonical_id": 388441,
-      "name": "Granblue Fantasy: Relink - Endless Ragnarok",
-      "url": "https://www.igdb.com/games/granblue-fantasy-relink-endless-ragnarok",
-      "game_type": "expanded_game",
-      "reference_ids": [
-        388441
-      ],
-      "reference_regions": [
-        "WORLD"
-      ],
-      "first_ps4_release": "2026-07-09",
-      "release_date_label": "Jul 09, 2026",
-      "catalogued": false,
-      "listings": [],
-      "package_regions": [],
-      "base_regions": [],
-      "has_labelled_base": false
     },
     {
       "canonical_id": 113378,
@@ -109675,6 +109735,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 418826,
+      "name": "Happy Weekend",
+      "url": "https://www.igdb.com/games/happy-weekend--1",
+      "game_type": "port",
+      "reference_ids": [
+        418826
+      ],
+      "reference_regions": [
+        "JPN"
+      ],
+      "first_ps4_release": "2026-11-26",
+      "release_date_label": "Nov 26, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 117051,
       "name": "Happy Words",
       "url": "https://www.igdb.com/games/happy-words",
@@ -111779,7 +111858,7 @@
     },
     {
       "canonical_id": 56062,
-      "name": "Hell is Other Demons",
+      "name": "Hell Is Other Demons",
       "url": "https://www.igdb.com/games/hell-is-other-demons",
       "game_type": "main_game",
       "reference_ids": [
@@ -123438,6 +123517,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 414005,
+      "name": "Jaden Industries",
+      "url": "https://www.igdb.com/games/jaden-industries",
+      "game_type": "main_game",
+      "reference_ids": [
+        414005
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-23",
+      "release_date_label": "Nov 23, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 72767,
       "name": "Jagged Alliance 3",
       "url": "https://www.igdb.com/games/jagged-alliance-3",
@@ -129856,6 +129954,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 430516,
+      "name": "Kitsune Zero",
+      "url": "https://www.igdb.com/games/kitsune-zero--1",
+      "game_type": "main_game",
+      "reference_ids": [
+        430516
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-19",
+      "release_date_label": "Nov 19, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 203679,
       "name": "Kitten Hero",
       "url": "https://www.igdb.com/games/kitten-hero",
@@ -131874,7 +131991,7 @@
     },
     {
       "canonical_id": 398862,
-      "name": "Kyra The Hunter",
+      "name": "Kyra the Hunter",
       "url": "https://www.igdb.com/games/kyra-the-hunter",
       "game_type": "main_game",
       "reference_ids": [
@@ -132399,7 +132516,7 @@
     },
     {
       "canonical_id": 310761,
-      "name": "Lady Death Demonicron",
+      "name": "Lady Death: Demonicron",
       "url": "https://www.igdb.com/games/lady-death-demonicron",
       "game_type": "main_game",
       "reference_ids": [
@@ -136771,7 +136888,7 @@
     },
     {
       "canonical_id": 29004,
-      "name": "Life is Strange: Before the Storm",
+      "name": "Life Is Strange: Before the Storm",
       "url": "https://www.igdb.com/games/life-is-strange-before-the-storm",
       "game_type": "main_game",
       "reference_ids": [
@@ -136801,7 +136918,7 @@
     },
     {
       "canonical_id": 144776,
-      "name": "Life is Strange: Before the Storm Remastered",
+      "name": "Life Is Strange: Before the Storm Remastered",
       "url": "https://www.igdb.com/games/life-is-strange-before-the-storm-remastered",
       "game_type": "remaster",
       "reference_ids": [
@@ -136826,7 +136943,7 @@
     },
     {
       "canonical_id": 144765,
-      "name": "Life is Strange: True Colors",
+      "name": "Life Is Strange: True Colors",
       "url": "https://www.igdb.com/games/life-is-strange-true-colors",
       "game_type": "main_game",
       "reference_ids": [
@@ -138921,6 +139038,25 @@
       ],
       "first_ps4_release": "2024-08-23",
       "release_date_label": "Aug 23, 2024",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 335837,
+      "name": "Look Mum No Computer",
+      "url": "https://www.igdb.com/games/look-mum-no-computer",
+      "game_type": "main_game",
+      "reference_ids": [
+        335837
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-01-22",
+      "release_date_label": "Jan 22, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -144311,6 +144447,25 @@
       ],
       "first_ps4_release": "2024-08-10",
       "release_date_label": "Aug 10, 2024",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 412114,
+      "name": "Marupoyo: The Round Chick's Adventure",
+      "url": "https://www.igdb.com/games/marupoyo-the-round-chicks-adventure",
+      "game_type": "main_game",
+      "reference_ids": [
+        412114
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-26",
+      "release_date_label": "Nov 26, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -206141,6 +206296,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 425567,
+      "name": "Scribblenauts Unlimited",
+      "url": "https://www.igdb.com/games/scribblenauts-unlimited--1",
+      "game_type": "expanded_game",
+      "reference_ids": [
+        425567
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2018-09-18",
+      "release_date_label": "Sep 18, 2018",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 370966,
       "name": "Scurge: Hive",
       "url": "https://www.igdb.com/games/scurge-hive--1",
@@ -221882,6 +222056,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 403726,
+      "name": "Springbot: The Last Spark",
+      "url": "https://www.igdb.com/games/springbot-the-last-spark",
+      "game_type": "main_game",
+      "reference_ids": [
+        403726
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-06-02",
+      "release_date_label": "Jun 02, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 391155,
       "name": "Springcar",
       "url": "https://www.igdb.com/games/springcar",
@@ -224098,6 +224291,25 @@
       ],
       "first_ps4_release": "2025-05-28",
       "release_date_label": "May 28, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 402584,
+      "name": "Steamboat Incident",
+      "url": "https://www.igdb.com/games/steamboat-incident",
+      "game_type": "main_game",
+      "reference_ids": [
+        402584
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-06-04",
+      "release_date_label": "Jun 04, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -248103,6 +248315,25 @@
       ],
       "first_ps4_release": "2025-10-10",
       "release_date_label": "Oct 10, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 52011,
+      "name": "The Mystery of Woolley Mountain",
+      "url": "https://www.igdb.com/games/the-mystery-of-woolley-mountain",
+      "game_type": "main_game",
+      "reference_ids": [
+        52011
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-03-28",
+      "release_date_label": "Mar 28, 2025",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -274832,6 +275063,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 424308,
+      "name": "What Do You Meme? The Video Game",
+      "url": "https://www.igdb.com/games/what-do-you-meme-the-video-game",
+      "game_type": "main_game",
+      "reference_ids": [
+        424308
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-11-23",
+      "release_date_label": "Nov 23, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 266452,
       "name": "What Have You Done, Father?",
       "url": "https://www.igdb.com/games/what-have-you-done-father",
@@ -293946,9 +294196,9 @@
     },
     {
       "canonical_id": 45810,
-      "name": "MTV Sports Skateboarding",
+      "name": "MTV Sports: Skateboarding Featuring Andy Macdonald",
       "reason": "No PS4/PS VR reference match; platform/conversion review needed",
-      "url": "https://www.igdb.com/games/mtv-sports-skateboarding",
+      "url": "https://www.igdb.com/games/mtv-sports-skateboarding-featuring-andy-macdonald--1",
       "platforms": [
         "PC (Microsoft Windows)",
         "PlayStation",
@@ -301486,7 +301736,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-25T03:35:18.542407+00:00",
+  "updated_at": "2026-11-26T03:33:38.273322+00:00",
   "regions": {
     "summary": {
       "links": 45403,
