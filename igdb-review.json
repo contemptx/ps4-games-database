@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T03:32:40.406080+00:00",
+  "updated_at": "2026-11-26T03:30:56.126657+00:00",
   "records": [
     {
       "name": ".hack//Infection PS2-PS4 Ported",
@@ -5710,16 +5710,6 @@
     },
     {
       "name": "Einhander",
-      "status": "unmatched",
-      "candidate_ids": []
-    },
-    {
-      "name": "Eiyuden Chronicle Hundred Heroes Digital Deluxe Edition",
-      "status": "unmatched",
-      "candidate_ids": []
-    },
-    {
-      "name": "Eiyuden Chronicle Hundred Heroes Digital Deluxe Edition PS4",
       "status": "unmatched",
       "candidate_ids": []
     },
