@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-11-26",
-  "reference_fetched_at": "2026-11-26T03:33:37.399620+00:00",
+  "as_of": "2026-11-27",
+  "reference_fetched_at": "2026-11-27T03:34:18.668238+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5360,
-    "reference_unique_games": 13304,
+    "reference_unique_games": 13320,
     "reference_matches": 4138,
-    "reference_gaps": 9166,
+    "reference_gaps": 9182,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1155,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1222,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 787,
-      "out_of_scope_type": 5381,
+      "future_undated_or_unreleased_date": 786,
+      "out_of_scope_type": 5390,
       "unreleased_status": 317,
       "unresolved_edition_parent": 12
     }
@@ -11137,6 +11137,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 405912,
+      "name": "Alien Cat 2: Retro Collection",
+      "url": "https://www.igdb.com/games/alien-cat-2-retro-collection",
+      "game_type": "main_game",
+      "reference_ids": [
+        405912
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-06-18",
+      "release_date_label": "Jun 18, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 339059,
       "name": "Alien Cat Story",
       "url": "https://www.igdb.com/games/alien-cat-story",
@@ -13175,6 +13194,25 @@
         "USA"
       ],
       "has_labelled_base": true
+    },
+    {
+      "canonical_id": 274386,
+      "name": "An Aisling",
+      "url": "https://www.igdb.com/games/an-aisling",
+      "game_type": "main_game",
+      "reference_ids": [
+        274386
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-05-31",
+      "release_date_label": "May 31, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
     },
     {
       "canonical_id": 140953,
@@ -31023,6 +31061,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 264652,
+      "name": "Bahamut and the Waqwaq Tree",
+      "url": "https://www.igdb.com/games/bahamut-and-the-waqwaq-tree",
+      "game_type": "main_game",
+      "reference_ids": [
+        264652
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-05-06",
+      "release_date_label": "May 06, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 210566,
       "name": "Bahnsen Knights",
       "url": "https://www.igdb.com/games/bahnsen-knights",
@@ -40511,6 +40568,25 @@
       "has_labelled_base": true
     },
     {
+      "canonical_id": 389046,
+      "name": "Book of Korvald",
+      "url": "https://www.igdb.com/games/book-of-korvald--2",
+      "game_type": "main_game",
+      "reference_ids": [
+        389046
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-02-18",
+      "release_date_label": "Feb 18, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 208565,
       "name": "Book Quest",
       "url": "https://www.igdb.com/games/book-quest",
@@ -46066,7 +46142,8 @@
       "url": "https://www.igdb.com/games/call-of-duty-black-ops-7",
       "game_type": "main_game",
       "reference_ids": [
-        348220
+        348220,
+        416010
       ],
       "reference_regions": [
         "WORLD"
@@ -52214,6 +52291,25 @@
       ],
       "first_ps4_release": "2025-10-14",
       "release_date_label": "Oct 14, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 71189,
+      "name": "Chickens Madness",
+      "url": "https://www.igdb.com/games/chickens-madness",
+      "game_type": "main_game",
+      "reference_ids": [
+        71189
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-02-04",
+      "release_date_label": "Feb 04, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -60079,8 +60175,8 @@
     },
     {
       "canonical_id": 34894,
-      "name": "Crossout",
-      "url": "https://www.igdb.com/games/crossout",
+      "name": "Crossout Remastered",
+      "url": "https://www.igdb.com/games/crossout-remastered",
       "game_type": "main_game",
       "reference_ids": [
         34894
@@ -68507,9 +68603,12 @@
       "game_type": "expanded_game",
       "reference_ids": [
         148520,
-        148525
+        148525,
+        199816
       ],
       "reference_regions": [
+        "ASIA",
+        "EUR",
         "JPN",
         "USA"
       ],
@@ -68957,7 +69056,7 @@
     },
     {
       "canonical_id": 278160,
-      "name": "Demons are coming!",
+      "name": "Demons Are Coming!",
       "url": "https://www.igdb.com/games/demons-are-coming",
       "game_type": "main_game",
       "reference_ids": [
@@ -68966,8 +69065,8 @@
       "reference_regions": [
         "WORLD"
       ],
-      "first_ps4_release": "2025-08-15",
-      "release_date_label": "Aug 15, 2025",
+      "first_ps4_release": "2025-08-14",
+      "release_date_label": "Aug 14, 2025",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -71604,6 +71703,25 @@
       ],
       "first_ps4_release": "2025-04-01",
       "release_date_label": "Apr 01, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 216659,
+      "name": "Discolored 2",
+      "url": "https://www.igdb.com/games/discolored-2",
+      "game_type": "main_game",
+      "reference_ids": [
+        216659
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-03-03",
+      "release_date_label": "Mar 03, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -78017,6 +78135,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 114830,
+      "name": "Drug Dealer Simulator",
+      "url": "https://www.igdb.com/games/drug-dealer-simulator",
+      "game_type": "main_game",
+      "reference_ids": [
+        114830
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-11-06",
+      "release_date_label": "Nov 06, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 370790,
       "name": "Drug Dealer: Schedule I",
       "url": "https://www.igdb.com/games/drug-dealer-schedule-i",
@@ -80646,6 +80783,25 @@
       ],
       "first_ps4_release": "2023-08-18",
       "release_date_label": "Aug 18, 2023",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 375408,
+      "name": "Easy Flight Simulator 2",
+      "url": "https://www.igdb.com/games/easy-flight-simulator-2",
+      "game_type": "main_game",
+      "reference_ids": [
+        375408
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-10-25",
+      "release_date_label": "Oct 25, 2025",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -99725,6 +99881,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 81486,
+      "name": "Geki Yaba Runner",
+      "url": "https://www.igdb.com/games/geki-yaba-runner",
+      "game_type": "main_game",
+      "reference_ids": [
+        81486
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-12-23",
+      "release_date_label": "Dec 23, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 89771,
       "name": "Gekido: Kintaro's Revenge",
       "url": "https://www.igdb.com/games/gekido-kintaros-revenge",
@@ -101356,14 +101531,16 @@
       "url": "https://www.igdb.com/games/giana-sisters-twisted-dreams",
       "game_type": "main_game",
       "reference_ids": [
+        3098,
         44541
       ],
       "reference_regions": [
         "EUR",
-        "USA"
+        "USA",
+        "WORLD"
       ],
-      "first_ps4_release": "2014-12-10",
-      "release_date_label": "Dec 10, 2014",
+      "first_ps4_release": "2014-12-09",
+      "release_date_label": "Dec 09, 2014",
       "catalogued": true,
       "listings": [
         "Giana Sisters Twisted Dreams Directors Cut"
@@ -162053,6 +162230,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 283258,
+      "name": "Neon Drifter: Cyber Racing",
+      "url": "https://www.igdb.com/games/neon-drifter-cyber-racing",
+      "game_type": "main_game",
+      "reference_ids": [
+        283258
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-01-28",
+      "release_date_label": "Jan 28, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 31180,
       "name": "Neon Drive",
       "url": "https://www.igdb.com/games/neon-drive",
@@ -191093,6 +191289,25 @@
       ],
       "first_ps4_release": "2022-12-14",
       "release_date_label": "Dec 14, 2022",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 378715,
+      "name": "Raptor Evolution",
+      "url": "https://www.igdb.com/games/raptor-evolution",
+      "game_type": "main_game",
+      "reference_ids": [
+        378715
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2025-12-19",
+      "release_date_label": "Dec 19, 2025",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -221786,6 +222001,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 335835,
+      "name": "Sportal",
+      "url": "https://www.igdb.com/games/sportal",
+      "game_type": "main_game",
+      "reference_ids": [
+        335835
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-06-11",
+      "release_date_label": "Jun 11, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 25185,
       "name": "Sports Bar VR",
       "url": "https://www.igdb.com/games/sports-bar-vr",
@@ -229778,6 +230012,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 388470,
+      "name": "Super Juicy Stack",
+      "url": "https://www.igdb.com/games/super-juicy-stack",
+      "game_type": "main_game",
+      "reference_ids": [
+        388470
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-03-23",
+      "release_date_label": "Mar 23, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 400458,
       "name": "Super Jump Ninja",
       "url": "https://www.igdb.com/games/super-jump-ninja",
@@ -235207,6 +235460,25 @@
       ],
       "first_ps4_release": "2025-04-11",
       "release_date_label": "Apr 11, 2025",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 401565,
+      "name": "Tap Jewels",
+      "url": "https://www.igdb.com/games/tap-jewels",
+      "game_type": "main_game",
+      "reference_ids": [
+        401565
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-05-08",
+      "release_date_label": "May 08, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -279892,6 +280164,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 333294,
+      "name": "Wrap House Simulator",
+      "url": "https://www.igdb.com/games/wrap-house-simulator",
+      "game_type": "main_game",
+      "reference_ids": [
+        333294
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-07-17",
+      "release_date_label": "Jul 17, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 115873,
       "name": "Wrath: Aeon of Ruin",
       "url": "https://www.igdb.com/games/wrath-aeon-of-ruin",
@@ -283227,6 +283518,25 @@
       ],
       "first_ps4_release": "2023-02-22",
       "release_date_label": "Feb 22, 2023",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
+      "canonical_id": 381713,
+      "name": "Zen Wash",
+      "url": "https://www.igdb.com/games/zen-wash",
+      "game_type": "main_game",
+      "reference_ids": [
+        381713
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-04-23",
+      "release_date_label": "Apr 23, 2026",
       "catalogued": false,
       "listings": [],
       "package_regions": [],
@@ -301736,7 +302046,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-26T03:33:38.273322+00:00",
+  "updated_at": "2026-11-27T03:34:19.233492+00:00",
   "regions": {
     "summary": {
       "links": 45403,
