@@ -1,20 +1,20 @@
 {
-  "as_of": "2026-11-27",
-  "reference_fetched_at": "2026-11-27T03:34:18.668238+00:00",
+  "as_of": "2026-11-28",
+  "reference_fetched_at": "2026-11-28T03:32:54.878892+00:00",
   "policy": "IGDB reference identities with a PS4 or original PS VR release dated on or before the snapshot date. Main games, standalone expansions, ports, remakes, remasters and expanded games are included. Explicit edition parents and reviewed duplicate-ID aliases count once. DLC, updates, bundles, episodes, seasons, mods and forks are excluded. Future, undated and explicitly unreleased records are excluded; partial dates qualify only after the end of their stated period. This is a third-party reference, not Sony's official total. An unmatched ID is a candidate gap, not proof that a game is missing. Regional variants do not increase the unique-title count.",
   "summary": {
     "catalogue_unique_identities": 5360,
-    "reference_unique_games": 13320,
+    "reference_unique_games": 13322,
     "reference_matches": 4138,
-    "reference_gaps": 9182,
+    "reference_gaps": 9184,
     "matches_with_labelled_base": 3679,
     "local_ps4_or_psvr_reference": 4197,
     "local_without_ps4_reference": 1155,
     "local_identities_without_igdb": 8,
     "local_outside_dated_benchmark": 1222,
     "excluded_reference_records": {
-      "future_undated_or_unreleased_date": 786,
-      "out_of_scope_type": 5390,
+      "future_undated_or_unreleased_date": 785,
+      "out_of_scope_type": 5394,
       "unreleased_status": 317,
       "unresolved_edition_parent": 12
     }
@@ -123029,6 +123029,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 402304,
+      "name": "Isekai Villain",
+      "url": "https://www.igdb.com/games/isekai-villain",
+      "game_type": "main_game",
+      "reference_ids": [
+        402304
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-06-05",
+      "release_date_label": "Jun 05, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 120849,
       "name": "Iseshima Mystery Annai: Itsuwari no Kuro Shinju",
       "url": "https://www.igdb.com/games/iseshima-mystery-annai-itsuwari-no-kuro-shinju",
@@ -142198,9 +142217,11 @@
       "game_type": "main_game",
       "reference_ids": [
         252167,
-        252388
+        252388,
+        276866
       ],
       "reference_regions": [
+        "USA",
         "WORLD"
       ],
       "first_ps4_release": "2023-08-15",
@@ -225532,6 +225553,25 @@
       "has_labelled_base": false
     },
     {
+      "canonical_id": 189039,
+      "name": "Stillborn Slayer",
+      "url": "https://www.igdb.com/games/stillborn-slayer",
+      "game_type": "main_game",
+      "reference_ids": [
+        189039
+      ],
+      "reference_regions": [
+        "WORLD"
+      ],
+      "first_ps4_release": "2026-02-20",
+      "release_date_label": "Feb 20, 2026",
+      "catalogued": false,
+      "listings": [],
+      "package_regions": [],
+      "base_regions": [],
+      "has_labelled_base": false
+    },
+    {
       "canonical_id": 138634,
       "name": "Stilstand",
       "url": "https://www.igdb.com/games/stilstand",
@@ -294304,8 +294344,7 @@
         "Arcade",
         "Nintendo 64",
         "PC (Microsoft Windows)",
-        "PlayStation",
-        "Dreamcast"
+        "PlayStation"
       ],
       "listings": [
         "Mortal Kombat 4"
@@ -302046,7 +302085,7 @@
       ]
     }
   ],
-  "updated_at": "2026-11-27T03:34:19.233492+00:00",
+  "updated_at": "2026-11-28T03:32:55.450347+00:00",
   "regions": {
     "summary": {
       "links": 45403,
